@@ -11,9 +11,17 @@
 }
 
 .main-body {
-  width: 400px;
+  width: 360px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
+}
+
+.nav-bar {
+  width: 360px;
+  height: 80px;
+  background: #ff6347;
 }
 
 /* AlphabetList Styles */

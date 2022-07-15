@@ -272,6 +272,7 @@ class App extends React.Component {
         {
           // hasAnimal  &&
           <div className="main-body">
+            <div className="nav-bar"></div>
             {this.state.isDetailOpen ? (
               <>
                 <LetterDetail
