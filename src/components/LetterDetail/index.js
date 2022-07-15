@@ -62,6 +62,7 @@ class LetterDetail extends React.Component {
                   <div className="image-holder">
                     <img
                       className="animal-image"
+                      style={{ width: animal.horizontal && "100%", height: !animal.horizontal && "100%" }}
                       src={animal.animalImage}
                       alt={animal.animalName}
                     />
