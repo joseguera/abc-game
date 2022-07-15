@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 15px;
 
 }
 
@@ -152,11 +153,18 @@ input:checked + .slider:before {
   width: 290px;
   height: 491.39px;
   border-radius: 15px;
+  padding: 20px;
+}
+
+.playing-card {
   display: flex;
   flex-direction: column;
   align-content: center;
   row-gap: 15px;
-  padding: 20px;
+}
+.card-holder {
+  display: flex;
+  justify-content: center;
 }
 
 .xCloser-holder {
@@ -183,7 +191,7 @@ input:checked + .slider:before {
 }
 
 .animal-image {
-  width: 300px;
+  height: 300px
 }
 
 .animalName-holder {
