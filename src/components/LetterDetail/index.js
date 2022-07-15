@@ -60,12 +60,13 @@ class LetterDetail extends React.Component {
                     </div>
                   </div>
                   <div className="image-holder">
-                    <img
-                      className="animal-image"
-                      style={{ width: animal.horizontal && "100%", height: !animal.horizontal && "100%" }}
-                      src={animal.animalImage}
-                      alt={animal.animalName}
-                    />
+                    <div className="animal-image">
+                      <img
+                        style={{ width: animal.horizontal && "100%", height: !animal.horizontal && "100%" }}
+                        src={animal.animalImage}
+                        alt={animal.animalName}
+                      />
+                    </div>
                   </div>
                   <div
                     className="animalName-holder"
