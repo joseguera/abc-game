@@ -31,7 +31,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Baboon",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 3,
@@ -40,7 +40,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Chimp",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 4,
@@ -49,7 +49,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Dingo",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 5,
@@ -67,7 +67,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Frog",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 7,
@@ -76,7 +76,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Gorilla",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 8,
@@ -85,7 +85,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Hyena",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 9,
@@ -94,7 +94,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Impala",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 10,
@@ -103,7 +103,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Jaguar",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 11,
@@ -112,7 +112,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Koala",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 12,
@@ -121,7 +121,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Lemur",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 13,
@@ -139,7 +139,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Numbat",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 15,
@@ -148,7 +148,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Okapi",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 16,
@@ -166,7 +166,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Quetzal",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 18,
@@ -175,7 +175,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Rhino",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 19,
@@ -184,7 +184,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Snake",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 20,
@@ -193,7 +193,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Tiger",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 21,
@@ -202,7 +202,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Unau",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 22,
@@ -211,7 +211,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Vervet Monkey",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 23,
@@ -220,7 +220,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Wildebeest",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 24,
@@ -229,16 +229,16 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Xenops",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 25,
         value: "Y",
-        // clicked: false,
+        clicked: false,
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Yellowjacket",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 26,
@@ -247,7 +247,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Zebra",
-        horizontal: false
+        horizontal: true
       }
     ],
     isDetailOpen: false,
