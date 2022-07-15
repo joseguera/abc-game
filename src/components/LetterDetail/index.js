@@ -39,7 +39,7 @@ class LetterDetail extends React.Component {
     const { isLiked, isSpellingOpen } = this.state;
 
     return (
-      <div>
+      <div className="card-holder">
         {this.props.alphabet
           .filter((letter) => letter.clicked)
           .map((animal) => (
@@ -50,7 +50,7 @@ class LetterDetail extends React.Component {
                   handleOpenClose={this.handleOpenClose}
                 />
               ) : (
-                <>
+                <div className="playing-card">
                   <div className="xCloser-holder">
                     <div
                       className="x-closer"
@@ -92,7 +92,7 @@ class LetterDetail extends React.Component {
                       <FontAwesomeIcon icon={faHeart} />
                     </div>
                   </div>
-                </>
+                </div>
               )}
             </div>
           ))}

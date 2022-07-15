@@ -20,7 +20,7 @@ class App extends React.Component {
         value: "A",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922806/Cory-Images/Alligator_okxd6p.png",
         animalName: "Alligator"
       },
       {
@@ -52,7 +52,7 @@ class App extends React.Component {
         value: "E",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922807/Cory-Images/Elephant_f8cj8o.png",
         animalName: "Elephant"
       },
       {
@@ -116,7 +116,7 @@ class App extends React.Component {
         value: "M",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922803/Cory-Images/Macaw_ej3au6.png",
         animalName: "Macaw"
       },
       {
@@ -140,7 +140,7 @@ class App extends React.Component {
         value: "P",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922805/Cory-Images/Panda_sddolm.png",
         animalName: "Panda"
       },
       {
@@ -272,14 +272,13 @@ class App extends React.Component {
         {
           // hasAnimal  &&
           <div className="main-body">
+            <div className="nav-bar"></div>
             {this.state.isDetailOpen ? (
-              <>
-                <LetterDetail
-                  alphabet={this.state.alphabet}
-                  isDetailOpen={this.state.isDetailOpen}
-                  handleOpenClose={this.handleOpenClose}
-                />
-              </>
+              <LetterDetail
+                alphabet={this.state.alphabet}
+                isDetailOpen={this.state.isDetailOpen}
+                handleOpenClose={this.handleOpenClose}
+              />
             ) : (
               <AlphabetList
                 letterRows={letterRows}
