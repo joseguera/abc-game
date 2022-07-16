@@ -219,10 +219,10 @@ input:checked + .slider:before {
 
 .xCloser-holder {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.x-closer {
+.x-closer, .question-icon {
   /* 
     IMPROVEMENT NOTE:
     add animation, when not hovered over,
@@ -240,9 +240,6 @@ input:checked + .slider:before {
   align-items: center;
   width: 290px;
   height: 290px;
-}
-
-.animal-image {
 }
 
 .animalName-holder {
