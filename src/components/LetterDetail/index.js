@@ -5,7 +5,7 @@ import {
   faXmark,
   faHeart,
   faFrog,
-  faLightbulb
+  faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
 import SpellingCard from "../SpellingCard";
 import NameButton from "../NameButton";
@@ -20,7 +20,7 @@ class LetterDetail extends React.Component {
   state = {
     animal: this.props.alphabet.animalName,
     isLiked: false,
-    isSpellingOpen: false
+    isSpellingOpen: false,
   };
 
   setLiked = () => {
@@ -31,7 +31,7 @@ class LetterDetail extends React.Component {
   handleOpenClose = () => {
     const clicked = this.state.isSpellingOpen;
     this.setState({
-      isSpellingOpen: !clicked
+      isSpellingOpen: !clicked,
     });
   };
 
@@ -60,17 +60,16 @@ class LetterDetail extends React.Component {
                     </div>
                   </div>
                   <div className="image-holder">
-                    <div className="animal-image">
-                      <img
-                        style={{ width: animal.horizontal && "100%", height: !animal.horizontal && "100%" }}
-                        src={animal.animalImage}
-                        alt={animal.animalName}
-                      />
-                    </div>
+                    <img
+                      style={{
+                        width: animal.horizontal ? "100%" : "",
+                        height: !animal.horizontal ? "100%" : "",
+                      }}
+                      src={animal.animalImage}
+                      alt={animal.animalName}
+                    />
                   </div>
-                  <div
-                    className="animalName-holder"
-                  >
+                  <div className="animalName-holder">
                     <div>
                       <p className="animal-name">{animal.animalName}</p>
                     </div>
