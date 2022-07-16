@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpellCheck,
   faXmark,
+  faQuestion,
   faHeart,
   faFrog,
   faLightbulb,
@@ -52,6 +53,9 @@ class LetterDetail extends React.Component {
               ) : (
                 <div className="playing-card">
                   <div className="xCloser-holder">
+                    <div className="question-icon">
+                      <FontAwesomeIcon icon={faQuestion} />
+                    </div>
                     <div
                       className="x-closer"
                       onClick={() => this.props.handleOpenClose(animal)}
