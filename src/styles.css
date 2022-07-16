@@ -19,10 +19,60 @@
 
 }
 
-.nav-bar {
+.navBar-holder {
+  display: flex;
   width: 360px;
   height: 80px;
   background: #ff6347;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NavBar Styles */
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.navBar-title-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar-item {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
+} 
+
+.navBar-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.navBar-brand {
+  height: 25px;
+  line-height: 25px;
+}
+
+.site-title {
+  font-size: 10px;
+
 }
 
 /* AlphabetList Styles */

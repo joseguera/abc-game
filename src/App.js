@@ -1,4 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faListUl,
+  faPaw,
+  faMusic,
+  faBookOpenReader,
+  faCartShopping
+} from "@fortawesome/free-solid-svg-icons";
 import AlphabetList from "../src/components/AlphabetList";
 import LetterDetail from "../src/components/LetterDetail";
 import "./styles.css";
@@ -298,7 +306,32 @@ class App extends React.Component {
         {
           // hasAnimal  &&
           <div className="main-body">
-            <div className="nav-bar"></div>
+            <div className="navBar-holder">
+              <div className="nav-bar">
+                <div className="navBar-title-holder">
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faPaw} className="navBar-brand" />
+                  </div>
+                  <div className="site-title">
+                    <h1>ABC Animal Game</h1>
+                  </div>
+                </div>
+                <div className="navBar-buttons">
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faBookOpenReader} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faCartShopping} className="navBar-icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
             {this.state.isDetailOpen ? (
               <LetterDetail
                 alphabet={this.state.alphabet}
