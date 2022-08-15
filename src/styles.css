@@ -1,5 +1,12 @@
+body {
+  font-family: 'Pangolin', sans-serif;
+  margin: 0px !important;
+  padding: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
-  font-family: sans-serif;
   font-size: 25px;
   text-align: center;
   display: flex;

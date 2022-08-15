@@ -10,7 +10,6 @@ export const StyledLetter = styled.div`
     transition: all 0.5s ease-out;
     color: #3D674C /*Spring Leaves*/;
     box-shadow: -5px 5px #D54A0A /*Tia Maria*/;
-    font-family: 'Pangolin', sans-serif;
     background-color: #E3DAC9;
     &:hover, &:focus {
         cursor: pointer;
