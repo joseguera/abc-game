@@ -245,7 +245,7 @@ class App extends React.Component {
         clicked: false,
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
-        animalName: "Yellowjacket",
+        animalName: "Yellow Mongoose",
         horizontal: true
       },
       {
