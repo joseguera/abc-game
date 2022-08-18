@@ -82,7 +82,7 @@ class LetterDetail extends React.Component {
                     </div>
                   </div>
                   <div className="icon-holder">
-                    <NameButton animalName={animal.animalName} />
+                    <NameButton animalName={animal.animalName} animalNameSound={animal.animalNameSound}/>
                     <div className="icon">
                       <FontAwesomeIcon icon={faFrog} />
                     </div>

@@ -30,6 +30,7 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922806/Cory-Images/Alligator_okxd6p.png",
         animalName: "Alligator",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
         horizontal: true
       },
       {
@@ -39,6 +40,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Baboon",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
         horizontal: true
       },
       {
@@ -48,6 +50,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Chimp",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/chimp_cr87ba.mp3",
         horizontal: true
       },
       {
@@ -57,6 +60,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Dingo",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
         horizontal: true
       },
       {
@@ -66,6 +70,7 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922807/Cory-Images/Elephant_f8cj8o.png",
         animalName: "Elephant",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
         horizontal: true
       },
       {
@@ -75,6 +80,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Frog",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
         horizontal: true
       },
       {
@@ -84,6 +90,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Gorilla",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
         horizontal: true
       },
       {
@@ -93,6 +100,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Hyena",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
         horizontal: true
       },
       {
@@ -102,6 +110,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Impala",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
         horizontal: true
       },
       {
@@ -111,6 +120,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Jaguar",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
         horizontal: true
       },
       {
@@ -120,6 +130,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Koala",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
         horizontal: true
       },
       {
@@ -129,6 +140,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Lemur",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
         horizontal: true
       },
       {
@@ -138,6 +150,7 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922803/Cory-Images/Macaw_ej3au6.png",
         animalName: "Macaw",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
         horizontal: false
       },
       {
@@ -147,6 +160,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Numbat",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
         horizontal: true
       },
       {
@@ -156,6 +170,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Okapi",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
         horizontal: true
       },
       {
@@ -165,6 +180,7 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922805/Cory-Images/Panda_sddolm.png",
         animalName: "Panda",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
         horizontal: false
       },
       {
@@ -174,6 +190,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Quetzal",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
         horizontal: true
       },
       {
@@ -183,6 +200,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Rhino",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
         horizontal: true
       },
       {
@@ -192,6 +210,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Snake",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
         horizontal: true
       },
       {
@@ -201,6 +220,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Tiger",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
         horizontal: true
       },
       {
@@ -210,6 +230,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Unau",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
         horizontal: true
       },
       {
@@ -219,6 +240,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Vervet Monkey",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
         horizontal: true
       },
       {
@@ -228,6 +250,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Wildebeest",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
         horizontal: true
       },
       {
@@ -237,6 +260,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Xenops",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
         horizontal: true
       },
       {
@@ -246,6 +270,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Yellow Mongoose",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
         horizontal: true
       },
       {
@@ -255,6 +280,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Zebra",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/zebra_bbvbk1.mp3",
         horizontal: true
       }
     ],
