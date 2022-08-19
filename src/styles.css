@@ -184,6 +184,7 @@ input:checked + .slider:before {
 
 .letter-detail {
   background-color: cornsilk;
+  background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png");
   border: 1px solid #ff6347;
   width: 290px;
   height: 491.39px;
@@ -204,10 +205,10 @@ input:checked + .slider:before {
 
 .xCloser-holder {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.x-closer, .question-icon {
+.x-closer {
   /* 
     IMPROVEMENT NOTE:
     add animation, when not hovered over,
@@ -266,8 +267,13 @@ input:checked + .slider:before {
   color: #2f4f4f;
 }
 
+.icon-heart {
+  font-size: 27px;
+  cursor: pointer;
+  color: #2f4f4f;
+}
+
 .icon:hover,
-.x-closer:hover,
-.heart-icon:hover {
-  color: #797979 !important;
+.x-closer:hover {
+  color: #4d8080 !important;
 }

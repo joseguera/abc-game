@@ -19,7 +19,7 @@ export default class LetterTiles extends React.Component {
   render() {
     const { letterTiles } = this.state;
 
-    const tiles = letterTiles.toUpperCase().split("");
+    const tiles = letterTiles.split("");
 
     // console.log(letterTiles)
     return (

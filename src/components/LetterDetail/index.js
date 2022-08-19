@@ -24,6 +24,8 @@ class LetterDetail extends React.Component {
     isSpellingOpen: false,
   };
 
+  colorRef = React.createRef();
+
   setLiked = () => {
     const liked = this.state.isLiked;
     this.setState({ isLiked: !liked });
@@ -35,6 +37,14 @@ class LetterDetail extends React.Component {
       isSpellingOpen: !clicked,
     });
   };
+
+  handleMouseOver = () => {
+    return this.state.isLiked ? this.colorRef.current.style.color = "#ff9380" : this.colorRef.current.style.color = "#4d8080";
+  }
+
+  handleMouseOut = () => {
+    return this.state.isLiked ? this.colorRef.current.style.color = "#FF6347" : this.colorRef.current.style.color = "#2F4F4F";
+  }
 
   render() {
     const { isLiked, isSpellingOpen } = this.state;
@@ -53,9 +63,6 @@ class LetterDetail extends React.Component {
               ) : (
                 <div className="playing-card">
                   <div className="xCloser-holder">
-                    <div className="question-icon">
-                      <FontAwesomeIcon icon={faQuestion} />
-                    </div>
                     <div
                       className="x-closer"
                       onClick={() => this.props.handleOpenClose(animal)}
@@ -84,15 +91,15 @@ class LetterDetail extends React.Component {
                   <div className="icon-holder">
                     <NameButton animalName={animal.animalName} animalNameSound={animal.animalNameSound}/>
                     <div className="icon">
-                      <FontAwesomeIcon icon={faFrog} />
-                    </div>
-                    <div className="icon">
                       <FontAwesomeIcon icon={faLightbulb} />
                     </div>
                     <div
-                      className="icon"
+                      className="icon-heart"
                       onClick={this.setLiked}
                       style={{ color: `${isLiked ? "#FF6347" : "#2F4F4F"}` }}
+                      ref={this.colorRef}
+                      onMouseOver={this.handleMouseOver}
+                      onMouseOut={this.handleMouseOut}
                     >
                       <FontAwesomeIcon icon={faHeart} />
                     </div>
