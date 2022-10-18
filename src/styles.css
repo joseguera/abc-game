@@ -19,9 +19,10 @@ body {
 
 .main-body {
   width: 360px;
+  height: 625px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
   background-color: #fde7b4;
 }
@@ -29,7 +30,7 @@ body {
 .navBar-holder {
   display: flex;
   width: 360px;
-  height: 80px;
+  height: 52px;
   background: #ff6347;
   justify-content: center;
   align-items: center;
@@ -89,9 +90,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: space-between;
   gap: 20px;
+  padding-top: 35px;
 }
 
 .letter-row {

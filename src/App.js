@@ -319,11 +319,12 @@ class App extends React.Component {
     const { alphabet } = this.state;
 
     const letterRows = [
-      alphabet.slice(0, 6),
-      alphabet.slice(6, 12),
-      alphabet.slice(12, 18),
-      alphabet.slice(18, 22),
-      alphabet.slice(22, 26)
+      alphabet.slice(0, 5),
+      alphabet.slice(5, 10),
+      alphabet.slice(10, 15),
+      alphabet.slice(15, 20),
+      alphabet.slice(20, 23),
+      alphabet.slice(23, 26)
     ];
 
     return (
