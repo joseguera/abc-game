@@ -8,14 +8,7 @@ export default class SpellingCard extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="image-holder">
-          <img
-            className="animal-image"
-            src={this.props.animal.animalImage}
-            alt={this.props.animal.animalName}
-          />
-        </div>
+    <>
         <LetterTiles animalName={this.props.animal.animalName} />
         <div
           className="paw-closer icon"
@@ -23,7 +16,8 @@ export default class SpellingCard extends React.Component {
         >
           <FontAwesomeIcon icon={faPaw} />
         </div>
-      </div>
+    
+    </>
     );
   }
 }

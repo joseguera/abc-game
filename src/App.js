@@ -41,7 +41,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
         animalName: "Baboon",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
-        horizontal: true
+        horizontal: false
       },
       {
         id: 3,
@@ -51,7 +51,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
         animalName: "Chimp",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/chimp_cr87ba.mp3",
-        horizontal: true
+        horizontal: false
       },
       {
         id: 4,
@@ -91,14 +91,14 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
         animalName: "Gorilla",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
-        horizontal: true
+        horizontal: false
       },
       {
         id: 8,
         value: "H",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666126152/Cory-Images/hyena.png",
         animalName: "Hyena",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
         horizontal: true
