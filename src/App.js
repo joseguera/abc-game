@@ -279,8 +279,8 @@ class App extends React.Component {
         clicked: false,
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
-        animalName: "Zebra",
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/zebra_bbvbk1.mp3",
+        animalName: "Zebu",
+        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660867601/animal-sounds/zebu_lgd2bj.mp3",
         horizontal: true
       }
     ],
@@ -319,11 +319,12 @@ class App extends React.Component {
     const { alphabet } = this.state;
 
     const letterRows = [
-      alphabet.slice(0, 6),
-      alphabet.slice(6, 12),
-      alphabet.slice(12, 18),
-      alphabet.slice(18, 22),
-      alphabet.slice(22, 26)
+      alphabet.slice(0, 5),
+      alphabet.slice(5, 10),
+      alphabet.slice(10, 15),
+      alphabet.slice(15, 20),
+      alphabet.slice(20, 23),
+      alphabet.slice(23, 26)
     ];
 
     return (
@@ -339,7 +340,7 @@ class App extends React.Component {
                     <FontAwesomeIcon icon={faPaw} className="navBar-brand" />
                   </div>
                   <div className="site-title">
-                    <h1>ABC Animal Game</h1>
+                    <h1>Aby Zebra</h1>
                   </div>
                 </div>
                 <div className="navBar-buttons">
