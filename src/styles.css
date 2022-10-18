@@ -235,6 +235,15 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  height: 62px;
+}
+
+.animal-name-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .animalName-details {
