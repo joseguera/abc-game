@@ -38,7 +38,7 @@ class App extends React.Component {
         value: "B",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1662964660/Cory-Images/baboon.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
         animalName: "Baboon",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
         horizontal: true
@@ -48,7 +48,7 @@ class App extends React.Component {
         value: "C",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1662945792/Cory-Images/chimp.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
         animalName: "Chimp",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/chimp_cr87ba.mp3",
         horizontal: true
@@ -58,7 +58,7 @@ class App extends React.Component {
         value: "D",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1663383400/Cory-Images/dingo.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
         animalName: "Dingo",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
         horizontal: true
@@ -68,7 +68,7 @@ class App extends React.Component {
         value: "E",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1663637534/Cory-Images/elephant.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
         animalName: "Elephant",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
         horizontal: true
@@ -78,7 +78,7 @@ class App extends React.Component {
         value: "F",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1663732753/Cory-Images/frog.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
         animalName: "Frog",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
         horizontal: true
@@ -88,7 +88,7 @@ class App extends React.Component {
         value: "G",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1664319040/Cory-Images/gorilla.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
         animalName: "Gorilla",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
         horizontal: true
@@ -128,7 +128,7 @@ class App extends React.Component {
         value: "K",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1662835835/Cory-Images/koala.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
         animalName: "Koala",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
         horizontal: true
@@ -258,7 +258,7 @@ class App extends React.Component {
         value: "X",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1662940873/Cory-Images/xenops.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
         animalName: "Xenops",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
         horizontal: true
