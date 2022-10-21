@@ -361,14 +361,14 @@ class App extends React.Component {
             </div>
             {this.state.isDetailOpen ? (
               <LetterDetail
-                alphabet={this.state.alphabet}
+                alphabet={alphabet}
                 isDetailOpen={this.state.isDetailOpen}
                 handleOpenClose={this.handleOpenClose}
               />
             ) : (
               <AlphabetList
-                letterRows={letterRows}
                 handleOpenClose={this.handleOpenClose}
+                alphabet={alphabet}
                 // handleButtonCheck={this.handleButtonCheck}
               />
             )}
