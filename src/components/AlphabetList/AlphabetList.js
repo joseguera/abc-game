@@ -3,17 +3,16 @@ import AlphabetLetter from "../AlphabetLetter";
 const AlphabetList = (props) => {
   return (
     <div className="alphabet-list">
-      {props.letterRows.map((row) => {
+      {props.alphabet.map((alpha) => {
         return (
           <div className="letter-row">
-            {row.map((letterVar) => (
               <AlphabetLetter
-                key={letterVar.id}
-                letter={letterVar}
+                key={alpha.id}
+                letter={alpha.value}
                 handleOpenClose={props.handleOpenClose}
+                alpha={alpha}
                 // handleButtonCheck={props.handleButtonCheck}
               />
-            ))}
           </div>
         );
       })}
