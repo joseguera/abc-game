@@ -5,7 +5,6 @@ import {
   faXmark,
   faQuestion,
   faHeart,
-  faFrog,
   faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
 import SpellingCard from "../SpellingCard";
@@ -19,9 +18,8 @@ class LetterDetail extends React.Component {
   */
 
   state = {
-    animal: this.props.alphabet.animalName,
     isLiked: false,
-    isSpellingOpen: false,
+    isSpellingOpen: false
   };
 
   colorRef = React.createRef();
@@ -71,8 +69,8 @@ class LetterDetail extends React.Component {
                 <div className="image-holder">
                   <img
                     style={{
-                      width: animal.horizontal ? "100%" : "",
-                      height: !animal.horizontal ? "100%" : "",
+                      width: animal.horizontal && "100%",
+                      height: !animal.horizontal && "100%"
                     }}
                     src={animal.animalImage}
                     alt={animal.animalName}
@@ -87,7 +85,7 @@ class LetterDetail extends React.Component {
                   ) : (
                     <div className="animal-name-holder">
                       <div>
-                        <p className="animal-name">{animal.animalName}</p>
+                        <p className="animal-name" style={{ "line-height" : (animal.animalName === "Yellow Mongoose") && "35px" }}>{animal.animalName}</p>
                       </div>
                       <div className="icon" onClick={this.handleOpenClose}>
                         <FontAwesomeIcon icon={faSpellCheck} />

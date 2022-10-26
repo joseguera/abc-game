@@ -27,15 +27,17 @@ export const StyledLetter = styled.div`
 export const Letter = styled.div`
     width: 30px;
     height: 30px;
+    line-height: 30px;
 `;
 
 export const IconHolder = styled.div`
+    display: flex;
+    align-items: center;
     width: 50px;
     height: 50px;
     align-self: flex-end;
 `;
 
 export const AnimalIcon = styled.img`
-    width: 50px;
-    height: 50px;
+
 `;

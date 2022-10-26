@@ -107,7 +107,21 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 2.5px;
+  gap: 0.5px;
+}
+
+.tile-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5px;
+}
+
+.tile-direction {
+  display: flex;
+  flex-direction: row;
 }
 
 .tile-letter {
@@ -277,6 +291,8 @@ input:checked + .slider:before {
   font-size: 27px;
   cursor: pointer;
   color: #2f4f4f;
+  display: flex;
+  align-items: center;
 }
 
 .icon-heart {
@@ -288,4 +304,15 @@ input:checked + .slider:before {
 .icon:hover,
 .x-closer:hover {
   color: #4d8080 !important;
+}
+
+.spelling-card-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5px;
+}
+
+.blank {
+  display: flex;
+  flex-direction: column;
 }
