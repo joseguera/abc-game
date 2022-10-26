@@ -6,6 +6,11 @@ const TileLetter = (props) => {
       className="tile-letter"
     >
       {props.letter}
+      {props.letter}
+      {props.letter}
+      {props.letter}
+      {props.letter}
+      {props.letter}
       
     </div>
   );
