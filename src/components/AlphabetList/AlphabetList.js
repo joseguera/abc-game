@@ -8,10 +8,8 @@ const AlphabetList = (props) => {
           <div className="letter-row">
               <AlphabetLetter
                 key={alpha.id}
-                letter={alpha.value}
                 handleOpenClose={props.handleOpenClose}
                 alpha={alpha}
-                // handleButtonCheck={props.handleButtonCheck}
               />
           </div>
         );

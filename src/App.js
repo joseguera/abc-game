@@ -28,7 +28,7 @@ class App extends React.Component {
         value: "A",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922806/Cory-Images/Alligator_okxd6p.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
         animalName: "Alligator",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
         horizontal: true
@@ -91,14 +91,14 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
         animalName: "Gorilla",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
-        horizontal: false
+        horizontal: true
       },
       {
         id: 8,
         value: "H",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666126152/Cory-Images/hyena.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725657/Cory-Images/hyena_klzzic.png",
         animalName: "Hyena",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
         horizontal: true
@@ -108,7 +108,7 @@ class App extends React.Component {
         value: "I",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725654/Cory-Images/impala_wasjnb.png",
         animalName: "Impala",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
         horizontal: true
@@ -118,7 +118,7 @@ class App extends React.Component {
         value: "J",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
         animalName: "Jaguar",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
         horizontal: true
@@ -148,7 +148,7 @@ class App extends React.Component {
         value: "M",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922803/Cory-Images/Macaw_ej3au6.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
         animalName: "Macaw",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
         horizontal: false
@@ -178,7 +178,7 @@ class App extends React.Component {
         value: "P",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1657922805/Cory-Images/Panda_sddolm.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
         animalName: "Panda",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
         horizontal: false
@@ -249,7 +249,7 @@ class App extends React.Component {
         clicked: false,
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
-        animalName: "Wildebeest",
+        animalName: "Warthog",
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
         horizontal: true
       },
@@ -317,15 +317,6 @@ class App extends React.Component {
   render() {
     // const hasAnimal = !this.state.isLoading && this.state.animal;
     const { alphabet } = this.state;
-
-    const letterRows = [
-      alphabet.slice(0, 5),
-      alphabet.slice(5, 10),
-      alphabet.slice(10, 15),
-      alphabet.slice(15, 20),
-      alphabet.slice(20, 23),
-      alphabet.slice(23, 26)
-    ];
 
     return (
       <div className="App">
