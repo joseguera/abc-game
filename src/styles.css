@@ -200,9 +200,9 @@ input:checked + .slider:before {
 
 .letter-detail {
   background-color: cornsilk;
-  background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png");
+  /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
   border: 1px solid #ff6347;
-  width: 290px;
+  width: 295px;
   height: 491.39px;
   border-radius: 15px;
   padding: 20px;
