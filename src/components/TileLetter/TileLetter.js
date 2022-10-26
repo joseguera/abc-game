@@ -5,7 +5,7 @@ const TileLetter = (props) => {
     <div
       className="tile-letter"
     >
-      {props.letter}      
+      {props.letter}
     </div>
   );
 };
