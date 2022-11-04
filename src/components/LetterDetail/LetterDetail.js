@@ -19,7 +19,7 @@ class LetterDetail extends React.Component {
 
   state = {
     isLiked: false,
-    isSpellingOpen: false
+    isSpellingOpen: false,
   };
 
   colorRef = React.createRef();
@@ -70,47 +70,59 @@ class LetterDetail extends React.Component {
                   <img
                     style={{
                       width: animal.horizontal && "100%",
-                      height: !animal.horizontal && "100%"
+                      height: !animal.horizontal && "100%",
                     }}
                     src={animal.animalImage}
                     alt={animal.animalName}
                   />
                 </div>
-                <div className="animalName-holder">
+                <div className="animal-name-holder">
                   {isSpellingOpen ? (
                     <SpellingCard
                       animal={animal}
                       handleOpenClose={this.handleOpenClose}
                     />
                   ) : (
-                    <div className="animal-name-holder">
+                    <div className="animal-utils">
+                      <div className="animal-name-title">
                       <div>
-                        <p className="animal-name" style={{ "line-height" : (animal.animalName === "Yellow Mongoose") && "35px" }}>{animal.animalName}</p>
+                        <p
+                          className="animal-name"
+                          style={{
+                            lineHeight:
+                              animal.animalName === "Yellow Mongoose" && "35px",
+                          }}
+                        >
+                          {animal.animalName}
+                        </p>
                       </div>
                       <div className="icon" onClick={this.handleOpenClose}>
                         <FontAwesomeIcon icon={faSpellCheck} />
                       </div>
+                      </div>
+                      <div className="icon-holder">
+                        <NameButton
+                          animalName={animal.animalName}
+                          animalNameSound={animal.animalNameSound}
+                        />
+                        <div className="icon">
+                          <FontAwesomeIcon icon={faLightbulb} />
+                        </div>
+                        <div
+                          className="icon-heart"
+                          onClick={this.setLiked}
+                          style={{
+                            color: `${isLiked ? "#FF6347" : "#2F4F4F"}`,
+                          }}
+                          ref={this.colorRef}
+                          onMouseOver={this.handleMouseOver}
+                          onMouseOut={this.handleMouseOut}
+                        >
+                          <FontAwesomeIcon icon={faHeart} />
+                        </div>
+                      </div>
                     </div>
                   )}
-                </div>
-                <div className="icon-holder">
-                  <NameButton
-                    animalName={animal.animalName}
-                    animalNameSound={animal.animalNameSound}
-                  />
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faLightbulb} />
-                  </div>
-                  <div
-                    className="icon-heart"
-                    onClick={this.setLiked}
-                    style={{ color: `${isLiked ? "#FF6347" : "#2F4F4F"}` }}
-                    ref={this.colorRef}
-                    onMouseOver={this.handleMouseOver}
-                    onMouseOut={this.handleMouseOut}
-                  >
-                    <FontAwesomeIcon icon={faHeart} />
-                  </div>
                 </div>
               </div>
             </div>

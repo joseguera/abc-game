@@ -5,9 +5,8 @@ const AlphabetList = (props) => {
     <div className="alphabet-list">
       {props.alphabet.map((alpha) => {
         return (
-          <div className="letter-row">
+          <div className="letter-row" key={alpha.id}>
               <AlphabetLetter
-                key={alpha.id}
                 handleOpenClose={props.handleOpenClose}
                 alpha={alpha}
               />
