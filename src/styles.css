@@ -107,7 +107,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 0.5px;
+  flex-wrap: wrap;
 }
 
 .tile-column {
@@ -125,10 +125,10 @@ body {
 }
 
 .tile-letter {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
   border: 1px solid coral;
   border-radius: 5px;
   cursor: pointer;
@@ -203,7 +203,7 @@ input:checked + .slider:before {
   /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
   border: 1px solid #ff6347;
   width: 295px;
-  height: 491.39px;
+  height: 500px;
   border-radius: 15px;
   padding: 20px;
 }
@@ -212,8 +212,8 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-content: center;
-  row-gap: 15px;
 }
+
 .card-holder {
   display: flex;
   justify-content: center;
@@ -242,6 +242,7 @@ input:checked + .slider:before {
   align-items: center;
   width: 290px;
   height: 290px;
+  padding-bottom: 15px;
 }
 
 .animalName-holder {
@@ -249,8 +250,25 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  row-gap: 15px;
+  width: 295px;
+}
+
+.animal-name-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   gap: 15px;
-  height: 62px;
+}
+
+.animal-utils {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  width: 295px;
 }
 
 .animal-name-holder {
@@ -260,6 +278,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
+
 
 .animalName-details {
   display: flex;
@@ -295,6 +314,11 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.spell-close-icon {
+  font-size: 42px;
+  height: 42px;
+}
+
 .icon-heart {
   font-size: 27px;
   cursor: pointer;
@@ -309,7 +333,9 @@ input:checked + .slider:before {
 .spelling-card-holder {
   display: flex;
   flex-direction: row;
-  gap: 1.5px;
+  flex-wrap: wrap;
+  width: 295px;
+  justify-content: center;
 }
 
 .blank {

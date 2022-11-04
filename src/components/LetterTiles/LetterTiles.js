@@ -9,13 +9,13 @@ export default class LetterTiles extends React.Component {
   render() {
     const { letterTiles } = this.state;
 
-    const mongooseTiles = letterTiles.split(" ");
+    // const mongooseTiles = letterTiles.split(" ");
 
-    const tiles = letterTiles.split("");
+    const tiles = letterTiles.join("-");
 
     return (
       <div className="animalName-holder">
-          {letterTiles === "Yellow Mongoose" ? (
+          {/* {letterTiles === "Yellow Mongoose" ? (
             <div className="tile-column">
               <div className="tile-direction">
                 {mongooseTiles[0].split("").map((tile, idx) => (
@@ -28,11 +28,11 @@ export default class LetterTiles extends React.Component {
                 ))}
               </div>
             </div>
-          ) : (
+          ) : ( */}
             <div className="tile-row">
-              {tiles.map((tile, idx) => <TileLetter key={idx} letter={tile} />)}
+              {tiles.split("").map((tile, idx) => <TileLetter key={idx} letter={tile} />)}
             </div>
-          )}
+          {/* )} */}
       </div>
     );
   }
