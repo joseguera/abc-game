@@ -206,7 +206,7 @@ class App extends React.Component {
         animalImage:
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Quetzal",
-        syllables: ["Quet-zal"],
+        syllables: ["Quet-", "zal"],
         animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
         horizontal: true
       },

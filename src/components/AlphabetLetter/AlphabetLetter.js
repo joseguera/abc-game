@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledLetter, Letter, IconHolder, AnimalIcon } from "./AlphabetLetter.styles";
 
-const AlphabetLetter = (props) => {
+export default function AlphabetLetter(props) {
  
   return (
     <StyledLetter
@@ -22,5 +22,3 @@ const AlphabetLetter = (props) => {
     </StyledLetter>
   );
 };
-
-export default AlphabetLetter;

@@ -1,20 +1,20 @@
-import AlphabetLetter from "../AlphabetLetter";
+import React from "react";
+import AlphabetLetter from "../../components/AlphabetLetter/AlphabetLetter";
+import { List, LetterRow } from "./AlphabetList.styles";
 
-const AlphabetList = (props) => {
+export default function AlphabetList(props) {
   return (
-    <div className="alphabet-list">
+    <List>
       {props.alphabet.map((alpha) => {
         return (
-          <div className="letter-row" key={alpha.id}>
+          <LetterRow key={alpha.id}>
               <AlphabetLetter
                 handleOpenClose={props.handleOpenClose}
                 alpha={alpha}
               />
-          </div>
+          </LetterRow>
         );
       })}
-    </div>
+    </List>
   );
 };
-
-export default AlphabetList;
