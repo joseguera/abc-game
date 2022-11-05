@@ -90,7 +90,7 @@ class LetterDetail extends React.Component {
                           className="animal-name"
                           style={{
                             lineHeight:
-                              animal.animalName === "Yellow Mongoose" && "35px",
+                              (animal.animalName === "Yellow Mongoose" || animal.animalName === "Vervet Monkey") && "35px",
                           }}
                         >
                           {animal.animalName}
