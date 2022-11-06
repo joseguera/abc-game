@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimalNameHolder, RowHolder, TileRow } from "./LetterTiles.styles";
 import TileLetter from "../TileLetter";
 
 export default class LetterTiles extends React.Component {
@@ -13,35 +14,35 @@ export default class LetterTiles extends React.Component {
 
 
     return (
-      <div className="animalName-holder">
+      <AnimalNameHolder>
         { animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
-          <div className="row-holder">
+          <RowHolder>
             {tiles.map((tile) => {
               return tile.map((letter, idx) => {
                 return (
-                  <div className="tile-row" key={idx}>
+                  <TileRow key={idx}>
                     {letter.split("").map((l, idx) => (
                       <TileLetter key={idx} letter={l} />
                     ))}
-                  </div>
+                  </TileRow>
                 );
               });
             })}
-          </div>
+          </RowHolder>
         ) : (
-          <div className="row-holder">
+          <RowHolder>
             {tiles.map((tile, idx) => {
               return (
-                <div className="tile-row" key={idx}>
+                <TileRow key={idx}>
                   {tile.split("").map((tile, idx) => (
                     <TileLetter key={idx} letter={tile} />
                   ))}
-                </div>
+                </TileRow>
               );
             })}
-          </div>
+          </RowHolder>
         )}
-      </div>
+      </AnimalNameHolder>
     );
   }
 }

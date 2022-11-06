@@ -1,4 +1,5 @@
 import React from "react";
+import { SpellingCardHolder, Icon } from "./SpellingCard.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 import LetterTiles from "../LetterTiles";
@@ -8,16 +9,14 @@ export default class SpellingCard extends React.Component {
 
   render() {
     return (
-    <div className="spelling-card-holder">
+    <SpellingCardHolder>
         <LetterTiles syllables={this.props.animal.syllables} animalName={this.props.animal.animalName} />
-        <div
-          className="icon spell-close-icon"
+        <Icon
           onClick={() => this.props.handleOpenClose()}
         >
           <FontAwesomeIcon icon={faRectangleXmark} />
-        </div>
-    
-    </div>
+        </Icon>
+    </SpellingCardHolder>
     );
   }
 }

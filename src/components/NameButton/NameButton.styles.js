@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
-// export const Letter = styled.div`
-//     width: 30px;
-//     height: 30px;
-//     line-height: 30px;
-// `;
+export const Icon = styled.div`
+  font-size: 27px;
+  cursor: pointer;
+  color: #2f4f4f;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: #4d8080 !important;
+  }
+`;

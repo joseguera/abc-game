@@ -1,4 +1,5 @@
 import React from "react";
+import { CardHolder, CardLetter, PlayingCard, XCloserHolder, XCloser, ImageHolder, NameHolder, AnimalUtils, AnimalNameTitle, AnimalName, Icon, IconHolder, IconHeart } from "./LetterDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpellCheck,
@@ -52,21 +53,20 @@ class LetterDetail extends React.Component {
     const { isLiked, isSpellingOpen } = this.state;
 
     return (
-      <div className="card-holder">
+      <CardHolder>
         {this.props.alphabet
           .filter((letter) => letter.clicked)
           .map((animal) => (
-            <div key={animal.id} className="letter-detail">
-              <div className="playing-card">
-                <div className="xCloser-holder">
-                  <div
-                    className="x-closer"
+            <CardLetter key={animal.id}>
+              <PlayingCard>
+                <XCloserHolder>
+                  <XCloser
                     onClick={() => this.props.handleOpenClose(animal)}
                   >
                     <FontAwesomeIcon icon={faXmark} />
-                  </div>
-                </div>
-                <div className="image-holder">
+                  </XCloser>
+                </XCloserHolder>
+                <ImageHolder>
                   <img
                     style={{
                       width: animal.horizontal && "100%",
@@ -75,41 +75,39 @@ class LetterDetail extends React.Component {
                     src={animal.animalImage}
                     alt={animal.animalName}
                   />
-                </div>
-                <div className="animal-name-holder">
+                </ImageHolder>
+                <NameHolder>
                   {isSpellingOpen ? (
                     <SpellingCard
                       animal={animal}
                       handleOpenClose={this.handleOpenClose}
                     />
                   ) : (
-                    <div className="animal-utils">
-                      <div className="animal-name-title">
+                    <AnimalUtils>
+                      <AnimalNameTitle>
                       <div>
-                        <p
-                          className="animal-name"
+                        <AnimalName
                           style={{
                             lineHeight:
                               (animal.animalName === "Yellow Mongoose" || animal.animalName === "Vervet Monkey") && "35px",
                           }}
                         >
                           {animal.animalName}
-                        </p>
+                        </AnimalName>
                       </div>
-                      <div className="icon" onClick={this.handleOpenClose}>
+                      <Icon onClick={this.handleOpenClose}>
                         <FontAwesomeIcon icon={faSpellCheck} />
-                      </div>
-                      </div>
-                      <div className="icon-holder">
+                      </Icon>
+                      </AnimalNameTitle>
+                      <IconHolder>
                         <NameButton
                           animalName={animal.animalName}
                           animalNameSound={animal.animalNameSound}
                         />
-                        <div className="icon">
+                        <Icon>
                           <FontAwesomeIcon icon={faLightbulb} />
-                        </div>
-                        <div
-                          className="icon-heart"
+                        </Icon>
+                        <IconHeart
                           onClick={this.setLiked}
                           style={{
                             color: `${isLiked ? "#FF6347" : "#2F4F4F"}`,
@@ -119,15 +117,15 @@ class LetterDetail extends React.Component {
                           onMouseOut={this.handleMouseOut}
                         >
                           <FontAwesomeIcon icon={faHeart} />
-                        </div>
-                      </div>
-                    </div>
+                        </IconHeart>
+                      </IconHolder>
+                    </AnimalUtils>
                   )}
-                </div>
-              </div>
-            </div>
+                </NameHolder>
+              </PlayingCard>
+            </CardLetter>
           ))}
-      </div>
+      </CardHolder>
     );
   }
 }
