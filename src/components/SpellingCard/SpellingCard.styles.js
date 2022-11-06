@@ -9,7 +9,7 @@ justify-content: center;
 `;
 
 export const Icon = styled.div`
-  font-size: 27px;
+  font-size: 40px;
   cursor: pointer;
   color: #2f4f4f;
   display: flex;
