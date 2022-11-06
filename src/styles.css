@@ -66,7 +66,7 @@ body {
   height: 30px;
   align-items: center;
   justify-content: space-around;
-} 
+}
 
 .navBar-icon {
   width: 15px;
@@ -85,31 +85,6 @@ body {
 
 /* AlphabetList Styles */
 
-.alphabet-list {
-  width: 360px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: space-between;
-  gap: 20px;
-  padding-top: 35px;
-}
-
-.letter-row {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.tile-row {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .tile-column {
   display: flex;
   flex-direction: column;
@@ -122,16 +97,6 @@ body {
 .tile-direction {
   display: flex;
   flex-direction: row;
-}
-
-.tile-letter {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 30px;
-  border: 1px solid coral;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 /* LanguageSwitch Styles */
@@ -173,15 +138,15 @@ body {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196f3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -192,93 +157,12 @@ input:checked + .slider:before {
 .slider.round {
   border-radius: 34px;
 }
+
 .slider.round:before {
   border-radius: 50%;
 }
 
 /* LetterDetail Styles */
-
-.letter-detail {
-  background-color: cornsilk;
-  /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
-  border: 1px solid #ff6347;
-  width: 295px;
-  height: 500px;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.playing-card {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.card-holder {
-  display: flex;
-  justify-content: center;
-}
-
-.xCloser-holder {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.x-closer {
-  /* 
-    IMPROVEMENT NOTE:
-    add animation, when not hovered over,
-    leave as "X", else turn red with circle around it
-
-  */
-  cursor: pointer;
-  font-size: 27px;
-  color: #2f4f4f;
-}
-
-.image-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 290px;
-  height: 290px;
-  padding-bottom: 15px;
-}
-
-.animalName-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 15px;
-  width: 295px;
-}
-
-.animal-name-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.animal-utils {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: stretch;
-  width: 295px;
-}
-
-.animal-name-holder {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .animalName-details {
   display: flex;
@@ -288,54 +172,8 @@ input:checked + .slider:before {
   gap: 20px;
 }
 
-.animal-name {
-  font-size: 42px;
-  align-self: center;
-  line-height: 61px;
-  height: 62px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
 .audio-player {
   display: none;
-}
-
-.icon-holder {
-  display: flex;
-  justify-content: space-around;
-}
-
-.icon {
-  font-size: 27px;
-  cursor: pointer;
-  color: #2f4f4f;
-  display: flex;
-  align-items: center;
-}
-
-.spell-close-icon {
-  font-size: 42px;
-  height: 42px;
-}
-
-.icon-heart {
-  font-size: 27px;
-  cursor: pointer;
-  color: #2f4f4f;
-}
-
-.icon:hover,
-.x-closer:hover {
-  color: #4d8080 !important;
-}
-
-.spelling-card-holder {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 295px;
-  justify-content: center;
 }
 
 .blank {

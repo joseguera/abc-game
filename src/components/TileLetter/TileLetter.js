@@ -1,13 +1,8 @@
 import React from "react";
+import { LetterTile } from "./TileLetter.styles";
 
 const TileLetter = (props) => {
-  return (
-    <div
-      className="tile-letter"
-    >
-      {props.letter}
-    </div>
-  );
+  return <LetterTile>{props.letter}</LetterTile>;
 };
 
 export default TileLetter;

@@ -16,11 +16,10 @@ export const StyledLetter = styled.div`
     padding: 5px;
     &:hover, &:focus {
         cursor: pointer;
-        font-size: 24px;
-        border: 1px solid #558F69;
+        box-shadow: -5px 5px #558F69;
         color: #558F69;
         font-size: 30px;
-        font-weight: bold;
+        // font-weight: bold;
     }
 `;
 

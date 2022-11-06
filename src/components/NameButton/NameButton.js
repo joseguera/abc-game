@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "./NameButton.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeLow } from "@fortawesome/free-solid-svg-icons";
 
@@ -13,9 +14,9 @@ export default class NameButton extends React.Component {
 
   render() {
     return (
-      <div className="icon">
+      <Icon>
         <FontAwesomeIcon icon={faVolumeLow} onClick={this.playAudio}/>
-      </div>
+      </Icon>
     );
   }
 }
