@@ -10,7 +10,7 @@ export default class SpellingCard extends React.Component {
   render() {
     return (
     <SpellingCardHolder>
-        <LetterTiles syllables={this.props.animal.syllables} animalName={this.props.animal.animalName} />
+        <LetterTiles sounds={this.props.sounds} syllables={this.props.animal.syllables} animalName={this.props.animal.animalName} />
         <Icon
           onClick={() => this.props.handleOpenClose()}
         >
