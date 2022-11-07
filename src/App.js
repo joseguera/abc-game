@@ -310,7 +310,8 @@ class App extends React.Component {
         horizontal: true
       }
     ],
-      letterSounds: {
+    sounds: {
+      alphabet: {
         A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/A.mp3",
         B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/B.mp3",
         C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/C.mp3",
@@ -337,7 +338,8 @@ class App extends React.Component {
         X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/X.mp3",
         Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Y.mp3",
         Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Z.mp3",
-      },
+      }
+    },
     isDetailOpen: false,
     isLoading: false
   };
@@ -409,6 +411,7 @@ class App extends React.Component {
                 alphabet={alphabet}
                 isDetailOpen={this.state.isDetailOpen}
                 handleOpenClose={this.handleOpenClose}
+                sounds={this.state.sounds.alphabet}
               />
             ) : (
               <AlphabetList

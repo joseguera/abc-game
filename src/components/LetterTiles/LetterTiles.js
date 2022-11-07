@@ -13,6 +13,7 @@ export default class LetterTiles extends React.Component {
     const tiles = letterTiles;
 
 
+
     return (
       <AnimalNameHolder>
         { animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
@@ -22,7 +23,7 @@ export default class LetterTiles extends React.Component {
                 return (
                   <TileRow key={idx}>
                     {letter.split("").map((l, idx) => (
-                      <TileLetter key={idx} letter={l} />
+                      <TileLetter key={idx} letter={l} sounds={this.props.sounds} />
                     ))}
                   </TileRow>
                 );
@@ -34,8 +35,8 @@ export default class LetterTiles extends React.Component {
             {tiles.map((tile, idx) => {
               return (
                 <TileRow key={idx}>
-                  {tile.split("").map((tile, idx) => (
-                    <TileLetter key={idx} letter={tile} />
+                  {tile.split("").map((t, idx) => (
+                    <TileLetter key={idx} letter={t} sounds={this.props.sounds} />
                   ))}
                 </TileRow>
               );

@@ -80,6 +80,7 @@ class LetterDetail extends React.Component {
                   {isSpellingOpen ? (
                     <SpellingCard
                       animal={animal}
+                      sounds={this.props.sounds}
                       handleOpenClose={this.handleOpenClose}
                     />
                   ) : (
