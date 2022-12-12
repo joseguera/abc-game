@@ -1,11 +1,12 @@
 import React from "react";
+import { zebrAPI } from "./zebrAPI";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faListUl,
   faPaw,
   faMusic,
   faBookOpenReader,
-  faCartShopping
+  faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import AlphabetList from "../src/components/AlphabetList";
 import LetterDetail from "../src/components/LetterDetail";
@@ -30,9 +31,10 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
         animalName: "Alligator",
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
         syllables: ["Al-li-", "ga-", "tor"],
-        horizontal: true
+        horizontal: true,
       },
       {
         id: 2,
@@ -42,8 +44,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
         animalName: "Baboon",
         syllables: ["Ba-boon"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
-        horizontal: false
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
+        horizontal: false,
       },
       {
         id: 3,
@@ -53,8 +56,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
         animalName: "Chimpanzee",
         syllables: ["Chim-", "pan-", "zee"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/chimp_cr87ba.mp3",
-        horizontal: false
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/chimp_cr87ba.mp3",
+        horizontal: false,
       },
       {
         id: 4,
@@ -64,8 +68,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
         animalName: "Dingo",
         syllables: ["Din-go"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
+        horizontal: true,
       },
       {
         id: 5,
@@ -75,8 +80,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
         animalName: "Elephant",
         syllables: ["El-e-", "phant"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
+        horizontal: true,
       },
       {
         id: 6,
@@ -86,8 +92,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
         animalName: "Frog",
         syllables: ["Frog"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
+        horizontal: true,
       },
       {
         id: 7,
@@ -97,8 +104,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
         animalName: "Gorilla",
         syllables: ["Go-", "ril-la"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
-        horizontal: false
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
+        horizontal: false,
       },
       {
         id: 8,
@@ -108,8 +116,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1667582162/Cory-Images/hyena_dzhabn.png",
         animalName: "Hyena",
         syllables: ["Hy-e-na"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
+        horizontal: true,
       },
       {
         id: 9,
@@ -119,8 +128,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725654/Cory-Images/impala_wasjnb.png",
         animalName: "Impala",
         syllables: ["Im-", "pal-a"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
+        horizontal: true,
       },
       {
         id: 10,
@@ -130,8 +140,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
         animalName: "Jaguar",
         syllables: ["Jag-", "u-ar"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
+        horizontal: true,
       },
       {
         id: 11,
@@ -141,8 +152,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
         animalName: "Koala",
         syllables: ["Ko-", "a-la"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
+        horizontal: true,
       },
       {
         id: 12,
@@ -152,8 +164,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Lemur",
         syllables: ["Le-mur"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
+        horizontal: true,
       },
       {
         id: 13,
@@ -163,8 +176,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
         animalName: "Macaw",
         syllables: ["Ma-caw"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
-        horizontal: false
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
+        horizontal: false,
       },
       {
         id: 14,
@@ -174,8 +188,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Numbat",
         syllables: ["Num-bat"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
+        horizontal: true,
       },
       {
         id: 15,
@@ -185,8 +200,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Okapi",
         syllables: ["O-ka-pi"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
+        horizontal: true,
       },
       {
         id: 16,
@@ -196,8 +212,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
         animalName: "Panda",
         syllables: ["Pan-da"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
-        horizontal: false
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
+        horizontal: false,
       },
       {
         id: 17,
@@ -207,8 +224,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Quetzal",
         syllables: ["Quet-", "zal"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
+        horizontal: true,
       },
       {
         id: 18,
@@ -218,8 +236,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Rhinoceros",
         syllables: ["Rhi-", "noc-", "er-os"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
+        horizontal: true,
       },
       {
         id: 19,
@@ -229,8 +248,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Snake",
         syllables: ["Snake"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
+        horizontal: true,
       },
       {
         id: 20,
@@ -240,8 +260,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Tiger",
         syllables: ["Ti-ger"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
+        horizontal: true,
       },
       {
         id: 21,
@@ -251,8 +272,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Unau",
         syllables: ["U-nau"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
+        horizontal: true,
       },
       {
         id: 22,
@@ -262,8 +284,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Vervet Monkey",
         syllables: [["Ver-vet"], ["Mon-key"]],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
+        horizontal: true,
       },
       {
         id: 23,
@@ -273,8 +296,9 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Warthog",
         syllables: ["Wart-", "hog"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
+        horizontal: true,
       },
       {
         id: 24,
@@ -284,8 +308,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
         animalName: "Xenops",
         syllables: ["Xe-nops"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
+        horizontal: true,
       },
       {
         id: 25,
@@ -295,8 +320,9 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
         animalName: "Yellow Mongoose",
         syllables: [["Ye-llow"], ["Mon-", "goose"]],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
-        horizontal: true
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
+        horizontal: true,
       },
       {
         id: 26,
@@ -306,9 +332,10 @@ class App extends React.Component {
           "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
         animalName: "Zebra",
         syllables: ["Ze-bra"],
-        animalNameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
-        horizontal: true
-      }
+        animalNameSound:
+          "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
+        horizontal: true,
+      },
     ],
     sounds: {
       alphabet: {
@@ -338,10 +365,10 @@ class App extends React.Component {
         X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/X.mp3",
         Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Y.mp3",
         Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Z.mp3",
-      }
+      },
     },
     isDetailOpen: false,
-    isLoading: false
+    isLoading: false,
   };
   ////////////////////////////////////
   ///////// PARENT FUNCTIONS /////////
@@ -361,7 +388,7 @@ class App extends React.Component {
     const clicked = this.state.isDetailOpen;
     this.setState({
       alphabet: newList,
-      isDetailOpen: !clicked
+      isDetailOpen: !clicked,
     });
   };
 
@@ -380,28 +407,14 @@ class App extends React.Component {
         {
           // hasAnimal  &&
           <div className="main-body">
-            <div className="navBar-holder">
-              <div className="nav-bar">
-                <div className="navBar-title-holder">
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faPaw} className="navBar-brand" />
+            <div className="header-holder">
+              <div className="header">
+                <div className="header-title-holder">
+                  <div className="header-item">
+                    <FontAwesomeIcon icon={faPaw} className="header-brand" />
                   </div>
                   <div className="site-title">
-                    <h1>Aby Zebra</h1>
-                  </div>
-                </div>
-                <div className="navBar-buttons">
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faBookOpenReader} className="navBar-icon" />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faCartShopping} className="navBar-icon" />
+                    <h1 className="titles">Aby Zebra</h1>
                   </div>
                 </div>
               </div>
@@ -420,6 +433,30 @@ class App extends React.Component {
                 // handleButtonCheck={this.handleButtonCheck}
               />
             )}
+            <div className="navBar-holder">
+              <div className="navBar-bar">
+                <div className="navBar-buttons">
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon
+                      icon={faBookOpenReader}
+                      className="navBar-icon"
+                    />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      className="navBar-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         }
       </div>

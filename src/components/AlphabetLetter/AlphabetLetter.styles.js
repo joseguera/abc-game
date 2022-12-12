@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledLetter = styled.div`
     display: flex;
     flex-direction: column;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     line-height: 40px;
     font-size: 30px;
     border: 1px solid #3D674C /*Spring Leaves*/;

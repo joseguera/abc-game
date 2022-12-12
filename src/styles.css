@@ -14,43 +14,49 @@ body {
   justify-content: center;
   align-items: center;
   gap: 25px 0px;
-  margin: 0 auto;
 }
 
 .main-body {
-  width: 360px;
-  height: 625px;
+  width: 428px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
   background-color: #fde7b4;
 }
 
-.navBar-holder {
+.header-holder, .navBar-holder {
   display: flex;
-  width: 360px;
-  height: 52px;
+  width: 428px;
   background: #ff6347;
   justify-content: center;
   align-items: center;
 }
 
-/* NavBar Styles */
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
+.nav-bar-holder {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
 }
 
-.navBar-title-holder {
+/* NavBar Styles */
+
+.header, .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-title-holder, .navBar-title-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title-holder {
+  gap: 12px;
 }
 
 .navBar-buttons {
@@ -60,7 +66,7 @@ body {
   align-items: center;
 }
 
-.navBar-item {
+.header-item, .navBar-item {
   display: flex;
   width: 30px;
   height: 30px;
@@ -73,30 +79,13 @@ body {
   height: 15px;
 }
 
-.navBar-brand {
+.header-brand, .navBar-brand {
   height: 25px;
   line-height: 25px;
 }
 
 .site-title {
-  font-size: 10px;
-
-}
-
-/* AlphabetList Styles */
-
-.tile-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5px;
-}
-
-.tile-direction {
-  display: flex;
-  flex-direction: row;
+  font-size: 16px;
 }
 
 /* LanguageSwitch Styles */
