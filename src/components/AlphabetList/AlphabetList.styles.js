@@ -8,7 +8,8 @@ export const List = styled.div`
   justify-content: center;
   align-items: space-between;
   gap: 20px;
-  padding-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const LetterRow = styled.div`
