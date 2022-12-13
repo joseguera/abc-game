@@ -32,9 +32,16 @@ export const Letter = styled.div`
 export const IconHolder = styled.div`
     display: flex;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     align-self: flex-end;
+    justify-content: center;
+    .horizontal {
+        width: 100%;
+    }
+    .vertical {
+        height: 100%;
+    }
 `;
 
 export const AnimalIcon = styled.img`

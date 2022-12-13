@@ -13,11 +13,9 @@ export default function AlphabetLetter(props) {
       </Letter>
       <IconHolder>
         <AnimalIcon src={props.alpha.animalImage}
-        style={{
-          width: props.alpha.horizontal && "100%",
-          height: !props.alpha.horizontal && "100%" 
-        }}
-          alt="none" />
+          className={(props.alpha.horizontal) ? "horizontal" : "vertical"}
+          alt="none" 
+        />
       </IconHolder>
     </StyledLetter>
   );

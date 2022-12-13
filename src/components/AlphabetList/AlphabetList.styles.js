@@ -7,7 +7,7 @@ export const List = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: space-between;
-  gap: 20px;
+  gap: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
 `;
