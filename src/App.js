@@ -8,7 +8,7 @@ import {
   faBookOpenReader,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
-import AlphabetList from "../src/components/AlphabetList";
+import { ButtonList } from "components";
 import LetterDetail from "../src/components/LetterDetail";
 import "./styles.css";
 
@@ -427,7 +427,7 @@ class App extends React.Component {
                 sounds={this.state.sounds.alphabet}
               />
             ) : (
-              <AlphabetList
+              <ButtonList
                 handleOpenClose={this.handleOpenClose}
                 alphabet={alphabet}
                 // handleButtonCheck={this.handleButtonCheck}
