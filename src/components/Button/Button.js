@@ -1,7 +1,7 @@
 import React from "react";
-import { StyledLetter, Letter, IconHolder, AnimalIcon } from "./AlphabetLetter.styles";
+import { StyledLetter, Letter, IconHolder, AnimalIcon } from "./Button.styles";
 
-export default function AlphabetLetter(props) {
+export default function Button(props) {
  
   return (
     <StyledLetter
