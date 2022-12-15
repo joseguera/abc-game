@@ -9,7 +9,7 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { ButtonList } from "components";
-import LetterDetail from "../src/components/LetterDetail";
+import LetterDetail from "./components/SubjectDetail";
 import "./styles.css";
 
 class App extends React.Component {

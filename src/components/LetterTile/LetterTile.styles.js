@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LetterTile = styled.div`
+export const Tile = styled.div`
   width: 40px;
   height: 40px;
   line-height: 40px;
