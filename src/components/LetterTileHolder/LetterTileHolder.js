@@ -1,8 +1,12 @@
 import React from "react";
-import { AnimalNameHolder, RowHolder, TileRow } from "./LetterTiles.styles";
-import TileLetter from "../TileLetter";
+import {
+  AnimalNameHolder,
+  RowHolder,
+  TileRow,
+} from "./LetterTileHolder.styles";
+import { LetterTile } from "components";
 
-export default class LetterTiles extends React.Component {
+export default class LetterTileHolder extends React.Component {
   state = {
     letterTiles: this.props.syllables,
   };
@@ -12,18 +16,20 @@ export default class LetterTiles extends React.Component {
     const { animalName } = this.props;
     const tiles = letterTiles;
 
-
-
     return (
       <AnimalNameHolder>
-        { animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
+        {animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
           <RowHolder>
             {tiles.map((tile) => {
               return tile.map((letter, idx) => {
                 return (
                   <TileRow key={idx}>
                     {letter.split("").map((l, idx) => (
-                      <TileLetter key={idx} letter={l} sounds={this.props.sounds} />
+                      <LetterTile
+                        key={idx}
+                        letter={l}
+                        sounds={this.props.sounds}
+                      />
                     ))}
                   </TileRow>
                 );
@@ -36,7 +42,11 @@ export default class LetterTiles extends React.Component {
               return (
                 <TileRow key={idx}>
                   {tile.split("").map((t, idx) => (
-                    <TileLetter key={idx} letter={t} sounds={this.props.sounds} />
+                    <LetterTile
+                      key={idx}
+                      letter={t}
+                      sounds={this.props.sounds}
+                    />
                   ))}
                 </TileRow>
               );

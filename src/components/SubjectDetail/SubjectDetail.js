@@ -1,5 +1,20 @@
 import React from "react";
-import { CardHolder, CardLetter, PlayingCard, XCloserHolder, XCloser, ImageHolder, NameHolder, AnimalUtils, AnimalNameTitle, AnimalName, Icon, IconHolder, IconHeart } from "./LetterDetail.styles";
+import { SpellingCard, NameButton } from "components";
+import {
+  CardHolder,
+  CardLetter,
+  PlayingCard,
+  XCloserHolder,
+  XCloser,
+  ImageHolder,
+  NameHolder,
+  Utils,
+  NameTitle,
+  Name,
+  Icon,
+  IconHolder,
+  IconHeart,
+} from "./SubjectDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpellCheck,
@@ -8,10 +23,8 @@ import {
   faHeart,
   faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
-import SpellingCard from "../SpellingCard";
-import NameButton from "../NameButton";
 
-class LetterDetail extends React.Component {
+class SubjectDetail extends React.Component {
   /////// IMPROVEMENT NOTE ///////
   /*
     If user clicks on the animalName => Animal Fact will play
@@ -60,9 +73,7 @@ class LetterDetail extends React.Component {
             <CardLetter key={animal.id}>
               <PlayingCard>
                 <XCloserHolder>
-                  <XCloser
-                    onClick={() => this.props.handleOpenClose(animal)}
-                  >
+                  <XCloser onClick={() => this.props.handleOpenClose(animal)}>
                     <FontAwesomeIcon icon={faXmark} />
                   </XCloser>
                 </XCloserHolder>
@@ -84,22 +95,24 @@ class LetterDetail extends React.Component {
                       handleOpenClose={this.handleOpenClose}
                     />
                   ) : (
-                    <AnimalUtils>
-                      <AnimalNameTitle>
-                      <div>
-                        <AnimalName
-                          style={{
-                            lineHeight:
-                              (animal.animalName === "Yellow Mongoose" || animal.animalName === "Vervet Monkey") && "35px",
-                          }}
-                        >
-                          {animal.animalName}
-                        </AnimalName>
-                      </div>
-                      <Icon onClick={this.handleOpenClose}>
-                        <FontAwesomeIcon icon={faSpellCheck} />
-                      </Icon>
-                      </AnimalNameTitle>
+                    <Utils>
+                      <NameTitle>
+                        <div>
+                          <Name
+                            style={{
+                              lineHeight:
+                                (animal.animalName === "Yellow Mongoose" ||
+                                  animal.animalName === "Vervet Monkey") &&
+                                "35px",
+                            }}
+                          >
+                            {animal.animalName}
+                          </Name>
+                        </div>
+                        <Icon onClick={this.handleOpenClose}>
+                          <FontAwesomeIcon icon={faSpellCheck} />
+                        </Icon>
+                      </NameTitle>
                       <IconHolder>
                         <NameButton
                           animalName={animal.animalName}
@@ -120,7 +133,7 @@ class LetterDetail extends React.Component {
                           <FontAwesomeIcon icon={faHeart} />
                         </IconHeart>
                       </IconHolder>
-                    </AnimalUtils>
+                    </Utils>
                   )}
                 </NameHolder>
               </PlayingCard>
@@ -131,4 +144,4 @@ class LetterDetail extends React.Component {
   }
 }
 
-export default LetterDetail;
+export default SubjectDetail;

@@ -52,7 +52,7 @@ export const NameHolder = styled.div`
   align-items: center;
 `;
 
-export const AnimalUtils = styled.div`
+export const Utils = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -61,7 +61,7 @@ export const AnimalUtils = styled.div`
   width: 295px;
 `;
 
-export const AnimalNameTitle = styled.div`
+export const NameTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ export const AnimalNameTitle = styled.div`
   gap: 15px;
 `;
 
-export const AnimalName = styled.div`
+export const Name = styled.div`
   font-size: 42px;
   align-self: center;
   line-height: 61px;

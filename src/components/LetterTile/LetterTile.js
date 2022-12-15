@@ -1,14 +1,14 @@
 import React from "react";
-import { LetterTile, Dash } from "./TileLetter.styles";
+import { Tile, Dash } from "./LetterTile.styles";
 
-const TileLetter = (props) => {
+const LetterTile = (props) => {
   const letters = props.letter.toUpperCase();
   const playAudio = () => {
     new Audio(props.sounds[letters]).play();
   };
   return (
     (props.letter !== "-") ? (
-      <LetterTile onClick={playAudio}>{props.letter}</LetterTile>
+      <Tile onClick={playAudio}>{props.letter}</Tile>
     ) : (
       <Dash>{props.letter}</Dash>
     )
@@ -16,4 +16,4 @@ const TileLetter = (props) => {
   )
 };
 
-export default TileLetter;
+export default LetterTile;
