@@ -4,7 +4,7 @@ import {
   RowHolder,
   TileRow,
 } from "./LetterTileHolder.styles";
-import { LetterTile } from "components";
+import { LetterTile, SyllableTile } from "components";
 
 export default class LetterTileHolder extends React.Component {
   state = {
@@ -18,6 +18,7 @@ export default class LetterTileHolder extends React.Component {
 
     return (
       <AnimalNameHolder>
+        <SyllableTile />
         {animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
           <RowHolder>
             {tiles.map((tile) => {
