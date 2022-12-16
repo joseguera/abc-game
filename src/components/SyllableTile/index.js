@@ -1,1 +1,1 @@
-export { default } from "./SyllableTile.js";
+export { default } from './SyllableTile.js';

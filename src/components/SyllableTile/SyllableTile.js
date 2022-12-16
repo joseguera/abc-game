@@ -7,10 +7,10 @@ const SyllableTile = (props) => {
     new Audio(props.sounds[letters]).play();
   };
   return (
-    (props.letter !== "-") ? (
-      <Tile onClick={playAudio}>{props.letter}</Tile>
-    ) : (
-      <Dash>{props.letter}</Dash>
+    (props.syllables === " ") ? (
+      <Dash>-</Dash>
+      ) : (
+        <Tile onClick={playAudio}>{props.letter}</Tile>
     )
 
   )

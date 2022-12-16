@@ -19,6 +19,6 @@ export const Dash = styled.div`
   height: 42px;
   line-height: 42px;
   font-size: 35px;
-  border-radius: 5px;
   cursor: pointer;
+  border: none !important;
 `;

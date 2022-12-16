@@ -19,3 +19,7 @@ export const TileRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
 `;
+
+export const Test = styled.div`
+  border: 1px solid black;
+`;

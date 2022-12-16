@@ -319,7 +319,7 @@ class App extends React.Component {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
         animalName: "Yellow Mongoose",
-        syllables: [["Ye-llow"], ["Mon-", "goose"]],
+        syllables: [["Yel-low"], ["Mon-", "goose"]],
         animalNameSound:
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
         horizontal: true,

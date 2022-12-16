@@ -6,14 +6,11 @@ const LetterTile = (props) => {
   const playAudio = () => {
     new Audio(props.sounds[letters]).play();
   };
-  return (
-    (props.letter !== "-") ? (
-      <Tile onClick={playAudio}>{props.letter}</Tile>
-    ) : (
-      <Dash>{props.letter}</Dash>
-    )
-
-  )
+  return props.letter !== "-" ? (
+    <Tile onClick={playAudio}>{props.letter}</Tile>
+  ) : (
+    <div style={{ border: "none" }}>{props.letter}</div>
+  );
 };
 
 export default LetterTile;
