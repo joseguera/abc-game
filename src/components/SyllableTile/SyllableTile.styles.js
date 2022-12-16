@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Tile = styled.div`
-  width: 40px;
+  width: fit-content;
   height: 40px;
+  padding: 0 5px;
   line-height: 40px;
   font-size: 35px;
   border: 1px solid #ff6347;
