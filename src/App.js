@@ -125,7 +125,7 @@ class App extends React.Component {
         value: "I",
         clicked: false,
         animalImage:
-          "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725654/Cory-Images/impala_wasjnb.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317903/Cory-Images/impala_qbglhz.png",
         animalName: "Impala",
         syllables: ["Im-", "pal-a"],
         animalNameSound:
@@ -161,7 +161,7 @@ class App extends React.Component {
         value: "L",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317901/Cory-Images/lemur_k4gg9o.png",
         animalName: "Lemur",
         syllables: ["Le-mur"],
         animalNameSound:
@@ -185,7 +185,7 @@ class App extends React.Component {
         value: "N",
         clicked: false,
         animalImage:
-          "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+          "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317909/Cory-Images/numbat_bwu8od.png",
         animalName: "Numbat",
         syllables: ["Num-bat"],
         animalNameSound:
