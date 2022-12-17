@@ -18,6 +18,7 @@ export const TileRow = styled.div`
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  // padding-bottom: 10px;
 `;
 
 export const Test = styled.div`

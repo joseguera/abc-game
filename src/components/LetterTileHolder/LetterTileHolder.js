@@ -43,11 +43,15 @@ export default class LetterTileHolder extends React.Component {
                   return (
                     <TileRow key={idx}>
                       {syllable.split("-").map((l, idx) => (
+                        <>
+                          {console.log(idx)}
                           <SyllableTile
                             key={idx}
-                            letter={l}
+                            index={idx}
+                            syllable={l}
                             // sounds={this.props.sounds}
                           />
+                        </>
                       ))}
                     </TileRow>
                   );
@@ -78,7 +82,8 @@ export default class LetterTileHolder extends React.Component {
                     {tile.split("-").map((t, idx) => (
                       <SyllableTile
                         key={idx}
-                        letter={t}
+                        index={idx}
+                        syllable={t}
                         // sounds={this.props.sounds}
                       />
                     ))}
