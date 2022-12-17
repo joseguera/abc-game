@@ -15,10 +15,9 @@ export const Tile = styled.div`
 `;
 
 export const Dash = styled.div`
-  width: 42px;
+  width: 10.65px;
   height: 42px;
   line-height: 42px;
-  font-size: 35px;
-  cursor: pointer;
+  cursor: auto;
   border: none !important;
 `;

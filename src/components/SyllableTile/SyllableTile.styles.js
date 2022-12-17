@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Tile = styled.div`
-  width: fit-content;
   height: 40px;
-  padding: 0 5px;
+  letter-spacing: 20px;
+  padding-left: 20px;
   line-height: 40px;
   font-size: 35px;
   border: 1px solid #ff6347;
@@ -16,10 +16,8 @@ export const Tile = styled.div`
 `;
 
 export const Dash = styled.div`
-  width: 42px;
+  width: 10.65px;
   height: 42px;
   line-height: 42px;
-  font-size: 35px;
-  border-radius: 5px;
-  cursor: pointer;
+  cursor: auto;
 `;

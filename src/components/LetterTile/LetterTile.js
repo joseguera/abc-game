@@ -9,7 +9,7 @@ const LetterTile = (props) => {
   return props.letter !== "-" ? (
     <Tile onClick={playAudio}>{props.letter}</Tile>
   ) : (
-    <div style={{ border: "none" }}>{props.letter}</div>
+    <Dash>-</Dash>
   );
 };
 
