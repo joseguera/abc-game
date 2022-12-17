@@ -166,7 +166,7 @@ class App extends React.Component {
         syllables: ["Le-mur"],
         animalNameSound:
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
-        horizontal: true,
+        horizontal: false,
       },
       {
         id: 13,
