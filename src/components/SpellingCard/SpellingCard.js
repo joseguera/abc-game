@@ -24,6 +24,7 @@ export default class SpellingCard extends React.Component {
       <SpellingCardHolder>
         <LetterTileHolder
           sounds={this.props.sounds}
+          tiles={this.props.animal.tiles}
           syllables={this.props.animal.syllables}
           animalName={this.props.animal.animalName}
           isSpelled={isSpelled}
