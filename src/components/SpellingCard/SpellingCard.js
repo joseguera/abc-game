@@ -19,12 +19,12 @@ export default class SpellingCard extends React.Component {
   }
 
   render() {
-    console.log(this.state.isSpelled)
     const { isSpelled } = this.state;
     return (
       <SpellingCardHolder>
         <LetterTileHolder
           sounds={this.props.sounds}
+          tiles={this.props.animal.tiles}
           syllables={this.props.animal.syllables}
           animalName={this.props.animal.animalName}
           isSpelled={isSpelled}
