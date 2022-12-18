@@ -4,7 +4,6 @@ import {
   AnimalNameHolder,
   RowHolder,
   TileRow,
-  Test
 } from "./LetterTileHolder.styles";
 
 export default class LetterTileHolder extends React.Component {
@@ -15,14 +14,13 @@ export default class LetterTileHolder extends React.Component {
   render() {
     const { letterTiles } = this.state;
     const { animalName } = this.props;
-    const tiles = letterTiles;
 
     return (
       <AnimalNameHolder>
         {animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
           <RowHolder>
             {(this.props.isSpelled) ? (
-              tiles.map((tile) => {
+              letterTiles.map((tile) => {
               return tile.map((letter, idx) => {
                 return (
                   <TileRow key={idx}>
@@ -44,7 +42,6 @@ export default class LetterTileHolder extends React.Component {
                     <TileRow key={idx}>
                       {syllable.split("-").map((l, idx) => (
                         <>
-                          {console.log(idx)}
                           <SyllableTile
                             key={idx}
                             index={idx}
@@ -62,7 +59,7 @@ export default class LetterTileHolder extends React.Component {
         ) : (
           <RowHolder>
             {(this.props.isSpelled) ? (
-              tiles.map((tile, idx) => {
+              letterTiles.map((tile, idx) => {
                 return (
                   <TileRow key={idx}>
                     {tile.split("").map((t, idx) => (
@@ -79,10 +76,11 @@ export default class LetterTileHolder extends React.Component {
               letterTiles.map((tile, idx) => {
                 return (
                   <TileRow key={idx}>
-                    {tile.split("-").map((t, idx) => (
+                    {tile.split("-").map((t) => (
                       <SyllableTile
-                        key={idx}
+                        key={t}
                         index={idx}
+                        arrLen={tile}
                         syllable={t}
                         // sounds={this.props.sounds}
                       />

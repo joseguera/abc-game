@@ -19,7 +19,6 @@ export default class SpellingCard extends React.Component {
   }
 
   render() {
-    console.log(this.state.isSpelled)
     const { isSpelled } = this.state;
     return (
       <SpellingCardHolder>
