@@ -11,7 +11,7 @@ export const CardLetter = styled.div`
   /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
   border: 1px solid #ff6347;
   width: 320px;
-  height: 536px;
+  height: 550px;
   border-radius: 15px;
   padding: 20px;
 `;
@@ -52,7 +52,7 @@ export const NameHolder = styled.div`
   justify-content: center;
   align-items: center;
   width: 320px;
-  height: 168px;
+  height: 192px;
 `;
 
 export const Utils = styled.div`

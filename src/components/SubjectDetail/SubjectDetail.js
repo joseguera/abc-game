@@ -1,5 +1,5 @@
 import React from "react";
-import { SpellingCard, NameButton } from "components";
+import { SpellingCard, NameButton, FactButton } from "components";
 import {
   CardHolder,
   CardLetter,
@@ -118,9 +118,10 @@ class SubjectDetail extends React.Component {
                           animalName={animal.animalName}
                           animalNameSound={animal.animalNameSound}
                         />
-                        <Icon>
-                          <FontAwesomeIcon icon={faLightbulb} />
-                        </Icon>
+                        <FactButton
+                          animalName={animal.animalName}
+                          animalNameSound={animal.animalNameSound}
+                        />
                         <IconHeart
                           onClick={this.setLiked}
                           style={{
