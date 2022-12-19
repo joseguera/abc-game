@@ -10,11 +10,12 @@ const SyllableTile = (props) => {
   const last = props.syllableTiles.length - 1;
 
   return props.syllableTiles.map((syllable, idx) => {
-    return props.animalName === "Vervet Monkey" ||
-      props.animalName === "Yellow Mongoose" ? (
+    // return props.animalName === "Vervet Monkey" || props.animalName === "Yellow Mongoose" ? 
+    return Array.isArray(syllable) ? 
+    (
       syllable.map((syl, idx) => {
         return idx === 0 ? (
-          <Syllable key={idx}>
+          <Syllable key={idx+syl}>
             <Tile>{syl}</Tile>
             <Dash>-</Dash>
           </Syllable>

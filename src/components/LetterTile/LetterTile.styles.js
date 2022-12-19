@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Tile = styled.div`
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 35px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 36px;
   border: 1px solid #ff6347;
   border-radius: 5px;
   cursor: pointer;

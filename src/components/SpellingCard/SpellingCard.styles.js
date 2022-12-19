@@ -4,7 +4,7 @@ export const SpellingCardHolder = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 295px;
+  width: 360px;
   justify-content: center;
 `;
 

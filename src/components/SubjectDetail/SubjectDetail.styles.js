@@ -3,14 +3,15 @@ import styled from "styled-components";
 export const CardHolder = styled.div`
   display: flex;
   justify-content: center;
+  padding: 20px 0 20px 0;
 `;
 
 export const CardLetter = styled.div`
   background-color: cornsilk;
   /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
   border: 1px solid #ff6347;
-  width: 295px;
-  height: 500px;
+  width: 320px;
+  height: 536px;
   border-radius: 15px;
   padding: 20px;
 `;
@@ -39,8 +40,8 @@ export const ImageHolder = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 290px;
-  height: 290px;
+  width: 320px;
+  height: 320px;
   padding-bottom: 15px;
 `;
 
@@ -50,6 +51,8 @@ export const NameHolder = styled.div`
   gap: 10px;
   justify-content: center;
   align-items: center;
+  width: 320px;
+  height: 168px;
 `;
 
 export const Utils = styled.div`
@@ -58,7 +61,7 @@ export const Utils = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: stretch;
-  width: 295px;
+  width: 320px;
 `;
 
 export const NameTitle = styled.div`
