@@ -1,21 +1,34 @@
 import React from "react";
-import { Icon } from "./FactButton.styles"
+import { Icon } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 export default class FactButton extends React.Component {
   state = {
-    audio: this.props.animalNameSound
+    audio: this.props.animalFacts,
+    counter: 0
   };
 
-  playAudio = () => {
-    new Audio(this.state.audio).play();
+  factCounter = () => {
+    let count = this.state.counter;
+    this.setState({ counter: count += 1 });
+    this.playAudio(this.state.counter);
   }
 
+  playAudio = (count) => {
+    (count >= 3 && this.setState({ counter: 0 }));
+    return new Audio(this.state.audio[count]).play();
+  };
+
   render() {
+    console.log(this.state.counter)
     return (
       <Icon>
-        <FontAwesomeIcon icon={faLightbulb} onClick={this.playAudio}/>
+        <FontAwesomeIcon
+          disabled={true}
+          icon={faLightbulb}
+          onClick={() => this.factCounter()}
+        />
       </Icon>
     );
   }

@@ -6,6 +6,7 @@ import {
   PlayingCard,
   XCloserHolder,
   XCloser,
+  DestructButton,
   ImageHolder,
   NameHolder,
   Utils,
@@ -14,7 +15,7 @@ import {
   Icon,
   IconHolder,
   IconHeart,
-} from "./SubjectDetail.styles";
+} from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpellCheck,
@@ -22,9 +23,10 @@ import {
   faQuestion,
   faHeart,
   faLightbulb,
+  faMap
 } from "@fortawesome/free-solid-svg-icons";
 
-class SubjectDetail extends React.Component {
+class CardDetail extends React.Component {
   /////// IMPROVEMENT NOTE ///////
   /*
     If user clicks on the animalName => Animal Fact will play
@@ -73,6 +75,7 @@ class SubjectDetail extends React.Component {
             <CardLetter key={animal.id}>
               <PlayingCard>
                 <XCloserHolder>
+                  <DestructButton><FontAwesomeIcon icon={faMap} /></DestructButton>
                   <XCloser onClick={() => this.props.handleOpenClose(animal)}>
                     <FontAwesomeIcon icon={faXmark} />
                   </XCloser>
@@ -121,6 +124,7 @@ class SubjectDetail extends React.Component {
                         <FactButton
                           animalName={animal.animalName}
                           animalNameSound={animal.animalNameSound}
+                          animalFacts={animal.animalFacts}
                         />
                         <IconHeart
                           onClick={this.setLiked}
@@ -145,4 +149,4 @@ class SubjectDetail extends React.Component {
   }
 }
 
-export default SubjectDetail;
+export default CardDetail;

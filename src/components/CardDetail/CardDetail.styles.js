@@ -24,10 +24,19 @@ export const PlayingCard = styled.div`
 
 export const XCloserHolder = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 `;
 
 export const XCloser = styled.div`
+  cursor: pointer;
+  font-size: 27px;
+  color: #2f4f4f;
+  &:hover {
+    color: #4d8080 !important;
+  }
+`;
+
+export const DestructButton = styled.div`
   cursor: pointer;
   font-size: 27px;
   color: #2f4f4f;
