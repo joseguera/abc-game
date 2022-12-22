@@ -1,35 +1,41 @@
-import React from "react";
-import { Icon } from "./FactButton.styles";
+import React, { useState } from "react";
+import { Icon, IconDisabled } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
-export default class FactButton extends React.Component {
-  state = {
-    audio: this.props.animalFacts,
-    counter: 0
+const FactButton = (props) => {
+  const [factCounter, setFactCounter] = useState(0);
+
+  const adjustCounter = () => {
+    setFactCounter((currentCount) => {
+      let factNumber = currentCount >= 2 ? 0 : (currentCount += 1);
+      return factNumber;
+    });
   };
 
-  factCounter = () => {
-    let count = this.state.counter;
-    this.setState({ counter: count += 1 });
-    this.playAudio(this.state.counter);
-  }
-
-  playAudio = (count) => {
-    (count >= 3 && this.setState({ counter: 0 }));
-    return new Audio(this.state.audio[count]).play();
+  const playAudio = (count) => {
+    console.log({ count });
+    return new Audio(props.animalFacts[count]).play();
   };
 
-  render() {
-    console.log(this.state.counter)
-    return (
+  return (
+    <>
       <Icon>
         <FontAwesomeIcon
-          disabled={true}
           icon={faLightbulb}
-          onClick={() => this.factCounter()}
+          onClick={() => {
+            adjustCounter();
+            playAudio(factCounter);
+          }}
         />
       </Icon>
-    );
-  }
-}
+      <IconDisabled>
+        <FontAwesomeIcon
+          icon={faLightbulb}
+        />
+      </IconDisabled>
+    </>
+  );
+};
+
+export default FactButton;

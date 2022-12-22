@@ -7,6 +7,17 @@ export const Icon = styled.div`
   display: flex;
   align-items: center;
   &:hover {
-    color: #4d8080 !important;
+    color: #FC6A03;
+  }
+`;
+
+export const IconDisabled = styled.div`
+  font-size: 27px;
+  cursor: not-allowed;
+  color: #2F4F4F;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: #8D4004;
   }
 `;
