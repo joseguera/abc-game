@@ -1,35 +1,53 @@
-import React from "react";
-import { Icon } from "./FactButton.styles";
+import React, { useState, useEffect } from "react";
+import { Icon, IconDisabled } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
-export default class FactButton extends React.Component {
-  state = {
-    audio: this.props.animalFacts,
-    counter: 0
+const FactButton = (props) => {
+  const [factCounter, setFactCounter] = useState(0);
+  const [audio, setAudio] = useState(typeof Audio !== "undefined" && new Audio(props.animalFacts[0]));
+  // const [isPlaying, setIsPlaying] = useState(false);
+
+  const adjustCounter = () => {
+    setFactCounter((currentCount) => {
+      let factNumber = currentCount >= 2 ? 0 : (currentCount += 1);
+      setAudioTrack(factNumber)
+      return factNumber;
+    });
   };
 
-  factCounter = () => {
-    let count = this.state.counter;
-    this.setState({ counter: count += 1 });
-    this.playAudio(this.state.counter);
-  }
-
-  playAudio = (count) => {
-    (count >= 3 && this.setState({ counter: 0 }));
-    return new Audio(this.state.audio[count]).play();
+  const setAudioTrack = (factNumber) => {
+    setAudio((currentElement) => {
+      currentElement = new Audio(props.animalFacts[factNumber]);
+      return currentElement;
+    });
   };
 
-  render() {
-    console.log(this.state.counter)
-    return (
+  const playAudio = () => {
+    console.log(audio.src, audio.duration, factCounter);
+    return audio.play();
+  };
+
+  // useEffect(() => {
+  //   isPlaying ? audio.play() : audio.pause();
+  // }, [isPlaying]);
+
+  return (
+    <>
       <Icon>
         <FontAwesomeIcon
-          disabled={true}
           icon={faLightbulb}
-          onClick={() => this.factCounter()}
+          onClick={() => {
+            adjustCounter();
+            playAudio();
+          }}
         />
       </Icon>
-    );
-  }
-}
+      <IconDisabled>
+        <FontAwesomeIcon icon={faLightbulb} />
+      </IconDisabled>
+    </>
+  );
+};
+
+export default FactButton;
