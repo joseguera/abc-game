@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { change } from "../../features/playing/playingSlice";
 import { Icon, IconDisabled } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 const FactButton = (props) => {
+  const dispatch = useDispatch();
+  const playing = useSelector((state) => state.playing.value)
   const [factCounter, setFactCounter] = useState(0);
   const [audio, setAudio] = useState(
     typeof Audio !== "undefined" && new Audio(props.animalFacts[0])
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const setAudioTrack = (factNumber) => {
     setAudio((currentElement) => {
       currentElement = new Audio(props.animalFacts[factNumber]);
@@ -27,7 +29,7 @@ const FactButton = (props) => {
   };
 
   const playAudio = () => {
-    setIsPlaying(true)
+    dispatch(change())
     const audioDuration = Math.ceil(audio.duration * 1000);
     setAudioTrackDuration(audioDuration);
     return audio.play();
@@ -36,14 +38,14 @@ const FactButton = (props) => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsPlaying(false);
+      dispatch(change())
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration]);
 
   return (
     <>
-      {isPlaying > 0 ? (
+      {!playing > 0 ? (
         <IconDisabled>
           <FontAwesomeIcon
             icon={faLightbulb}
