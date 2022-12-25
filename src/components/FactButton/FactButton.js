@@ -5,16 +5,11 @@ import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 const FactButton = (props) => {
   const [factCounter, setFactCounter] = useState(0);
-  const [audio, setAudio] = useState(typeof Audio !== "undefined" && new Audio(props.animalFacts[0]));
-  // const [isPlaying, setIsPlaying] = useState(false);
-
-  const adjustCounter = () => {
-    setFactCounter((currentCount) => {
-      let factNumber = currentCount >= 2 ? 0 : (currentCount += 1);
-      setAudioTrack(factNumber)
-      return factNumber;
-    });
-  };
+  const [audio, setAudio] = useState(
+    typeof Audio !== "undefined" && new Audio(props.animalFacts[0])
+  );
+  const [audioTrackDuration, setAudioTrackDuration] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const setAudioTrack = (factNumber) => {
     setAudio((currentElement) => {
@@ -23,29 +18,48 @@ const FactButton = (props) => {
     });
   };
 
+  const adjustCounter = () => {
+    setFactCounter((currentCount) => {
+      let factNumber = currentCount >= 2 ? 0 : (currentCount += 1);
+      setAudioTrack(factNumber);
+      return factNumber;
+    });
+  };
+
   const playAudio = () => {
-    console.log(audio.src, audio.duration, factCounter);
+    setIsPlaying(true)
+    const audioDuration = Math.ceil(audio.duration * 1000);
+    setAudioTrackDuration(audioDuration);
     return audio.play();
   };
 
-  // useEffect(() => {
-  //   isPlaying ? audio.play() : audio.pause();
-  // }, [isPlaying]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPlaying(false);
+    }, audioTrackDuration);
+    return () => clearTimeout(timer);
+  }, [audioTrackDuration]);
 
   return (
     <>
-      <Icon>
-        <FontAwesomeIcon
-          icon={faLightbulb}
-          onClick={() => {
-            adjustCounter();
-            playAudio();
-          }}
-        />
-      </Icon>
-      <IconDisabled>
-        <FontAwesomeIcon icon={faLightbulb} />
-      </IconDisabled>
+      {isPlaying > 0 ? (
+        <IconDisabled>
+          <FontAwesomeIcon
+            icon={faLightbulb}
+          />
+        </IconDisabled>
+      ) : (
+        <Icon>
+          <FontAwesomeIcon
+            icon={faLightbulb}
+            onClick={() => {
+              adjustCounter();
+              playAudio();
+            }}
+          />
+        </Icon>
+      )}
     </>
   );
 };
