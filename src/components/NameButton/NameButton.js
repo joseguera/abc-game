@@ -1,22 +1,33 @@
-import React from "react";
-import { Icon } from "./NameButton.styles"
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { Icon, IconDisabled } from "./NameButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeLow } from "@fortawesome/free-solid-svg-icons";
 
-export default class NameButton extends React.Component {
-  state = {
-    audio: this.props.animalNameSound
+export default function NameButton(props) {
+  const playing = useSelector((state) => state.playing.value);
+  const [audio, setAudio] = useState(
+    typeof Audio !== "undefined" && new Audio(props.animalNameSound)
+  );
+  const [audioTrackDuration, setAudioTrackDuration] = useState(0);
+
+  const playAudio = () => {
+    const audioDuration = Math.ceil(audio.duration * 1000);
+    setAudioTrackDuration(audioDuration);
+    return audio.play();
   };
 
-  playAudio = () => {
-    new Audio(this.state.audio).play();
-  }
-
-  render() {
-    return (
-      <Icon>
-        <FontAwesomeIcon icon={faVolumeLow} onClick={this.playAudio}/>
-      </Icon>
-    );
-  }
+  return (
+    <>
+      {playing ? (
+        <Icon>
+          <FontAwesomeIcon icon={faVolumeLow} onClick={() => playAudio()} />
+        </Icon>
+      ) : (
+        <IconDisabled>
+          <FontAwesomeIcon icon={faVolumeLow} />
+        </IconDisabled>
+      )}
+    </>
+  );
 }
