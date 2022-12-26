@@ -14,10 +14,7 @@ export const Icon = styled.div`
 export const IconDisabled = styled.div`
   font-size: 27px;
   cursor: not-allowed;
-  color: #2F4F4F;
+  color: #8fbcbc;
   display: flex;
   align-items: center;
-  &:hover {
-    color: #8D4004;
-  }
 `;

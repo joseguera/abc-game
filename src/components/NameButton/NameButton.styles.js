@@ -10,3 +10,11 @@ export const Icon = styled.div`
     color: #4d8080 !important;
   }
 `;
+
+export const IconDisabled = styled.div`
+  font-size: 27px;
+  cursor: not-allowed;
+  color: #8fbcbc;
+  display: flex;
+  align-items: center;
+`;
