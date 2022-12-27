@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { zebrAPI } from "./zebrAPI";
+import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faListUl,
@@ -21,7 +22,7 @@ export default function App() {
     - etc...
   */
 
-  const [alphabet, setAlphabet] = useState([
+  const [alphabet, setAlphabet] = useLocalStorage("alphabet", [
     {
       id: 1,
       value: "A",
@@ -477,19 +478,15 @@ export default function App() {
     setDetailOpen(!clicked);
   };
 
-  const handleLike = (id, liked) => {
-    console.log(id, liked)
-    // const newList = alphabet.map((buttonValue) => {
-    //   if (id === buttonValue.id) {
-    //     if (liked === 'true') {
-    //       buttonValue.isLiked = true;
-    //     } else if (liked === 'false') {
-    //       buttonValue.isLiked = false;
-    //     }
-    //   }
-    //   return buttonValue;
-    // });
-    // setAlphabet(newList);
+  const handleLike = (id) => {
+    const newList = alphabet.map((buttonValue) => {
+      if (id === buttonValue.id) {
+          buttonValue.isLiked = (String(buttonValue.isLiked) === "true") ? false : true;
+          // console.log(buttonValue.isLiked, buttonValue.isLiked.toString(), String(buttonValue.isLiked))
+      }
+      return buttonValue;
+    });
+    setAlphabet(newList);
   };
 
   ///////// IMPROVEMENT NOTES /////////

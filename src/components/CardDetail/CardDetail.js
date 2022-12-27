@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import useLocalStorage from "../../hooks/useLocalStorage";
 import { SpellingCard, NameButton, FactButton } from "components";
 import {
   CardHolder,
@@ -35,7 +34,7 @@ export default function CardDetail(props) {
   */
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
-  const [liked, setLiked] = useLocalStorage("Like", "false");
+  const [liked, setLiked] = useState(false);
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -43,7 +42,7 @@ export default function CardDetail(props) {
   };
 
   const handleLike = (id) => {
-    props.handleLike(id, liked);
+    props.handleLike(id);
   };
 
   return (
@@ -107,11 +106,8 @@ export default function CardDetail(props) {
                         animalNameSound={animal.animalNameSound}
                         animalFacts={animal.animalFacts}
                       />
-                      {props.isLiked ? (
-                        <IconHeartLiked onClick={() => {
-                          handleLike(animal.id);
-                          (liked === 'true' ? setLiked('false') : setLiked('true'));
-                        }}>
+                      {animal.isLiked ? (
+                        <IconHeartLiked onClick={() => handleLike(animal.id)}>
                           <FontAwesomeIcon icon={faHeart} />
                         </IconHeartLiked>
                       ) : (
