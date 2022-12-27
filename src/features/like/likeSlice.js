@@ -8,7 +8,7 @@ export const likeSlice = createSlice({
   name: "like",
   initialState,
   reducers: {
-    change: (state) => {
+    liked: (state) => {
       state.value = !state.value
     },
   },

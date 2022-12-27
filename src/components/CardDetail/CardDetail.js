@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SpellingCard, NameButton, FactButton } from "components";
 import {
   CardHolder,
@@ -14,7 +14,8 @@ import {
   Name,
   Icon,
   IconHolder,
-  IconHeart,
+  IconHeartLiked,
+  IconHeartNotLiked,
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,131 +23,110 @@ import {
   faXmark,
   faQuestion,
   faHeart,
-  faLightbulb,
-  faMap
+  faMap,
 } from "@fortawesome/free-solid-svg-icons";
 
-class CardDetail extends React.Component {
+export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
   /*
     If user clicks on the animalName => Animal Fact will play
     If user clicks on the animalImage => "The alligator says [alligator sound]"
   */
 
-  state = {
-    isLiked: false,
-    isSpellingOpen: false,
+  const [isLiked, setIsLiked] = useState(false);
+  const [isSpellingOpen, setIsSpellingOpen] = useState(false);
+
+  
+
+  const handleOpenClose = () => {
+    const clicked = isSpellingOpen;
+    setIsSpellingOpen(!clicked);
   };
 
-  colorRef = React.createRef();
-
-  setLiked = () => {
-    const liked = this.state.isLiked;
-    this.setState({ isLiked: !liked });
+  const handleLike = (id) => {
+    setIsLiked(!isLiked)
+    props.handleLike(id);
   };
 
-  handleOpenClose = () => {
-    const clicked = this.state.isSpellingOpen;
-    this.setState({
-      isSpellingOpen: !clicked,
-    });
-  };
-
-  handleMouseOver = () => {
-    return this.state.isLiked
-      ? (this.colorRef.current.style.color = "#ff9380")
-      : (this.colorRef.current.style.color = "#4d8080");
-  };
-
-  handleMouseOut = () => {
-    return this.state.isLiked
-      ? (this.colorRef.current.style.color = "#FF6347")
-      : (this.colorRef.current.style.color = "#2F4F4F");
-  };
-
-  render() {
-    const { isLiked, isSpellingOpen } = this.state;
-
-    return (
-      <CardHolder>
-        {this.props.alphabet
-          .filter((letter) => letter.clicked)
-          .map((animal) => (
-            <CardLetter key={animal.id}>
-              <PlayingCard>
-                <XCloserHolder>
-                  <DestructButton><FontAwesomeIcon icon={faMap} /></DestructButton>
-                  <XCloser onClick={() => this.props.handleOpenClose(animal)}>
-                    <FontAwesomeIcon icon={faXmark} />
-                  </XCloser>
-                </XCloserHolder>
-                <ImageHolder>
-                  <img
-                    style={{
-                      width: animal.horizontal && "100%",
-                      height: !animal.horizontal && "100%",
-                    }}
-                    src={animal.animalImage}
-                    alt={animal.animalName}
+  return (
+    <CardHolder>
+      {props.alphabet
+        .filter((letter) => letter.clicked)
+        .map((animal) => (
+          <CardLetter key={animal.id}>
+            <PlayingCard>
+              <XCloserHolder>
+                <DestructButton>
+                  <FontAwesomeIcon icon={faMap} />
+                </DestructButton>
+                <XCloser onClick={() => props.handleOpenClose(animal)}>
+                  <FontAwesomeIcon icon={faXmark} />
+                </XCloser>
+              </XCloserHolder>
+              <ImageHolder>
+                <img
+                  style={{
+                    width: animal.horizontal && "100%",
+                    height: !animal.horizontal && "100%",
+                  }}
+                  src={animal.animalImage}
+                  alt={animal.animalName}
+                />
+              </ImageHolder>
+              <NameHolder>
+                {isSpellingOpen ? (
+                  <SpellingCard
+                    animal={animal}
+                    sounds={props.sounds}
+                    handleOpenClose={() => handleOpenClose()}
                   />
-                </ImageHolder>
-                <NameHolder>
-                  {isSpellingOpen ? (
-                    <SpellingCard
-                      animal={animal}
-                      sounds={this.props.sounds}
-                      handleOpenClose={this.handleOpenClose}
-                    />
-                  ) : (
-                    <Utils>
-                      <NameTitle>
-                        <div>
-                          <Name
-                            style={{
-                              lineHeight:
-                                (animal.animalName === "Yellow Mongoose" ||
-                                  animal.animalName === "Vervet Monkey") &&
-                                "35px",
-                            }}
-                          >
-                            {animal.animalName}
-                          </Name>
-                        </div>
-                        <Icon onClick={this.handleOpenClose}>
-                          <FontAwesomeIcon icon={faSpellCheck} />
-                        </Icon>
-                      </NameTitle>
-                      <IconHolder>
-                        <NameButton
-                          animalName={animal.animalName}
-                          animalNameSound={animal.animalNameSound}
-                        />
-                        <FactButton
-                          animalName={animal.animalName}
-                          animalNameSound={animal.animalNameSound}
-                          animalFacts={animal.animalFacts}
-                        />
-                        <IconHeart
-                          onClick={this.setLiked}
+                ) : (
+                  <Utils>
+                    <NameTitle>
+                      <div>
+                        <Name
                           style={{
-                            color: `${isLiked ? "#FF6347" : "#2F4F4F"}`,
+                            lineHeight:
+                              (animal.animalName === "Yellow Mongoose" ||
+                                animal.animalName === "Vervet Monkey") &&
+                              "35px",
                           }}
-                          ref={this.colorRef}
-                          onMouseOver={this.handleMouseOver}
-                          onMouseOut={this.handleMouseOut}
+                        >
+                          {animal.animalName}
+                        </Name>
+                      </div>
+                      <Icon onClick={() => handleOpenClose()}>
+                        <FontAwesomeIcon icon={faSpellCheck} />
+                      </Icon>
+                    </NameTitle>
+                    <IconHolder>
+                      <NameButton
+                        animalName={animal.animalName}
+                        animalNameSound={animal.animalNameSound}
+                      />
+                      <FactButton
+                        animalName={animal.animalName}
+                        animalNameSound={animal.animalNameSound}
+                        animalFacts={animal.animalFacts}
+                      />
+                      {isLiked ? (
+                        <IconHeartLiked onClick={() => handleLike(animal.id)}>
+                          <FontAwesomeIcon icon={faHeart} />
+                        </IconHeartLiked>
+                      ) : (
+                        <IconHeartNotLiked
+                          onClick={() => handleLike(animal.id)}
                         >
                           <FontAwesomeIcon icon={faHeart} />
-                        </IconHeart>
-                      </IconHolder>
-                    </Utils>
-                  )}
-                </NameHolder>
-              </PlayingCard>
-            </CardLetter>
-          ))}
-      </CardHolder>
-    );
-  }
+                        </IconHeartNotLiked>
+                      )}
+                    </IconHolder>
+                  </Utils>
+                )}
+              </NameHolder>
+            </PlayingCard>
+          </CardLetter>
+        ))}
+    </CardHolder>
+  );
 }
-
-export default CardDetail;

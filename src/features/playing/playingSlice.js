@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: false,
+  value: true,
 };
 
 export const playingSlice = createSlice({
   name: "playing",
   initialState,
   reducers: {
-    change: (state) => {
-      state.value = !state.value
+    change: (state, action) => {
+      state.value = action.payload
     },
   },
 });

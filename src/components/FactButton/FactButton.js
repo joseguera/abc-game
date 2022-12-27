@@ -29,7 +29,7 @@ export default function FactButton(props) {
   };
 
   const playAudio = () => {
-    dispatch(change());
+    dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
     setAudioTrackDuration(audioDuration);
     return audio.play();
@@ -37,7 +37,8 @@ export default function FactButton(props) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      dispatch(change());
+      dispatch(change(true));
+      console.log(playing)
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration]);

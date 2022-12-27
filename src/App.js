@@ -40,6 +40,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/alligator_fact3_kudvzs.mp3",
         ],
         horizontal: true,
+        isLiked: true
       },
       {
         id: 2,
@@ -54,6 +55,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 3,
@@ -68,6 +70,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 4,
@@ -82,6 +85,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 5,
@@ -96,6 +100,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 6,
@@ -110,6 +115,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 7,
@@ -124,6 +130,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 8,
@@ -138,6 +145,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 9,
@@ -152,6 +160,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 10,
@@ -166,6 +175,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 11,
@@ -180,6 +190,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 12,
@@ -194,6 +205,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 13,
@@ -208,6 +220,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 14,
@@ -222,6 +235,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 15,
@@ -236,6 +250,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 16,
@@ -250,6 +265,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
         animalFacts: ["", "", ""],
         horizontal: false,
+        isLiked: false
       },
       {
         id: 17,
@@ -264,6 +280,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 18,
@@ -278,6 +295,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 19,
@@ -292,6 +310,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 20,
@@ -306,6 +325,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 21,
@@ -320,6 +340,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 22,
@@ -337,6 +358,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 23,
@@ -351,6 +373,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 24,
@@ -365,6 +388,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 25,
@@ -382,6 +406,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: false
       },
       {
         id: 26,
@@ -396,6 +421,7 @@ class App extends React.Component {
           "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
         animalFacts: ["", "", ""],
         horizontal: true,
+        isLiked: true
       },
     ],
     destructButton: "icon.jpg",
@@ -454,6 +480,19 @@ class App extends React.Component {
     });
   };
 
+  handleLike = (id) => {
+    const { alphabet } = this.state;
+    const newList = alphabet.map(buttonValue => {
+      if (id === buttonValue.id) {
+        buttonValue.isLiked = !buttonValue.isLiked
+      }
+      return buttonValue;
+    })
+    this.setState({
+      alphabet: newList,
+    });
+  }
+
   ///////// IMPROVEMENT NOTES /////////
   /*
     
@@ -487,6 +526,7 @@ class App extends React.Component {
                 isDetailOpen={this.state.isDetailOpen}
                 handleOpenClose={this.handleOpenClose}
                 sounds={this.state.sounds.alphabet}
+                handleLike={this.handleLike}
               />
             ) : (
               <ButtonList
