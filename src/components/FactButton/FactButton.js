@@ -38,7 +38,6 @@ export default function FactButton(props) {
   useEffect(() => {
     const timer = setTimeout(() => {
       dispatch(change(true));
-      console.log(playing)
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration]);
