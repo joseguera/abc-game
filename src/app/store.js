@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import playingReducer from '../features/playing/playingSlice'
 
-export default configureStore({
+export const store = configureStore({
   reducer: {
     playing: playingReducer
   }

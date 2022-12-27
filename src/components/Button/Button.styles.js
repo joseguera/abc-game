@@ -5,7 +5,6 @@ export const StyledLetter = styled.div`
     flex-direction: column;
     width: 90px;
     height: 90px;
-    line-height: 40px;
     font-size: 30px;
     border: 1px solid #3D674C /*Spring Leaves*/;
     border-radius: 7.5px;
@@ -19,14 +18,28 @@ export const StyledLetter = styled.div`
         box-shadow: -5px 5px #558F69;
         color: #558F69;
         font-size: 30px;
-        // font-weight: bold;
     }
 `;
 
+export const ButtonHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .heart-icon {
+        width: 15px;
+        height: 15px;
+    }
+`;
 export const Letter = styled.div`
     width: 30px;
     height: 30px;
     line-height: 30px;
+`;
+export const Icon = styled.div`
+    width: 15px;
+    height: 15px;
+    line-height: 7.5px;
 `;
 
 export const IconHolder = styled.div`

@@ -11,6 +11,7 @@ export default function ButtonList(props) {
             <Button
               handleOpenClose={props.handleOpenClose}
               alpha={alpha}
+              handleLike={props.handleLike}
             />
           </ButtonRow>
         );
