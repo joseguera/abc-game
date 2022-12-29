@@ -565,7 +565,7 @@ export default function App() {
       handleClose toggles the view from the AlphabetList
       to the LetterDetail
     */
-  const handleOpenClose = (letter) => {
+  const handleOpenClose = (letter, audio = new Audio()) => {
     const newList = alphabet.map((element) => {
       if (letter.id === element.id) {
         element.clicked = !element.clicked;
@@ -575,6 +575,7 @@ export default function App() {
     const clicked = detailOpen;
     setAlphabet(newList);
     setDetailOpen(!clicked);
+    return audio.volume = 0;
   };
 
   const handleLike = (id) => {

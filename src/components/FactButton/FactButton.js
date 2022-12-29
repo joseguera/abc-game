@@ -32,6 +32,7 @@ export default function FactButton(props) {
     dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
     setAudioTrackDuration(audioDuration);
+    props.getAudio(audio)
     return audio.play();
   };
 
