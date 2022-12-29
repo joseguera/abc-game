@@ -34,12 +34,19 @@ export default function CardDetail(props) {
   */
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
-  const [liked, setLiked] = useState(false);
+  const [audio, setAudio] = useState();
+
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
     setIsSpellingOpen(!clicked);
+    audio.volume = 0;
   };
+
+  // gets passed down to FactButton component to raise the audio file to this component's state
+  const getAudio = (audio) => {
+    setAudio(audio);
+  }
 
   const handleLike = (id) => {
     props.handleLike(id);
@@ -56,7 +63,7 @@ export default function CardDetail(props) {
                 <DestructButton>
                   <FontAwesomeIcon icon={faMap} />
                 </DestructButton>
-                <XCloser onClick={() => props.handleOpenClose(animal)}>
+                <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
                   <FontAwesomeIcon icon={faXmark} />
                 </XCloser>
               </XCloserHolder>
@@ -105,6 +112,7 @@ export default function CardDetail(props) {
                         animalName={animal.animalName}
                         animalNameSound={animal.animalNameSound}
                         animalFacts={animal.animalFacts}
+                        getAudio={getAudio}
                       />
                       {animal.isLiked ? (
                         <IconHeartLiked onClick={() => handleLike(animal.id)}>
