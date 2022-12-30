@@ -294,7 +294,7 @@ export default function App() {
       value: "O",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/okapi_m5hjmr.png",
       animalName: "Okapi",
       tiles: ["O-ka-pi"],
       syllables: ["O", "ka", "pi"],
@@ -332,7 +332,7 @@ export default function App() {
       value: "Q",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/quetzal_wjwfmg.png",
       animalName: "Quetzal",
       tiles: ["Quet-", "zal"],
       syllables: ["Quet", "zal"],
@@ -343,7 +343,7 @@ export default function App() {
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661509/animal_facts_audio/quetzal_fact2_owzkum.mp3",
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/quetzal_fact3_is9snv.mp3",
       ],
-      horizontal: true,
+      horizontal: false,
       isLiked: false,
     },
     {
@@ -351,7 +351,7 @@ export default function App() {
       value: "R",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
       animalName: "Rhinoceros",
       tiles: ["Rhi-", "noc-", "er-os"],
       syllables: ["Rhi", "noc", "er", "os"],
@@ -370,7 +370,7 @@ export default function App() {
       value: "S",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/snake_mzfb57.png",
       animalName: "Snake",
       tiles: ["Snake"],
       syllables: ["Snake"],
@@ -389,7 +389,7 @@ export default function App() {
       value: "T",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
       animalName: "Tiger",
       tiles: ["Ti-ger"],
       syllables: ["Ti", "ger"],
@@ -408,7 +408,7 @@ export default function App() {
       value: "U",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/sloth_tw82gs.png",
       animalName: "Unau",
       tiles: ["U-nau"],
       syllables: ["U", "nau"],
@@ -419,7 +419,7 @@ export default function App() {
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact2_hcpoef.mp3",
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact3_mamotq.mp3",
       ],
-      horizontal: true,
+      horizontal: false,
       isLiked: false,
     },
     {
@@ -427,7 +427,7 @@ export default function App() {
       value: "V",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/vervet_pwgmks.png",
       animalName: "Vervet Monkey",
       tiles: [["Ver-vet"], ["Mon-key"]],
       syllables: [
@@ -441,7 +441,7 @@ export default function App() {
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact2_ycapu7.mp3",
         "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact3_lfyjzb.mp3",
       ],
-      horizontal: true,
+      horizontal: false,
       isLiked: false,
     },
     {
@@ -449,7 +449,7 @@ export default function App() {
       value: "W",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/warthog_ne88og.png",
       animalName: "Warthog",
       tiles: ["Wart-", "hog"],
       syllables: ["Wart", "hog"],
@@ -487,7 +487,7 @@ export default function App() {
       value: "Y",
       clicked: false,
       animalImage:
-        "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/mongoose_ieo5rn.png",
       animalName: "Yellow Mongoose",
       tiles: [["Yel-low"], ["Mon-", "goose"]],
       syllables: [
@@ -509,7 +509,7 @@ export default function App() {
       value: "Z",
       clicked: false,
       animalImage:
-        "https://www.clipartmax.com/png/middle/156-1560736_smiley-transparent-smiley-face-clipart.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
       animalName: "Zebra",
       tiles: ["Ze-bra"],
       syllables: ["Ze", "bra"],
