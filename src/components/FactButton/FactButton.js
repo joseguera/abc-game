@@ -41,7 +41,7 @@ export default function FactButton(props) {
       dispatch(change(true));
     }, audioTrackDuration);
     return () => clearTimeout(timer);
-  }, [audioTrackDuration]);
+  }, [audioTrackDuration, dispatch]);
 
   return (
     <>
