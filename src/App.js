@@ -17,7 +17,7 @@ export default function App() {
   /*
     Other keys that need to be added to the alphabet objects are:
     - category : 'grassland-tropical'
-    - animalName : 
+    - name : 
     - animalPicture : 'some file name or external link'
     - etc...
   */
@@ -29,7 +29,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
-      animalName: "Alligator",
+      name: {
+        eng: "Alligator", 
+        spa: "Caimán", 
+      },
       tiles: ["Al-li-", "ga-", "tor"],
       syllables: ["Al", "li", "ga", "tor"],
       animalNameSound:
@@ -48,7 +51,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
-      animalName: "Baboon",
+      name: {
+        eng: "Baboon", 
+        spa: "Mandril", 
+      },
       tiles: ["Ba-boon"],
       syllables: ["Ba", "boon"],
       animalNameSound:
@@ -67,7 +73,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
-      animalName: "Chimpanzee",
+      name: {
+        eng: "Chimpanzee", 
+        spa: "Chimpancé", 
+      },
       tiles: ["Chim-", "pan-", "zee"],
       syllables: ["Chim", "pan", "zee"],
       animalNameSound:
@@ -86,7 +95,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
-      animalName: "Dingo",
+      name: {
+        eng: "Dingo", 
+        spa: "Dingo", 
+      },
       tiles: ["Din-go"],
       syllables: ["Din", "go"],
       animalNameSound:
@@ -105,7 +117,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
-      animalName: "Elephant",
+      name: {
+        eng: "Elephant", 
+        spa: "Elefante",
+      },
       tiles: ["El-e-", "phant"],
       syllables: ["El", "e", "phant"],
       animalNameSound:
@@ -124,7 +139,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
-      animalName: "Frog",
+      name: {
+        eng: "Frog", 
+        spa: "Rana", 
+      },
       tiles: ["Frog"],
       syllables: ["Frog"],
       animalNameSound:
@@ -143,7 +161,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
-      animalName: "Gorilla",
+      name: {
+        eng: "Gorilla", 
+        spa: "Gorila", 
+      },
       tiles: ["Go-", "ril-la"],
       syllables: ["Go", "ril", "la"],
       animalNameSound:
@@ -162,7 +183,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1667582162/Cory-Images/hyena_dzhabn.png",
-      animalName: "Hyena",
+      name: {
+        eng: "Hyena", 
+        spa: "Hiena", 
+      },
       tiles: ["Hy-e-na"],
       syllables: ["Hy", "e", "na"],
       animalNameSound:
@@ -181,7 +205,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317903/Cory-Images/impala_qbglhz.png",
-      animalName: "Impala",
+      name: {
+        eng: "Impala", 
+        spa: "Impala", 
+      },
       tiles: ["Im-", "pal-a"],
       syllables: ["Im", "pal", "a"],
       animalNameSound:
@@ -200,7 +227,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
-      animalName: "Jaguar",
+      name: {
+        eng: "Jaguar", 
+        spa: "Jaguar", 
+      },
       tiles: ["Jag-", "u-ar"],
       syllables: ["Jag", "u", "ar"],
       animalNameSound:
@@ -219,7 +249,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
-      animalName: "Koala",
+      name: {
+        eng: "Koala", 
+        spa: "Coala", 
+      },
       tiles: ["Ko-", "a-la"],
       syllables: ["Ko", "a", "la"],
       animalNameSound:
@@ -238,7 +271,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317901/Cory-Images/lemur_k4gg9o.png",
-      animalName: "Lemur",
+      name: {
+        eng: "Lemur", 
+        spa: "Lémur", 
+      },
       tiles: ["Le-mur"],
       syllables: ["Le", "mur"],
       animalNameSound:
@@ -257,7 +293,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
-      animalName: "Macaw",
+      name: {
+        eng: "Macaw", 
+        spa: "Guacamaya", 
+      },
       tiles: ["Ma-caw"],
       syllables: ["Ma", "caw"],
       animalNameSound:
@@ -276,7 +315,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317909/Cory-Images/numbat_bwu8od.png",
-      animalName: "Numbat",
+      name: {
+        eng: "Numbat", 
+        spa: "Numbat", 
+      },
       tiles: ["Num-bat"],
       syllables: ["Num", "bat"],
       animalNameSound:
@@ -295,7 +337,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/okapi_m5hjmr.png",
-      animalName: "Okapi",
+      name: {
+        eng: "Okapi", 
+        spa: "Okapi", 
+      },
       tiles: ["O-ka-pi"],
       syllables: ["O", "ka", "pi"],
       animalNameSound:
@@ -314,7 +359,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
-      animalName: "Panda",
+      name: {
+        eng: "Panda", 
+        spa: "Panda", 
+      },
       tiles: ["Pan-da"],
       syllables: ["Pan", "da"],
       animalNameSound:
@@ -333,7 +381,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/quetzal_wjwfmg.png",
-      animalName: "Quetzal",
+      name: {
+        eng: "Quetzal", 
+        spa: "Quetzal", 
+      },
       tiles: ["Quet-", "zal"],
       syllables: ["Quet", "zal"],
       animalNameSound:
@@ -352,7 +403,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
-      animalName: "Rhinoceros",
+      name: {
+        eng: "Rhinoceros", 
+        spa: "Rinoceronte", 
+      },
       tiles: ["Rhi-", "noc-", "er-os"],
       syllables: ["Rhi", "noc", "er", "os"],
       animalNameSound:
@@ -371,7 +425,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/snake_mzfb57.png",
-      animalName: "Snake",
+      name: {
+        eng: "Snake", 
+        spa: "Serpiente", 
+      },
       tiles: ["Snake"],
       syllables: ["Snake"],
       animalNameSound:
@@ -390,7 +447,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
-      animalName: "Tiger",
+      name: {
+        eng: "Tiger", 
+        spa: "Tigre", 
+      },
       tiles: ["Ti-ger"],
       syllables: ["Ti", "ger"],
       animalNameSound:
@@ -409,7 +469,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/sloth_tw82gs.png",
-      animalName: "Unau",
+      name: {
+        eng: "Unau", 
+        spa: "Perezoso", 
+      },
       tiles: ["U-nau"],
       syllables: ["U", "nau"],
       animalNameSound:
@@ -428,7 +491,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/vervet_pwgmks.png",
-      animalName: "Vervet Monkey",
+      name: {
+        eng: "Vervet Monkey", 
+        spa: "Mono Vervet", 
+      },
       tiles: [["Ver-vet"], ["Mon-key"]],
       syllables: [
         ["Ver", "vet"],
@@ -450,7 +516,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/warthog_ne88og.png",
-      animalName: "Warthog",
+      name: {
+        eng: "Warthog", 
+        spa: "Jabalí", 
+      },
       tiles: ["Wart-", "hog"],
       syllables: ["Wart", "hog"],
       animalNameSound:
@@ -469,7 +538,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
-      animalName: "Xenops",
+      name: {
+        eng: "Xenops", 
+        spa: "Xenops", 
+      },
       tiles: ["Xe-nops"],
       syllables: ["Xe", "nops"],
       animalNameSound:
@@ -488,7 +560,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/mongoose_ieo5rn.png",
-      animalName: "Yellow Mongoose",
+      name: {
+        eng: "Yellow Mongoose", 
+        spa: "Mangosta Amarilla", 
+      },
       tiles: [["Yel-low"], ["Mon-", "goose"]],
       syllables: [
         ["Yel", "low"],
@@ -510,7 +585,10 @@ export default function App() {
       clicked: false,
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
-      animalName: "Zebra",
+      name: {
+        eng: "Zebra", 
+        spa: "Zebra", 
+      },
       tiles: ["Ze-bra"],
       syllables: ["Ze", "bra"],
       animalNameSound:

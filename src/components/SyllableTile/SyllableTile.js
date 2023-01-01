@@ -8,9 +8,9 @@ const SyllableTile = (props) => {
   // };
 
   const last = props.syllableTiles.length - 1;
+  const rand = Math.random();
 
   return props.syllableTiles.map((syllable, idx) => {
-    // return props.animalName === "Vervet Monkey" || props.animalName === "Yellow Mongoose" ? 
     return Array.isArray(syllable) ? 
     (
       syllable.map((syl, idx) => {
@@ -21,14 +21,14 @@ const SyllableTile = (props) => {
           </Syllable>
         ) : (
           <>
-            <Tile key={idx}>{syl}</Tile>
+            <Tile key={idx+syl}>{syl}</Tile>
           </>
         );
       })
     ) : idx === last ? (
-      <Tile key={idx}>{syllable}</Tile>
+      <Tile key={idx+syllable+"last"}>{syllable}</Tile>
     ) : (
-      <Syllable key={idx}>
+      <Syllable key={idx+syllable}>
         <Tile>{syllable}</Tile>
         <Dash>-</Dash>
       </Syllable>
