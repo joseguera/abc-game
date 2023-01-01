@@ -100,7 +100,9 @@ export default function CardDetail(props) {
                         </Name>
                       </div>
                       <Icon onClick={() => handleOpenClose()}>
-                        <FontAwesomeIcon icon={faSpellCheck} />
+                        <button>
+                          <FontAwesomeIcon icon={faSpellCheck} />
+                        </button>
                       </Icon>
                     </NameTitle>
                     <IconHolder>

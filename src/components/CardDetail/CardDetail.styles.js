@@ -79,6 +79,15 @@ export const NameTitle = styled.div`
   align-items: center;
   flex-direction: row;
   gap: 15px;
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
 `;
 
 export const Name = styled.div`
@@ -109,7 +118,7 @@ export const IconHolder = styled.div`
 export const IconHeartLiked = styled.div`
   font-size: 27px;
   cursor: pointer;
-  color: #FF6347;
+  color: #ff6347;
   &:hover {
     color: #ff9380;
   }
