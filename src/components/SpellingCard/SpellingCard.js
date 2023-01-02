@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { LetterTileHolder } from "components";
 import { SpellingCardHolder, IconHolder, CloseIcon, Icon } from "./SpellingCard.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,29 +8,27 @@ import {
   faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default class SpellingCard extends React.Component {
-  state = {
-    isSpelled: true
-  };
+export default function SpellingCard(props) {
 
-  setSpeller = () => {
-    const spelled = this.state.isSpelled; 
-    this.setState({ isSpelled: !spelled })
+  const [isSpelled, setIsSpelled] = useState(true);
+
+  const setSpeller = () => {
+    setIsSpelled(!isSpelled)
   }
 
-  render() {
-    const { isSpelled } = this.state;
     return (
       <SpellingCardHolder>
         <LetterTileHolder
-          sounds={this.props.sounds}
-          tiles={this.props.animal.tiles}
-          syllables={this.props.animal.syllables}
-          name={this.props.animal.name}
+          value={props.value}
+          sounds={props.sounds}
+          syllableSounds={props.syllableSounds}
+          tiles={props.animal.tiles}
+          syllables={props.animal.syllables}
+          name={props.animal.name}
           isSpelled={isSpelled}
         />
         <IconHolder>
-          <Icon onClick={() => this.setSpeller()}>
+          <Icon onClick={() => setSpeller()}>
             {(isSpelled) ? (
               <FontAwesomeIcon icon={faObjectGroup} />
             ) : (
@@ -38,11 +36,10 @@ export default class SpellingCard extends React.Component {
             )}
             
           </Icon>
-          <CloseIcon onClick={() => this.props.handleOpenClose()}>
+          <CloseIcon onClick={() => props.handleOpenClose()}>
             <FontAwesomeIcon icon={faRectangleXmark} />
           </CloseIcon>
         </IconHolder>
       </SpellingCardHolder>
     );
-  }
 }

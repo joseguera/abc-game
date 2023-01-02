@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NameButton, FactButton } from "components";
+import { NameButton, FactButton, LanguageButton } from "components";
 import {
   Utils,
   NameTitle,
@@ -16,7 +16,7 @@ export default function CardUtils(props) {
   const handleLike = (id) => {
     props.handleLike(id);
   };
-  
+
   return (
     <Utils>
       <NameTitle>
@@ -44,6 +44,7 @@ export default function CardUtils(props) {
           animalFacts={props.animalFacts}
           getAudio={props.getAudio}
         />
+        <LanguageButton />
         {props.isLiked ? (
           <IconHeartLiked onClick={() => handleLike(props.id)}>
             <FontAwesomeIcon icon={faHeart} />
