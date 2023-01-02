@@ -16,7 +16,6 @@ import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
   /*
-    If user clicks on the name => Animal Fact will play
     If user clicks on the animalImage => "The alligator says [alligator sound]"
   */
 
@@ -55,10 +54,7 @@ export default function CardDetail(props) {
               </XCloserHolder>
               <ImageHolder>
                 <img
-                  style={{
-                    width: animal.horizontal && "100%",
-                    height: !animal.horizontal && "100%",
-                  }}
+                  className={animal.horizontal ? "horizontal" : "vertical"}
                   src={animal.animalImage}
                   alt={animal.name}
                 />
@@ -68,6 +64,8 @@ export default function CardDetail(props) {
                   <SpellingCard
                     animal={animal}
                     sounds={props.sounds}
+                    syllableSounds={props.syllableSounds}
+                    value={animal.value}
                     handleOpenClose={() => handleOpenClose()}
                   />
                 ) : (
@@ -79,6 +77,7 @@ export default function CardDetail(props) {
                     name={animal.name}
                     animalNameSound={animal.animalNameSound}
                     animalFacts={animal.animalFacts}
+                    isLiked={animal.isLiked}
                   />
                 )}
               </NameHolder>

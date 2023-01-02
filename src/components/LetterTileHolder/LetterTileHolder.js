@@ -6,67 +6,64 @@ import {
   TileRow,
 } from "./LetterTileHolder.styles";
 
-export default class LetterTileHolder extends React.Component {
-  state = {
-    letterTiles: this.props.tiles,
-    syllableTiles: this.props.syllables,
-  };
-
-  render() {
-    const { letterTiles } = this.state;
-    const { syllableTiles } = this.state;
-    const { name } = this.props;
-
-    return (
-      <AnimalNameHolder>
-        {name.eng.length > 10 ? (
-          <RowHolder>
-            {this.props.isSpelled ? (
-              letterTiles.map((tile) => {
-                return tile.map((letter, idx) => {
-                  return (
-                    <TileRow key={idx + letter}>
-                      {letter.split("").map((l, idx) => (
-                        <LetterTile
-                          key={idx + l}
-                          letter={l}
-                          sounds={this.props.sounds}
-                        />
-                      ))}
-                    </TileRow>
-                  );
-                });
-              })
-            ) : (
-              <TileRow>
-                <SyllableTile syllableTiles={syllableTiles} />
-              </TileRow>
-            )}
-          </RowHolder>
-        ) : (
-          <RowHolder>
-            {this.props.isSpelled ? (
-              letterTiles.map((tile, idx) => {
+export default function LetterTileHolder(props) {
+  return (
+    <AnimalNameHolder>
+      {props.name.eng.length > 10 ? (
+        <RowHolder>
+          {props.isSpelled ? (
+            props.tiles.map((tile) => {
+              return tile.map((letter, idx) => {
                 return (
-                  <TileRow key={idx + tile}>
-                    {tile.split("").map((t, idx) => (
+                  <TileRow key={idx + letter}>
+                    {letter.split("").map((l, idx) => (
                       <LetterTile
-                        key={idx + t}
-                        letter={t}
-                        sounds={this.props.sounds}
+                        key={idx + l}
+                        letter={l}
+                        sounds={props.sounds}
                       />
                     ))}
                   </TileRow>
                 );
-              })
-            ) : (
-              <TileRow>
-                <SyllableTile syllableTiles={syllableTiles} />
-              </TileRow>
-            )}
-          </RowHolder>
-        )}
-      </AnimalNameHolder>
-    );
-  }
+              });
+            })
+          ) : (
+            <TileRow>
+              <SyllableTile
+                value={props.value}
+                syllableTiles={props.syllables}
+                syllableSounds={props.syllableSounds}
+              />
+            </TileRow>
+          )}
+        </RowHolder>
+      ) : (
+        <RowHolder>
+          {props.isSpelled ? (
+            props.tiles.map((tile, idx) => {
+              return (
+                <TileRow key={idx + tile}>
+                  {tile.split("").map((t, idx) => (
+                    <LetterTile
+                      key={idx + t}
+                      letter={t}
+                      sounds={props.sounds}
+                    />
+                  ))}
+                </TileRow>
+              );
+            })
+          ) : (
+            <TileRow>
+              <SyllableTile
+                value={props.value}
+                syllableTiles={props.syllables}
+                syllableSounds={props.syllableSounds}
+              />
+            </TileRow>
+          )}
+        </RowHolder>
+      )}
+    </AnimalNameHolder>
+  );
 }
