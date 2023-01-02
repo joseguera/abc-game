@@ -15,20 +15,20 @@ export default class LetterTileHolder extends React.Component {
   render() {
     const { letterTiles } = this.state;
     const { syllableTiles } = this.state;
-    const { animalName } = this.props;
+    const { name } = this.props;
 
     return (
       <AnimalNameHolder>
-        {animalName === "Yellow Mongoose" || animalName === "Vervet Monkey" ? (
+        {name.eng.length > 10 ? (
           <RowHolder>
             {this.props.isSpelled ? (
               letterTiles.map((tile) => {
                 return tile.map((letter, idx) => {
                   return (
-                    <TileRow key={idx}>
+                    <TileRow key={idx + letter}>
                       {letter.split("").map((l, idx) => (
                         <LetterTile
-                          key={idx}
+                          key={idx + l}
                           letter={l}
                           sounds={this.props.sounds}
                         />
@@ -39,7 +39,7 @@ export default class LetterTileHolder extends React.Component {
               })
             ) : (
               <TileRow>
-                <SyllableTile syllableTiles={syllableTiles} animalName={animalName} />
+                <SyllableTile syllableTiles={syllableTiles} />
               </TileRow>
             )}
           </RowHolder>
@@ -48,10 +48,10 @@ export default class LetterTileHolder extends React.Component {
             {this.props.isSpelled ? (
               letterTiles.map((tile, idx) => {
                 return (
-                  <TileRow key={idx}>
+                  <TileRow key={idx + tile}>
                     {tile.split("").map((t, idx) => (
                       <LetterTile
-                        key={idx}
+                        key={idx + t}
                         letter={t}
                         sounds={this.props.sounds}
                       />

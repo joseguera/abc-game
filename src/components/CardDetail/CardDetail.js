@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SpellingCard, NameButton, FactButton } from "components";
+import { SpellingCard, CardUtils } from "components";
 import {
   CardHolder,
   CardLetter,
@@ -9,33 +9,19 @@ import {
   DestructButton,
   ImageHolder,
   NameHolder,
-  Utils,
-  NameTitle,
-  Name,
-  Icon,
-  IconHolder,
-  IconHeartLiked,
-  IconHeartNotLiked,
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSpellCheck,
-  faXmark,
-  faQuestion,
-  faHeart,
-  faMap,
-} from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 
 export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
   /*
-    If user clicks on the animalName => Animal Fact will play
+    If user clicks on the name => Animal Fact will play
     If user clicks on the animalImage => "The alligator says [alligator sound]"
   */
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
-  const [audio, setAudio] = useState();
-
+  const [audio, setAudio] = useState(new Audio());
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -46,7 +32,7 @@ export default function CardDetail(props) {
   // gets passed down to FactButton component to raise the audio file to this component's state
   const getAudio = (audio) => {
     setAudio(audio);
-  }
+  };
 
   const handleLike = (id) => {
     props.handleLike(id);
@@ -74,7 +60,7 @@ export default function CardDetail(props) {
                     height: !animal.horizontal && "100%",
                   }}
                   src={animal.animalImage}
-                  alt={animal.animalName}
+                  alt={animal.name}
                 />
               </ImageHolder>
               <NameHolder>
@@ -85,50 +71,15 @@ export default function CardDetail(props) {
                     handleOpenClose={() => handleOpenClose()}
                   />
                 ) : (
-                  <Utils>
-                    <NameTitle>
-                      <div>
-                        <Name
-                          style={{
-                            lineHeight:
-                              (animal.animalName === "Yellow Mongoose" ||
-                                animal.animalName === "Vervet Monkey") &&
-                              "35px",
-                          }}
-                        >
-                          {animal.animalName}
-                        </Name>
-                      </div>
-                      <Icon onClick={() => handleOpenClose()}>
-                        <button>
-                          <FontAwesomeIcon icon={faSpellCheck} />
-                        </button>
-                      </Icon>
-                    </NameTitle>
-                    <IconHolder>
-                      <NameButton
-                        animalName={animal.animalName}
-                        animalNameSound={animal.animalNameSound}
-                      />
-                      <FactButton
-                        animalName={animal.animalName}
-                        animalNameSound={animal.animalNameSound}
-                        animalFacts={animal.animalFacts}
-                        getAudio={getAudio}
-                      />
-                      {animal.isLiked ? (
-                        <IconHeartLiked onClick={() => handleLike(animal.id)}>
-                          <FontAwesomeIcon icon={faHeart} />
-                        </IconHeartLiked>
-                      ) : (
-                        <IconHeartNotLiked
-                          onClick={() => handleLike(animal.id)}
-                        >
-                          <FontAwesomeIcon icon={faHeart} />
-                        </IconHeartNotLiked>
-                      )}
-                    </IconHolder>
-                  </Utils>
+                  <CardUtils
+                    getAudio={getAudio}
+                    handleOpenClose={handleOpenClose}
+                    handleLike={handleLike}
+                    id={animal.id}
+                    name={animal.name}
+                    animalNameSound={animal.animalNameSound}
+                    animalFacts={animal.animalFacts}
+                  />
                 )}
               </NameHolder>
             </PlayingCard>
