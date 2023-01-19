@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { zebrAPI } from "./zebrAPI";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,8 +31,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
       name: {
-        eng: "Alligator", 
-        spa: "Caimán", 
+        eng: "Alligator",
+        spa: "Caimán",
       },
       tiles: ["Al-li-", "ga-", "tor"],
       syllables: ["Al", "li", "ga", "tor"],
@@ -52,8 +53,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
       name: {
-        eng: "Baboon", 
-        spa: "Mandril", 
+        eng: "Baboon",
+        spa: "Mandril",
       },
       tiles: ["Ba-boon"],
       syllables: ["Ba", "boon"],
@@ -74,8 +75,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
       name: {
-        eng: "Chimpanzee", 
-        spa: "Chimpancé", 
+        eng: "Chimpanzee",
+        spa: "Chimpancé",
       },
       tiles: ["Chim-", "pan-", "zee"],
       syllables: ["Chim", "pan", "zee"],
@@ -96,8 +97,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
       name: {
-        eng: "Dingo", 
-        spa: "Dingo", 
+        eng: "Dingo",
+        spa: "Dingo",
       },
       tiles: ["Din-go"],
       syllables: ["Din", "go"],
@@ -118,7 +119,7 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
       name: {
-        eng: "Elephant", 
+        eng: "Elephant",
         spa: "Elefante",
       },
       tiles: ["El-e-", "phant"],
@@ -140,8 +141,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
       name: {
-        eng: "Frog", 
-        spa: "Rana", 
+        eng: "Frog",
+        spa: "Rana",
       },
       tiles: ["Frog"],
       syllables: ["Frog"],
@@ -162,8 +163,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
       name: {
-        eng: "Gorilla", 
-        spa: "Gorila", 
+        eng: "Gorilla",
+        spa: "Gorila",
       },
       tiles: ["Go-", "ril-la"],
       syllables: ["Go", "ril", "la"],
@@ -184,8 +185,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1667582162/Cory-Images/hyena_dzhabn.png",
       name: {
-        eng: "Hyena", 
-        spa: "Hiena", 
+        eng: "Hyena",
+        spa: "Hiena",
       },
       tiles: ["Hy-e-na"],
       syllables: ["Hy", "e", "na"],
@@ -206,8 +207,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317903/Cory-Images/impala_qbglhz.png",
       name: {
-        eng: "Impala", 
-        spa: "Impala", 
+        eng: "Impala",
+        spa: "Impala",
       },
       tiles: ["Im-", "pal-a"],
       syllables: ["Im", "pal", "a"],
@@ -228,8 +229,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
       name: {
-        eng: "Jaguar", 
-        spa: "Jaguar", 
+        eng: "Jaguar",
+        spa: "Jaguar",
       },
       tiles: ["Jag-", "u-ar"],
       syllables: ["Jag", "u", "ar"],
@@ -250,8 +251,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
       name: {
-        eng: "Koala", 
-        spa: "Coala", 
+        eng: "Koala",
+        spa: "Coala",
       },
       tiles: ["Ko-", "a-la"],
       syllables: ["Ko", "a", "la"],
@@ -272,8 +273,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317901/Cory-Images/lemur_k4gg9o.png",
       name: {
-        eng: "Lemur", 
-        spa: "Lémur", 
+        eng: "Lemur",
+        spa: "Lémur",
       },
       tiles: ["Le-mur"],
       syllables: ["Le", "mur"],
@@ -294,8 +295,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
       name: {
-        eng: "Macaw", 
-        spa: "Guacamaya", 
+        eng: "Macaw",
+        spa: "Guacamaya",
       },
       tiles: ["Ma-caw"],
       syllables: ["Ma", "caw"],
@@ -316,8 +317,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317909/Cory-Images/numbat_bwu8od.png",
       name: {
-        eng: "Numbat", 
-        spa: "Numbat", 
+        eng: "Numbat",
+        spa: "Numbat",
       },
       tiles: ["Num-bat"],
       syllables: ["Num", "bat"],
@@ -338,8 +339,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/okapi_m5hjmr.png",
       name: {
-        eng: "Okapi", 
-        spa: "Okapi", 
+        eng: "Okapi",
+        spa: "Okapi",
       },
       tiles: ["O-ka-pi"],
       syllables: ["O", "ka", "pi"],
@@ -360,8 +361,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
       name: {
-        eng: "Panda", 
-        spa: "Panda", 
+        eng: "Panda",
+        spa: "Panda",
       },
       tiles: ["Pan-da"],
       syllables: ["Pan", "da"],
@@ -382,8 +383,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/quetzal_wjwfmg.png",
       name: {
-        eng: "Quetzal", 
-        spa: "Quetzal", 
+        eng: "Quetzal",
+        spa: "Quetzal",
       },
       tiles: ["Quet-", "zal"],
       syllables: ["Quet", "zal"],
@@ -404,8 +405,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
       name: {
-        eng: "Rhinoceros", 
-        spa: "Rinoceronte", 
+        eng: "Rhinoceros",
+        spa: "Rinoceronte",
       },
       tiles: ["Rhi-", "noc-", "er-os"],
       syllables: ["Rhi", "noc", "er", "os"],
@@ -426,8 +427,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/snake_mzfb57.png",
       name: {
-        eng: "Snake", 
-        spa: "Serpiente", 
+        eng: "Snake",
+        spa: "Serpiente",
       },
       tiles: ["Snake"],
       syllables: ["Snake"],
@@ -448,8 +449,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
       name: {
-        eng: "Tiger", 
-        spa: "Tigre", 
+        eng: "Tiger",
+        spa: "Tigre",
       },
       tiles: ["Ti-ger"],
       syllables: ["Ti", "ger"],
@@ -470,8 +471,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/sloth_tw82gs.png",
       name: {
-        eng: "Unau", 
-        spa: "Perezoso", 
+        eng: "Unau",
+        spa: "Perezoso",
       },
       tiles: ["U-nau"],
       syllables: ["U", "nau"],
@@ -492,8 +493,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/vervet_pwgmks.png",
       name: {
-        eng: "Vervet Monkey", 
-        spa: "Mono Vervet", 
+        eng: "Vervet Monkey",
+        spa: "Mono Vervet",
       },
       tiles: [["Ver-vet"], ["Mon-key"]],
       syllables: [
@@ -517,8 +518,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/warthog_ne88og.png",
       name: {
-        eng: "Warthog", 
-        spa: "Jabalí", 
+        eng: "Warthog",
+        spa: "Jabalí",
       },
       tiles: ["Wart-", "hog"],
       syllables: ["Wart", "hog"],
@@ -539,8 +540,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
       name: {
-        eng: "Xenops", 
-        spa: "Xenops", 
+        eng: "Xenops",
+        spa: "Xenops",
       },
       tiles: ["Xe-nops"],
       syllables: ["Xe", "nops"],
@@ -561,8 +562,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/mongoose_ieo5rn.png",
       name: {
-        eng: "Yellow Mongoose", 
-        spa: "Mangosta Amarilla", 
+        eng: "Yellow Mongoose",
+        spa: "Mangosta Amarilla",
       },
       tiles: [["Yel-low"], ["Mon-", "goose"]],
       syllables: [
@@ -586,8 +587,8 @@ export default function App() {
       animalImage:
         "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
       name: {
-        eng: "Zebra", 
-        spa: "Zebra", 
+        eng: "Zebra",
+        spa: "Zebra",
       },
       tiles: ["Ze-bra"],
       syllables: ["Ze", "bra"],
@@ -637,120 +638,123 @@ export default function App() {
       al: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_1_pfcrda.mp3",
       li: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_2_upcmbv.mp3",
       ga: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_3_h1a4kp.mp3",
-      tor: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_4_kl1tng.mp3"
+      tor: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_4_kl1tng.mp3",
     },
     B: {
-      ba: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_1_itfivg.mp3", 
+      ba: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_1_itfivg.mp3",
       boon: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_2_ncorah.mp3",
     },
     C: {
       chim: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_1_qcfs5u.mp3",
-      pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_2_besjij.mp3", 
-      zee: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_3_c9jbgo.mp3"
+      pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_2_besjij.mp3",
+      zee: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_3_c9jbgo.mp3",
     },
     D: {
       din: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_1_uisizq.mp3",
-      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_2_ksewju.mp3"
+      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_2_ksewju.mp3",
     },
     E: {
-      el: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_1_x7njho.mp3", 
-      e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/elephant_2_tpecbo.mp3", 
-      phant: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_3_ifv1kp.mp3"
+      el: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_1_x7njho.mp3",
+      e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/elephant_2_tpecbo.mp3",
+      phant:
+        "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_3_ifv1kp.mp3",
     },
     F: {
       frog: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/frog_1_ziaz9v.mp3",
     },
     G: {
-      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_1_ml8hee.mp3", 
+      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_1_ml8hee.mp3",
       ril: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_2_e4b1vh.mp3",
-      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_3_lj7nc5.mp3"
+      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_3_lj7nc5.mp3",
     },
     H: {
       hy: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_1_nmxsgi.mp3",
       e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_2_vbkgbo.mp3",
-      na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_3_nefma3.mp3"
+      na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_3_nefma3.mp3",
     },
     I: {
       im: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_1_uwkk50.mp3",
       pal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_2_qbm7el.mp3",
-      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_3_w5g2rc.mp3"
+      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_3_w5g2rc.mp3",
     },
     J: {
       jag: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/jaguar_1_rsytkv.mp3",
       u: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_2_yvkrbl.mp3",
-      ar: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_3_qjl6n0.mp3"
+      ar: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_3_qjl6n0.mp3",
     },
     K: {
       ko: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_1_aczrfi.mp3",
       a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_2_fzcj6v.mp3",
-      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_3_dlcaiz.mp3"
+      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_3_dlcaiz.mp3",
     },
     L: {
       le: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_1_snqqev.mp3",
-      mur: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_2_i58c0k.mp3"
+      mur: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_2_i58c0k.mp3",
     },
     M: {
       ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_1_v3cwcl.mp3",
-      caw: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_2_qhttqp.mp3"
+      caw: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_2_qhttqp.mp3",
     },
     N: {
       num: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/numbat_1_db9zmv.mp3",
-      bat: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/numbat_2_anah1d.mp3"
+      bat: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/numbat_2_anah1d.mp3",
     },
     O: {
       o: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/okapi_1_sw3dtv.mp3",
       ka: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/okapi_2_vfwlga.mp3",
-      pi: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/okapi_3_h0flxr.mp3"
+      pi: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/okapi_3_h0flxr.mp3",
     },
-    P: {  
+    P: {
       pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/panda_1_mpjyto.mp3",
-      da: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/panda_2_uczfub.mp3"
+      da: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/panda_2_uczfub.mp3",
     },
     Q: {
       quet: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/quetzal_1_m6re23.mp3",
-      zal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/quetzal_2_zrctiz.mp3"
+      zal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/quetzal_2_zrctiz.mp3",
     },
     R: {
       rhi: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/rhinoceros_1_thiixg.mp3",
       noc: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/rhinoceros_2_dwczll.mp3",
       er: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/rhinoceros_3_a5nanz.mp3",
-      os: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/rhinoceros_4_ci6fpm.mp3"
+      os: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/rhinoceros_4_ci6fpm.mp3",
     },
     S: {
-      snake: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/snake_1_uudc5b.mp3",
+      snake:
+        "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/snake_1_uudc5b.mp3",
     },
     T: {
       ti: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/tiger_1_cmeugy.mp3",
-      ger: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/tiger_2_dmfmjj.mp3"
+      ger: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/tiger_2_dmfmjj.mp3",
     },
     U: {
       u: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/unau_1_ujzyfb.mp3",
-      nau: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/unau_2_ce3igp.mp3"
+      nau: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/unau_2_ce3igp.mp3",
     },
     V: {
-      ver: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_1_xvowle.mp3", 
+      ver: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_1_xvowle.mp3",
       vet: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_2_haaszc.mp3",
       mon: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/vervet_monkey_3_v9rfek.mp3",
-      key: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/vervet_monkey_4_mxlxbg.mp3"
+      key: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/vervet_monkey_4_mxlxbg.mp3",
     },
     W: {
-      wart: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/warthog_1_iysnah.mp3", 
+      wart: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/warthog_1_iysnah.mp3",
       hog: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/warthog_2_fu4elu.mp3",
     },
     X: {
       xe: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/xenops_1_zgooqe.mp3",
-      nops: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/xenops_2_kpnjv5.mp3"
+      nops: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/xenops_2_kpnjv5.mp3",
     },
     Y: {
       yel: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_1_m8jdxg.mp3",
       low: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_2_bdw2zz.mp3",
       mon: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_3_su0kmh.mp3",
-      goose: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_4_bivqec.mp3"
+      goose:
+        "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_4_bivqec.mp3",
     },
     Z: {
-      ze: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_1_cnq15e.mp3", 
-      bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_2_gflttj.mp3"
-    }
+      ze: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_1_cnq15e.mp3",
+      bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_2_gflttj.mp3",
+    },
   });
   const [detailOpen, setDetailOpen] = useState(false);
   const [loading, isLoading] = useState(false);
@@ -773,7 +777,7 @@ export default function App() {
     const clicked = detailOpen;
     setAlphabet(newList);
     setDetailOpen(!clicked);
-    return audio.volume = 0;
+    return (audio.volume = 0);
   };
 
   const handleLike = (id) => {
@@ -796,65 +800,98 @@ export default function App() {
   // const hasAnimal = !this.state.isLoading && this.state.animal;
 
   return (
-    <div className="App">
-      {loading && <div>Loading</div>}
-      {
-        // hasAnimal  &&
-        <div className="main-body">
-          <div className="header-holder">
-            <div className="header">
-              <div className="header-title-holder">
-                <div className="header-item">
-                  <FontAwesomeIcon icon={faPaw} className="header-brand" />
+    <Router>
+      <div className="App">
+        {loading && <div>Loading</div>}
+        {
+          // hasAnimal  &&
+          <div className="main-body">
+            <div className="header-holder">
+              <div className="header">
+                <div className="header-title-holder">
+                  <div className="header-item">
+                    <FontAwesomeIcon icon={faPaw} className="header-brand" />
+                  </div>
+                  <div className="site-title">
+                    <h1 className="titles">Aby Zebra</h1>
+                  </div>
                 </div>
-                <div className="site-title">
-                  <h1 className="titles">Aby Zebra</h1>
+              </div>
+            </div>
+            {/* {detailOpen ? (
+              <CardDetail
+                alphabet={alphabet}
+                isDetailOpen={detailOpen}
+                handleOpenClose={handleOpenClose}
+                sounds={sounds.alphabet}
+                syllableSounds={syllables}
+                handleLike={handleLike}
+              />
+            ) : (
+              <ButtonList
+                handleOpenClose={handleOpenClose}
+                alphabet={alphabet}
+                // handleButtonCheck={this.handleButtonCheck}
+              />
+            )} */}
+
+            {/* Router Code */}
+            <Switch>
+              <Route
+                exact
+                path="/"
+                component={(props) => (
+                  <ButtonList
+                    {...props}
+                    handleOpenClose={handleOpenClose}
+                    alphabet={alphabet}
+                  />
+                )}
+              />
+              <Route
+                path="/letter/:id"
+                component={(props) => (
+                  <CardDetail
+                    {...props}
+                    alphabet={alphabet}
+                    isDetailOpen={detailOpen}
+                    handleOpenClose={handleOpenClose}
+                    sounds={sounds.alphabet}
+                    syllableSounds={syllables}
+                    handleLike={handleLike}
+                  />
+                )}
+              />
+            </Switch>
+            {/* End of Router Code */}
+
+            <div className="navBar-holder">
+              <div className="navBar-bar">
+                <div className="navBar-buttons">
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon
+                      icon={faBookOpenReader}
+                      className="navBar-icon"
+                    />
+                  </div>
+                  <div className="navBar-item">
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      className="navBar-icon"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          {detailOpen ? (
-            <CardDetail
-              alphabet={alphabet}
-              isDetailOpen={detailOpen}
-              handleOpenClose={handleOpenClose}
-              sounds={sounds.alphabet}
-              syllableSounds={syllables}
-              handleLike={handleLike}
-            />
-          ) : (
-            <ButtonList
-              handleOpenClose={handleOpenClose}
-              alphabet={alphabet}
-              // handleButtonCheck={this.handleButtonCheck}
-            />
-          )}
-          <div className="navBar-holder">
-            <div className="navBar-bar">
-              <div className="navBar-buttons">
-                <div className="navBar-item">
-                  <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
-                </div>
-                <div className="navBar-item">
-                  <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
-                </div>
-                <div className="navBar-item">
-                  <FontAwesomeIcon
-                    icon={faBookOpenReader}
-                    className="navBar-icon"
-                  />
-                </div>
-                <div className="navBar-item">
-                  <FontAwesomeIcon
-                    icon={faCartShopping}
-                    className="navBar-icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      }
-    </div>
+        }
+      </div>
+    </Router>
   );
 }
