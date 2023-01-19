@@ -12,6 +12,7 @@ import {
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
@@ -21,6 +22,7 @@ export default function CardDetail(props) {
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
+  const animal = props.alphabet[props.match.params.id];
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -39,51 +41,97 @@ export default function CardDetail(props) {
 
   return (
     <CardHolder>
-      {props.alphabet
-        .filter((letter) => letter.clicked)
-        .map((animal) => (
-          <CardLetter key={animal.id}>
-            <PlayingCard>
-              <XCloserHolder>
-                <DestructButton>
-                  <FontAwesomeIcon icon={faMap} />
-                </DestructButton>
-                <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
-                  <FontAwesomeIcon icon={faXmark} />
-                </XCloser>
-              </XCloserHolder>
-              <ImageHolder>
-                <img
-                  className={animal.horizontal ? "horizontal" : "vertical"}
-                  src={animal.animalImage}
-                  alt={animal.name}
-                />
-              </ImageHolder>
-              <NameHolder>
-                {isSpellingOpen ? (
-                  <SpellingCard
-                    animal={animal}
-                    sounds={props.sounds}
-                    syllableSounds={props.syllableSounds}
-                    value={animal.value}
-                    handleOpenClose={() => handleOpenClose()}
-                  />
-                ) : (
-                  <CardUtils
-                    getAudio={getAudio}
-                    handleOpenClose={handleOpenClose}
-                    handleLike={handleLike}
-                    id={animal.id}
-                    name={animal.name}
-                    animalNameSound={animal.animalNameSound}
-                    animalFacts={animal.animalFacts}
-                    isLiked={animal.isLiked}
-                  />
-                )}
-              </NameHolder>
-            </PlayingCard>
-          </CardLetter>
-        ))}
+      <CardLetter key={animal.id}>
+        <PlayingCard>
+          <XCloserHolder>
+            <DestructButton>
+              <FontAwesomeIcon icon={faMap} />
+            </DestructButton>
+            <Link to="/">
+              <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
+                <FontAwesomeIcon icon={faXmark} />
+              </XCloser>
+            </Link>
+          </XCloserHolder>
+          <ImageHolder>
+            <img
+              className={animal.horizontal ? "horizontal" : "vertical"}
+              src={animal.animalImage}
+              alt={animal.name}
+            />
+          </ImageHolder>
+          <NameHolder>
+            {isSpellingOpen ? (
+              <SpellingCard
+                animal={animal}
+                sounds={props.sounds}
+                syllableSounds={props.syllableSounds}
+                value={animal.value}
+                handleOpenClose={() => handleOpenClose()}
+              />
+            ) : (
+              <CardUtils
+                getAudio={getAudio}
+                handleOpenClose={handleOpenClose}
+                handleLike={handleLike}
+                id={animal.id}
+                name={animal.name}
+                animalNameSound={animal.animalNameSound}
+                animalFacts={animal.animalFacts}
+                isLiked={animal.isLiked}
+              />
+            )}
+          </NameHolder>
+        </PlayingCard>
+      </CardLetter>
     </CardHolder>
+    // <CardHolder>
+    //   {console.log(props.alphabet)}
+    //   {props.alphabet
+    //     .filter((letter) => letter.clicked)
+    //     .map((animal) => (
+    //       <CardLetter key={animal.id}>
+    //         <PlayingCard>
+    //           <XCloserHolder>
+    //             <DestructButton>
+    //               <FontAwesomeIcon icon={faMap} />
+    //             </DestructButton>
+    //             <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
+    //               <FontAwesomeIcon icon={faXmark} />
+    //             </XCloser>
+    //           </XCloserHolder>
+    //           <ImageHolder>
+    //             <img
+    //               className={animal.horizontal ? "horizontal" : "vertical"}
+    //               src={animal.animalImage}
+    //               alt={animal.name}
+    //             />
+    //           </ImageHolder>
+    //           <NameHolder>
+    //             {isSpellingOpen ? (
+    //               <SpellingCard
+    //                 animal={animal}
+    //                 sounds={props.sounds}
+    //                 syllableSounds={props.syllableSounds}
+    //                 value={animal.value}
+    //                 handleOpenClose={() => handleOpenClose()}
+    //               />
+    //             ) : (
+    //               <CardUtils
+    //                 getAudio={getAudio}
+    //                 handleOpenClose={handleOpenClose}
+    //                 handleLike={handleLike}
+    //                 id={animal.id}
+    //                 name={animal.name}
+    //                 animalNameSound={animal.animalNameSound}
+    //                 animalFacts={animal.animalFacts}
+    //                 isLiked={animal.isLiked}
+    //               />
+    //             )}
+    //           </NameHolder>
+    //         </PlayingCard>
+    //       </CardLetter>
+    //     ))}
+    // </CardHolder>
   );
 }
