@@ -12,6 +12,7 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { ButtonList, CardDetail } from "components";
+import { MainApp } from "App.styles";
 import "./styles.css";
 
 export default function App() {
@@ -802,7 +803,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="App">
+      <MainApp>
         {loading && <div>Loading</div>}
         {
           // hasAnimal  &&
@@ -818,9 +819,9 @@ export default function App() {
                   </div>
                 </div>
                 <div className="link-navBar">
-                  <Link to="">Home</Link> | <Link to="">Science</Link> |{" "}
-                  <Link to="">Technology</Link><Link to="">Engineering</Link>{" "}
-                  | <Link to="">Arts</Link> | <Link to="">Math</Link>
+                  <Link to="/" className="styled-link">Home</Link> | <Link to="/science" className="styled-link">Science</Link> |{" "}
+                  <Link to="/technology" className="styled-link">Technology</Link><Link to="/engineering" className="styled-link">Engineering</Link>{" "}
+                  | <Link to="/arts" className="styled-link">Arts</Link> | <Link to="/math" className="styled-link">Math</Link>
                 </div>
               </div>
             </div>
@@ -935,7 +936,7 @@ export default function App() {
             </div>
           </div>
         }
-      </div>
+      </MainApp>
     </Router>
   );
 }
