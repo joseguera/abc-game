@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { zebrAPI } from "./zebrAPI";
+import { Home, Science, Technology, Engineering, Arts, Math } from 'pages';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -818,7 +819,7 @@ export default function App() {
                 </div>
                 <div className="link-navBar">
                   <Link to="">Home</Link> | <Link to="">Science</Link> |{" "}
-                  <Link to="">Technology</Link> | <Link to="">Engineering</Link>{" "}
+                  <Link to="">Technology</Link><Link to="">Engineering</Link>{" "}
                   | <Link to="">Arts</Link> | <Link to="">Math</Link>
                 </div>
               </div>
@@ -829,6 +830,60 @@ export default function App() {
               <Route
                 exact
                 path="/"
+                component={(props) => (
+                  <Home
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/science"
+                component={(props) => (
+                  <Science
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/technology"
+                component={(props) => (
+                  <Technology
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/engineering"
+                component={(props) => (
+                  <Engineering
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/arts"
+                component={(props) => (
+                  <Arts
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/math"
+                component={(props) => (
+                  <Math
+                    {...props}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/button"
                 component={(props) => (
                   <ButtonList
                     {...props}
