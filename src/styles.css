@@ -40,10 +40,16 @@ body {
 
 /* NavBar Styles */
 
+
 .header, .nav-bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+}
+
+.header {
+  flex-direction: column;
   align-items: center;
 }
 
@@ -85,6 +91,11 @@ body {
 
 .site-title {
   font-size: 16px;
+}
+
+.link-navBar {
+  display: flex;
+  justify-content: center;
 }
 
 /* LanguageSwitch Styles */

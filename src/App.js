@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { zebrAPI } from "./zebrAPI";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -816,24 +816,13 @@ export default function App() {
                     <h1 className="titles">Aby Zebra</h1>
                   </div>
                 </div>
+                <div className="link-navBar">
+                  <Link to="">Home</Link> | <Link to="">Science</Link> |{" "}
+                  <Link to="">Technology</Link> | <Link to="">Engineering</Link>{" "}
+                  | <Link to="">Arts</Link> | <Link to="">Math</Link>
+                </div>
               </div>
             </div>
-            {/* {detailOpen ? (
-              <CardDetail
-                alphabet={alphabet}
-                isDetailOpen={detailOpen}
-                handleOpenClose={handleOpenClose}
-                sounds={sounds.alphabet}
-                syllableSounds={syllables}
-                handleLike={handleLike}
-              />
-            ) : (
-              <ButtonList
-                handleOpenClose={handleOpenClose}
-                alphabet={alphabet}
-                // handleButtonCheck={this.handleButtonCheck}
-              />
-            )} */}
 
             {/* Router Code */}
             <Switch>
