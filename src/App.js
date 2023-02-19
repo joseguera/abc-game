@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { zebrAPI } from "./zebrAPI";
-import { Home, Science, Technology, Engineering, Arts, Math } from 'pages';
+import { Home, Science, Technology, Engineering, Arts, Math } from "pages";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +14,7 @@ import {
 import { ButtonList, CardDetail } from "components";
 import { MainApp } from "App.styles";
 import "./styles.css";
+import { StyledLink, SiteTitle } from "./App.styles";
 
 export default function App() {
   ///////// IMPROVEMENT NOTE /////////
@@ -768,7 +769,8 @@ export default function App() {
   /* 
       handleClose toggles the view from the AlphabetList
       to the LetterDetail
-    */
+  */
+
   const handleOpenClose = (letter, audio = new Audio()) => {
     const newList = alphabet.map((element) => {
       if (letter.id === element.id) {
@@ -814,14 +816,13 @@ export default function App() {
                   <div className="header-item">
                     <FontAwesomeIcon icon={faPaw} className="header-brand" />
                   </div>
-                  <div className="site-title">
-                    <h1 className="titles">Aby Zebra</h1>
-                  </div>
-                </div>
-                <div className="link-navBar">
-                  <Link to="/" className="styled-link">Home</Link> | <Link to="/science" className="styled-link">Science</Link> |{" "}
-                  <Link to="/technology" className="styled-link">Technology</Link><Link to="/engineering" className="styled-link">Engineering</Link>{" "}
-                  | <Link to="/arts" className="styled-link">Arts</Link> | <Link to="/math" className="styled-link">Math</Link>
+
+                  <SiteTitle>
+                    <StyledLink to="/">
+                      <h1 className="titles">Aby Zebra</h1>
+                    </StyledLink>
+                  </SiteTitle>
+
                 </div>
               </div>
             </div>
@@ -843,6 +844,7 @@ export default function App() {
                 component={(props) => (
                   <Science
                     {...props}
+                    alphabet={alphabet}
                   />
                 )}
               />

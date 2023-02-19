@@ -1,5 +1,6 @@
 import React from "react";
+import { ButtonList } from 'components';
 
 export default function Science(props) {
-  return <h2>Hello, Science page</h2>;
+  return <ButtonList alphabet={props.alphabet} />;
 }

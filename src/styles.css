@@ -81,10 +81,6 @@ body {
   line-height: 25px;
 }
 
-.site-title {
-  font-size: 16px;
-}
-
 .link-navBar {
   width: 80%;
   display: flex;
