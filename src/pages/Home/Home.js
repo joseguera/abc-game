@@ -1,23 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
+  HomeBody,
   ButtonMatrix,
-  NavButton
+  NavButton,
+  StyledLink
 } from "./Home.styles";
 
 export default function Home(props) {
   return (
-    <>
+    <HomeBody>
       <h2>Welcome to Aby Zebra</h2>
       <ButtonMatrix>
-        <Link to="/science">
+        <StyledLink to="/science">
           <NavButton>Science</NavButton>
-        </Link>
+        </StyledLink>
         <NavButton>Technology</NavButton>
         <NavButton>Engineering</NavButton>
         <NavButton>Arts</NavButton>
         <NavButton>Math</NavButton>
       </ButtonMatrix>
-    </>
+    </HomeBody>
   );
 }

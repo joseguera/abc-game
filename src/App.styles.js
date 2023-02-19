@@ -12,3 +12,8 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 
+export const MainApp = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+

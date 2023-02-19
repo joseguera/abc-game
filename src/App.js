@@ -12,9 +12,8 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { ButtonList, CardDetail } from "components";
-import { MainApp } from "App.styles";
 import "./styles.css";
-import { StyledLink, SiteTitle } from "./App.styles";
+import { StyledLink, SiteTitle, MainApp } from "./App.styles";
 
 export default function App() {
   ///////// IMPROVEMENT NOTE /////////
