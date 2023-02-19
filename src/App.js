@@ -12,6 +12,7 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { ButtonList, CardDetail } from "components";
+import { MainApp } from "App.styles";
 import "./styles.css";
 import { StyledLink, SiteTitle } from "./App.styles";
 
@@ -804,7 +805,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="App">
+      <MainApp>
         {loading && <div>Loading</div>}
         {
           // hasAnimal  &&
@@ -815,11 +816,13 @@ export default function App() {
                   <div className="header-item">
                     <FontAwesomeIcon icon={faPaw} className="header-brand" />
                   </div>
+
                   <SiteTitle>
                     <StyledLink to="/">
                       <h1 className="titles">Aby Zebra</h1>
                     </StyledLink>
                   </SiteTitle>
+
                 </div>
               </div>
             </div>
@@ -935,7 +938,7 @@ export default function App() {
             </div>
           </div>
         }
-      </div>
+      </MainApp>
     </Router>
   );
 }
