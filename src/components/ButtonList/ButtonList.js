@@ -3,6 +3,7 @@ import { Button } from "components";
 import { ButtonMatrix, ButtonRow } from "./ButtonList.styles";
 
 export default function ButtonList(props) {
+  console.log(props.alphabet)
   return (
     <ButtonMatrix>
       {props.alphabet.map((alpha) => {
