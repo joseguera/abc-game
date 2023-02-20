@@ -17,6 +17,7 @@ export default function Button(props) {
     <Link to={`/letter/${props.alpha.id - 1}`} style={styledLink} >
       <StyledLetter
         className="alphabet-letter"
+        id={`letter-${props.alpha.id - 1}`}
       >
         <ButtonHeader>
           <Letter>{props.alpha.value}</Letter>

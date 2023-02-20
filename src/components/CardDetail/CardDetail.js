@@ -47,7 +47,7 @@ export default function CardDetail(props) {
             <DestructButton>
               <FontAwesomeIcon icon={faMap} />
             </DestructButton>
-            <Link to="/">
+            <Link to={`/science/#${animal.id}}`}>
               <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
