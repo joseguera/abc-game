@@ -895,7 +895,7 @@ export default function App() {
                 )}
               />
               <Route
-                path="/letter/:id"
+                path="/science/letter/:id"
                 component={(props) => (
                   <CardDetail
                     {...props}
