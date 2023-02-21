@@ -53,6 +53,7 @@ export const NavButton = styled.button`
     cursor: pointer;
     box-shadow: -5px 5px #558f69;
     color: #558f69;
+    background-color: #fcd783;
   }
 `;
 
