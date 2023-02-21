@@ -383,7 +383,7 @@ export default function App() {
       value: "Q",
       clicked: false,
       animalImage:
-        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/quetzal_wjwfmg.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997505/Cory-Images/quetzal_nqwjsz.png",
       name: {
         eng: "Quetzal",
         spa: "Quetzal",
@@ -427,7 +427,7 @@ export default function App() {
       value: "S",
       clicked: false,
       animalImage:
-        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/snake_mzfb57.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997504/Cory-Images/snake_tr8orp.png",
       name: {
         eng: "Snake",
         spa: "Serpiente",
