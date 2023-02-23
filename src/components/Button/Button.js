@@ -14,13 +14,13 @@ import {
 
 export default function Button(props) {
   return (
-    <Link to={`/science/letter/${props.alpha.id - 1}`} style={styledLink} >
+    <Link to={`/science/letter/${props.item.id - 1}`} style={styledLink} >
       <StyledLetter
         className="alphabet-letter"
       >
         <ButtonHeader>
-          <Letter>{props.alpha.value}</Letter>
-          {props.alpha.isLiked && (
+          <Letter>{props.item.value}</Letter>
+          {props.item.isLiked && (
             <Icon>
               <FontAwesomeIcon className="heart-icon" icon={faHeart} />
             </Icon>
@@ -28,8 +28,8 @@ export default function Button(props) {
         </ButtonHeader>
         <IconHolder>
           <AnimalIcon
-            src={props.alpha.animalImage}
-            className={props.alpha.horizontal ? "horizontal" : "vertical"}
+            src={props.item.animalImage}
+            className={props.item.horizontal ? "horizontal" : "vertical"}
             alt="none"
           />
         </IconHolder>
