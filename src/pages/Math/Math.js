@@ -1,5 +1,6 @@
 import React from "react";
+import { ButtonList } from "components";
 
 export default function Math(props) {
-  return <h2>Hello, Math page</h2>;
+  return <ButtonList list={props.numbers} />;
 }

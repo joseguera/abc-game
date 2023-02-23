@@ -3,15 +3,14 @@ import { Button } from "components";
 import { ButtonMatrix, ButtonRow } from "./ButtonList.styles";
 
 export default function ButtonList(props) {
-  console.log(props.alphabet)
   return (
     <ButtonMatrix>
-      {props.alphabet.map((alpha) => {
+      {props.list.map((item) => {
         return (
-          <ButtonRow key={alpha.id}>
+          <ButtonRow key={item.id}>
             <Button
               handleOpenClose={props.handleOpenClose}
-              alpha={alpha}
+              item={item}
               handleLike={props.handleLike}
             />
           </ButtonRow>

@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  HomeBody,
-  ButtonMatrix,
-  NavButton,
-  StyledLink
-} from "./Home.styles";
+import { HomeBody, ButtonMatrix, NavButton, StyledLink } from "./Home.styles";
 
 export default function Home(props) {
   return (
@@ -17,7 +12,9 @@ export default function Home(props) {
         <NavButton>Technology</NavButton>
         <NavButton>Engineering</NavButton>
         <NavButton>Arts</NavButton>
-        <NavButton>Math</NavButton>
+        <StyledLink to="/math">
+          <NavButton>Math</NavButton>
+        </StyledLink>
       </ButtonMatrix>
     </HomeBody>
   );
