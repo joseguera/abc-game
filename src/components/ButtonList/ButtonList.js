@@ -9,6 +9,7 @@ export default function ButtonList(props) {
         return (
           <ButtonRow key={item.id}>
             <Button
+              category={props.category}
               handleOpenClose={props.handleOpenClose}
               item={item}
               handleLike={props.handleLike}

@@ -33,7 +33,7 @@ export default function App() {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
         name: {
-          eng: "Alligator",
+          eng: "1",
           spa: "Caimán",
         },
         tiles: ["Al-li-", "ga-", "tor"],
@@ -55,7 +55,7 @@ export default function App() {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
         name: {
-          eng: "Baboon",
+          eng: "2",
           spa: "Mandril",
         },
         tiles: ["Ba-boon"],
@@ -77,7 +77,7 @@ export default function App() {
         animalImage:
           "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
         name: {
-          eng: "Chimpanzee",
+          eng: "3",
           spa: "Chimpancé",
         },
         tiles: ["Chim-", "pan-", "zee"],
@@ -1498,12 +1498,27 @@ export default function App() {
                   />
                 )}
               />
-              <Route
-                path="/science/letter/:id"
+                 <Route
+                path="/math/:id"
                 component={(props) => (
                   <CardDetail
                     {...props}
-                    alphabet={alphabet}
+                    list={numbers}
+                    category="math"
+                    isDetailOpen={detailOpen}
+                    handleOpenClose={handleOpenClose}
+                    syllableSounds={syllables}
+                    handleLike={handleLike}
+                  />
+                )}
+              />
+              <Route
+                path="/science/:id"
+                component={(props) => (
+                  <CardDetail
+                    {...props}
+                    list={alphabet}
+                    category="science"
                     isDetailOpen={detailOpen}
                     handleOpenClose={handleOpenClose}
                     sounds={sounds.alphabet}
@@ -1512,6 +1527,7 @@ export default function App() {
                   />
                 )}
               />
+           
             </Switch>
             {/* End of Router Code */}
 

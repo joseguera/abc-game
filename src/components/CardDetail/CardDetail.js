@@ -22,7 +22,7 @@ export default function CardDetail(props) {
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
-  const animal = props.alphabet[props.match.params.id];
+  const animal = props.list[props.match.params.id];
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -47,7 +47,7 @@ export default function CardDetail(props) {
             <DestructButton>
               <FontAwesomeIcon icon={faMap} />
             </DestructButton>
-            <Link to={`/science`}>
+            <Link to={`/${props.category}`}>
               <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
@@ -85,53 +85,5 @@ export default function CardDetail(props) {
         </PlayingCard>
       </CardLetter>
     </CardHolder>
-    // <CardHolder>
-    //   {console.log(props.alphabet)}
-    //   {props.alphabet
-    //     .filter((letter) => letter.clicked)
-    //     .map((animal) => (
-    //       <CardLetter key={animal.id}>
-    //         <PlayingCard>
-    //           <XCloserHolder>
-    //             <DestructButton>
-    //               <FontAwesomeIcon icon={faMap} />
-    //             </DestructButton>
-    //             <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
-    //               <FontAwesomeIcon icon={faXmark} />
-    //             </XCloser>
-    //           </XCloserHolder>
-    //           <ImageHolder>
-    //             <img
-    //               className={animal.horizontal ? "horizontal" : "vertical"}
-    //               src={animal.animalImage}
-    //               alt={animal.name}
-    //             />
-    //           </ImageHolder>
-    //           <NameHolder>
-    //             {isSpellingOpen ? (
-    //               <SpellingCard
-    //                 animal={animal}
-    //                 sounds={props.sounds}
-    //                 syllableSounds={props.syllableSounds}
-    //                 value={animal.value}
-    //                 handleOpenClose={() => handleOpenClose()}
-    //               />
-    //             ) : (
-    //               <CardUtils
-    //                 getAudio={getAudio}
-    //                 handleOpenClose={handleOpenClose}
-    //                 handleLike={handleLike}
-    //                 id={animal.id}
-    //                 name={animal.name}
-    //                 animalNameSound={animal.animalNameSound}
-    //                 animalFacts={animal.animalFacts}
-    //                 isLiked={animal.isLiked}
-    //               />
-    //             )}
-    //           </NameHolder>
-    //         </PlayingCard>
-    //       </CardLetter>
-    //     ))}
-    // </CardHolder>
   );
 }
