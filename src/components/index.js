@@ -2,6 +2,7 @@ export { default as Button } from "./Button";
 export { default as ButtonList } from "./ButtonList";
 // export { default as LanguageSwitch } from './LanguageSwitch'
 export { default as CardDetail } from "./CardDetail";
+export { default as FactorButtons } from "./FactorButtons";
 export { default as LetterTileHolder } from "./LetterTileHolder";
 export { default as NameButton } from "./NameButton";
 export { default as FactButton } from "./FactButton";

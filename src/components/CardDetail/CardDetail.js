@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SpellingCard, CardUtils } from "components";
+import { SpellingCard, CardUtils, FactorButtons } from "components";
 import {
   CardHolder,
   CardLetter,
@@ -13,7 +13,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { factorFinder, primeFactorization, removeDuplicates } from "../../zebrAPI" 
 
 export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
@@ -39,11 +38,6 @@ export default function CardDetail(props) {
   const handleLike = (id) => {
     props.handleLike(id);
   };
-
-  const factors = factorFinder(primeFactorization(animal.id));
-  const factorButtons = removeDuplicates(factors);
-
-
 
   return (
     <CardHolder>
@@ -90,13 +84,9 @@ export default function CardDetail(props) {
               )
             )}
             {props.category === "math" && (
-              <>
-                {factorButtons.map((factor) => {
-                  return (
-                    <button key={factor} style={{ width : "50px", height : "25px" }}>{factor}</button>
-                  )
-                })}
-              </>
+              <FactorButtons 
+                animal={animal} 
+              />
             )}
           </NameHolder>
         </PlayingCard>
