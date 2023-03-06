@@ -1530,31 +1530,6 @@ export default function App() {
            
             </Switch>
             {/* End of Router Code */}
-
-            {/* <div className="navBar-holder">
-              <div className="navBar-bar">
-                <div className="navBar-buttons">
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faListUl} className="navBar-icon" />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon icon={faMusic} className="navBar-icon" />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon
-                      icon={faBookOpenReader}
-                      className="navBar-icon"
-                    />
-                  </div>
-                  <div className="navBar-item">
-                    <FontAwesomeIcon
-                      icon={faCartShopping}
-                      className="navBar-icon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         }
       </MainApp>
