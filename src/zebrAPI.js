@@ -48,7 +48,7 @@ export const zebrAPI = {
 };
 
 // console.log(zebrAPI);
-console.log(zebrAPI.science.zoology.alphabet.savanna[0].name.eng);
+// console.log(zebrAPI.science.zoology.alphabet.savanna[0].name.eng);
 
 /*
 const [syllables, setSyllables] = useState({
@@ -294,20 +294,20 @@ const alphabetSyllables = {
   }
 }
 
-console.log(alphabetSyllables["A"]["al"])
 
-/*
 
-function isPrimeNumber(n) {
+
+export function isPrimeNumber(n) {
   for (var i = 2; i < n; i++) { // i will always be less than the parameter so the condition below will never allow parameter to be divisible by itself ex. (7 % 7 = 0) which would return true
     if(n % i === 0) return false; // when parameter is divisible by i, it's not a prime number so return false
   }
   return n > 1; // otherwise it's a prime number so return true (it also must be greater than 1, reason for the n > 1 instead of true)
 }
 
+console.log(isPrimeNumber(27));
 
 // Returns the prime factors of a composite number
-function primeFactorization(compositeNumber) {
+export function primeFactorization(compositeNumber) {
   let factors = [];
   let remainder = compositeNumber;
   for (let i = 2; i < compositeNumber; i++) {
@@ -324,16 +324,17 @@ function primeFactorization(compositeNumber) {
   };
   remainder = compositeNumber !== 1 ? compositeNumber : 0;
   factors.push(remainder);
+
   return factors;
 };
 
-const number = primeFactorization(29);
+const number = primeFactorization(27);
 console.log(number)
 
 // Returns all the factors that make up a composite number
 // Takes an array of prime factors
 
-function factorFinder(primeFactors) {
+export function factorFinder(primeFactors) {
   let factors = [1];
   let total = primeFactors[0];
   let rest = 1;
@@ -361,6 +362,9 @@ function factorFinder(primeFactors) {
   return factors;
 }
 
-console.log(factorFinder(number))
+export function removeDuplicates(factors) {
+  return factors.filter((item,
+    index) => factors.indexOf(item) === index);
+}
 
-*/
+console.log(removeDuplicates(factorFinder(number)))

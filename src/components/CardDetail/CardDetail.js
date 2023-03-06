@@ -13,6 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { factorFinder, primeFactorization, removeDuplicates } from "../../zebrAPI" 
 
 export default function CardDetail(props) {
   /////// IMPROVEMENT NOTE ///////
@@ -39,6 +40,11 @@ export default function CardDetail(props) {
     props.handleLike(id);
   };
 
+  const factors = factorFinder(primeFactorization(animal.id));
+  const factorButtons = removeDuplicates(factors);
+
+
+
   return (
     <CardHolder>
       <CardLetter key={animal.id}>
@@ -61,25 +67,36 @@ export default function CardDetail(props) {
             />
           </ImageHolder>
           <NameHolder>
-            {isSpellingOpen ? (
-              <SpellingCard
-                animal={animal}
-                sounds={props.sounds}
-                syllableSounds={props.syllableSounds}
-                value={animal.value}
-                handleOpenClose={() => handleOpenClose()}
-              />
-            ) : (
-              <CardUtils
-                getAudio={getAudio}
-                handleOpenClose={handleOpenClose}
-                handleLike={handleLike}
-                id={animal.id}
-                name={animal.name}
-                animalNameSound={animal.animalNameSound}
-                animalFacts={animal.animalFacts}
-                isLiked={animal.isLiked}
-              />
+            {props.category === "science" && (
+              isSpellingOpen ? (
+                <SpellingCard
+                  animal={animal}
+                  sounds={props.sounds}
+                  syllableSounds={props.syllableSounds}
+                  value={animal.value}
+                  handleOpenClose={() => handleOpenClose()}
+                />
+              ) : (
+                <CardUtils
+                  getAudio={getAudio}
+                  handleOpenClose={handleOpenClose}
+                  handleLike={handleLike}
+                  id={animal.id}
+                  name={animal.name}
+                  animalNameSound={animal.animalNameSound}
+                  animalFacts={animal.animalFacts}
+                  isLiked={animal.isLiked}
+                />
+              )
+            )}
+            {props.category === "math" && (
+              <>
+                {factorButtons.map((factor) => {
+                  return (
+                    <button key={factor} style={{ width : "50px", height : "25px" }}>{factor}</button>
+                  )
+                })}
+              </>
             )}
           </NameHolder>
         </PlayingCard>
