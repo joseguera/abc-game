@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SpellingCard, CardUtils, FactorButtons } from "components";
+import { SpellingCard, CardUtils, FactorButtons, FactorUnitAnimations } from "components";
 import {
   CardHolder,
   CardLetter,
@@ -45,7 +45,8 @@ export default function CardDetail(props) {
         <PlayingCard>
           <XCloserHolder>
             <DestructButton>
-              <FontAwesomeIcon icon={faMap} />
+              {/* <FontAwesomeIcon icon={faMap} /> */}
+              {animal.value}
             </DestructButton>
             <Link to={`/${props.category}`}>
               <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
@@ -54,15 +55,20 @@ export default function CardDetail(props) {
             </Link>
           </XCloserHolder>
           <ImageHolder>
-            <img
-              className={animal.horizontal ? "horizontal" : "vertical"}
-              src={animal.animalImage}
-              alt={animal.name}
-            />
+            {props.category === "science" && (
+              <img
+                className={animal.horizontal ? "horizontal" : "vertical"}
+                src={animal.animalImage}
+                alt={animal.name}
+              />
+            )}
+            {props.category === "math" && (
+             <FactorUnitAnimations unitNumber={animal.id} />
+            )}
           </ImageHolder>
           <NameHolder>
-            {props.category === "science" && (
-              isSpellingOpen ? (
+            {props.category === "science" &&
+              (isSpellingOpen ? (
                 <SpellingCard
                   animal={animal}
                   sounds={props.sounds}
@@ -81,13 +87,8 @@ export default function CardDetail(props) {
                   animalFacts={animal.animalFacts}
                   isLiked={animal.isLiked}
                 />
-              )
-            )}
-            {props.category === "math" && (
-              <FactorButtons 
-                animal={animal} 
-              />
-            )}
+              ))}
+            {props.category === "math" && <FactorButtons animal={animal} />}
           </NameHolder>
         </PlayingCard>
       </CardLetter>

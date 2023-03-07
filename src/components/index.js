@@ -11,3 +11,4 @@ export { default as SpellingCard } from "./SpellingCard";
 export { default as CardUtils } from "./CardUtils";
 export { default as LetterTile } from "./LetterTile";
 export { default as SyllableTile } from "./SyllableTile";
+export { default as FactorUnitAnimations } from "./FactorUnitAnimations";
