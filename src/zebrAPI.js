@@ -304,7 +304,7 @@ export function isPrimeNumber(n) {
   return n > 1; // otherwise it's a prime number so return true (it also must be greater than 1, reason for the n > 1 instead of true)
 }
 
-console.log(isPrimeNumber(27));
+// console.log(isPrimeNumber(27));
 
 // Returns the prime factors of a composite number
 export function primeFactorization(compositeNumber) {
@@ -329,7 +329,7 @@ export function primeFactorization(compositeNumber) {
 };
 
 const number = primeFactorization(27);
-console.log(number)
+// console.log(number)
 
 // Returns all the factors that make up a composite number
 // Takes an array of prime factors
@@ -363,8 +363,9 @@ export function factorFinder(primeFactors) {
 }
 
 export function removeDuplicates(factors) {
-  return factors.filter((item,
-    index) => factors.indexOf(item) === index);
+  return factors
+    .filter((item, index) => factors.indexOf(item) === index)
+    .filter((item) => item !== 0);
 }
 
-console.log(removeDuplicates(factorFinder(number)))
+// console.log(removeDuplicates(factorFinder(number)))

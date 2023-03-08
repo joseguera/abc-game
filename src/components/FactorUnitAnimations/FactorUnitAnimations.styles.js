@@ -1,11 +1,39 @@
 import styled, { keyframes } from "styled-components";
 
+export const DotPicture = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  .bigNumber {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .smallNumber {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
 export const DotHolder = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 200px;
-  gap: 5px;
+  width: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 `;
@@ -39,9 +67,10 @@ const example = keyframes`
 `;
 
 export const Dot = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: red;
   animation: ${example} 4s infinite;
+  // position: relative;
 `;

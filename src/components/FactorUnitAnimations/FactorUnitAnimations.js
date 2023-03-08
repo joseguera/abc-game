@@ -1,16 +1,31 @@
 import React from "react";
-import { DotHolder, Dot } from "./FactorUnitAnimations.styles";
+import { DotPicture, DotHolder, Dot } from "./FactorUnitAnimations.styles";
+import { CardHolder } from './../CardDetail/CardDetail.styles';
 
-export default function FactorUnitAnimations(props) {
-  const loaders = Array.apply(null, Array(props.unitNumber)).map(
+export default function FactorUnitAnimations({ unitNumber, button, value }) {
+  const cups = Array.apply(null, Array(unitNumber / value)).map(
+    function () {}
+  );
+  const beadsPerCup = unitNumber / value;
+  const beads = Array.apply(null, Array(unitNumber / beadsPerCup)).map(
     function () {}
   );
 
+  console.log(value)
+
   return (
-    <DotHolder>
-      {loaders.map((el, index) => {
-        return <Dot key={index}></Dot>;
+    <DotPicture>
+      {cups.map((el, index) => {
+        return (
+          <div className={value === 1 ? "bigNumber" : "smallNumber"} key={index}>
+            {beads.map((el2, index2) => {
+              return (
+                <Dot key={index2}></Dot>
+              )
+            })}
+          </div>
+        );
       })}
-    </DotHolder>
+    </DotPicture>
   );
 }
