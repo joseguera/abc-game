@@ -23,6 +23,8 @@ export default function CardDetail(props) {
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
   const animal = props.list[props.match.params.id];
+  const [button, setButton] = useState(1);
+  const [value, setValue] = useState(1);
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -38,6 +40,15 @@ export default function CardDetail(props) {
   const handleLike = (id) => {
     props.handleLike(id);
   };
+
+  const factorSplit = (button, value) => {
+    setButton(button);
+    setValue(value);
+  } 
+
+  // useEffect(() => {
+    
+  // })
 
   return (
     <CardHolder>
@@ -63,7 +74,7 @@ export default function CardDetail(props) {
               />
             )}
             {props.category === "math" && (
-             <FactorUnitAnimations unitNumber={animal.id} />
+             <FactorUnitAnimations unitNumber={animal.id} button={button} value={value} />
             )}
           </ImageHolder>
           <NameHolder>
@@ -88,7 +99,7 @@ export default function CardDetail(props) {
                   isLiked={animal.isLiked}
                 />
               ))}
-            {props.category === "math" && <FactorButtons animal={animal} />}
+            {props.category === "math" && <FactorButtons animal={animal} factorSplit={factorSplit} />}
           </NameHolder>
         </PlayingCard>
       </CardLetter>
