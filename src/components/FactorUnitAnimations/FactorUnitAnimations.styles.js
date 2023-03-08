@@ -16,6 +16,7 @@ export const DotPicture = styled.div`
     gap: 10px;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000000 !important;
   }
   .smallNumber {
     display: flex;
@@ -25,6 +26,7 @@ export const DotPicture = styled.div`
     gap: 10px;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000000 !important;
   }
 `;
 
