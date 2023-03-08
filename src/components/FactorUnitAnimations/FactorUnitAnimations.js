@@ -17,7 +17,7 @@ export default function FactorUnitAnimations({ unitNumber, button, value }) {
     <DotPicture>
       {cups.map((el, index) => {
         return (
-          <div className={value > 8 ? "smallNumber" : "bigNumber"} key={index}>
+          <div className={value > 5 ? "smallNumber" : "bigNumber"} key={index}>
             {beads.map((el2, index2) => {
               return (
                 <Dot key={index2}></Dot>
