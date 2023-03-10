@@ -4,7 +4,7 @@ import {
   factorFinder,
   primeFactorization,
   removeDuplicates,
-} from "../../zebrAPI";
+} from "../../utils/utils";
 import { ButtonHolder, NumberButton } from "./FactorButtons.styles";
 
 export default function FactorButtons(props) {
