@@ -1008,7 +1008,7 @@ export default function App() {
       value: "R",
       clicked: false,
       animalImage:
-        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1678245750/Cory-Images/rhino_hwzyv2.png",
       name: {
         eng: "Rhinoceros",
         spa: "Rinoceronte",
@@ -1052,7 +1052,7 @@ export default function App() {
       value: "T",
       clicked: false,
       animalImage:
-        "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
+        "https://res.cloudinary.com/djqxogkfw/image/upload/v1678245750/Cory-Images/tiger_fxkfho.png",
       name: {
         eng: "Tiger",
         spa: "Tigre",
