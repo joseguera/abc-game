@@ -11,7 +11,9 @@ export default function Home(props) {
         </StyledLink>
         <NavButton>Technology</NavButton>
         <NavButton>Engineering</NavButton>
-        <NavButton>Arts</NavButton>
+        <StyledLink to="/arts">
+          <NavButton>Arts</NavButton>
+        </StyledLink>
         <StyledLink to="/math">
           <NavButton>Math</NavButton>
         </StyledLink>
