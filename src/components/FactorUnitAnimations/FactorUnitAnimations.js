@@ -11,7 +11,6 @@ export default function FactorUnitAnimations({ unitNumber, button, value }) {
     function () {}
   );
 
-  console.log(value)
 
   return (
     <DotPicture>

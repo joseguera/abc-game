@@ -27,7 +27,7 @@ export default function CardDetail(props) {
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
-  const animal = props.list[props.match.params.id];
+  const item = props.list[props.match.params.id];
   const [button, setButton] = useState(1);
   const [value, setValue] = useState(1);
 
@@ -42,10 +42,6 @@ export default function CardDetail(props) {
     setAudio(audio);
   };
 
-  const handleLike = (id) => {
-    props.handleLike(id);
-  };
-
   const factorSplit = (button, value) => {
     setButton(button);
     setValue(value);
@@ -57,15 +53,15 @@ export default function CardDetail(props) {
 
   return (
     <CardHolder>
-      <CardLetter key={animal.id}>
+      <CardLetter key={item.id}>
         <PlayingCard>
           <XCloserHolder>
             <DestructButton>
               {/* <FontAwesomeIcon icon={faMap} /> */}
-              {animal.value}
+              {item.value}
             </DestructButton>
             <Link to={`/${props.category}`}>
-              <XCloser onClick={() => props.handleOpenClose(animal, audio)}>
+              <XCloser onClick={() => props.handleOpenClose(item, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
             </Link>
@@ -74,15 +70,15 @@ export default function CardDetail(props) {
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(props.category === "science" || props.category === "arts") && (
               <img
-                className={animal.horizontal ? "horizontal" : "vertical"}
-                src={animal.animalImage}
-                alt={animal.name}
+                className={item.horizontal ? "horizontal" : "vertical"}
+                src={item.animalImage}
+                alt={item.name}
               />
             )}
             {/* ///// MATH Image Logic ///// */}
             {props.category === "math" && (
               <FactorUnitAnimations
-                unitNumber={animal.id}
+                unitNumber={item.id}
                 button={button}
                 value={value}
               />
@@ -93,27 +89,29 @@ export default function CardDetail(props) {
             {(props.category === "science" || props.category === "arts") &&
               (isSpellingOpen ? (
                 <SpellingCard
-                  animal={animal}
+                  list={props.list}
                   sounds={props.sounds}
                   syllableSounds={props.syllableSounds}
-                  value={animal.value}
+                  value={item.value}
                   handleOpenClose={() => handleOpenClose()}
                 />
               ) : (
                 <CardUtils
+                  list={props.list}
                   getAudio={getAudio}
                   handleOpenClose={handleOpenClose}
-                  handleLike={handleLike}
-                  id={animal.id}
-                  name={animal.name}
-                  animalNameSound={animal.animalNameSound}
-                  animalFacts={animal.animalFacts}
-                  isLiked={animal.isLiked}
+                  handleLike={props.handleLike}
+                  id={item.id}
+                  category={props.category}
+                  name={item.name}
+                  animalNameSound={item.animalNameSound}
+                  animalFacts={item.animalFacts}
+                  isLiked={item.isLiked}
                 />
               ))}
             {/* ///// MATH Card Title Logic ///// */}
             {props.category === "math" && (
-              <FactorButtons animal={animal} factorSplit={factorSplit} />
+              <FactorButtons item={item} factorSplit={factorSplit} />
             )}
           </NameHolder>
         </PlayingCard>

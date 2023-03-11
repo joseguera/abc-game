@@ -799,7 +799,7 @@ export const artsArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/baboon_fact3_a7j7vh.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: 3,

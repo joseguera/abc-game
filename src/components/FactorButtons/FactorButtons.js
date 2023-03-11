@@ -8,7 +8,7 @@ import {
 import { ButtonHolder, NumberButton } from "./FactorButtons.styles";
 
 export default function FactorButtons(props) {
-  const factors = factorFinder(primeFactorization(props.animal.id));
+  const factors = factorFinder(primeFactorization(props.item.id));
   const factorButtons = removeDuplicates(factors);
   const factorValues = [...factorButtons].reverse();
 

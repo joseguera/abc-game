@@ -13,8 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpellCheck, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function CardUtils(props) {
-  const handleLike = (id) => {
-    props.handleLike(id);
+  const handleLike = (id, category, list) => {
+    props.handleLike(id, category, list);
   };
 
   return (
@@ -45,11 +45,11 @@ export default function CardUtils(props) {
           getAudio={props.getAudio}
         />
         {props.isLiked ? (
-          <IconHeartLiked onClick={() => handleLike(props.id)}>
+          <IconHeartLiked onClick={() => handleLike(props.id, props.category, props.list)}>
             <FontAwesomeIcon icon={faHeart} />
           </IconHeartLiked>
         ) : (
-          <IconHeartNotLiked onClick={() => handleLike(props.id)}>
+          <IconHeartNotLiked onClick={() => handleLike(props.id, props.category, props.list)}>
             <FontAwesomeIcon icon={faHeart} />
           </IconHeartNotLiked>
         )}

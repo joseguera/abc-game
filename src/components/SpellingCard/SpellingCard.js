@@ -22,9 +22,9 @@ export default function SpellingCard(props) {
           value={props.value}
           sounds={props.sounds}
           syllableSounds={props.syllableSounds}
-          tiles={props.animal.tiles}
-          syllables={props.animal.syllables}
-          name={props.animal.name}
+          tiles={props.list.tiles}
+          syllables={props.list.syllables}
+          name={props.list.name}
           isSpelled={isSpelled}
         />
         <IconHolder>
