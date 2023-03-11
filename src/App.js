@@ -22,7 +22,6 @@ import "./styles.css";
 import { StyledLink, SiteTitle, MainApp } from "./App.styles";
 
 export default function App() {
-
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
   const [sounds, setSounds] = useState(alphabetLetterSounds);
@@ -62,22 +61,29 @@ export default function App() {
     return (audio.volume = 0);
   };
 
-  const handleLike = (id) => {
-    const newList = animals.map((buttonValue) => {
+  const handleLike = (id, category, list) => {
+    const newList = list.map((buttonValue) => {
       if (id === buttonValue.id) {
         buttonValue.isLiked =
           String(buttonValue.isLiked) === "true" ? false : true;
       }
       return buttonValue;
     });
-    setAnimals(newList);
+
+    if (category === "science") {
+      setAnimals(newList);
+    }
+    if (category === "arts") {
+      setInstruments(newList);
+    }
+    if (category === "math") {
+      setNumbers(newList);
+    }
   };
 
   //////////////////////////////////////////
   ///////// PARENT FUNCTIONS - END /////////
   //////////////////////////////////////////
-
-
 
   /////////////////////////////////////
   ///////// IMPROVEMENT NOTES /////////
