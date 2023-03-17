@@ -9,7 +9,7 @@ export const Utils = styled.div`
   width: 320px;
 `;
 
-export const NameTitle = styled.div`
+export const NameHolder = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

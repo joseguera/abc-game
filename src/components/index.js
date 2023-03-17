@@ -1,7 +1,6 @@
 export { default as Button } from "./Button";
 export { default as ButtonList } from "./ButtonList";
 // export { default as LanguageSwitch } from './LanguageSwitch'
-export { default as CardDetail } from "./CardDetail";
 export { default as FactorButtons } from "./FactorButtons";
 export { default as LetterTileHolder } from "./LetterTileHolder";
 export { default as NameButton } from "./NameButton";
@@ -11,3 +10,5 @@ export { default as CardUtils } from "./CardUtils";
 export { default as LetterTile } from "./LetterTile";
 export { default as SyllableTile } from "./SyllableTile";
 export { default as FactorUnitAnimations } from "./FactorUnitAnimations";
+export { default as Menu } from "./Menu";
+export { default as Header } from "./Header";

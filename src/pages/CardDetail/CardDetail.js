@@ -47,10 +47,6 @@ export default function CardDetail(props) {
     setValue(value);
   };
 
-  // useEffect(() => {
-
-  // })
-
   return (
     <CardHolder>
       <CardLetter key={item.id}>
