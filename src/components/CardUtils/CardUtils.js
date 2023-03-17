@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NameButton, FactButton } from "components";
 import {
   Utils,
-  NameTitle,
+  NameHolder,
   Name,
   Icon,
   IconHolder,
@@ -12,44 +12,44 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpellCheck, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-export default function CardUtils(props) {
+export default function CardUtils({ name, animalNameSound, animalFacts, getAudio, id, category, list, handleOpenClose, isLiked }, props) {
   const handleLike = (id, category, list) => {
     props.handleLike(id, category, list);
   };
 
   return (
     <Utils>
-      <NameTitle>
+      <NameHolder>
         <div>
-          {props.name.eng.length > 10 ? (
-            <div className="name">{props.name.eng}</div>
+          {name.eng.length > 10 ? (
+            <div className="name">{name.eng}</div>
           ) : (
-            <Name>{props.name.eng}</Name>
+            <Name>{name.eng}</Name>
           )}
         </div>
-        <Icon onClick={() => props.handleOpenClose()}>
+        <Icon onClick={() => handleOpenClose()}>
           <button>
             <FontAwesomeIcon icon={faSpellCheck} />
           </button>
         </Icon>
-      </NameTitle>
+      </NameHolder>
       <IconHolder>
         <NameButton
-          name={props.name.eng}
-          animalNameSound={props.animalNameSound}
+          name={name.eng}
+          animalNameSound={animalNameSound}
         />
         <FactButton
-          name={props.name.eng}
-          animalNameSound={props.animalNameSound}
-          animalFacts={props.animalFacts}
-          getAudio={props.getAudio}
+          name={name.eng}
+          animalNameSound={animalNameSound}
+          animalFacts={animalFacts}
+          getAudio={getAudio}
         />
-        {props.isLiked ? (
-          <IconHeartLiked onClick={() => handleLike(props.id, props.category, props.list)}>
+        {isLiked ? (
+          <IconHeartLiked onClick={() => handleLike(id, category, list)}>
             <FontAwesomeIcon icon={faHeart} />
           </IconHeartLiked>
         ) : (
-          <IconHeartNotLiked onClick={() => handleLike(props.id, props.category, props.list)}>
+          <IconHeartNotLiked onClick={() => handleLike(id, category, list)}>
             <FontAwesomeIcon icon={faHeart} />
           </IconHeartNotLiked>
         )}

@@ -6,20 +6,19 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { Home, Science, Technology, Engineering, Arts, Math } from "pages";
+import { Home, CardDetail, Science, Technology, Engineering, Arts, Math } from "pages";
+import { Header, Menu } from "components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faListUl,
-  faPaw,
   faMusic,
   faBookOpenReader,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
-import { ButtonList, CardDetail } from "components";
 import "./styles.css";
-import { StyledLink, SiteTitle, MainApp } from "./App.styles";
+import { MainApp } from "./App.styles";
 
 export default function App() {
   // SCIENCE
@@ -37,6 +36,7 @@ export default function App() {
   const [numbers, setNumbers] = useLocalStorage("numbers", mathArray);
 
   const [detailOpen, setDetailOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);    
   const [loading, isLoading] = useState(false);
 
   ////////////////////////////////////////////
@@ -81,6 +81,11 @@ export default function App() {
     }
   };
 
+  const openMenu = () => {
+    const menu = menuOpen;
+    setMenuOpen(!menu);
+  } 
+
   //////////////////////////////////////////
   ///////// PARENT FUNCTIONS - END /////////
   //////////////////////////////////////////
@@ -99,27 +104,14 @@ export default function App() {
         {
           // hasAnimal  &&
           <div className="main-body">
-            <div className="header-holder">
-              <div className="header">
-                <div className="header-title-holder">
-                  <div className="header-item">
-                    <FontAwesomeIcon icon={faPaw} className="header-brand" />
-                  </div>
-                  <SiteTitle>
-                    <StyledLink to="/">
-                      <h1 className="titles">Aby Zebra</h1>
-                    </StyledLink>
-                  </SiteTitle>
-                </div>
-              </div>
-            </div>
-
+            <Header openMenu={openMenu} />
+            <Menu menuOpen={menuOpen} />
             {/* Start of Router Code */}
             <Switch>
               <Route
                 exact
                 path="/"
-                component={(props) => <Home {...props} />}
+                component={(props) => <Home {...props} menuOpen={menuOpen} />}
               />
               <Route
                 exact

@@ -1,5 +1,7 @@
 // Design for zebrAPI which is the backbone of the Aby Zebra web app
 
+import electric_bass from './images/instruments/electric_bass.png'
+
 /////////////////////////////
 ////////// SCIENCE //////////
 /////////////////////////////
@@ -849,8 +851,7 @@ export const artsArray = [
     id: 5,
     value: "E",
     clicked: false,
-    animalImage:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
+    animalImage: electric_bass,
     name: {
       eng: "Electric Bass",
       spa: "Elefante",
