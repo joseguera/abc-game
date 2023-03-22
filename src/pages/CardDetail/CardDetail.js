@@ -20,6 +20,7 @@ import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function CardDetail(props) {
+
   /////// IMPROVEMENT NOTE ///////
   /*
     If user clicks on the animalImage => "The alligator says [alligator sound]"
