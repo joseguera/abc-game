@@ -1,5 +1,6 @@
 // Design for zebrAPI which is the backbone of the Aby Zebra web app
 
+import aeolian_harp from './images/instruments/aeolian_harp.png'
 import electric_bass from './images/instruments/electric_bass.png'
 
 /////////////////////////////
@@ -763,8 +764,7 @@ export const artsArray = [
     id: 1,
     value: "A",
     clicked: false,
-    animalImage:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
+    animalImage: aeolian_harp,
     name: {
       eng: "Aeolian Harp",
       spa: "Caimán",
