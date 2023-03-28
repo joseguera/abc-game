@@ -6,7 +6,7 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { Home, CardDetail, Science, Technology, Engineering, Arts, Math } from "pages";
+import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math } from "pages";
 import { Header, Menu } from "components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
@@ -105,7 +105,7 @@ export default function App() {
           // hasAnimal  &&
           <div className="main-body">
             <Header openMenu={openMenu} />
-            <Menu menuOpen={menuOpen} />
+            {menuOpen && <Menu openMenu={openMenu} />}
             {/* Start of Router Code */}
             <Switch>
               <Route
@@ -139,6 +139,21 @@ export default function App() {
                 exact
                 path="/math"
                 component={(props) => <Math {...props} numbers={numbers} />}
+              />
+              <Route
+                exact
+                path="/about"
+                component={(props) => <About {...props} />}
+              />
+              <Route
+                exact
+                path="/contact"
+                component={(props) => <Contact {...props} />}
+              />
+              <Route
+                exact
+                path="/aby-store"
+                component={(props) => <Shop {...props} />}
               />
               <Route
                 path="/science/:id"
