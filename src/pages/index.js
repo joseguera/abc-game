@@ -7,3 +7,4 @@ export { default as Arts } from './Arts';
 export { default as Math } from "./Math";
 export { default as About } from "./About";
 export { default as Contact } from "./Contact";
+export { default as Shop } from "./Shop";

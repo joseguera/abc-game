@@ -11,9 +11,10 @@ body {
   width: 428px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #fde7b4;
+  min-height: 100vh;
 }
 
 /* LanguageSwitch Styles */

@@ -1,19 +1,27 @@
 import React from "react";
-import { MenuHolder, MenuItem } from "./Menu.styles";
+import { ModalBackground, MenuHolder, MenuItem, StyledLink } from "./Menu.styles";
 
-export default function Menu({ menuOpen }) {
+export default function Menu({ openMenu }) {
+
   return (
-    <MenuHolder>
-      {menuOpen ? (
-          <div className="show">
-            <MenuItem>Home</MenuItem>
+    <>
+      <ModalBackground onClick={() => openMenu()}/>
+      <MenuHolder>
+        <div className="show">
+          <StyledLink to="/" onClick={() => openMenu()}>
+            <MenuItem >Home</MenuItem>
+          </StyledLink>
+          <StyledLink to="/about" onClick={() => openMenu()}>
             <MenuItem>About</MenuItem>
+          </StyledLink>
+          <StyledLink to="/aby-store" onClick={() => openMenu()}>
             <MenuItem>Aby's Store</MenuItem>
+          </StyledLink>
+          <StyledLink to="/contact" onClick={() => openMenu()}>
             <MenuItem>Contact</MenuItem>
-          </div>
-      ) : (
-          <div className="hide"></div>
-      )}
-    </MenuHolder>
+          </StyledLink>
+        </div>
+      </MenuHolder>
+    </>
   );
 }
