@@ -37,6 +37,7 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
         <NameButton
           name={name.eng}
           animalNameSound={animalNameSound}
+          category={category}
         />
         <FactButton
           name={name.eng}

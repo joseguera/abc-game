@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Icon, IconDisabled } from "./NameButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeLow } from "@fortawesome/free-solid-svg-icons";
+import { faPaw, faMusic } from "@fortawesome/free-solid-svg-icons";
 
 export default function NameButton(props) {
   const playing = useSelector((state) => state.playing.value);
@@ -21,11 +21,11 @@ export default function NameButton(props) {
     <>
       {playing ? (
         <Icon>
-          <FontAwesomeIcon icon={faVolumeLow} onClick={() => playAudio()} />
+          <FontAwesomeIcon icon={props.category === "science" ? faPaw : faMusic} onClick={() => playAudio()} />
         </Icon>
       ) : (
         <IconDisabled>
-          <FontAwesomeIcon icon={faVolumeLow} />
+          <FontAwesomeIcon icon={props.category === "science" ? faPaw : faMusic} />
         </IconDisabled>
       )}
     </>
