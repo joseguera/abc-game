@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { animalFactCitations } from "../../zebrAPI";
 import { AboutHolder, SteamHeading } from "./About.styles";
 
 export default function About(props) {
   const [steamCategories, setSteamCategories] = useState({
     science: { click: false },
-    arts: { click: false }
+    arts: { click: false },
   });
   const [clicked, setClicked] = useState(false);
 
   function openCitations(id) {
     if (id === "science") {
-      setSteamCategories({ ...steamCategories, science: { click: !clicked } })
+      setSteamCategories({ ...steamCategories, science: { click: !clicked } });
     }
     if (id === "arts") {
-      setSteamCategories({ ...steamCategories, arts: { click: !clicked } })
+      setSteamCategories({ ...steamCategories, arts: { click: !clicked } });
     }
     let showCitation = clicked;
     setClicked(!showCitation);
@@ -24,7 +25,18 @@ export default function About(props) {
   return (
     <AboutHolder>
       <h2>About</h2>
-      <p>These are the links we used to create our fun facts:</p>
+      <p>
+        These are the links we used to create our fun facts:
+        <br />
+        <span>
+          <i>
+            NOTE: We've carefully vetted these links to ensure that their page
+            content was child-friendly. However, we cannot control the ads or
+            links to other pages on these sites. Parental discretion is advised.
+          </i>
+        </span>
+      </p>
+
       <div>
         <h3>Citations</h3>
         <SteamHeading onClick={() => openCitations("science")}>
@@ -36,19 +48,16 @@ export default function About(props) {
           )}
         </SteamHeading>
         {steamCategories.science.click && (
-          <div>
-            <ul>
-              <li>link 1</li>
-              <li>link 2</li>
-              <li>link 3</li>
-              <li>link 4</li>
-              <li>link 5</li>
-              <li>link 6</li>
-              <li>link 7</li>
-              <li>link 8</li>
-              <li>link 9</li>
-              <li>link 10</li>
-            </ul>
+          <div style={{ width: "300px", fontSize: "12px" }}>
+              {Object.values(animalFactCitations).map((fact, idx) => {
+                return (
+                  <ul key={idx}>
+                    <li><a href={fact.F1}>{fact.F1}</a></li>
+                    <li><a href={fact.F2}>{fact.F2}</a></li>
+                    <li><a href={fact.F3}>{fact.F3}</a></li>
+                  </ul>
+                );
+              })}
           </div>
         )}
         <SteamHeading onClick={() => openCitations("arts")}>
