@@ -52,9 +52,9 @@ export default function About(props) {
               {Object.values(animalFactCitations).map((fact, idx) => {
                 return (
                   <ul key={idx}>
-                    <li><a href={fact.F1}>{fact.F1}</a></li>
-                    <li><a href={fact.F2}>{fact.F2}</a></li>
-                    <li><a href={fact.F3}>{fact.F3}</a></li>
+                    <li><a href={fact.F1} target="_blank" rel="noopener noreferrer">{fact.F1}</a></li>
+                    <li><a href={fact.F2} target="_blank" rel="noopener noreferrer">{fact.F2}</a></li>
+                    <li><a href={fact.F3} target="_blank" rel="noopener noreferrer">{fact.F3}</a></li>
                   </ul>
                 );
               })}
