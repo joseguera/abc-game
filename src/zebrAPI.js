@@ -8,7 +8,7 @@ import electric_bass from "./images/instruments/electric_bass.png";
 
 export const scienceArray = [
   {
-    id: 1,
+    id: "alligator",
     value: "A",
     clicked: false,
     animalImage:
@@ -30,7 +30,7 @@ export const scienceArray = [
     isLiked: true,
   },
   {
-    id: 2,
+    id: "baboon",
     value: "B",
     clicked: false,
     animalImage:
@@ -52,7 +52,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 3,
+    id: "chimpanzee",
     value: "C",
     clicked: false,
     animalImage:
@@ -74,7 +74,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 4,
+    id: "dingo",
     value: "D",
     clicked: false,
     animalImage:
@@ -96,7 +96,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 5,
+    id: "elephant",
     value: "E",
     clicked: false,
     animalImage:
@@ -118,7 +118,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 6,
+    id: "frog",
     value: "F",
     clicked: false,
     animalImage:
@@ -140,7 +140,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 7,
+    id: "gorilla",
     value: "G",
     clicked: false,
     animalImage:
@@ -162,7 +162,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 8,
+    id: "hyena",
     value: "H",
     clicked: false,
     animalImage:
@@ -184,7 +184,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 9,
+    id: "impala",
     value: "I",
     clicked: false,
     animalImage:
@@ -206,7 +206,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 10,
+    id: "jaguar",
     value: "J",
     clicked: false,
     animalImage:
@@ -228,7 +228,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 11,
+    id: "koala",
     value: "K",
     clicked: false,
     animalImage:
@@ -250,7 +250,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 12,
+    id: "lemur",
     value: "L",
     clicked: false,
     animalImage:
@@ -272,7 +272,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 13,
+    id: "macaw",
     value: "M",
     clicked: false,
     animalImage:
@@ -294,7 +294,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 14,
+    id: "numbat",
     value: "N",
     clicked: false,
     animalImage:
@@ -316,7 +316,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 15,
+    id: "okapi",
     value: "O",
     clicked: false,
     animalImage:
@@ -338,7 +338,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 16,
+    id: "panda",
     value: "P",
     clicked: false,
     animalImage:
@@ -360,7 +360,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 17,
+    id: "quetzal",
     value: "Q",
     clicked: false,
     animalImage:
@@ -382,7 +382,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 18,
+    id: "rhinoceros",
     value: "R",
     clicked: false,
     animalImage:
@@ -404,7 +404,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 19,
+    id: "snake",
     value: "S",
     clicked: false,
     animalImage:
@@ -426,7 +426,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 20,
+    id: "tiger",
     value: "T",
     clicked: false,
     animalImage:
@@ -448,7 +448,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 21,
+    id: "unau",
     value: "U",
     clicked: false,
     animalImage:
@@ -470,7 +470,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 22,
+    id: "vervet-monkey",
     value: "V",
     clicked: false,
     animalImage:
@@ -495,7 +495,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 23,
+    id: "warthog",
     value: "W",
     clicked: false,
     animalImage:
@@ -517,7 +517,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 24,
+    id: "xenops",
     value: "X",
     clicked: false,
     animalImage:
@@ -539,7 +539,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 25,
+    id: "yellow-mongoose",
     value: "Y",
     clicked: false,
     animalImage:
@@ -564,7 +564,7 @@ export const scienceArray = [
     isLiked: false,
   },
   {
-    id: 26,
+    id: "zebra",
     value: "Z",
     clicked: false,
     animalImage:
@@ -742,6 +742,10 @@ export const alphabetLetterSounds = {
   },
 }
 
+export const animalFactCitations = {
+
+}
+
 ////////////////////////////////
 ////////// TECHNOLOGY //////////
 ////////////////////////////////
@@ -760,7 +764,7 @@ export const alphabetLetterSounds = {
 
 export const artsArray = [
   {
-    id: 1,
+    id: "aeolian-harp",
     value: "A",
     clicked: false,
     animalImage: "https://res.cloudinary.com/djqxogkfw/image/upload/v1680238445/images/instruments/aeolian_harp.png",
@@ -781,7 +785,7 @@ export const artsArray = [
     isLiked: true,
   },
   {
-    id: 2,
+    id: "bell-tree",
     value: "B",
     clicked: false,
     animalImage:
@@ -803,7 +807,7 @@ export const artsArray = [
     isLiked: true,
   },
   {
-    id: 3,
+    id: "cuica",
     value: "C",
     clicked: false,
     animalImage:
@@ -825,7 +829,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 4,
+    id: "didgeridoo",
     value: "D",
     clicked: false,
     animalImage:
@@ -847,7 +851,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 5,
+    id: "electric-bass",
     value: "E",
     clicked: false,
     animalImage: electric_bass,
@@ -868,7 +872,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 6,
+    id: "french-horn",
     value: "F",
     clicked: false,
     animalImage:
@@ -890,7 +894,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 7,
+    id: "gamelatron",
     value: "G",
     clicked: false,
     animalImage:
@@ -912,7 +916,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 8,
+    id: "harmonica",
     value: "H",
     clicked: false,
     animalImage:
@@ -934,7 +938,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 9,
+    id: "inci",
     value: "I",
     clicked: false,
     animalImage:
@@ -956,7 +960,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 10,
+    id: "janggu",
     value: "J",
     clicked: false,
     animalImage:
@@ -978,7 +982,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 11,
+    id: "khaen",
     value: "K",
     clicked: false,
     animalImage:
@@ -1000,7 +1004,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 12,
+    id: "leier",
     value: "L",
     clicked: false,
     animalImage:
@@ -1022,7 +1026,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 13,
+    id: "mbira",
     value: "M",
     clicked: false,
     animalImage:
@@ -1044,7 +1048,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 14,
+    id: "native-american-flute",
     value: "N",
     clicked: false,
     animalImage:
@@ -1066,7 +1070,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 15,
+    id: "oboe",
     value: "O",
     clicked: false,
     animalImage:
@@ -1088,7 +1092,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 16,
+    id: "panpipes",
     value: "P",
     clicked: false,
     animalImage:
@@ -1110,7 +1114,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 17,
+    id: "quijada-de-burro",
     value: "Q",
     clicked: false,
     animalImage:
@@ -1132,7 +1136,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 18,
+    id: "rabab",
     value: "R",
     clicked: false,
     animalImage:
@@ -1154,7 +1158,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 19,
+    id: "sitar",
     value: "S",
     clicked: false,
     animalImage:
@@ -1176,7 +1180,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 20,
+    id: "taiko",
     value: "T",
     clicked: false,
     animalImage:
@@ -1198,7 +1202,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 21,
+    id: "ukulele",
     value: "U",
     clicked: false,
     animalImage:
@@ -1220,7 +1224,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 22,
+    id: "violin",
     value: "V",
     clicked: false,
     animalImage:
@@ -1245,7 +1249,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 23,
+    id: "waterphone",
     value: "W",
     clicked: false,
     animalImage:
@@ -1267,7 +1271,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 24,
+    id: "xalam",
     value: "X",
     clicked: false,
     animalImage:
@@ -1289,7 +1293,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 25,
+    id: "yuka",
     value: "Y",
     clicked: false,
     animalImage:
@@ -1314,7 +1318,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: 26,
+    id: "Zarb",
     value: "Z",
     clicked: false,
     animalImage:
@@ -1343,14 +1347,14 @@ export const artsArray = [
 
 export const mathArray = [
   {
-    id: 1,
+    id: "1",
     value: 1,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725655/Cory-Images/alligator_e1xwoj.png",
     name: {
-      eng: "1",
-      spa: "Caimán",
+      eng: "one",
+      spa: "uno",
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
@@ -1365,14 +1369,14 @@ export const mathArray = [
     isLiked: true,
   },
   {
-    id: 2,
+    id: "2",
     value: 2,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/baboon_jr7qvu.png",
     name: {
-      eng: "2",
-      spa: "Mandril",
+      eng: "two",
+      spa: "dos",
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
@@ -1387,14 +1391,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 3,
+    id: "3",
     value: 3,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
     name: {
-      eng: "3",
-      spa: "Chimpancé",
+      eng: "three",
+      spa: "tres",
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
@@ -1409,14 +1413,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 4,
+    id: "4",
     value: 4,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
     name: {
-      eng: "Dingo",
-      spa: "Dingo",
+      eng: "four",
+      spa: "cuatro",
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
@@ -1431,14 +1435,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 5,
+    id: "5",
     value: 5,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
     name: {
-      eng: "Elephant",
-      spa: "Elefante",
+      eng: "five",
+      spa: "cinco",
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
@@ -1453,14 +1457,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 6,
+    id: "6",
     value: 6,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
     name: {
-      eng: "Frog",
-      spa: "Rana",
+      eng: "six",
+      spa: "seis",
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
@@ -1475,14 +1479,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 7,
+    id: "7",
     value: 7,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
     name: {
-      eng: "Gorilla",
-      spa: "Gorila",
+      eng: "seven",
+      spa: "siete",
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
@@ -1497,14 +1501,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 8,
+    id: "8",
     value: 8,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1667582162/Cory-Images/hyena_dzhabn.png",
     name: {
-      eng: "Hyena",
-      spa: "Hiena",
+      eng: "eight",
+      spa: "ocho",
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
@@ -1519,14 +1523,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 9,
+    id: "9",
     value: 9,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317903/Cory-Images/impala_qbglhz.png",
     name: {
-      eng: "Impala",
-      spa: "Impala",
+      eng: "nine",
+      spa: "nueve",
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
@@ -1541,14 +1545,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 10,
+    id: "10",
     value: 10,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
     name: {
-      eng: "Jaguar",
-      spa: "Jaguar",
+      eng: "ten",
+      spa: "diez",
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
@@ -1563,14 +1567,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 11,
+    id: "11",
     value: 11,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
     name: {
-      eng: "Koala",
-      spa: "Coala",
+      eng: "eleven",
+      spa: "once",
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
@@ -1585,14 +1589,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 12,
+    id: "12",
     value: 12,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317901/Cory-Images/lemur_k4gg9o.png",
     name: {
-      eng: "Lemur",
-      spa: "Lémur",
+      eng: "twelve",
+      spa: "doce",
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
@@ -1607,14 +1611,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 13,
+    id: "13",
     value: 13,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
     name: {
-      eng: "Macaw",
-      spa: "Guacamaya",
+      eng: "thirteen",
+      spa: "trece",
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
@@ -1629,14 +1633,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 14,
+    id: "14",
     value: 14,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317909/Cory-Images/numbat_bwu8od.png",
     name: {
-      eng: "Numbat",
-      spa: "Numbat",
+      eng: "fourteen",
+      spa: "catorce",
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
@@ -1651,14 +1655,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 15,
+    id: "15",
     value: 15,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/okapi_m5hjmr.png",
     name: {
-      eng: "Okapi",
-      spa: "Okapi",
+      eng: "fifteen",
+      spa: "quince",
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
@@ -1673,14 +1677,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 16,
+    id: "16",
     value: 16,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
     name: {
-      eng: "Panda",
-      spa: "Panda",
+      eng: "sixteen",
+      spa: "dieciséis",
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
@@ -1695,14 +1699,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 17,
+    id: "17",
     value: 17,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997505/Cory-Images/quetzal_nqwjsz.png",
     name: {
-      eng: "Quetzal",
-      spa: "Quetzal",
+      eng: "seventeen",
+      spa: "diecisiete",
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
@@ -1717,14 +1721,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 18,
+    id: "18",
     value: 18,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
     name: {
-      eng: "Rhinoceros",
-      spa: "Rinoceronte",
+      eng: "eighteen",
+      spa: "dieciocho",
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
@@ -1739,14 +1743,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 19,
+    id: "19",
     value: 19,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997504/Cory-Images/snake_tr8orp.png",
     name: {
-      eng: "Snake",
-      spa: "Serpiente",
+      eng: "nineteen",
+      spa: "diecinueve",
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
@@ -1761,14 +1765,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 20,
+    id: "20",
     value: 20,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
     name: {
-      eng: "Tiger",
-      spa: "Tigre",
+      eng: "Twenty",
+      spa: "veinte",
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
@@ -1783,14 +1787,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 21,
+    id: "21",
     value: 21,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/sloth_tw82gs.png",
     name: {
-      eng: "Unau",
-      spa: "Perezoso",
+      eng: "twenty-one",
+      spa: "veintiuno",
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
@@ -1805,14 +1809,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 22,
+    id: "22",
     value: 22,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/vervet_pwgmks.png",
     name: {
-      eng: "Vervet Monkey",
-      spa: "Mono Vervet",
+      eng: "twenty-two",
+      spa: "veintidós",
     },
     tiles: [["Ver-vet"], ["Mon-key"]],
     syllables: [
@@ -1830,14 +1834,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 23,
+    id: "23",
     value: 23,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/warthog_ne88og.png",
     name: {
-      eng: "Warthog",
-      spa: "Jabalí",
+      eng: "twenty-three",
+      spa: "veintitrés",
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
@@ -1852,14 +1856,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 24,
+    id: "24",
     value: 24,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
     name: {
-      eng: "Xenops",
-      spa: "Xenops",
+      eng: "twenty-four",
+      spa: "veinticuatro",
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
@@ -1874,14 +1878,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 25,
+    id: "25",
     value: 25,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/mongoose_ieo5rn.png",
     name: {
-      eng: "Yellow Mongoose",
-      spa: "Mangosta Amarilla",
+      eng: "twenty-five",
+      spa: "veinticinco",
     },
     tiles: [["Yel-low"], ["Mon-", "goose"]],
     syllables: [
@@ -1899,14 +1903,14 @@ export const mathArray = [
     isLiked: false,
   },
   {
-    id: 26,
+    id: "26",
     value: 26,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
     name: {
-      eng: "Zebra",
-      spa: "Zebra",
+      eng: "twenty-six",
+      spa: "veintiséis",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -1921,14 +1925,14 @@ export const mathArray = [
     isLiked: true,
   },
   {
-    id: 27,
+    id: "27",
     value: 27,
     clicked: false,
     animalImage:
       "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
     name: {
-      eng: "Zebra",
-      spa: "Zebra",
+      eng: "twenty-seven",
+      spa: "veintisiete",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -1945,6 +1949,11 @@ export const mathArray = [
 ];
 
 
+
+///////////////////////////////
+///////////////////////////////
+///////////////////////////////
+///////////////////////////////
 // Content Array Model/Template
 export const zebrAPI = {
     science: {
