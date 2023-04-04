@@ -19,8 +19,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-export default function CardDetail(props) {
-
+export default function CardDetail({
+  list,
+  category,
+  sounds,
+  syllableSounds,
+  handleLike,
+  ...props
+}) {
   /////// IMPROVEMENT NOTE ///////
   /*
     If user clicks on the animalImage => "The alligator says [alligator sound]"
@@ -28,9 +34,17 @@ export default function CardDetail(props) {
 
   const [isSpellingOpen, setIsSpellingOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
-  const item = props.list[props.match.params.id];
   const [button, setButton] = useState(1);
   const [value, setValue] = useState(1);
+
+  /* finds the index of the object in "list" array being passed down as props
+     and provides it to "item" object */
+  
+  const itemIndex = (item) => {
+    return item.id === props.match.params.id;
+  }
+
+  let item = list[list.findIndex(itemIndex)];
 
   const handleOpenClose = () => {
     const clicked = isSpellingOpen;
@@ -48,6 +62,8 @@ export default function CardDetail(props) {
     setValue(value);
   };
 
+
+
   return (
     <CardHolder>
       <CardLetter key={item.id}>
@@ -57,15 +73,15 @@ export default function CardDetail(props) {
               {/* <FontAwesomeIcon icon={faMap} /> */}
               {item.value}
             </DestructButton>
-            <Link to={`/${props.category}`}>
-              <XCloser onClick={() => props.handleOpenClose(item, audio)}>
+            <Link to={`/${category}`}>
+              <XCloser onClick={() => handleOpenClose(item, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
             </Link>
           </XCloserHolder>
           <ImageHolder>
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
-            {(props.category === "science" || props.category === "arts") && (
+            {(category === "science" || category === "arts") && (
               <img
                 className={item.horizontal ? "horizontal" : "vertical"}
                 src={item.animalImage}
@@ -73,9 +89,9 @@ export default function CardDetail(props) {
               />
             )}
             {/* ///// MATH Image Logic ///// */}
-            {props.category === "math" && (
+            {category === "math" && (
               <FactorUnitAnimations
-                unitNumber={item.id}
+                unitNumber={item.value}
                 button={button}
                 value={value}
               />
@@ -83,23 +99,23 @@ export default function CardDetail(props) {
           </ImageHolder>
           <NameHolder>
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
-            {(props.category === "science" || props.category === "arts") &&
+            {(category === "science" || category === "arts") &&
               (isSpellingOpen ? (
                 <SpellingCard
-                  list={props.list}
-                  sounds={props.sounds}
-                  syllableSounds={props.syllableSounds}
+                  list={list}
+                  sounds={sounds}
+                  syllableSounds={syllableSounds}
                   value={item.value}
-                  handleOpenClose={() => handleOpenClose()}
+                  handleOpenClose={() => props.handleOpenClose()}
                 />
               ) : (
                 <CardUtils
-                  list={props.list}
+                  list={list}
                   getAudio={getAudio}
                   handleOpenClose={handleOpenClose}
-                  handleLike={props.handleLike}
+                  handleLike={handleLike}
                   id={item.id}
-                  category={props.category}
+                  category={category}
                   name={item.name}
                   animalNameSound={item.animalNameSound}
                   animalFacts={item.animalFacts}
@@ -107,7 +123,7 @@ export default function CardDetail(props) {
                 />
               ))}
             {/* ///// MATH Card Title Logic ///// */}
-            {props.category === "math" && (
+            {category === "math" && (
               <FactorButtons item={item} factorSplit={factorSplit} />
             )}
           </NameHolder>
