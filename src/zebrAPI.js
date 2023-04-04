@@ -1447,7 +1447,7 @@ export const artsArray = [
     isLiked: false,
   },
   {
-    id: "Zarb",
+    id: "zarb",
     value: "Z",
     clicked: false,
     animalImage:
