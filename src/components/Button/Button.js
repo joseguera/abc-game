@@ -14,7 +14,7 @@ import {
 
 export default function Button(props) {
   return (
-    <Link to={`/${props.category}/${props.item.id - 1}`} style={styledLink} >
+    <Link to={`/${props.category}/${props.item.id}`} style={styledLink} >
       <StyledLetter
         className="alphabet-letter"
       >
