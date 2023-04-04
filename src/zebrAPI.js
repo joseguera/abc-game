@@ -2,9 +2,9 @@
 
 import electric_bass from "./images/instruments/electric_bass.png";
 
-/////////////////////////////
-////////// SCIENCE //////////
-/////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+//////////////////////////////// SCIENCE ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 
 export const scienceArray = [
   {
@@ -743,24 +743,153 @@ export const alphabetLetterSounds = {
 }
 
 export const animalFactCitations = {
+  alligator: {
+    F1: "https://a-z-animals.com/blog/what-is-a-group-of-crocodiles-called/",
+    F2: "https://www.etymonline.com/word/alligator",
+    F3: "https://nationalzoo.si.edu/animals/american-alligator",
+  },
+  baboon: {
+    F1: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029117",
+    F2: "https://www.livescience.com/57588-baboon-facts.html",
+    F3: "https://www.awf.org/wildlife-conservation/baboon",
+  },
+  chimpanzee: {
+    F1: "https://www.bbc.com/news/science-environment-40405026.amp",
+    F2: "https://earth.org/10-facts-about-chimpanzees/",
+    F3: "https://projectchimps.org/chimps/chimps-facts/",
+  },
+  dingo: {
+    F1: "https://australian.museum/learn/animals/mammals/dingo/",
+    F2: "https://australian.museum/learn/animals/mammals/dingo/",
+    F3: "https://www.animalfactsencyclopedia.com/Dingo-facts.html",
+  },
+  elephant: {
+    F1: "https://www.etymonline.com/word/elephant#etymonline_v_5724",
+    F2: "https://www.worldwildlife.org/stories/what-s-the-difference-between-asian-and-african-elephants-and-10-other-elephant-facts",
+    F3: "https://www.childfun.com/articles/general/15-elephant-facts-for-kids/",
+  },
+  frog: {
+    F1: "https://toadsnfrogs.com/group-frogs-called/",
+    F2: "https://www.dictionary.com/browse/polliwog",
+    F3: "https://www.burkemuseum.org/collections-and-research/biology/herpetology/all-about-amphibians/all-about-frogs",
+  },
+  gorilla: {
+    F1: "https://www.worldwildlife.org/stories/what-do-gorillas-eat-and-other-gorilla-facts",
+    F2: "https://www.natgeokids.com/uk/discover/animals/general-animals/gorilla-facts/",
+    F3: "https://www.natgeokids.com/uk/discover/animals/general-animals/gorilla-facts/",
+  },
+  hyena: {
+    F1: "https://www.britannica.com/story/do-hyenas-really-laugh",
+    F2: "https://onekindplanet.org/animal/spotted-hyena/",
+    F3: "https://onekindplanet.org/animal/spotted-hyena/",
+  },
+  impala: {
+    F1: "https://www.nationalgeographic.com/animals/mammals/facts/impala",
+    F2: "https://www.livescience.com/52557-impalas.html",
+    F3: "https://cheetah.org/canada/2018/04/15/cheetah-versus-impala-each-has-a-competitive-edge/",
+  },
+  jaguar: {
+    F1: "https://www.gadsdentimes.com/story/lifestyle/columns/2019/09/15/david-murdock-column-on-collective-nouns/2787435007/",
+    F2: "https://www.nationalgeographic.com/animals/article/animals-big-cats-jaguars-leopards",
+    F3: "https://www.wwf.org.uk/learn/wildlife/jaguars",
+  },
+  koala: {
+    F1: "https://www.savethekoala.com/about-koalas/frequently-asked-questions/",
+    F2: "https://www.britannica.com/animal/marsupial",
+    F3: "https://www.australia.com/en-us/things-to-do/wildlife/facts-about-koalas.html",
+  },
+  lemur: {
+    F1: "https://www.bbc.co.uk/newsround/48539466",
+    F2: "https://www.treehugger.com/incredible-facts-about-lemurs-4868779",
+    F3: "https://www.lemurconservationnetwork.org/top-10-facts-about-lemurs/",
+  },
+  macaw: {
+    F1: "https://www.rainforestcruises.com/guides/macaw-facts",
+    F2: "https://www.allaboutparrots.com/do-macaw-bites-hurt/",
+    F3: "https://news.mongabay.com/2019/07/la-mosquitia-dangerous-territory-for-scarlet-macaws-in-honduras/amp/",
+  },
+  numbat: {
+    F1: "http://www.numbat.org.au/thenumbat",
+    F2: "https://animalia.bio/numbat",
+    F3: "http://www.numbat.org.au/thenumbat",
+  },
+  okapi: {
+    F1: "https://animals.sandiegozoo.org/animals/okapi",
+    F2: "https://animals.sandiegozoo.org/animals/okapi",
+    F3: "https://www.nationalgeographic.com/animals/mammals/facts/okapi",
+  },
+  panda: {
+    F1: "https://www.newscientist.com/article/2295189-giant-pandas-black-and-white-coat-works-as-excellent-camouflage/",
+    F2: "https://m.timesofindia.com/why-is-the-panda-called-so/articleshow/2225965.cms",
+    F3: "https://earth.org/interesting-facts-about-pandas/",
+  },
+  quetzal: {
+    F1: "http://datazone.birdlife.org/sowb/casestudy/the-resplendent-quetzal-in-aztec-and-mayan-culture",
+    F2: "https://www.nationalgeographic.com/animals/birds/facts/resplendent-quetzal",
+    F3: "https://www.britannica.com/animal/quetzal",
+  },
+  rhinoceros: {
+    F1: "https://travel.safari.com/a-crash-of-rhino/",
+    F2: "https://www.wwf.org.uk/learn/fascinating-facts/rhinos",
+    F3: "https://www.etymonline.com/word/rhinoceros#etymonline_v_15018",
+  },
+  snake: {
+    F1: "https://www.merriam-webster.com/dictionary/snakelet/",
+    F2: "https://wonderopolis.org/wonder/why-do-snakes-shed-their-skin",
+    F3: "https://www.etymonline.com/word/snake#etymonline_v_23755",
+  },
+  tiger: {
+    F1: "https://a-z-animals.com/blog/whats-a-group-of-tigers-called-how-do-they-behave/",
+    F2: "https://depts.washington.edu/triolive/quest/2007/TTQ07030/tiger.html",
+    F3: "https://www.pbs.org/wnet/nature/blog/tiger-fact-sheet/",
+  },
+  unau: {
+    F1: "https://slothconservation.org/what-do-you-call-a-group-of-sloths/",
+    F2: "https://www.worldwildlife.org/stories/why-are-sloths-slow-and-six-other-sloth-facts",
+    F3: "https://tarpits.org/experience-tar-pits/giants-ice-age",
+  },
+  vervet_monkey: {
+    F1: "https://animals.sandiegozoo.org/animals/vervet-monkey",
+    F2: "https://animals.sandiegozoo.org/animals/vervet-monkey",
+    F3: "https://www.sanbi.org/animal-of-the-week/vervet-monkey/",
+  },
+  warthog: {
+    F1: "https://www.safaribookings.com/blog/warthog-facts",
+    F2: "https://www.livescience.com/58337-warthog-facts.html",
+    F3: `${"https://lalibela.net/10-interesting-facts-about-warthogs/"}, ${"https://www.wwf.org.uk/learn/fascinating-facts/elephants"}`,
+  },
+  xenops: {
+    F1: "https://www.peruaves.org/furnariidae/streaked-xenops-xenops-rutilans/",
+    F2: "https://www.activewild.com/xenops/",
+    F3: "https://www.activewild.com/xenops/",
+  },
+  yellow_mongoose: {
+    F1: "https://animalia.bio/yellow-mongoose",
+    F2: "https://animalia.bio/yellow-mongoose",
+    F3: "https://www.science.org/content/article/scienceshot-why-mongoose-moms-synchronize-births",
+  },
+  zebra: {
+    F1: "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-zebras/",
+    F2: "https://www.natgeokids.com/uk/discover/animals/general-animals/zebra-facts/",
+    F3: "https://www.britannica.com/story/are-zebras-white-with-black-stripes-or-black-with-white-stripes",
+  },
+};
 
-}
-
-////////////////////////////////
-////////// TECHNOLOGY //////////
-////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TECHNOLOGY ////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 // technologyArray
 
-/////////////////////////////////
-////////// ENGINEERING //////////
-/////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// ENGINEERING ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 // engineeringArray
 
-//////////////////////////
-////////// ARTS //////////
-//////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////// ARTS ////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
 export const artsArray = [
   {
@@ -1341,9 +1470,9 @@ export const artsArray = [
   }
 ];
 
-//////////////////////////
-////////// MATH //////////
-//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// MATHEMATICS ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 export const mathArray = [
   {
@@ -1950,10 +2079,11 @@ export const mathArray = [
 
 
 
-///////////////////////////////
-///////////////////////////////
-///////////////////////////////
-///////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////// zebrAPI Model Implementation ///////////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 // Content Array Model/Template
 export const zebrAPI = {
     science: {
@@ -2001,3 +2131,13 @@ export const zebrAPI = {
     arts: {},
     maths: {},
 };
+
+
+
+
+
+
+
+
+
+
