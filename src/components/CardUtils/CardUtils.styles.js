@@ -46,9 +46,10 @@ export const Name = styled.div`
   margin-top: 0px;
 `;
 
-export const Icon = styled.div`
-  font-size: 27px;
+
+export const DestructButton = styled.div`
   cursor: pointer;
+  font-size: 27px;
   color: #2f4f4f;
   display: flex;
   align-items: center;
@@ -79,3 +80,4 @@ export const IconHeartNotLiked = styled.div`
     color: #4d8080;
   }
 `;
+

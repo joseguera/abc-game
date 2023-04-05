@@ -4,13 +4,13 @@ import {
   Utils,
   NameHolder,
   Name,
-  Icon,
+  DestructButton,
   IconHolder,
   IconHeartLiked,
   IconHeartNotLiked,
 } from "./CardUtils.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpellCheck, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faShapes, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function CardUtils({ name, animalNameSound, animalFacts, getAudio, id, category, list, handleLike, handleOpenClose, isLiked }) {
   const handleLikeHeart = (id, category, list) => {
@@ -27,14 +27,14 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
             <Name>{name.eng}</Name>
           )}
         </div>
-        <Icon onClick={() => handleOpenClose()}>
+        <DestructButton onClick={() => handleOpenClose()}>
           <button>
-            <FontAwesomeIcon icon={faSpellCheck} />
+            <FontAwesomeIcon icon={faShapes} />
           </button>
-        </Icon>
+        </DestructButton>
       </NameHolder>
       <IconHolder>
-        <NameButton
+        <NameButton // SoundEffectButton
           name={name.eng}
           animalNameSound={animalNameSound}
           category={category}
@@ -45,7 +45,7 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
           animalFacts={animalFacts}
           getAudio={getAudio}
         />
-        {isLiked ? (
+        {isLiked ? ( // Simplify this button's functionality
           <IconHeartLiked onClick={() => handleLikeHeart(id, category, list)}>
             <FontAwesomeIcon icon={faHeart} />
           </IconHeartLiked>
