@@ -42,6 +42,11 @@ export const XCloser = styled.div`
   }
 `;
 
+export const UnitHolder = styled.div`
+  font-size: 27px;
+  color: #2f4f4f;
+`;
+
 export const DestructButton = styled.div`
   cursor: pointer;
   font-size: 27px;

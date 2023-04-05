@@ -11,6 +11,7 @@ import {
   PlayingCard,
   XCloserHolder,
   XCloser,
+  UnitHolder,
   DestructButton,
   ImageHolder,
   NameHolder,
@@ -32,7 +33,7 @@ export default function CardDetail({
     If user clicks on the animalImage => "The alligator says [alligator sound]"
   */
 
-  const [isSpellingOpen, setIsSpellingOpen] = useState(false);
+  const [isDestructOpen, setIsDestructOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
   const [button, setButton] = useState(1);
   const [value, setValue] = useState(1);
@@ -47,8 +48,8 @@ export default function CardDetail({
   let item = list[list.findIndex(itemIndex)];
 
   const handleOpenClose = () => {
-    const clicked = isSpellingOpen;
-    setIsSpellingOpen(!clicked);
+    const clicked = isDestructOpen;
+    setIsDestructOpen(!clicked);
     audio.volume = 0;
   };
 
@@ -69,10 +70,10 @@ export default function CardDetail({
       <CardLetter key={item.id}>
         <PlayingCard>
           <XCloserHolder>
-            <DestructButton>
+            <UnitHolder>
               {/* <FontAwesomeIcon icon={faMap} /> */}
               {item.value}
-            </DestructButton>
+            </UnitHolder>
             <Link to={`/${category}`}>
               <XCloser onClick={() => handleOpenClose(item, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
@@ -99,16 +100,18 @@ export default function CardDetail({
           </ImageHolder>
           <NameHolder>
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
-            {(category === "science" || category === "arts") &&
-              (isSpellingOpen ? (
-                <SpellingCard
-                  list={list}
-                  sounds={sounds}
-                  syllableSounds={syllableSounds}
-                  value={item.value}
-                  handleOpenClose={() => props.handleOpenClose()}
-                />
-              ) : (
+            {(isDestructOpen ? (
+                (category === "science" || category === "arts") ? (
+                  <SpellingCard
+                    list={list}
+                    sounds={sounds}
+                    syllableSounds={syllableSounds}
+                    value={item.value}
+                    handleOpenClose={() => props.handleOpenClose()}
+                  />
+                ) : (
+                  <FactorButtons item={item} factorSplit={factorSplit} />
+                )) : (
                 <CardUtils
                   list={list}
                   getAudio={getAudio}
@@ -123,9 +126,23 @@ export default function CardDetail({
                 />
               ))}
             {/* ///// MATH Card Title Logic ///// */}
-            {category === "math" && (
-              <FactorButtons item={item} factorSplit={factorSplit} />
-            )}
+            {/* {category === "math" && 
+              (isDestructOpen ? (
+                
+              ) : (
+                <CardUtils
+                  list={list}
+                  getAudio={getAudio}
+                  handleOpenClose={handleOpenClose}
+                  handleLike={handleLike}
+                  id={item.id}
+                  category={category}
+                  name={item.name}
+                  animalNameSound={item.animalNameSound}
+                  animalFacts={item.animalFacts}
+                  isLiked={item.isLiked}
+                />
+              ))} */}
           </NameHolder>
         </PlayingCard>
       </CardLetter>
