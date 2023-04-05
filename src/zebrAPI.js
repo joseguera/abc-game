@@ -962,7 +962,7 @@ export const artsArray = [
     value: "D",
     clicked: false,
     animalImage:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
+      "https://res.cloudinary.com/djqxogkfw/image/upload/v1680656457/images/instruments/didgeridoo.png",
     name: {
       eng: "Didgeridoo",
       spa: "Dingo",
@@ -1451,7 +1451,7 @@ export const artsArray = [
     value: "Z",
     clicked: false,
     animalImage:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1680238445/images/instruments/zarb.png",
+      "https://res.cloudinary.com/djqxogkfw/image/upload/v1680656454/images/instruments/zarb.png",
     name: {
       eng: "Zarb",
       spa: "Zebra",
