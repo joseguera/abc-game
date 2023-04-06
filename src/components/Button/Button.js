@@ -28,7 +28,7 @@ export default function Button(props) {
         </ButtonHeader>
         <IconHolder>
           <AnimalIcon
-            src={props.item.animalImage}
+            src={props.item.image}
             className={props.item.horizontal ? "horizontal" : "vertical"}
             alt="none"
           />

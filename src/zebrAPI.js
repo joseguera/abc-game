@@ -1,12 +1,8 @@
 // Design for zebrAPI which is the backbone of the Aby Zebra web app
 
-import electric_bass from "./images/instruments/electric_bass.png";
-
 const animalImages = process.env.REACT_APP_ANIMAL_IMAGE_URL;
 const artsImages = process.env.REACT_APP_INSTRUMENT_IMAGE_URL;
 const mathImages = process.env.REACT_APP_NUMBER_IMAGE_URL;
-
-console.log(`${animalImages}/alligator.png`)
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
@@ -17,7 +13,7 @@ export const scienceArray = [
     id: "alligator",
     value: "A",
     clicked: false,
-    animalImage: `${animalImages}/alligator.png`,
+    image: `${animalImages}/alligator.png`,
     name: {
       eng: "Alligator",
       spa: "Caimán",
@@ -38,7 +34,7 @@ export const scienceArray = [
     id: "baboon",
     value: "B",
     clicked: false,
-    animalImage: `${animalImages}/baboon.png`,
+    image: `${animalImages}/baboon.png`,
     name: {
       eng: "Baboon",
       spa: "Mandril",
@@ -59,7 +55,7 @@ export const scienceArray = [
     id: "chimpanzee",
     value: "C",
     clicked: false,
-    animalImage: `${animalImages}/chimpanzee.png`,
+    image: `${animalImages}/chimpanzee.png`,
     name: {
       eng: "Chimpanzee",
       spa: "Chimpancé",
@@ -80,7 +76,7 @@ export const scienceArray = [
     id: "dingo",
     value: "D",
     clicked: false,
-    animalImage: `${animalImages}/dingo.png`,
+    image: `${animalImages}/dingo.png`,
     name: {
       eng: "Dingo",
       spa: "Dingo",
@@ -101,7 +97,7 @@ export const scienceArray = [
     id: "elephant",
     value: "E",
     clicked: false,
-    animalImage: `${animalImages}/elephant.png`,
+    image: `${animalImages}/elephant.png`,
     name: {
       eng: "Elephant",
       spa: "Elefante",
@@ -122,7 +118,7 @@ export const scienceArray = [
     id: "frog",
     value: "F",
     clicked: false,
-    animalImage: `${animalImages}/frog.png`,
+    image: `${animalImages}/frog.png`,
     name: {
       eng: "Frog",
       spa: "Rana",
@@ -143,7 +139,7 @@ export const scienceArray = [
     id: "gorilla",
     value: "G",
     clicked: false,
-    animalImage: `${animalImages}/gorilla.png`,
+    image: `${animalImages}/gorilla.png`,
     name: {
       eng: "Gorilla",
       spa: "Gorila",
@@ -164,7 +160,7 @@ export const scienceArray = [
     id: "hyena",
     value: "H",
     clicked: false,
-    animalImage: `${animalImages}/hyena.png`,
+    image: `${animalImages}/hyena.png`,
     name: {
       eng: "Hyena",
       spa: "Hiena",
@@ -185,7 +181,7 @@ export const scienceArray = [
     id: "impala",
     value: "I",
     clicked: false,
-    animalImage: `${animalImages}/impala.png`,
+    image: `${animalImages}/impala.png`,
     name: {
       eng: "Impala",
       spa: "Impala",
@@ -206,7 +202,7 @@ export const scienceArray = [
     id: "jaguar",
     value: "J",
     clicked: false,
-    animalImage: `${animalImages}/jaguar.png`,
+    image: `${animalImages}/jaguar.png`,
     name: {
       eng: "Jaguar",
       spa: "Jaguar",
@@ -227,7 +223,7 @@ export const scienceArray = [
     id: "koala",
     value: "K",
     clicked: false,
-    animalImage: `${animalImages}/koala.png`,
+    image: `${animalImages}/koala.png`,
     name: {
       eng: "Koala",
       spa: "Coala",
@@ -248,7 +244,7 @@ export const scienceArray = [
     id: "lemur",
     value: "L",
     clicked: false,
-    animalImage: `${animalImages}/lemur.png`,
+    image: `${animalImages}/lemur.png`,
     name: {
       eng: "Lemur",
       spa: "Lémur",
@@ -269,7 +265,7 @@ export const scienceArray = [
     id: "macaw",
     value: "M",
     clicked: false,
-    animalImage: `${animalImages}/macaw.png`,
+    image: `${animalImages}/macaw.png`,
     name: {
       eng: "Macaw",
       spa: "Guacamaya",
@@ -290,7 +286,7 @@ export const scienceArray = [
     id: "numbat",
     value: "N",
     clicked: false,
-    animalImage: `${animalImages}/numbat.png`,
+    image: `${animalImages}/numbat.png`,
     name: {
       eng: "Numbat",
       spa: "Numbat",
@@ -311,7 +307,7 @@ export const scienceArray = [
     id: "okapi",
     value: "O",
     clicked: false,
-    animalImage: `${animalImages}/okapi.png`,
+    image: `${animalImages}/okapi.png`,
     name: {
       eng: "Okapi",
       spa: "Okapi",
@@ -332,7 +328,7 @@ export const scienceArray = [
     id: "panda",
     value: "P",
     clicked: false,
-    animalImage: `${animalImages}/panda.png`,
+    image: `${animalImages}/panda.png`,
     name: {
       eng: "Panda",
       spa: "Panda",
@@ -353,7 +349,7 @@ export const scienceArray = [
     id: "quetzal",
     value: "Q",
     clicked: false,
-    animalImage: `${animalImages}/quetzal.png`,
+    image: `${animalImages}/quetzal.png`,
     name: {
       eng: "Quetzal",
       spa: "Quetzal",
@@ -374,7 +370,7 @@ export const scienceArray = [
     id: "rhinoceros",
     value: "R",
     clicked: false,
-    animalImage: `${animalImages}/rhinoceros.png`,
+    image: `${animalImages}/rhinoceros.png`,
     name: {
       eng: "Rhinoceros",
       spa: "Rinoceronte",
@@ -395,7 +391,7 @@ export const scienceArray = [
     id: "snake",
     value: "S",
     clicked: false,
-    animalImage: `${animalImages}/snake.png`,
+    image: `${animalImages}/snake.png`,
     name: {
       eng: "Snake",
       spa: "Serpiente",
@@ -416,7 +412,7 @@ export const scienceArray = [
     id: "tiger",
     value: "T",
     clicked: false,
-    animalImage: `${animalImages}/tiger.png`,
+    image: `${animalImages}/tiger.png`,
     name: {
       eng: "Tiger",
       spa: "Tigre",
@@ -437,7 +433,7 @@ export const scienceArray = [
     id: "unau",
     value: "U",
     clicked: false,
-    animalImage: `${animalImages}/unau.png`,
+    image: `${animalImages}/unau.png`,
     name: {
       eng: "Unau",
       spa: "Perezoso",
@@ -458,7 +454,7 @@ export const scienceArray = [
     id: "vervet-monkey",
     value: "V",
     clicked: false,
-    animalImage: `${animalImages}/vervet-monkey.png`,
+    image: `${animalImages}/vervet-monkey.png`,
     name: {
       eng: "Vervet Monkey",
       spa: "Mono Vervet",
@@ -482,7 +478,7 @@ export const scienceArray = [
     id: "warthog",
     value: "W",
     clicked: false,
-    animalImage: `${animalImages}/warthog.png`,
+    image: `${animalImages}/warthog.png`,
     name: {
       eng: "Warthog",
       spa: "Jabalí",
@@ -503,7 +499,7 @@ export const scienceArray = [
     id: "xenops",
     value: "X",
     clicked: false,
-    animalImage: `${animalImages}/xenops.png`,
+    image: `${animalImages}/xenops.png`,
     name: {
       eng: "Xenops",
       spa: "Xenops",
@@ -524,7 +520,7 @@ export const scienceArray = [
     id: "yellow-mongoose",
     value: "Y",
     clicked: false,
-    animalImage: `${animalImages}/yellow-mongoose.png`,
+    image: `${animalImages}/yellow-mongoose.png`,
     name: {
       eng: "Yellow Mongoose",
       spa: "Mangosta Amarilla",
@@ -548,7 +544,7 @@ export const scienceArray = [
     id: "zebra",
     value: "Z",
     clicked: false,
-    animalImage: `${animalImages}/zebra.png`,
+    image: `${animalImages}/zebra.png`,
     name: {
       eng: "Zebra",
       spa: "Zebra",
@@ -963,7 +959,7 @@ export const artsArray = [
     id: "electric-bass",
     value: "E",
     clicked: false,
-    image: electric_bass,
+    image: "image.png",
     name: {
       eng: "Electric Bass",
       spa: "Elefante",

@@ -27,20 +27,20 @@ export default function CardDetail({
   handleLike,
   ...props
 }) {
-
   const [isDestructOpen, setIsDestructOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
   const [button, setButton] = useState(1);
   const [value, setValue] = useState(1);
 
   /* finds the index of the object in "list" array being passed down as props
-     and provides it to "item" object */
-  
+  and provides it to "item" object */
+
   const itemIndex = (item) => {
     return item.id === props.match.params.id;
-  }
+  };
 
   let item = list[list.findIndex(itemIndex)];
+  console.log(item);
 
   const handleOpenClose = () => {
     const clicked = isDestructOpen;
@@ -93,31 +93,37 @@ export default function CardDetail({
           </ImageHolder>
           <NameHolder>
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
-            {(isDestructOpen ? (
-                (category === "science" || category === "arts") ? (
-                  <SpellingCard
-                    list={item}
-                    sounds={sounds}
-                    syllableSounds={syllableSounds}
-                    value={item.value}
-                    handleOpenClose={() => handleOpenClose()}
-                  />
-                ) : (
-                  <FactorButtons item={item} factorSplit={factorSplit} />
-                )) : (
-                <CardUtils
-                  list={item}
-                  getAudio={getAudio}
-                  handleOpenClose={handleOpenClose}
-                  handleLike={handleLike}
-                  id={item.id}
-                  category={category}
-                  name={item.name}
-                  nameSound={item.nameSound}
-                  funFacts={item.funFacts}
-                  isLiked={item.isLiked}
+            {isDestructOpen ? (
+              category === "science" || category === "arts" ? (
+                <SpellingCard
+                  item={item}
+                  sounds={sounds}
+                  syllableSounds={syllableSounds}
+                  value={item.value}
+                  handleOpenClose={() => handleOpenClose()}
                 />
-              ))}
+              ) : (
+                <FactorButtons
+                  item={item}
+                  factorSplit={factorSplit}
+                  handleOpenClose={() => handleOpenClose()}
+                />
+              )
+            ) : (
+              <CardUtils
+                list={list}
+                item={item}
+                getAudio={getAudio}
+                handleOpenClose={handleOpenClose}
+                handleLike={handleLike}
+                id={item.id}
+                category={category}
+                name={item.name}
+                nameSound={item.nameSound}
+                funFacts={item.funFacts}
+                isLiked={item.isLiked}
+              />
+            )}
           </NameHolder>
         </PlayingCard>
       </CardLetter>
