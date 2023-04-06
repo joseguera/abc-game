@@ -8,10 +8,10 @@ import {
   faCalculator,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function NameButton({ name, category, animalNameSound }) {
+export default function NameButton({ name, category, nameSound }) {
   const playing = useSelector((state) => state.playing.value);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(animalNameSound)
+    typeof Audio !== "undefined" && new Audio(nameSound)
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 

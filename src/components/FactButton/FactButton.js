@@ -5,17 +5,17 @@ import { Icon, IconDisabled } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
-export default function FactButton(props) {
+export default function FactButton({ funFacts, getAudio }) {
   const dispatch = useDispatch();
   const playing = useSelector((state) => state.playing.value);
   const [factCounter, setFactCounter] = useState(0);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(props.animalFacts[0])
+    typeof Audio !== "undefined" && new Audio(funFacts[0])
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
   const setAudioTrack = (factNumber) => {
     setAudio((currentElement) => {
-      currentElement = new Audio(props.animalFacts[factNumber]);
+      currentElement = new Audio(funFacts[factNumber]);
       return currentElement;
     });
   };
@@ -32,7 +32,7 @@ export default function FactButton(props) {
     dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
     setAudioTrackDuration(audioDuration);
-    props.getAudio(audio)
+    getAudio(audio)
     return audio.play();
   };
 
