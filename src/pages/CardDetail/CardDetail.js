@@ -12,12 +12,11 @@ import {
   XCloserHolder,
   XCloser,
   UnitHolder,
-  DestructButton,
   ImageHolder,
   NameHolder,
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faQuestion, faMap } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function CardDetail({
@@ -28,10 +27,6 @@ export default function CardDetail({
   handleLike,
   ...props
 }) {
-  /////// IMPROVEMENT NOTE ///////
-  /*
-    If user clicks on the animalImage => "The alligator says [alligator sound]"
-  */
 
   const [isDestructOpen, setIsDestructOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
@@ -83,7 +78,7 @@ export default function CardDetail({
             {(category === "science" || category === "arts") && (
               <img
                 className={item.horizontal ? "horizontal" : "vertical"}
-                src={item.animalImage}
+                src={item.image}
                 alt={item.name}
               />
             )}
@@ -118,29 +113,11 @@ export default function CardDetail({
                   id={item.id}
                   category={category}
                   name={item.name}
-                  animalNameSound={item.animalNameSound}
-                  animalFacts={item.animalFacts}
+                  nameSound={item.nameSound}
+                  funFacts={item.funFacts}
                   isLiked={item.isLiked}
                 />
               ))}
-            {/* ///// MATH Card Title Logic ///// */}
-            {/* {category === "math" && 
-              (isDestructOpen ? (
-                
-              ) : (
-                <CardUtils
-                  list={list}
-                  getAudio={getAudio}
-                  handleOpenClose={handleOpenClose}
-                  handleLike={handleLike}
-                  id={item.id}
-                  category={category}
-                  name={item.name}
-                  animalNameSound={item.animalNameSound}
-                  animalFacts={item.animalFacts}
-                  isLiked={item.isLiked}
-                />
-              ))} */}
           </NameHolder>
         </PlayingCard>
       </CardLetter>

@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShapes, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-export default function CardUtils({ name, animalNameSound, animalFacts, getAudio, id, category, list, handleLike, handleOpenClose, isLiked }) {
+export default function CardUtils({ name, nameSound, funFacts, getAudio, id, category, list, handleLike, handleOpenClose, isLiked }) {
   const handleLikeHeart = (id, category, list) => {
     handleLike(id, category, list);
   };
@@ -21,7 +21,7 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
       <NameHolder>
       <NameButton
         name={name.eng}
-        animalNameSound={animalNameSound}
+        nameSound={nameSound}
         category={category}
       />
         <DestructButton onClick={() => handleOpenClose()}>
@@ -32,13 +32,13 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
       </NameHolder>
       <IconHolder>
         <SoundEffectButton
-          animalNameSound={animalNameSound}
+          nameSound={nameSound}
           category={category}
         />
         <FactButton
           name={name.eng}
-          animalNameSound={animalNameSound}
-          animalFacts={animalFacts}
+          nameSound={nameSound}
+          funFacts={funFacts}
           getAudio={getAudio}
         />
         {isLiked ? ( // Simplify this button's functionality

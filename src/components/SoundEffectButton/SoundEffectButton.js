@@ -4,10 +4,10 @@ import { Icon, IconDisabled } from "./SoundEffectButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlask, faMusic, faCalculator } from "@fortawesome/free-solid-svg-icons";
 
-export default function SoundEffectButton(props) {
+export default function SoundEffectButton({ nameSound, category }) {
   const playing = useSelector((state) => state.playing.value);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(props.animalNameSound)
+    typeof Audio !== "undefined" && new Audio(nameSound)
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 
@@ -35,11 +35,11 @@ export default function SoundEffectButton(props) {
     <>
       {playing ? (
         <Icon>
-          <FontAwesomeIcon icon={soundEffectButton(props.category)} onClick={() => playAudio()} />
+          <FontAwesomeIcon icon={soundEffectButton(category)} onClick={() => playAudio()} />
         </Icon>
       ) : (
         <IconDisabled>
-          <FontAwesomeIcon icon={soundEffectButton(props.category)} />
+          <FontAwesomeIcon icon={soundEffectButton(category)} />
         </IconDisabled>
       )}
     </>
