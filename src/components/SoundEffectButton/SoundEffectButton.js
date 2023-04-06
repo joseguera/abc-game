@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import {  Name, Icon, IconDisabled } from "./NameButton.styles";
+import { Icon, IconDisabled } from "./SoundEffectButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFlask,
-  faMusic,
-  faCalculator,
-} from "@fortawesome/free-solid-svg-icons";
+import { faFlask, faMusic, faCalculator } from "@fortawesome/free-solid-svg-icons";
 
-export default function NameButton({ name, category, animalNameSound }) {
+export default function SoundEffectButton(props) {
   const playing = useSelector((state) => state.playing.value);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(animalNameSound)
+    typeof Audio !== "undefined" && new Audio(props.animalNameSound)
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 
@@ -30,20 +26,22 @@ export default function NameButton({ name, category, animalNameSound }) {
       topicIcon = faMusic;
     }
     if (listTopic === "math") {
-      topicIcon = faCalculator;
+      topicIcon = faCalculator
     }
     return topicIcon;
-  };
+  }
 
   return (
     <>
-      <div>
-        {name.length > 10 ? (
-          <div className="name">{name}</div>
-        ) : (
-          <Name>{name}</Name>
-        )}
-      </div>
+      {playing ? (
+        <Icon>
+          <FontAwesomeIcon icon={soundEffectButton(props.category)} onClick={() => playAudio()} />
+        </Icon>
+      ) : (
+        <IconDisabled>
+          <FontAwesomeIcon icon={soundEffectButton(props.category)} />
+        </IconDisabled>
+      )}
     </>
   );
 }

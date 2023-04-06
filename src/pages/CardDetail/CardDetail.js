@@ -63,8 +63,6 @@ export default function CardDetail({
     setValue(value);
   };
 
-
-
   return (
     <CardHolder>
       <CardLetter key={item.id}>
@@ -103,17 +101,17 @@ export default function CardDetail({
             {(isDestructOpen ? (
                 (category === "science" || category === "arts") ? (
                   <SpellingCard
-                    list={list}
+                    list={item}
                     sounds={sounds}
                     syllableSounds={syllableSounds}
                     value={item.value}
-                    handleOpenClose={() => props.handleOpenClose()}
+                    handleOpenClose={() => handleOpenClose()}
                   />
                 ) : (
                   <FactorButtons item={item} factorSplit={factorSplit} />
                 )) : (
                 <CardUtils
-                  list={list}
+                  list={item}
                   getAudio={getAudio}
                   handleOpenClose={handleOpenClose}
                   handleLike={handleLike}

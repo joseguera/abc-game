@@ -4,6 +4,7 @@ export { default as ButtonList } from "./ButtonList";
 export { default as FactorButtons } from "./FactorButtons";
 export { default as LetterTileHolder } from "./LetterTileHolder";
 export { default as NameButton } from "./NameButton";
+export { default as SoundEffectButton } from "./SoundEffectButton";
 export { default as FactButton } from "./FactButton";
 export { default as SpellingCard } from "./SpellingCard";
 export { default as CardUtils } from "./CardUtils";

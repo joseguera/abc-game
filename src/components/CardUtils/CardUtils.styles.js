@@ -37,16 +37,6 @@ export const NameHolder = styled.div`
   }
 `;
 
-export const Name = styled.div`
-  font-size: 42px;
-  align-self: center;
-  line-height: 61px;
-  height: 62px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-`;
-
-
 export const DestructButton = styled.div`
   cursor: pointer;
   font-size: 27px;

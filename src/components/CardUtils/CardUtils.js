@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { NameButton, FactButton } from "components";
+import { NameButton, SoundEffectButton, FactButton } from "components";
 import {
   Utils,
   NameHolder,
-  Name,
   DestructButton,
   IconHolder,
   IconHeartLiked,
@@ -20,13 +19,11 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
   return (
     <Utils>
       <NameHolder>
-        <div>
-          {name.eng.length > 10 ? (
-            <div className="name">{name.eng}</div>
-          ) : (
-            <Name>{name.eng}</Name>
-          )}
-        </div>
+      <NameButton
+        name={name.eng}
+        animalNameSound={animalNameSound}
+        category={category}
+      />
         <DestructButton onClick={() => handleOpenClose()}>
           <button>
             <FontAwesomeIcon icon={faShapes} />
@@ -34,8 +31,7 @@ export default function CardUtils({ name, animalNameSound, animalFacts, getAudio
         </DestructButton>
       </NameHolder>
       <IconHolder>
-        <NameButton // SoundEffectButton
-          name={name.eng}
+        <SoundEffectButton
           animalNameSound={animalNameSound}
           category={category}
         />
