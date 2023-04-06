@@ -8,7 +8,7 @@ import {
   faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function SpellingCard(props) {
+export default function SpellingCard({ value, sounds, syllableSounds, item, handleOpenClose }) {
 
   const [isSpelled, setIsSpelled] = useState(true);
 
@@ -19,12 +19,12 @@ export default function SpellingCard(props) {
     return (
       <SpellingCardHolder>
         <LetterTileHolder
-          value={props.value}
-          sounds={props.sounds}
-          syllableSounds={props.syllableSounds}
-          tiles={props.list.tiles}
-          syllables={props.list.syllables}
-          name={props.list.name}
+          value={value}
+          sounds={sounds}
+          syllableSounds={syllableSounds}
+          tiles={item.tiles}
+          syllables={item.syllables}
+          name={item.name}
           isSpelled={isSpelled}
         />
         <IconHolder>
@@ -36,7 +36,7 @@ export default function SpellingCard(props) {
             )}
             
           </Icon>
-          <CloseIcon onClick={() => props.handleOpenClose()}>
+          <CloseIcon onClick={() => handleOpenClose()}>
             <FontAwesomeIcon icon={faRectangleXmark} />
           </CloseIcon>
         </IconHolder>

@@ -5,10 +5,17 @@ import {
   primeFactorization,
   removeDuplicates,
 } from "../../utils/utils";
-import { ButtonHolder, NumberButton } from "./FactorButtons.styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  ButtonContainer,
+  FactorHolder,
+  NumberButton,
+  CloseIcon,
+} from "./FactorButtons.styles";
 
-export default function FactorButtons(props) {
-  const factors = factorFinder(primeFactorization(props.item.id));
+export default function FactorButtons({ item, handleOpenClose, ...props }) {
+  const factors = factorFinder(primeFactorization(item.id));
   const factorButtons = removeDuplicates(factors);
   const factorValues = [...factorButtons].reverse();
 
@@ -17,19 +24,24 @@ export default function FactorButtons(props) {
   };
 
   return (
-    <ButtonHolder>
-      {_.zipWith(factorButtons, factorValues, function (button, value) {
-        return (
-          <NumberButton
-            key={button}
-            onClick={() => {
-              factorSplit(button, value);
-            }}
-          >
-            {button}
-          </NumberButton>
-        );
-      })}
-    </ButtonHolder>
+    <ButtonContainer>
+      <FactorHolder>
+        {_.zipWith(factorButtons, factorValues, function (button, value) {
+          return (
+            <NumberButton
+              key={button}
+              onClick={() => {
+                factorSplit(button, value);
+              }}
+            >
+              {button}
+            </NumberButton>
+          );
+        })}
+      </FactorHolder>
+      <CloseIcon onClick={() => handleOpenClose()}>
+        <FontAwesomeIcon icon={faRectangleXmark} />
+      </CloseIcon>
+    </ButtonContainer>
   );
 }
