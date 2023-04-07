@@ -36,14 +36,12 @@ export default function NameButton({ name, category, nameSound }) {
   };
 
   return (
-    <>
-      <div>
+      <Name onClick={playAudio}> 
         {name.length > 10 ? (
           <div className="name">{name}</div>
         ) : (
-          <Name>{name}</Name>
+          <div>{name}</div>
         )}
-      </div>
-    </>
+      </Name>
   );
 }

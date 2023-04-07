@@ -7,6 +7,21 @@ export const Name = styled.div`
   height: 62px;
   margin-bottom: 0px;
   margin-top: 0px;
+  &:hover {
+    color: #2f4f4f !important;
+    cursor: pointer;
+  }
+  .name {
+    font-size: 40px;
+    align-self: center;
+    line-height: 61px;
+    height: 62px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    width: 185px;
+    line-height: 35px;
+  }
 `;
 
 export const Icon = styled.div`
