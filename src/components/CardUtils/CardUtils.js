@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShapes, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-export default function CardUtils({ name, nameSound, funFacts, getAudio, id, category, handleLike, handleOpenClose, isLiked, ...props }) {
+export default function CardUtils({ name, nameSound, funFacts, getAudio, id, category, handleLike, xSectionCloser, isLiked, ...props }) {
   const handleLikeHeart = (id, category, list) => {
     handleLike(id, category, list);
   };
@@ -24,7 +24,7 @@ export default function CardUtils({ name, nameSound, funFacts, getAudio, id, cat
         nameSound={nameSound}
         category={category}
       />
-        <DestructButton onClick={() => handleOpenClose()}>
+        <DestructButton onClick={() => xSectionCloser()}>
           <button>
             <FontAwesomeIcon icon={faShapes} />
           </button>

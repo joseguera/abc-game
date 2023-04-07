@@ -12,15 +12,15 @@ import {
   AnimalIcon,
 } from "./Button.styles";
 
-export default function Button(props) {
+export default function Button({ category, item }) {
   return (
-    <Link to={`/${props.category}/${props.item.id}`} style={styledLink} >
+    <Link to={`/${category}/${item.id}`} style={styledLink} >
       <StyledLetter
         className="alphabet-letter"
       >
         <ButtonHeader>
-          <Letter>{props.item.value}</Letter>
-          {props.item.isLiked && (
+          <Letter>{item.value}</Letter>
+          {item.isLiked && (
             <Icon>
               <FontAwesomeIcon className="heart-icon" icon={faHeart} />
             </Icon>
@@ -28,9 +28,9 @@ export default function Button(props) {
         </ButtonHeader>
         <IconHolder>
           <AnimalIcon
-            src={props.item.image}
-            className={props.item.horizontal ? "horizontal" : "vertical"}
-            alt="none"
+            src={item.image}
+            className={item.horizontal ? "horizontal" : "vertical"}
+            alt={item.name}
           />
         </IconHolder>
       </StyledLetter>

@@ -14,7 +14,7 @@ import {
   CloseIcon,
 } from "./FactorButtons.styles";
 
-export default function FactorButtons({ item, handleOpenClose, ...props }) {
+export default function FactorButtons({ item, xSectionCloser, ...props }) {
   const factors = factorFinder(primeFactorization(item.id));
   const factorButtons = removeDuplicates(factors);
   const factorValues = [...factorButtons].reverse();
@@ -39,7 +39,7 @@ export default function FactorButtons({ item, handleOpenClose, ...props }) {
           );
         })}
       </FactorHolder>
-      <CloseIcon onClick={() => handleOpenClose()}>
+      <CloseIcon onClick={() => xSectionCloser()}>
         <FontAwesomeIcon icon={faRectangleXmark} />
       </CloseIcon>
     </ButtonContainer>
