@@ -1,4 +1,8 @@
-// Design for zebrAPI which is the backbone of the Aby Zebra web app
+// Design for  zebrAPI which is the backbone of the Aby Zebra web app
+
+
+import impala from "./images/animals/impala.png";
+import okapi from 'images/animals/okapi.png';
 
 const animalImages = process.env.REACT_APP_ANIMAL_IMAGE_URL;
 const artsImages = process.env.REACT_APP_INSTRUMENT_IMAGE_URL;
@@ -181,7 +185,7 @@ export const scienceArray = [
     id: "impala",
     value: "I",
     clicked: false,
-    image: `${animalImages}/impala.png`,
+    image: impala,
     name: {
       eng: "Impala",
       spa: "Impala",
@@ -307,7 +311,7 @@ export const scienceArray = [
     id: "okapi",
     value: "O",
     clicked: false,
-    image: `${animalImages}/okapi.png`,
+    image: okapi,
     name: {
       eng: "Okapi",
       spa: "Okapi",
