@@ -7,7 +7,6 @@ import {
 } from "./LetterTileHolder.styles";
 
 export default function LetterTileHolder(props) {
-  console.log(props.name.eng)
   return (
     <AnimalNameHolder>
       {props.name.eng.length > 10 ? (

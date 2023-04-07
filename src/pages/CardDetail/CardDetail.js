@@ -25,6 +25,7 @@ export default function CardDetail({
   sounds,
   syllableSounds,
   handleLike,
+  handleOpenClose,
   ...props
 }) {
   const [isDestructOpen, setIsDestructOpen] = useState(false);
@@ -40,9 +41,8 @@ export default function CardDetail({
   };
 
   let item = list[list.findIndex(itemIndex)];
-  console.log(item);
-
-  const handleOpenClose = () => {
+  
+  const xSectionCloser = () => {
     const clicked = isDestructOpen;
     setIsDestructOpen(!clicked);
     audio.volume = 0;
@@ -68,7 +68,7 @@ export default function CardDetail({
               {item.value}
             </UnitHolder>
             <Link to={`/${category}`}>
-              <XCloser onClick={() => handleOpenClose(item, audio)}>
+              <XCloser onClick={() => handleOpenClose(item.id, category, list, audio)}>
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
             </Link>
@@ -100,13 +100,13 @@ export default function CardDetail({
                   sounds={sounds}
                   syllableSounds={syllableSounds}
                   value={item.value}
-                  handleOpenClose={() => handleOpenClose()}
+                  xSectionCloser={() => xSectionCloser()}
                 />
               ) : (
                 <FactorButtons
                   item={item}
                   factorSplit={factorSplit}
-                  handleOpenClose={() => handleOpenClose()}
+                  xSectionCloser={() => xSectionCloser()}
                 />
               )
             ) : (
@@ -114,7 +114,7 @@ export default function CardDetail({
                 list={list}
                 item={item}
                 getAudio={getAudio}
-                handleOpenClose={handleOpenClose}
+                xSectionCloser={xSectionCloser}
                 handleLike={handleLike}
                 id={item.id}
                 category={category}

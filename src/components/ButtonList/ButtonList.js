@@ -2,17 +2,15 @@ import React from "react";
 import { Button } from "components";
 import { ButtonMatrix, ButtonRow } from "./ButtonList.styles";
 
-export default function ButtonList(props) {
+export default function ButtonList({ list, category }) {
   return (
     <ButtonMatrix>
-      {props.list.map((item) => {
+      {list.map((item) => {
         return (
           <ButtonRow key={item.id}>
             <Button
-              category={props.category}
-              handleOpenClose={props.handleOpenClose}
+              category={category}
               item={item}
-              handleLike={props.handleLike}
             />
           </ButtonRow>
         );

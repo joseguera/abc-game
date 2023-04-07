@@ -48,15 +48,25 @@ export default function App() {
       to the LetterDetail
   */
 
-  const handleOpenClose = (letter, audio = new Audio()) => {
-    const newList = animals.map((element) => {
-      if (letter.id === element.id) {
+  const handleOpenClose = (id, category, list, audio = new Audio()) => {
+    const newList = list.map((element) => {
+      if (id === element.id) {
         element.clicked = !element.clicked;
       }
       return element;
     });
+
+    if (category === "science") {
+      setAnimals(newList);
+    }
+    if (category === "arts") {
+      setInstruments(newList);
+    }
+    if (category === "math") {
+      setNumbers(newList);
+    }
+
     const clicked = detailOpen;
-    setAnimals(newList);
     setDetailOpen(!clicked);
     return (audio.volume = 0);
   };
@@ -64,8 +74,7 @@ export default function App() {
   const handleLike = (id, category, list) => {
     const newList = list.map((buttonValue) => {
       if (id === buttonValue.id) {
-        buttonValue.isLiked =
-          String(buttonValue.isLiked) === "true" ? false : true;
+        buttonValue.isLiked = !buttonValue.clicked;
       }
       return buttonValue;
     });
