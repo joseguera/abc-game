@@ -74,7 +74,7 @@ export default function App() {
   const handleLike = (id, category, list) => {
     const newList = list.map((buttonValue) => {
       if (id === buttonValue.id) {
-        buttonValue.isLiked = !buttonValue.clicked;
+        buttonValue.isLiked =  String(buttonValue.isLiked) === "true" ? false : true;
       }
       return buttonValue;
     });
