@@ -1,29 +1,35 @@
-import React, { useState } from "react";
-import { NameButton, SoundEffectButton, FactButton } from "components";
+import React from "react";
+import {
+  NameButton,
+  SoundEffectButton,
+  FactButton,
+  LikeButton,
+} from "components";
 import {
   Utils,
   NameHolder,
   DestructButton,
   IconHolder,
-  IconHeartLiked,
-  IconHeartNotLiked,
 } from "./CardUtils.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShapes, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faShapes } from "@fortawesome/free-solid-svg-icons";
 
-export default function CardUtils({ name, nameSound, funFacts, getAudio, id, category, handleLike, xSectionCloser, isLiked, ...props }) {
-  const handleLikeHeart = (id, category, list) => {
-    handleLike(id, category, list);
-  };
-
+export default function CardUtils({
+  name,
+  nameSound,
+  funFacts,
+  getAudio,
+  id,
+  category,
+  handleLike,
+  xSectionCloser,
+  isLiked,
+  list,
+}) {
   return (
     <Utils>
       <NameHolder>
-      <NameButton
-        name={name.eng}
-        nameSound={nameSound}
-        category={category}
-      />
+        <NameButton name={name.eng} nameSound={nameSound} category={category} />
         <DestructButton onClick={() => xSectionCloser()}>
           <button>
             <FontAwesomeIcon icon={faShapes} />
@@ -31,25 +37,20 @@ export default function CardUtils({ name, nameSound, funFacts, getAudio, id, cat
         </DestructButton>
       </NameHolder>
       <IconHolder>
-        <SoundEffectButton
-          nameSound={nameSound}
-          category={category}
-        />
+        <SoundEffectButton nameSound={nameSound} category={category} />
         <FactButton
           name={name.eng}
           nameSound={nameSound}
           funFacts={funFacts}
           getAudio={getAudio}
         />
-        {isLiked ? ( // Simplify this button's functionality
-          <IconHeartLiked onClick={() => handleLikeHeart(id, category, props.list)}>
-            <FontAwesomeIcon icon={faHeart} />
-          </IconHeartLiked>
-        ) : (
-          <IconHeartNotLiked onClick={() => handleLikeHeart(id, category, props.list)}>
-            <FontAwesomeIcon icon={faHeart} />
-          </IconHeartNotLiked>
-        )}
+        <LikeButton
+          handleLike={handleLike}
+          isLiked={isLiked}
+          id={id}
+          category={category}
+          list={list}
+        />
       </IconHolder>
     </Utils>
   );
