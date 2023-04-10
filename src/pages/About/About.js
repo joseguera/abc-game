@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { animalFactCitations } from "../../zebrAPI";
-import { AboutHolder, SteamHeading } from "./About.styles";
+import { AboutHolder, Title, Instructions, CitationHolder, SubTitle, SteamHeading, Links } from "./About.styles";
 
 export default function About(props) {
   const [steamCategories, setSteamCategories] = useState({
@@ -24,8 +24,8 @@ export default function About(props) {
 
   return (
     <AboutHolder>
-      <h2>About</h2>
-      <p>
+      <Title>About</Title>
+      <Instructions>
         These are the links we used to create our fun facts:
         <br />
         <span>
@@ -35,10 +35,10 @@ export default function About(props) {
             links to other pages on these sites. Parental discretion is advised.
           </i>
         </span>
-      </p>
+      </Instructions>
 
-      <div>
-        <h3>Citations</h3>
+      <CitationHolder>
+        <SubTitle>Citations</SubTitle>
         <SteamHeading onClick={() => openCitations("science")}>
           Science Facts{" "}
           {steamCategories.science.click ? (
@@ -48,17 +48,18 @@ export default function About(props) {
           )}
         </SteamHeading>
         {steamCategories.science.click && (
-          <div style={{ width: "300px", fontSize: "12px" }}>
+          <Links>
               {Object.values(animalFactCitations).map((fact, idx) => {
                 return (
                   <ul key={idx}>
+                    <p>Name</p>
                     <li><a href={fact.F1} target="_blank" rel="noopener noreferrer">{fact.F1}</a></li>
                     <li><a href={fact.F2} target="_blank" rel="noopener noreferrer">{fact.F2}</a></li>
                     <li><a href={fact.F3} target="_blank" rel="noopener noreferrer">{fact.F3}</a></li>
                   </ul>
                 );
               })}
-          </div>
+          </Links>
         )}
         <SteamHeading onClick={() => openCitations("arts")}>
           Art Facts{" "}
@@ -84,7 +85,7 @@ export default function About(props) {
             </ul>
           </div>
         )}
-      </div>
+      </CitationHolder>
     </AboutHolder>
   );
 }
