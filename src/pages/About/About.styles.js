@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AboutHolder = styled.div`
+    padding: 20px;
     .hide {
         display: none;
     }
@@ -9,7 +10,40 @@ export const AboutHolder = styled.div`
     }
 `;
 
+export const Title = styled.div`
+    font-size: 24px;
+`;
+
+export const SubTitle = styled.div`
+    font-size: 20px;
+`;
+
+export const Instructions = styled.p`
+    font-size: 16px;
+`;
+
+export const CitationHolder = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+`;
+
 export const SteamHeading = styled.div`
-    padding-bottom: 20px;
     cursor: pointer;
 `;
+
+export const Links = styled.div`
+    width: 390px;
+    overflow-wrap: break-word;
+    a {
+        text-decoration: none;
+        color: #ff6347;
+    }
+    a:visited {
+        color: tomato;
+    }
+    a:hover {
+        color: #801300;
+    }
+`;
+
