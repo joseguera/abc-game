@@ -4,6 +4,7 @@ import {
   CardUtils,
   FactorButtons,
   FactorUnitAnimations,
+  SlideShow,
 } from "components";
 import {
   CardHolder,
@@ -42,8 +43,6 @@ export default function CardDetail({
 
   let item = list[list.findIndex(itemIndex)];
 
-  console.log(list.findIndex(itemIndex))
-  
   const xSectionCloser = () => {
     const clicked = isDestructOpen;
     setIsDestructOpen(!clicked);
@@ -60,17 +59,42 @@ export default function CardDetail({
     setValue(value);
   };
 
+  const destructComponents = {
+    science: (
+      <SpellingCard
+        item={item}
+        sounds={sounds}
+        syllableSounds={syllableSounds}
+        value={item.value}
+        xSectionCloser={() => xSectionCloser()}
+      />
+    ),
+    arts: <SlideShow xSectionCloser={() => xSectionCloser()} />,
+    math: (
+      <FactorButtons
+        item={item}
+        factorSplit={factorSplit}
+        xSectionCloser={() => xSectionCloser()}
+      />
+    ),
+  };
+
+  const openDestruct = (category) => {
+    return destructComponents[category];
+  }
+
   return (
     <CardHolder>
       <CardLetter key={item.id}>
         <PlayingCard>
           <XCloserHolder>
             <UnitHolder>
-              {/* <FontAwesomeIcon icon={faMap} /> */}
               {item.value}
             </UnitHolder>
             <Link to={`/${category}`}>
-              <XCloser onClick={() => handleOpenClose(item.id, category, list, audio)}>
+              <XCloser
+                onClick={() => handleOpenClose(item.id, category, list, audio)}
+              >
                 <FontAwesomeIcon icon={faXmark} />
               </XCloser>
             </Link>
@@ -96,21 +120,7 @@ export default function CardDetail({
           <NameHolder>
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
             {isDestructOpen ? (
-              category === "science" || category === "arts" ? (
-                <SpellingCard
-                  item={item}
-                  sounds={sounds}
-                  syllableSounds={syllableSounds}
-                  value={item.value}
-                  xSectionCloser={() => xSectionCloser()}
-                />
-              ) : (
-                <FactorButtons
-                  item={item}
-                  factorSplit={factorSplit}
-                  xSectionCloser={() => xSectionCloser()}
-                />
-              )
+              openDestruct(category)
             ) : (
               <CardUtils
                 list={list}
