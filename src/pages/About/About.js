@@ -2,7 +2,17 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { animalFactCitations } from "../../zebrAPI";
-import { AboutHolder, Title, Instructions, CitationHolder, SubTitle, SteamHeading, Links } from "./About.styles";
+import {
+  AboutHolder,
+  Title,
+  Instructions,
+  CitationHolder,
+  SubTitle,
+  SteamHeading,
+  AnimalName,
+  AnimalFact,
+  Links,
+} from "./About.styles";
 
 export default function About(props) {
   const [steamCategories, setSteamCategories] = useState({
@@ -20,6 +30,35 @@ export default function About(props) {
     }
     let showCitation = clicked;
     setClicked(!showCitation);
+  }
+
+  function setLinks(object) {
+    const linkBlock = Object.entries(object).map(([name, link]) => {
+      let linkName = name.split("_").join(" ");
+      return (
+        <>
+          <AnimalName>{linkName}</AnimalName>
+          <ul>
+            <AnimalFact>
+              <a href={link.F1} target="_blank" rel="noopener noreferrer">
+                {link.F1}
+              </a>
+            </AnimalFact>
+            <AnimalFact>
+              <a href={link.F2} target="_blank" rel="noopener noreferrer">
+                {link.F2}
+              </a>
+            </AnimalFact>
+            <AnimalFact>
+              <a href={link.F3} target="_blank" rel="noopener noreferrer">
+                {link.F3}
+              </a>
+            </AnimalFact>
+          </ul>
+        </>
+      );
+    });
+    return linkBlock;
   }
 
   return (
@@ -48,18 +87,7 @@ export default function About(props) {
           )}
         </SteamHeading>
         {steamCategories.science.click && (
-          <Links>
-              {Object.values(animalFactCitations).map((fact, idx) => {
-                return (
-                  <ul key={idx}>
-                    <p>Name</p>
-                    <li><a href={fact.F1} target="_blank" rel="noopener noreferrer">{fact.F1}</a></li>
-                    <li><a href={fact.F2} target="_blank" rel="noopener noreferrer">{fact.F2}</a></li>
-                    <li><a href={fact.F3} target="_blank" rel="noopener noreferrer">{fact.F3}</a></li>
-                  </ul>
-                );
-              })}
-          </Links>
+          <Links>{setLinks(animalFactCitations)}</Links>
         )}
         <SteamHeading onClick={() => openCitations("arts")}>
           Art Facts{" "}

@@ -32,6 +32,16 @@ export const SteamHeading = styled.div`
     cursor: pointer;
 `;
 
+export const AnimalName = styled.p`
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: 10px;
+`;
+
+export const AnimalFact = styled.li`
+    font-size: 12px;
+`;
+
 export const Links = styled.div`
     width: 390px;
     overflow-wrap: break-word;
