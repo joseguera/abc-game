@@ -30,6 +30,7 @@ const animals = {
   const instruments = {
     aeolian_harp: require("./instruments/aeolian-harp.png"),
     didgeridoo: require("./instruments/didgeridoo.png"),
+    mbira: require("./instruments/mbira.png"),
     zarb: require("./instruments/zarb.png"),
   }
   
