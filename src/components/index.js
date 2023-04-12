@@ -14,3 +14,4 @@ export { default as FactorUnitAnimations } from "./FactorUnitAnimations";
 export { default as Menu } from "./Menu";
 export { default as Header } from "./Header";
 export { default as LikeButton } from "./LikeButton";
+export { default as SlideShow } from "./SlideShow";
