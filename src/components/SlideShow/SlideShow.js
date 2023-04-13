@@ -11,10 +11,8 @@ export default function SlideShow({ xSectionCloser }) {
   const [slide, setSlide] = useState(0);
 
   const slideContent = [
-    <Fact>Information about the country or region of origin.</Fact>,
-    <Fact>
-      Information about the materials used to make it/how the instrument is
-      made.
+    <Fact>Place of Origin: Africa<br />Flag: [FLAG]</Fact>,
+    <Fact>Instrument Type: Wind<br />Made of Material: Wood
     </Fact>,
     <Fact>YouTube video of a musician playing the instrument.</Fact>,
   ];
