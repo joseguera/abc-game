@@ -15,8 +15,8 @@ export const SlideHolder = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
-  width: 295px;
+  gap: 15px;
+  height: 145px;
   color: #2f4f4f;
   .arrow-icon {
     font-size: 27px;
@@ -32,15 +32,16 @@ export const Slide = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 250px;
 `;
 
 export const Fact = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 225px;
+  font-size: 16px;
+  word-break: break-word;
+  width: 250px;
 `;
 
 export const CloseIcon = styled.div`
