@@ -74,3 +74,8 @@ export const Dot = styled.div`
   animation: ${example} 4s infinite;
   // position: relative;
 `;
+
+export const UnitImage = styled.img`
+  width: 15px;
+  height: 15px;
+`;

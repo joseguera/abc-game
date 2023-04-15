@@ -1,6 +1,6 @@
 import React from "react";
-import { DotPicture, DotHolder, Dot } from "./FactorUnitAnimations.styles";
-import { CardHolder } from "../../pages/CardDetail/CardDetail.styles";
+import apple from '../../images/numbers/apple.png';
+import { DotPicture, UnitImage, DotHolder, Dot } from "./FactorUnitAnimations.styles";
 
 export default function FactorUnitAnimations({ unitNumber, button, value }) {
   const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
@@ -15,7 +15,8 @@ export default function FactorUnitAnimations({ unitNumber, button, value }) {
         return (
           <div className={value > 5 ? "smallNumber" : "bigNumber"} key={index}>
             {beads.map((el2, index2) => {
-              return <Dot key={index2}></Dot>;
+              // return <Dot key={index2}></Dot>;
+              return <UnitImage key={index2} src={apple} />
             })}
           </div>
         );
