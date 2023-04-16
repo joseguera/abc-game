@@ -17,6 +17,7 @@ import { faShapes } from "@fortawesome/free-solid-svg-icons";
 export default function CardUtils({
   name,
   nameSound,
+  soundEffect,
   funFacts,
   getAudio,
   id,
@@ -37,7 +38,11 @@ export default function CardUtils({
         </DestructButton>
       </NameHolder>
       <IconHolder>
-        <SoundEffectButton nameSound={nameSound} category={category} />
+        <SoundEffectButton
+          soundEffect={soundEffect}
+          getAudio={getAudio}
+          category={category}
+        />
         <FactButton
           name={name.eng}
           nameSound={nameSound}

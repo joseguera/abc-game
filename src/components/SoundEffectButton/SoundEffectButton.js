@@ -1,22 +1,19 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { change } from "../../features/playing/playingSlice";
 import { Icon, IconDisabled } from "./SoundEffectButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlask, faMusic, faCalculator } from "@fortawesome/free-solid-svg-icons";
 
-export default function SoundEffectButton({ nameSound, category }) {
+export default function SoundEffectButton({ soundEffect, getAudio, category }) {
+  const dispatch = useDispatch();
   const playing = useSelector((state) => state.playing.value);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(nameSound)
+    typeof Audio !== "undefined" && new Audio(soundEffect)
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 
-  const playAudio = () => {
-    const audioDuration = Math.ceil(audio.duration * 1000);
-    setAudioTrackDuration(audioDuration);
-    return audio.play();
-  };
-
+  
   const soundEffectButton = (listTopic) => {
     let topicIcon = {};
     if (listTopic === "science") {
@@ -30,6 +27,21 @@ export default function SoundEffectButton({ nameSound, category }) {
     }
     return topicIcon;
   }
+
+  const playAudio = () => {
+    dispatch(change(false));
+    const audioDuration = Math.ceil(audio.duration * 1000);
+    setAudioTrackDuration(audioDuration);
+    getAudio(audio)
+    return audio.play();
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      dispatch(change(true));
+    }, audioTrackDuration);
+    return () => clearTimeout(timer);
+  }, [audioTrackDuration, dispatch]);
 
   return (
     <>

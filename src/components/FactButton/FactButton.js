@@ -32,7 +32,7 @@ export default function FactButton({ funFacts, getAudio }) {
     dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
     setAudioTrackDuration(audioDuration);
-    getAudio(audio)
+    getAudio(audio);
     return audio.play();
   };
 
