@@ -83,3 +83,92 @@ export function removeDuplicates(factors) {
 }
 
 // console.log(removeDuplicates(factorFinder(number)))
+
+//////////////////////////////////////////////////////////
+///////////////// DOT ORGANIZER FUNCTION /////////////////
+//////////////////////////////////////////////////////////
+
+function dotOrganizer(num) {
+  let numOfDots = num;
+  let remainder = 0;
+  let dots = [];
+  let rows = [];
+  let primeFactors = [7, 5, 3, 2];
+  let dot = ".";
+  let newLine = "\n";
+
+  for (let i = 0; i < numOfDots; i++) {
+    if (numOfDots > 5) {
+      remainder = numOfDots - 5;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+    if (numOfDots > 3) {
+      remainder = numOfDots - 3;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+    if (numOfDots > 2) {
+      remainder = numOfDots - 2;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+  }
+  rows.push(remainder);
+
+  rows.sort();
+
+  console.log(rows);
+
+  /*
+      newRow and oldRow go through a loop that will push/unshift
+      the factors in the "rows" array.
+
+      The goal is to create a bell curve shape that places the smallest numbers
+      at the ends and the largest ones at the center
+  */
+
+  let newRow = [];
+  let oldRow = [];
+  for (let i = 0; i < rows.length; i += 2) {
+    newRow.push(rows[i]);
+    oldRow.unshift(rows[i + 1]);
+  }
+  console.log(newRow);
+  console.log(oldRow);
+
+  /*
+      For an array with the following numbers: [1,2,2,3,3,3,5,5],
+      the loop above will return two arrays: newRow = [1,2,3,5] and oldRow = [5,3,3,2] 
+  */
+
+  /* 
+      finalRow concatenates the newRow and oldRow arrays
+  */
+  let finalRow = newRow.concat(oldRow);
+  console.log(finalRow);
+
+  /*
+      dots is an array that is created by mapping through the finalRow
+      and it uses the .repeat() method to multiply a "dot" string
+      by each number in the finalRow array
+  */
+  dots = finalRow.map((row) => {
+    return dot.repeat(row);
+  });
+  console.log(dots);
+
+  /*
+    Since the "dots" array displays the "dot" string in an array, organizedDots
+    uses the join() method to create a giant string using "\n" as a means
+    to joining all of the dots together. Thus, creating an organized image of dots.
+  */
+  let organizedDots = dots.join(newLine);
+
+  return organizedDots;
+}
+
+console.log(dotOrganizer(5));
