@@ -132,6 +132,7 @@ export default function CardDetail({
                 category={category}
                 name={item.name}
                 nameSound={item.nameSound}
+                soundEffect={item.soundEffect}
                 funFacts={item.funFacts}
                 isLiked={item.isLiked}
               />

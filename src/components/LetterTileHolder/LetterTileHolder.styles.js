@@ -23,3 +23,14 @@ export const TileRow = styled.div`
 export const Test = styled.div`
   border: 1px solid black;
 `;
+
+
+/////////////////////////////////////////////////////////////////////
+
+export const Dash = styled.div`
+  width: 10.65px;
+  height: 42px;
+  line-height: 42px;
+  cursor: auto;
+  border: none !important;
+`;
