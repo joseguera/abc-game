@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { change } from "../../features/playing/playingSlice";
-import { Button, Icon, IconDisabled } from "./SoundEffectButton.styles";
+import { Icon, IconDisabled } from "./SoundEffectButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlask, faMusic, faCalculator } from "@fortawesome/free-solid-svg-icons";
 
@@ -44,7 +44,7 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
   }, [audioTrackDuration, dispatch]);
 
   return (
-    <Button>
+    <>
       {playing ? (
         <Icon>
           <FontAwesomeIcon icon={soundEffectButton(category)} onClick={() => playAudio()} />
@@ -54,6 +54,6 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
           <FontAwesomeIcon icon={soundEffectButton(category)} />
         </IconDisabled>
       )}
-    </Button>
+    </>
   );
 }
