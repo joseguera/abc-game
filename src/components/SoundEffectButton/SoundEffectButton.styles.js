@@ -1,19 +1,6 @@
 import styled from "styled-components";
 
-
-
-export const Button = styled.div`
-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
-}
-`;
-
-export const Icon = styled.button`
+export const Icon = styled.div`
   font-size: 27px;
   cursor: pointer;
   color: #2f4f4f;
