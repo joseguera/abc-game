@@ -121,7 +121,7 @@ function dotOrganizer(num) {
 
   rows.sort();
 
-  console.log(rows);
+  // console.log(rows);
 
   /*
       newRow and oldRow go through a loop that will push/unshift
@@ -137,8 +137,6 @@ function dotOrganizer(num) {
     newRow.push(rows[i]);
     oldRow.unshift(rows[i + 1]);
   }
-  console.log(newRow);
-  console.log(oldRow);
 
   /*
       For an array with the following numbers: [1,2,2,3,3,3,5,5],
@@ -159,7 +157,7 @@ function dotOrganizer(num) {
   dots = finalRow.map((row) => {
     return dot.repeat(row);
   });
-  console.log(dots);
+  // console.log(dots);
 
   /*
     Since the "dots" array displays the "dot" string in an array, organizedDots
