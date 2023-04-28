@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const CardHolder = styled.div`
   display: flex;
@@ -31,12 +32,17 @@ export const PlayingCard = styled.div`
 export const XCloserHolder = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
-export const XCloser = styled.div`
-  cursor: pointer;
+export const XCloser = styled.button`
+  font-size: 27px;
+`;
+
+export const XCloserLink = styled(Link)`
   font-size: 27px;
   color: #2f4f4f;
+  text-decoration: none;
   &:hover {
     color: #4d8080 !important;
   }

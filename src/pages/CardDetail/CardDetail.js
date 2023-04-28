@@ -12,13 +12,13 @@ import {
   PlayingCard,
   XCloserHolder,
   XCloser,
+  XCloserLink,
   UnitHolder,
   ImageHolder,
   NameHolder,
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 export default function CardDetail({
   list,
@@ -81,23 +81,22 @@ export default function CardDetail({
 
   const openDestruct = (category) => {
     return destructComponents[category];
-  }
+  };
 
   return (
     <CardHolder>
       <CardLetter key={item.id}>
         <PlayingCard>
           <XCloserHolder>
-            <UnitHolder>
-              {item.value}
-            </UnitHolder>
-            <Link to={`/${category}`}>
-              <XCloser
-                onClick={() => handleOpenClose(item.id, category, list, audio)}
-              >
-                <FontAwesomeIcon icon={faXmark} />
-              </XCloser>
-            </Link>
+            <UnitHolder>{item.value}</UnitHolder>
+            <XCloser
+              onClick={() => handleOpenClose(item.id, category, list, audio)}
+            >
+              <XCloserLink to={`/${category}`}>
+                {/* <FontAwesomeIcon icon={faXmark} /> */}
+                &#x2715;
+              </XCloserLink>
+            </XCloser>
           </XCloserHolder>
           <ImageHolder>
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
