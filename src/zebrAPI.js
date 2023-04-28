@@ -536,7 +536,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact2_ugljou.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact3_gaevzy.mp3",
     ],
-    horizontal: true,
+    horizontal: false,
     isLiked: false,
   },
   {
