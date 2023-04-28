@@ -20,11 +20,11 @@ const animals = {
     snake: require("./animals/snake.png"),
     tiger: require("./animals/tiger.png"),
     unau: require("./animals/unau.png"),
-    // vervet_monkey: require("./animals/vervet-monkey.png"),
+    vervet_monkey: require("./animals/vervet_monkey.png"),
     // warthog: require("./animals/warthog.png"),
     xenops: require("./animals/xenops.png"),
-    // yellow_mongoose: require("./animals/yellow-mongoose.png"),
-    // zebra: require("./animals/zebra.png")
+    yellow_mongoose: require("./animals/yellow_mongoose.png"),
+    zebra: require("./animals/zebra.png")
   };
 
   const instruments = {
