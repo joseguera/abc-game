@@ -1,8 +1,7 @@
 // Design for  zebrAPI which is the backbone of the Aby Zebra web app
 
 import images from "./images/index.js";
-import gorillaSound from "./sounds/gorilla.mp3";
-import xenopsSound from "./sounds/xenops.wav";
+import sounds from "./sounds/index.js";
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
@@ -22,15 +21,14 @@ export const scienceArray = [
     syllables: ["Al", "li", "ga", "tor"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.alligator,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/alligator_fact1_jzvtc3.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/alligator_fact2_krxfag.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/alligator_fact3_kudvzs.mp3",
     ],
     horizontal: true,
-    isLiked: true,
+    isLiked: false,
   },
   {
     id: "baboon",
@@ -46,14 +44,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/baboon_fact1_vhvzyk.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/baboon_fact2_jh0az6.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/baboon_fact3_a7j7vh.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "chimpanzee",
@@ -68,8 +66,7 @@ export const scienceArray = [
     syllables: ["Chim", "pan", "zee"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.chimpanzee,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/chimpanzee_fact1_qv9lyc.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/chimpanzee_fact2_uhizwa.mp3",
@@ -91,8 +88,8 @@ export const scienceArray = [
     syllables: ["Din", "go"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.dingo,
+
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/dingo_fact1_kswj5g.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/dingo_fact2_n1ijx8.mp3",
@@ -114,8 +111,8 @@ export const scienceArray = [
     syllables: ["El", "e", "phant"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.elephant,
+
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/elephant_fact1_ejcgdf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/elephant_fact2_hacxsi.mp3",
@@ -137,8 +134,7 @@ export const scienceArray = [
     syllables: ["Frog"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/frog_fact1_rfrsgr.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/frog_fact2_ng3wgh.mp3",
@@ -160,7 +156,7 @@ export const scienceArray = [
     syllables: ["Go", "ril", "la"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
-    soundEffect: gorillaSound,
+    soundEffect: sounds.animals.gorilla,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/gorilla_fact1_cgq79y.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/gorilla_fact2_bxywsw.mp3",
@@ -182,8 +178,7 @@ export const scienceArray = [
     syllables: ["Hy", "e", "na"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.impala,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/hyena_fact1_qtugg1.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/hyena_fact2_qzdyqx.mp3",
@@ -205,8 +200,7 @@ export const scienceArray = [
     syllables: ["Im", "pal", "a"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.impala,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/impala_fact1_nq6zzx.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/impala_fact2_wc1yil.mp3",
@@ -229,14 +223,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact1_nfjkrf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact2_tnqran.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact3_clfmtr.mp3",
     ],
     horizontal: true,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "koala",
@@ -252,14 +246,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact1_vgfacw.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact2_wzdxnq.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact3_nyynb4.mp3",
     ],
     horizontal: true,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "lemur",
@@ -275,14 +269,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/lemur_fact1_rjnhm4.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/lemur_fact2_sthf0x.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/lemur_fact3_dechin.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "macaw",
@@ -297,8 +291,7 @@ export const scienceArray = [
     syllables: ["Ma", "caw"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.macaw,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/macaw_fact1_abx8vt.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/macaw_fact2_veofca.mp3",
@@ -321,14 +314,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/numbat_fact1_ymumed.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/numbat_fact2_laiinf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/numbat_fact3_lyn45a.mp3",
     ],
     horizontal: true,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "okapi",
@@ -343,8 +336,7 @@ export const scienceArray = [
     syllables: ["O", "ka", "pi"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.okapi,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/okapi_fact1_rhj1gd.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/okapi_fact2_y3ajoz.mp3",
@@ -366,8 +358,7 @@ export const scienceArray = [
     syllables: ["Pan", "da"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.panda,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/panda_fact1_mpa17k.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/panda_fact2_mo56nu.mp3",
@@ -389,8 +380,7 @@ export const scienceArray = [
     syllables: ["Quet", "zal"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.quetzal,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661509/animal_facts_audio/quetzal_fact1_mmzilu.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661509/animal_facts_audio/quetzal_fact2_owzkum.mp3",
@@ -412,8 +402,7 @@ export const scienceArray = [
     syllables: ["Rhi", "noc", "er", "os"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.rhinoceros,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/rhinoceros_fact1_idngtl.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/rhinoceros_fact2_e4hwic.mp3",
@@ -435,8 +424,7 @@ export const scienceArray = [
     syllables: ["Snake"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.snake,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/snake_fact1_dxxhpf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/snake_fact2_eztwvt.mp3",
@@ -458,8 +446,7 @@ export const scienceArray = [
     syllables: ["Ti", "ger"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+    soundEffect: sounds.animals.tiger,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/tiger_fact1_nwba8u.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/tiger_fact2_bnksqa.mp3",
@@ -482,14 +469,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact1_ds858v.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact2_hcpoef.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact3_mamotq.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "vervet-monkey",
@@ -508,14 +495,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact1_cz2295.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact2_ycapu7.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact3_lfyjzb.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "warthog",
@@ -531,14 +518,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact1_senecj.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact2_czrjpl.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact3_bukixi.mp3",
     ],
     horizontal: true,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "xenops",
@@ -553,7 +540,7 @@ export const scienceArray = [
     syllables: ["Xe", "nops"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
-    soundEffect: xenopsSound,
+    soundEffect: sounds.animals.xenops,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact1_jecyvz.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact2_kb4twj.mp3",
@@ -579,14 +566,14 @@ export const scienceArray = [
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+      sounds.animals.frog,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/yellow_mongoose_fact1_jgd2eq.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact2_ugljou.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact3_gaevzy.mp3",
     ],
     horizontal: false,
-    isLiked: false,
+    isLiked: true,
   },
   {
     id: "zebra",
@@ -601,15 +588,15 @@ export const scienceArray = [
     syllables: ["Ze", "bra"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
-    soundEffect:
-      "https://upload.wikimedia.org/wikipedia/commons/d/db/Alligatorbellowedit.ogg",
+
+    soundEffect: sounds.animals.zebra,
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
     ],
     horizontal: true,
-    isLiked: true,
+    isLiked: false,
   },
 ];
 
