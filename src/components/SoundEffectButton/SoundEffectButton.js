@@ -39,10 +39,16 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
     return audio.play();
   };
 
+
+  // Need to improve the implementation of this function
   useEffect(() => {
     const timer = setTimeout(() => {
       dispatch(change(true));
+
+      // In particular, right here:
+      // Maybe, carousel between two sound effects?
       setAudioTrackDuration(audioTrackDuration + 500);
+      // **********************************/
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration, dispatch]);
