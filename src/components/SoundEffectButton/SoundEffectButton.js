@@ -31,10 +31,10 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
     return topicIcon;
   };
 
-  const playAudio = (buffer) => {
+  const playAudio = () => {
     dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
-    setAudioTrackDuration(audioDuration + buffer);
+    setAudioTrackDuration(audioDuration);
     getAudio(audio);
     return audio.play();
   };
@@ -44,7 +44,6 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       dispatch(change(true));
-
       // In particular, right here:
       // Maybe, carousel between two sound effects?
       setAudioTrackDuration(audioTrackDuration + 500);
