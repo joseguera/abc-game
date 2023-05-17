@@ -7,7 +7,8 @@ export default function ButtonList({ list, category }) {
     <ButtonMatrix>
       {list.map((item) => {
         return (
-          <ButtonRow key={item.id}>
+          // <ButtonRow key={item.id}>
+          <ButtonRow key={item._id}>
             <Button
               category={category}
               item={item}

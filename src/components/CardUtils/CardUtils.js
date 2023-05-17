@@ -31,6 +31,7 @@ export default function CardUtils({
     <Utils>
       <NameHolder>
         <NameButton name={name.eng} nameSound={nameSound} category={category} />
+        {/* <NameButton name={name} nameSound={nameSound} category={category} /> */}
         <DestructButton onClick={() => xSectionCloser()}>
           <button>
             <FontAwesomeIcon icon={faShapes} />
@@ -45,6 +46,7 @@ export default function CardUtils({
         />
         <FactButton
           name={name.eng}
+          // name={name}
           nameSound={nameSound}
           funFacts={funFacts}
           getAudio={getAudio}

@@ -37,11 +37,15 @@ export default function CardDetail({
   /* finds the index of the object in "list" array being passed down as props
   and provides it to "item" object */
 
-  const itemIndex = (item) => {
-    return item.id === props.match.params.id;
-  };
+  // const itemIndex = () => {
+    // return item.id === props.match.params.id;
+  // };
+  
+  const itemIndex = list.findIndex(animal => animal.id === props.match.params.id);
+  // const itemIndex = list.findIndex(animal => animal.key === props.match.params.id);
 
-  let item = list[list.findIndex(itemIndex)];
+  let item = list[itemIndex];
+  
 
   const xSectionCloser = () => {
     const clicked = isDestructOpen;
@@ -89,6 +93,7 @@ export default function CardDetail({
         <PlayingCard>
           <XCloserHolder>
             <UnitHolder>{item.value}</UnitHolder>
+            {/* <UnitHolder>{value}</UnitHolder> */}
             <XCloser
               onClick={() => handleOpenClose(item.id, category, list, audio)}
             >
