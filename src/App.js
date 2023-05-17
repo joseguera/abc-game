@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import {
   scienceArray,
   artsArray,
@@ -23,6 +24,7 @@ import { MainApp } from "./App.styles";
 export default function App() {
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
+  // const [animals, setAnimals] = useState([]);
   const [sounds, setSounds] = useState(alphabetLetterSounds);
   const [syllables, setSyllables] = useState(animalSyllables);
 
@@ -38,6 +40,19 @@ export default function App() {
   const [detailOpen, setDetailOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);    
   const [loading, isLoading] = useState(false);
+
+  ///////// API Call - MongoDB /////////
+
+  // const getAnimals = async () => {
+  //   try {
+  //     const { data } = await axios(
+  //       `http://localhost:3000/`
+  //     );
+  //     setAnimals(data);    
+  //   } catch (error) {
+  //     console.error("Location Error:", error)
+  //   }
+  // }
 
   ////////////////////////////////////////////
   ///////// PARENT FUNCTIONS - START /////////
@@ -99,12 +114,14 @@ export default function App() {
   ///////// PARENT FUNCTIONS - END /////////
   //////////////////////////////////////////
 
+  // useEffect(() => {
+  //   getAnimals();
+  // }, [])
+
   /////////////////////////////////////
   ///////// IMPROVEMENT NOTES /////////
   /////////////////////////////////////
-  /*
-    
-  */
+  
 
   return (
     <Router>
