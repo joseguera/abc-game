@@ -1,12 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTableCells, faFileExport } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "components";
+import { Button, CardDisplayToggle } from "components";
 import {
+  ButtonListHolder,
   PageHeader,
   PageTitle,
-  CardDisplayToggle,
-  Icon,
   ButtonMatrix,
   ButtonRow,
 } from "./ButtonList.styles";
@@ -15,17 +12,10 @@ export default function ButtonList({ list, category }) {
   const capitalized = category.charAt(0).toUpperCase() + category.slice(1);
 
   return (
-    <>
+    <ButtonListHolder>
       <PageHeader>
         <PageTitle>{capitalized}</PageTitle>
-        <CardDisplayToggle>
-          <Icon>
-            <FontAwesomeIcon icon={faTableCells} />
-          </Icon>
-          <Icon>
-            <FontAwesomeIcon icon={faFileExport} />
-          </Icon>
-        </CardDisplayToggle>
+        <CardDisplayToggle />
       </PageHeader>
       <ButtonMatrix>
         {list.map((item) => {
@@ -37,6 +27,6 @@ export default function ButtonList({ list, category }) {
           );
         })}
       </ButtonMatrix>
-    </>
+    </ButtonListHolder>
   );
 }
