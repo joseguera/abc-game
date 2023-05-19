@@ -15,7 +15,7 @@ import {
 export default function Button({ category, item }) {
   return (
     <Link to={`/${category}/${item.id}`} style={styledLink} >
-    {/* <Link to={`/${category}/${item.key}`} style={styledLink} > */}
+    {/* <Link to={`/${category}/${item.key}`} style={styledLink}> */}
       <StyledLetter
         className="alphabet-letter"
       >
@@ -32,7 +32,7 @@ export default function Button({ category, item }) {
             src={item.image}
             className={item.horizontal ? "horizontal" : "vertical"}
             alt={item.name}
-            // alt={item.name}
+            // alt={item.name.en}
           />
         </IconHolder>
       </StyledLetter>
