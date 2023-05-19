@@ -22,7 +22,6 @@ button, input[type="submit"], input[type="reset"] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   background-color: #fde7b4;
   min-height: 100vh;
 }
