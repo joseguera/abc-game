@@ -36,16 +36,11 @@ export default function CardDetail({
 
   /* finds the index of the object in "list" array being passed down as props
   and provides it to "item" object */
-
-  // const itemIndex = () => {
-    // return item.id === props.match.params.id;
-  // };
   
   const itemIndex = list.findIndex(animal => animal.id === props.match.params.id);
   // const itemIndex = list.findIndex(animal => animal.key === props.match.params.id);
 
-  let item = list[itemIndex];
-  
+  let item = list[itemIndex];  
 
   const xSectionCloser = () => {
     const clicked = isDestructOpen;
@@ -110,6 +105,7 @@ export default function CardDetail({
                 className={item.horizontal ? "horizontal" : "vertical"}
                 src={item.image}
                 alt={item.name}
+                // alt={item.name.en}
               />
             )}
             {/* ///// MATH Image Logic ///// */}
@@ -135,6 +131,7 @@ export default function CardDetail({
                 id={item.id}
                 category={category}
                 name={item.name}
+                // name={item.name.en}
                 nameSound={item.nameSound}
                 soundEffect={item.soundEffect}
                 funFacts={item.funFacts}
