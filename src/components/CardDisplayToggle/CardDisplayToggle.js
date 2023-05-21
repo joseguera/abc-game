@@ -10,7 +10,6 @@ export default function CardDisplayToggle() {
   };
   return (
     <Toggler>
-      {console.log(selected)}
       {selected ? (
         <>
           <SelectedIcon onClick={() => setToggle()}>

@@ -8,13 +8,13 @@ export const CardHolder = styled.div`
 `;
 
 export const CardLetter = styled.div`
-  background-color: cornsilk;
+  background-color: #48a5e0;
   /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
-  border: 1px solid #ff6347;
+  border: 10px solid #fff8dc;
   width: 320px;
   height: 550px;
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
 `;
 
 export const PlayingCard = styled.div`
@@ -41,7 +41,7 @@ export const XCloser = styled.button`
 
 export const XCloserLink = styled(Link)`
   font-size: 27px;
-  color: #2f4f4f;
+  color: #000000;
   text-decoration: none;
   &:hover {
     color: #4d8080 !important;
