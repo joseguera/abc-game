@@ -88,7 +88,7 @@ export function removeDuplicates(factors) {
 ///////////////// DOT ORGANIZER FUNCTION /////////////////
 //////////////////////////////////////////////////////////
 
-function dotOrganizer(num) {
+export function dotOrganizer(num) {
   let numOfDots = num;
   let remainder = 0;
   let dots = [];
@@ -98,8 +98,24 @@ function dotOrganizer(num) {
   let newLine = "\n";
 
   for (let i = 0; i < numOfDots; i++) {
-    if (numOfDots > 5) {
+    if (numOfDots === 5) {
+      rows.push(1, 3, 1);
+      break;
+    }
+    if (numOfDots > 11) {
+      remainder = numOfDots - 7;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+    if (numOfDots > 7) {
       remainder = numOfDots - 5;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+    if (numOfDots > 5) {
+      remainder = numOfDots - 3;
       numOfDots -= remainder;
       rows.push(numOfDots);
       numOfDots = remainder;
@@ -118,7 +134,6 @@ function dotOrganizer(num) {
     }
   }
   rows.push(remainder);
-
   rows.sort();
 
   // console.log(rows);
@@ -147,7 +162,10 @@ function dotOrganizer(num) {
       finalRow concatenates the newRow and oldRow arrays
   */
   let finalRow = newRow.concat(oldRow);
-  console.log(finalRow);
+  // removes undefined values from finalRow
+  // finalRow = finalRow.filter((element) => element !== undefined)
+  finalRow = finalRow.filter((element) => !!element)
+  // console.log(finalRow);
 
   /*
       dots is an array that is created by mapping through the finalRow
@@ -164,9 +182,8 @@ function dotOrganizer(num) {
     uses the join() method to create a giant string using "\n" as a means
     to joining all of the dots together. Thus, creating an organized image of dots.
   */
-  let organizedDots = dots.join(newLine);
+  // let organizedDots = dots.join(newLine);
 
-  return organizedDots;
+  // return organizedDots;
+  return finalRow;
 }
-
-console.log(dotOrganizer(5));
