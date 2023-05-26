@@ -32,6 +32,7 @@ const animals = {
     bell_tree: require("./instruments/bell-tree.png"),
     cuica: require("./instruments/cuica.png"),
     didgeridoo: require("./instruments/didgeridoo.png"),
+    harmonica: require("./instruments/harmonica.png"),
     mbira: require("./instruments/mbira.png"),
     quijada_de_burro: require("./instruments/quijada-de-burro.png"),
     zarb: require("./instruments/zarb.png"),
