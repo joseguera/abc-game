@@ -5,7 +5,7 @@ export const DotPicture = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: 30px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   .bigNumber {
@@ -28,12 +28,11 @@ export const DotPicture = styled.div`
   }
 `;
 
-export const DotHolder = styled.div`
+export const UnitHolder = styled.div`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 20px;
-  gap: 10px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
 `;
