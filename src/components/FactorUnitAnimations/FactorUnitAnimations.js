@@ -1,5 +1,6 @@
 import React from "react";
 import apple from '../../images/numbers/apple.png';
+import { dotOrganizer } from "../../utils/utils.js"
 import { DotPicture, UnitImage, DotHolder, Dot } from "./FactorUnitAnimations.styles";
 
 export default function FactorUnitAnimations({ unitNumber, button, value }) {
@@ -8,6 +9,9 @@ export default function FactorUnitAnimations({ unitNumber, button, value }) {
   const beads = Array.apply(null, Array(unitNumber / beadsPerCup)).map(
     function () {}
   );
+
+  const dotArray = dotOrganizer(value);
+
 
   return (
     <DotPicture>
