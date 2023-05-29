@@ -4,34 +4,27 @@ export const DotPicture = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  gap: 15px;
+  width: 50%;
+  height: 100%;
+  gap: 5px;
+  padding: 0px 5px 5px 0px;
   justify-content: center;
   align-items: center;
-  .bigNumber {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 20px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .smallNumber {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 200px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
+  rotate: 90deg;
+`;
+
+export const UnitGroups = styled.div`
+  display: flex;
+  width: 15px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const UnitHolder = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20px;
+  width: 15px;
   gap: 5px;
   justify-content: center;
   align-items: center;
@@ -65,16 +58,9 @@ const example = keyframes`
     }
 `;
 
-export const Dot = styled.div`
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
-  animation: ${example} 4s infinite;
-  // position: relative;
-`;
-
 export const UnitImage = styled.img`
   width: 15px;
   height: 15px;
+  rotate: 270deg;
+  // animation: ${example} 4s infinite;
 `;
