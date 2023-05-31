@@ -21,7 +21,7 @@ const animals = {
     tiger: require("./animals/tiger.png"),
     unau: require("./animals/unau.png"),
     vervet_monkey: require("./animals/vervet_monkey.png"),
-    // warthog: require("./animals/warthog.png"),
+    warthog: require("./animals/warthog.png"),
     xenops: require("./animals/xenops.png"),
     yellow_mongoose: require("./animals/yellow_mongoose.png"),
     zebra: require("./animals/zebra.png")
