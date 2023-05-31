@@ -524,7 +524,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact2_czrjpl.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact3_bukixi.mp3",
     ],
-    horizontal: true,
+    horizontal: false,
     isLiked: true,
   },
   {
