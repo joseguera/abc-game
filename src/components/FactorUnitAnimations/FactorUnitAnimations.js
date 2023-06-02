@@ -8,35 +8,44 @@ import {
   UnitImage,
 } from "./FactorUnitAnimations.styles";
 
-export default function FactorUnitAnimations({ unitNumber, button, value }) {
+export default function FactorUnitAnimations({ unitNumber, value }) {
   const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
   const beadsPerCup = unitNumber / value;
-  const beads = Array.apply(null, Array(unitNumber / beadsPerCup)).map(
-    function () {}
-  );
+  // const beads = Array.apply(null, Array(unitNumber / beadsPerCup)).map(
+  //   function () {}
+  // );
+
+  const startBeads = value;
+
+  console.log({startBeads});
+  console.log({cups});
 
   const dotArray = dotOrganizer(value);
-
-  console.log(dotArray);
 
   const dots = dotArray.map((dot) => {
     return Array.apply(null, Array(dot)).map(function () {});
   });
 
-  console.log(dots);
+  const beads = Array.apply(null, Array(startBeads)).map(function () {});
+
+  console.log(beads);
 
   return (
     <DotPicture>
       {cups.map((el, index) => {
-        return dots.map((dot, index) => {
-          return (
-            <UnitHolder key={index}>
-              {dot.map((d) => {
-                return <UnitImage key={d} src={apple} />;
-              })}
-            </UnitHolder>
-          );
-        });
+        return value < 3
+          ? beads.map((b) => {
+              return <UnitImage key={b} src={apple} />;
+            })
+          : dots.map((dot, index) => {
+              return (
+                <UnitHolder key={index}>
+                  {dot.map((d) => {
+                    return <UnitImage key={d} src={apple} />;
+                  })}
+                </UnitHolder>
+              );
+            });
       })}
     </DotPicture>
   );
