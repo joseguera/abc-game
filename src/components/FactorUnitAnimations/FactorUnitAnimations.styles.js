@@ -2,20 +2,19 @@ import styled, { keyframes } from "styled-components";
 
 export const DotPicture = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 50%;
   height: 100%;
-  gap: 5px;
-  padding: 0px 5px 5px 0px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   rotate: 90deg;
 `;
 
 export const UnitGroups = styled.div`
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
-  width: 15px;
   gap: 5px;
   justify-content: center;
   align-items: center;
@@ -61,6 +60,7 @@ const example = keyframes`
 export const UnitImage = styled.img`
   width: 15px;
   height: 15px;
+  gap: 10px;
   rotate: 270deg;
   // animation: ${example} 4s infinite;
 `;

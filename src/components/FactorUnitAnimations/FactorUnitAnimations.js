@@ -28,15 +28,21 @@ export default function FactorUnitAnimations({ unitNumber, value }) {
   return (
     <DotPicture>
       {cups.map((el, index) => {
-        return dots.map((dot, index) => {
-              return (
-                <UnitHolder key={index}>
-                  {dot.map((d) => {
-                    return <UnitImage key={d} src={apple} />;
-                  })}
-                </UnitHolder>
-              );
-            });
+        return (
+          <UnitGroups>
+            {
+              dots.map((dot, index) => {
+                return (
+                  <UnitHolder key={index}>
+                    {dot.map((d) => {
+                      return <UnitImage key={d} src={apple} />;
+                    })}
+                  </UnitHolder>
+                );
+              })
+            }
+          </UnitGroups>
+        )
       })}
     </DotPicture>
   );
