@@ -132,6 +132,25 @@ export function dotOrganizer(num) {
       rows.push(numOfDots);
       numOfDots = remainder;
     }
+    
+    /////////////////////////////////
+    // Clean up this functionality //
+    
+    if (numOfDots === 2) {
+      remainder = numOfDots - 2;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+    if (numOfDots === 1) {
+      remainder = numOfDots - 1;
+      numOfDots -= remainder;
+      rows.push(numOfDots);
+      numOfDots = remainder;
+    }
+
+    /////////////////////////////////
+
   }
   rows.push(remainder);
   rows.sort();
@@ -175,7 +194,7 @@ export function dotOrganizer(num) {
   dots = finalRow.map((row) => {
     return dot.repeat(row);
   });
-  // console.log(dots);
+  console.log(dots);
 
   /*
     Since the "dots" array displays the "dot" string in an array, organizedDots
@@ -187,3 +206,5 @@ export function dotOrganizer(num) {
   // return organizedDots;
   return finalRow;
 }
+
+dotOrganizer(1);
