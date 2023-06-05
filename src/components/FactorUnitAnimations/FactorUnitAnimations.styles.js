@@ -58,8 +58,8 @@ const example = keyframes`
 `;
 
 export const UnitImage = styled.img`
-  width: 15px;
-  height: 15px;
+  width: ${props => props.unit === 1 ? "205px" : `${205 / props.unit}px`};
+  height: ${props => props.unit === 1 ? "205px" : `${205 / props.unit}px`};
   gap: 10px;
   rotate: 270deg;
   // animation: ${example} 4s infinite;

@@ -194,7 +194,7 @@ export function dotOrganizer(num) {
   dots = finalRow.map((row) => {
     return dot.repeat(row);
   });
-  console.log(dots);
+  // console.log(dots);
 
   /*
     Since the "dots" array displays the "dot" string in an array, organizedDots
@@ -207,4 +207,3 @@ export function dotOrganizer(num) {
   return finalRow;
 }
 
-dotOrganizer(1);
