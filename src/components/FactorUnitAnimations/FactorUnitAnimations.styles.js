@@ -4,9 +4,9 @@ export const DotPicture = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
+  width: 90%;
   height: 100%;
-  gap: 15px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   rotate: 90deg;
@@ -15,7 +15,7 @@ export const DotPicture = styled.div`
 export const UnitGroups = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
-  gap: 5px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 `;
@@ -58,8 +58,8 @@ const example = keyframes`
 `;
 
 export const UnitImage = styled.img`
-  width: ${props => props.unit === 1 ? "205px" : `${205 / props.unit}px`};
-  height: ${props => props.unit === 1 ? "205px" : `${205 / props.unit}px`};
+  width: ${props => props.unit === 1 ? "205px" : `${205 / 7}px`};
+  height: ${props => props.unit === 1 ? "205px" : `${205 / 7}px`};
   gap: 10px;
   rotate: 270deg;
   // animation: ${example} 4s infinite;
