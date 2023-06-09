@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { db } from "../../utils/firebase";
+import { onValue, ref } from "firebase/database";
 import {
   SpellingCard,
   CardUtils,
