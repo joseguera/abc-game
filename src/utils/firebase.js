@@ -2,7 +2,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getAnalytics } from "firebase/analytics";
-require('dotenv').config()
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -10,13 +9,13 @@ require('dotenv').config()
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID
+  apiKey: "AIzaSyCQok51QbBhsDTtBSAbyvJn48HlmQiOFVg",
+  authDomain: "aby-zebra.firebaseapp.com",
+  projectId: "aby-zebra",
+  storageBucket: "aby-zebra.appspot.com",
+  messagingSenderId: "426018360983",
+  appId: "1:426018360983:web:7f1196b3f0c72552d823d2",
+  measurementId: "G-2JNHZRCX7Z"
 };
 
 // Initialize Firebase
