@@ -1488,7 +1488,7 @@ export const mathArray = [
     id: "2",
     value: 2,
     clicked: false,
-    image: images.numbers.apple,
+    image: images.numbers.banana,
     name: {
       eng: "two",
       spa: "dos",
@@ -1502,15 +1502,14 @@ export const mathArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/baboon_fact2_jh0az6.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/baboon_fact3_a7j7vh.mp3",
     ],
-    horizontal: true,
+    horizontal: false,
     isLiked: false,
   },
   {
     id: "3",
     value: 3,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/chimp_s0mnxx.png",
+    image: images.numbers.cherry,
     name: {
       eng: "three",
       spa: "tres",
@@ -1531,8 +1530,7 @@ export const mathArray = [
     id: "4",
     value: 4,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/dingo_hmddgd.png",
+    image: images.numbers.dragonfruit,
     name: {
       eng: "four",
       spa: "cuatro",

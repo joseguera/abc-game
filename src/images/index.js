@@ -39,7 +39,10 @@ const animals = {
   }
   
   const numbers = {
-    apple: require("./numbers/apple.png")
+    apple: require("./numbers/apple.png"),
+    banana: require("./numbers/banana.png"),
+    cherry: require("./numbers/cherry.png"),
+    dragonfruit: require("./numbers/dragonfruit.png"),
   };
 
   const images = { animals, instruments, numbers }
