@@ -49,10 +49,12 @@ const animals = {
     fig: require("./numbers/fig.png"),
     guava: require("./numbers/guava.png"),
     horned_melon: require("./numbers/horned-melon.png"),
+    kiwi: require("./numbers/kiwi.png"),
     quince: require("./numbers/quince.png"),
     rambutan: require("./numbers/rambutan.png"),
     starfruit: require("./numbers/starfruit.png"),
     strawberry: require("./numbers/strawberry.png"),
+    uvas: require("./numbers/uvas.png"),
   };
 
   const images = { animals, instruments, numbers }
