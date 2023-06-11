@@ -1488,7 +1488,7 @@ export const mathArray = [
     id: "2",
     value: 2,
     clicked: false,
-    image: images.numbers.banana,
+    image: images.numbers.uvas,
     name: {
       eng: "two",
       spa: "dos",
@@ -1530,7 +1530,7 @@ export const mathArray = [
     id: "4",
     value: 4,
     clicked: false,
-    image: images.numbers.dragonfruit,
+    image: images.numbers.kiwi,
     name: {
       eng: "four",
       spa: "cuatro",
@@ -1551,7 +1551,7 @@ export const mathArray = [
     id: "5",
     value: 5,
     clicked: false,
-    image: images.numbers.blueberry,
+    image: images.numbers.fig,
     name: {
       eng: "five",
       spa: "cinco",
@@ -1807,8 +1807,7 @@ export const mathArray = [
     id: "17",
     value: 17,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997505/Cory-Images/quetzal_nqwjsz.png",
+    image: images.numbers.banana,
     name: {
       eng: "seventeen",
       spa: "diecisiete",
@@ -1963,7 +1962,7 @@ export const mathArray = [
     id: "24",
     value: 24,
     clicked: false,
-    image: images.numbers.fig,
+    image: images.numbers.blueberry,
     name: {
       eng: "twenty-four",
       spa: "veinticuatro",
