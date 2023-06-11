@@ -41,8 +41,18 @@ const animals = {
   const numbers = {
     apple: require("./numbers/apple.png"),
     banana: require("./numbers/banana.png"),
+    blueberry: require("./numbers/blueberry.png"),
     cherry: require("./numbers/cherry.png"),
+    coconut: require("./numbers/coconut.png"),
     dragonfruit: require("./numbers/dragonfruit.png"),
+    eggplant: require("./numbers/eggplant.png"),
+    fig: require("./numbers/fig.png"),
+    guava: require("./numbers/guava.png"),
+    horned_melon: require("./numbers/horned-melon.png"),
+    quince: require("./numbers/quince.png"),
+    rambutan: require("./numbers/rambutan.png"),
+    starfruit: require("./numbers/starfruit.png"),
+    strawberry: require("./numbers/strawberry.png"),
   };
 
   const images = { animals, instruments, numbers }
