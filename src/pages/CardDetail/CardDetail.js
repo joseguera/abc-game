@@ -113,6 +113,7 @@ export default function CardDetail({
             {/* ///// MATH Image Logic ///// */}
             {category === "math" && (
               <FactorUnitAnimations
+                image={item.image}
                 unitNumber={item.value}
                 button={button}
                 value={value}

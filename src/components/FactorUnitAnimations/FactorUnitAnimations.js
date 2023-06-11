@@ -1,5 +1,4 @@
 import React from "react";
-import apple from "../../images/numbers/apple.png";
 import { dotOrganizer } from "../../utils/utils.js";
 import {
   DotPicture,
@@ -8,7 +7,7 @@ import {
   UnitImage,
 } from "./FactorUnitAnimations.styles";
 
-export default function FactorUnitAnimations({ unitNumber, value }) {
+export default function FactorUnitAnimations({ unitNumber, value, image }) {
   const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
 
   const dotArray = dotOrganizer(value);
@@ -51,7 +50,7 @@ export default function FactorUnitAnimations({ unitNumber, value }) {
                 return (
                   <UnitHolder key={index}>
                     {dot.map((d) => {
-                      return <UnitImage key={d} src={apple} unit={unitNumber} size={unitSize()} />;
+                      return <UnitImage key={d} src={image} unit={unitNumber} size={unitSize()} />;
                     })}
                   </UnitHolder>
                 );
