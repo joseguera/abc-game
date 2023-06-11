@@ -1551,8 +1551,7 @@ export const mathArray = [
     id: "5",
     value: 5,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/elephant_u4435s.png",
+    image: images.numbers.blueberry,
     name: {
       eng: "five",
       spa: "cinco",
@@ -1573,8 +1572,7 @@ export const mathArray = [
     id: "6",
     value: 6,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116245/Cory-Images/frog_fomeds.png",
+    image: images.numbers.starfruit,
     name: {
       eng: "six",
       spa: "seis",
@@ -1595,8 +1593,7 @@ export const mathArray = [
     id: "7",
     value: 7,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116247/Cory-Images/gorilla_yjzqej.png",
+    image: images.numbers.guava,
     name: {
       eng: "seven",
       spa: "siete",
@@ -1617,8 +1614,7 @@ export const mathArray = [
     id: "8",
     value: 8,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1667582162/Cory-Images/hyena_dzhabn.png",
+    image: images.numbers.horned_melon,
     name: {
       eng: "eight",
       spa: "ocho",
@@ -1639,8 +1635,7 @@ export const mathArray = [
     id: "9",
     value: 9,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317903/Cory-Images/impala_qbglhz.png",
+    image: images.numbers.eggplant,
     name: {
       eng: "nine",
       spa: "nueve",
@@ -1661,8 +1656,7 @@ export const mathArray = [
     id: "10",
     value: 10,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/jaguar_vpi3s0.png",
+    image: images.numbers.rambutan,
     name: {
       eng: "ten",
       spa: "diez",
@@ -1683,8 +1677,7 @@ export const mathArray = [
     id: "11",
     value: 11,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116250/Cory-Images/koala_x4wwtd.png",
+    image: images.numbers.coconut,
     name: {
       eng: "eleven",
       spa: "once",
@@ -1771,8 +1764,7 @@ export const mathArray = [
     id: "15",
     value: 15,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/okapi_m5hjmr.png",
+    image: images.numbers.quince,
     name: {
       eng: "fifteen",
       spa: "quince",
@@ -1859,8 +1851,7 @@ export const mathArray = [
     id: "19",
     value: 19,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1676997504/Cory-Images/snake_tr8orp.png",
+    image: images.numbers.strawberry,
     name: {
       eng: "nineteen",
       spa: "diecinueve",
@@ -1972,8 +1963,7 @@ export const mathArray = [
     id: "24",
     value: 24,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666116248/Cory-Images/xenops_fgylga.png",
+    image: images.numbers.fig,
     name: {
       eng: "twenty-four",
       spa: "veinticuatro",
