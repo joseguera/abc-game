@@ -1530,7 +1530,7 @@ export const mathArray = [
     id: "4",
     value: 4,
     clicked: false,
-    image: images.numbers.kiwi,
+    image: images.numbers.velvet_tamarind,
     name: {
       eng: "four",
       spa: "cuatro",
@@ -1720,8 +1720,7 @@ export const mathArray = [
     id: "13",
     value: 13,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666725651/Cory-Images/macaw_wxuj7o.png",
+    image: images.numbers.mango,
     name: {
       eng: "thirteen",
       spa: "trece",
@@ -1742,8 +1741,7 @@ export const mathArray = [
     id: "14",
     value: 14,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317909/Cory-Images/numbat_bwu8od.png",
+    image: images.numbers.nectarine,
     name: {
       eng: "fourteen",
       spa: "catorce",
@@ -1785,8 +1783,7 @@ export const mathArray = [
     id: "16",
     value: 16,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1666736835/Cory-Images/panda_gc28ha.png",
+    image: images.numbers.pear,
     name: {
       eng: "sixteen",
       spa: "dieciséis",
@@ -1828,8 +1825,7 @@ export const mathArray = [
     id: "18",
     value: 18,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/rhinoceros_ljtw0h.png",
+    image: images.numbers.raspberry,
     name: {
       eng: "eighteen",
       spa: "dieciocho",
@@ -1871,8 +1867,7 @@ export const mathArray = [
     id: "20",
     value: 20,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/tiger_s2y1l4.png",
+    image: images.numbers.indian_gooseberry,
     name: {
       eng: "Twenty",
       spa: "veinte",
@@ -1915,8 +1910,7 @@ export const mathArray = [
     id: "22",
     value: 22,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/vervet_pwgmks.png",
+    image: images.numbers.kiwi,
     name: {
       eng: "twenty-two",
       spa: "veintidós",
@@ -1940,8 +1934,7 @@ export const mathArray = [
     id: "23",
     value: 23,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/warthog_ne88og.png",
+    image: images.numbers.watermelon,
     name: {
       eng: "twenty-three",
       spa: "veintitrés",
@@ -2030,8 +2023,7 @@ export const mathArray = [
     id: "27",
     value: 27,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
+    image: images.numbers.dragonfruit,
     name: {
       eng: "twenty-seven",
       spa: "veintisiete",
