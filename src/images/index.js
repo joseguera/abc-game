@@ -49,12 +49,19 @@ const animals = {
     fig: require("./numbers/fig.png"),
     guava: require("./numbers/guava.png"),
     horned_melon: require("./numbers/horned-melon.png"),
+    indian_gooseberry: require("./numbers/indian-gooseberry.png"),
     kiwi: require("./numbers/kiwi.png"),
+    mango: require("./numbers/mango.png"),
+    nectarine: require("./numbers/nectarine.png"),
+    pear: require("./numbers/pear.png"),
     quince: require("./numbers/quince.png"),
     rambutan: require("./numbers/rambutan.png"),
+    raspberry: require("./numbers/raspberry.png"),
     starfruit: require("./numbers/starfruit.png"),
     strawberry: require("./numbers/strawberry.png"),
     uvas: require("./numbers/uvas.png"),
+    velvet_tamarind: require("./numbers/velvet-tamarind.png"),
+    watermelon: require("./numbers/watermelon.png"),
   };
 
   const images = { animals, instruments, numbers }
