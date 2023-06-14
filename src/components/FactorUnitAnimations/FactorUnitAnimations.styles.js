@@ -6,10 +6,9 @@ export const DotPicture = styled.div`
   flex-wrap: wrap;
   width: 90%;
   height: 100%;
-  gap: 30px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  rotate: 90deg;
 `;
 
 export const UnitGroups = styled.div`
