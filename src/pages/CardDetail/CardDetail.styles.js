@@ -9,7 +9,6 @@ export const CardHolder = styled.div`
 
 export const CardLetter = styled.div`
   background-color: #48a5e0;
-  /* background-image: url("https://res.cloudinary.com/djqxogkfw/image/upload/v1660868115/Cory-Images/game_canvas_rvxiva.png"); */
   border: 10px solid #fff8dc;
   width: 320px;
   height: 550px;
