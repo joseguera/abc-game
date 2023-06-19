@@ -16,3 +16,4 @@ export { default as Header } from "./Header";
 export { default as LikeButton } from "./LikeButton";
 export { default as SlideShow } from "./SlideShow";
 export { default as CardDisplayToggle } from "./CardDisplayToggle";
+export { default as TenFrame } from "./TenFrame";
