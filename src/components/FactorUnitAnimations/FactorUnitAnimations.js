@@ -43,135 +43,21 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
 
   return (
     <DotPicture>
-      <div style={{ 
-        display: "grid",
-        gridTemplateColumns: "60px 60px 60px 60px 60px",
-        gridTemplateRows: "60px 60px 60px 60px 60px",
-        alignContent: "center",
-        justifyItems: "center",
-        gap: "1px"
-      }}>
-        <div style={{ 
-          gridColumn: "1",
-          gridRow: "1",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          One
-        </div>
-        <div style={{ 
-          gridColumn: "2",
-          gridRow: "1",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Two
-        </div>
-        <div style={{ 
-          gridColumn: "3",
-          gridRow: "1",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Three
-        </div>
-        <div style={{ 
-          gridColumn: "4",
-          gridRow: "1",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Four
-        </div>
-        <div style={{ 
-          gridColumn: "5",
-          gridRow: "1",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Five
-        </div>
-        <div style={{ 
-          gridColumn: "1",
-          gridRow: "2",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Six
-        </div>
-        <div style={{ 
-          gridColumn: "2",
-          gridRow: "2",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Seven
-        </div>
-        <div style={{ 
-          gridColumn: "3",
-          gridRow: "2",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Eight
-        </div>
-        <div style={{ 
-          gridColumn: "4",
-          gridRow: "2",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Nine
-        </div>
-        <div style={{ 
-          gridColumn: "5",
-          gridRow: "2",
-          border: "1px solid black",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "60px",
-          height: "60px"
-        }}>
-          Ten
-        </div>
+      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
       </div>
+      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+      </div>
+
       {/* {cups.map((el, index) => {
         return (
           <UnitGroups key={index}>
