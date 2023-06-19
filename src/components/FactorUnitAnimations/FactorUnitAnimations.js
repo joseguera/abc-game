@@ -7,6 +7,29 @@ import {
   UnitImage,
 } from "./FactorUnitAnimations.styles";
 
+
+function TenFrame() {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+      </div>
+      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
+      </div>
+    </div>
+  )
+}
+
+
 export default function FactorUnitAnimations({ unitNumber, value, image }) {
   const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
 
@@ -43,20 +66,8 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
 
   return (
     <DotPicture>
-      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-      </div>
-      <div style={{ display: "flex", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-        <div style={{ width: "20%", height: "59.2px", border: "1px solid black" }}></div>
-      </div>
+      <TenFrame />
+      <TenFrame />
 
       {/* {cups.map((el, index) => {
         return (

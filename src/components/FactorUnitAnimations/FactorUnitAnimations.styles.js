@@ -6,6 +6,7 @@ export const DotPicture = styled.div`
   flex-wrap: wrap;
   width: 90%;
   height: 100%;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 `;
