@@ -7,7 +7,7 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math } from "pages";
+import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math, Favorites } from "pages";
 import { Header, Menu } from "components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
@@ -180,6 +180,11 @@ export default function App() {
                 exact
                 path="/aby-store"
                 component={(props) => <Shop {...props} />}
+              />
+              <Route
+                exact
+                path="/my-favorites"
+                component={(props) => <Favorites {...props} animals={animals} numbers={numbers} instruments={instruments} />}
               />
               <Route
                 path="/science/:id"

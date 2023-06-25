@@ -17,6 +17,9 @@ export default function Menu({ openMenu }) {
           <StyledLink to="/aby-store" onClick={() => openMenu()}>
             <MenuItem>Aby's Store</MenuItem>
           </StyledLink>
+          <StyledLink to="/my-favorites" onClick={() => openMenu()}>
+            <MenuItem>My Favorites</MenuItem>
+          </StyledLink>
           <StyledLink to="/contact" onClick={() => openMenu()}>
             <MenuItem>Contact</MenuItem>
           </StyledLink>
