@@ -2,6 +2,7 @@ import React from "react";
 import { HomeBody, ButtonMatrix, NavButton, StyledLink } from "./Home.styles";
 
 export default function Home(props) {
+
   return (
     <HomeBody>
       <h2>Welcome to Aby Zebra</h2>
