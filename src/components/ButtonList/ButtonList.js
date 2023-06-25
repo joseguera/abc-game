@@ -1,22 +1,17 @@
 import React from "react";
-import { Button, CardDisplayToggle } from "components";
+import { Button, PageHeader } from "components";
 import {
   ButtonListHolder,
-  PageHeader,
-  PageTitle,
   ButtonMatrix,
-  ButtonRow,
+  ButtonRow
 } from "./ButtonList.styles";
 
 export default function ButtonList({ list, category }) {
   const capitalized = category.charAt(0).toUpperCase() + category.slice(1);
-
+  
   return (
     <ButtonListHolder>
-      <PageHeader>
-        <PageTitle>{capitalized}</PageTitle>
-        <CardDisplayToggle />
-      </PageHeader>
+      <PageHeader pageTitle={capitalized} />
       <ButtonMatrix>
         {list.map((item) => {
           return (

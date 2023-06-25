@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonListHolder = styled.div`
+export const FavoritesHolder = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,11 +17,4 @@ export const ButtonMatrix = styled.div`
   gap: 25px;
   padding-top: 10px;
   padding-bottom: 20px;
-`;
-
-export const ButtonRow = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
 `;

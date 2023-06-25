@@ -18,3 +18,4 @@ export { default as SlideShow } from "./SlideShow";
 export { default as CardDisplayToggle } from "./CardDisplayToggle";
 export { default as TenFrame } from "./TenFrame";
 export { default as ClearStorage } from "./ClearStorage";
+export { default as PageHeader } from "./PageHeader";
