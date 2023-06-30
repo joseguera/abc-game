@@ -15,6 +15,11 @@ const Header = (props) => {
     <HeaderHolder>
       <div className="header">
         <div className="header-title-holder">
+          <SiteTitle>
+            <StyledLink to="/">
+              <h1 className="titles">Aby Zebra</h1>
+            </StyledLink>
+          </SiteTitle>
           <div className="header-item">
             <FontAwesomeIcon
               icon={faPaw}
@@ -22,11 +27,6 @@ const Header = (props) => {
               onClick={() => openMenu()}
             />
           </div>
-          <SiteTitle>
-            <StyledLink to="/">
-              <h1 className="titles">Aby Zebra</h1>
-            </StyledLink>
-          </SiteTitle>
         </div>
       </div>
     </HeaderHolder>
