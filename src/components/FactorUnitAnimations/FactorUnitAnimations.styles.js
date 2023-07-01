@@ -4,7 +4,7 @@ export const DotPicture = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 100%;
   gap: 20px;
   justify-content: center;

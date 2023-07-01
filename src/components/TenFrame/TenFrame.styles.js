@@ -13,8 +13,8 @@ export const FrameRow = styled.div`
     justify-content: center; 
     align-items: center;
     .top-row {
+        aspect-ratio : 1 / 1;
         width: 20%; 
-        height: 59.2px;
         border: 2px solid black; 
         border-bottom: 1px;
     }
@@ -24,23 +24,12 @@ export const FrameRow = styled.div`
 
     }
     .lower-row {
+        aspect-ratio : 1 / 1;
         width: 20%;
-        height: 59.2px; 
         border: 2px solid black;
     }
     .bottom-cells { 
         border-right: 1px;
+        border-bottom: 2px solid black;
     }
-`;
-
-export const FrameCell = styled.div`
-    width: 20%; 
-    height: 59.2px;
-    border: 2px solid black; 
-    border-right: 1px; 
-    border-bottom: 2px;
-`;
-
-export const LastCell = styled.div`
-    
 `;

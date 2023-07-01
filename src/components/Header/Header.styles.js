@@ -64,16 +64,16 @@ export const HeaderHolder = styled.div`
     transform: skew(-5deg, -5deg) rotate(5deg);
     -webkit-transform-origin: center center;
     transform-origin: center center;
-    text-shadow: 1px 1px #009cb8,
-                2px 2px #009cb8,
-                3px 3px #009cb8,
-                4px 4px #009cb8,
-                5px 5px #009cb8,
-                6px 6px #009cb8,
-                7px 7px #009cb8,
-                8px 8px #005766,
-                9px 9px #005766,
-                10px 10px #005766,
+    text-shadow: 1px 1px #E1DFDB,
+                2px 2px #E1DFDB,
+                3px 3px #120600,
+                4px 4px #120600,
+                5px 5px #E1DFDB,
+                6px 6px #E1DFDB,
+                7px 7px #120600,
+                8px 8px #120600,
+                9px 9px #E1DFDB,
+                10px 10px #E1DFDB,
                 11px 11px 15px rgba(0, 0, 0, 0.5);
    }
 

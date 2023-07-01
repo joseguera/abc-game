@@ -8,15 +8,15 @@ export default function Home(props) {
       <h2>Welcome to Aby Zebra</h2>
       <ButtonMatrix>
         <StyledLink to="/science">
-          <NavButton>Science</NavButton>
+          <div class="btn-3d-1">Science</div>
         </StyledLink>
-        <NavButton>Technology</NavButton>
-        <NavButton>Engineering</NavButton>
+        <div class="btn-3d-1">Technology</div>
+        <div class="btn-3d-1">Engineering</div>
         <StyledLink to="/arts">
-          <NavButton>Arts</NavButton>
+          <div class="btn-3d-1">Arts</div>
         </StyledLink>
         <StyledLink to="/math">
-          <NavButton>Math</NavButton>
+          <div class="btn-3d-1">Math</div>
         </StyledLink>
       </ButtonMatrix>
     </HomeBody>

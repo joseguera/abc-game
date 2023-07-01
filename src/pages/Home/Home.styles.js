@@ -9,51 +9,91 @@ export const HomeBody = styled.div`
 `;
 
 export const ButtonMatrix = styled.div`
-  width: 400px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  button,
-  input[type="submit"],
-  input[type="reset"] {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    font-size: 24px;
-  }
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: #000000;
-  }
-`;
+  gap: 20px;
 
-export const NavButton = styled.button`
-  width: 180px;
-  border: 1px solid black !important;
-  padding: 30px !important;
-  margin: 10px;
-  text-align: center;
-  height: 90px;
-  border: 1px solid #3d674c /*Spring Leaves*/;
-  border-radius: 7.5px;
-  transition: all 0.5s ease-out;
-  color: #3d674c /*Spring Leaves*/;
-  box-shadow: -5px 5px #d54a0a /*Tia Maria*/;
-  background-color: #e3dac9;
-  padding: 5px;
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    box-shadow: -5px 5px #558f69;
-    color: #558f69;
-    background-color: #fcd783;
+
+  /////////////////////////
+  ///// BUTTON STYLES /////
+  ///////////////////////// 
+
+  .btn-3d-1 {
+    position: relative;
+    background: #FF6347;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 24px;
+    font-size: 1.4rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+  }
+
+  /* When you hover on the button */
+
+  .btn-3d-1:hover {
+    background: hsl(16, 100%, 45%);
+  }
+
+  .btn-3d-1:active {
+    background: hsl(16, 100%, 40%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+  }
+
+  /* Adding pseudo element to connect the button's corners */
+
+  .btn-3d-1::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border: 6px solid transparent;
+    border-right: 6px solid hsl(16, 100%, 30%);
+    border-left-width: 0px;
+    background: none;
+    top: 0;
+    left: -6px;
+  }
+
+  .btn-3d-1::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border: 6px solid transparent;
+    border-top: 6px solid hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    background: none;
+    bottom: -5.5px;
+    right: 0;
+  }
+
+  /* When you click on the button */
+
+  .btn-3d-1:active::before {
+    border: 3px solid transparent;
+    border-right: 3px solid hsl(16, 100%, 30%);
+    border-left-width: 0px;
+    top: 0;
+    left: -2.75px;
+  }
+
+  .btn-3d-1:active::after {
+    border: 2.75px solid transparent;
+    border-top: 3px solid hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    bottom: -2.75px;
+    right: 0;
   }
 `;
 

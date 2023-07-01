@@ -11,7 +11,7 @@ export const CardLetter = styled.div`
   background-color: #48a5e0;
   border: 10px solid #fff8dc;
   width: 320px;
-  height: 550px;
+  height: 710px;
   border-radius: 15px;
   padding: 10px;
 `;
@@ -66,8 +66,7 @@ export const ImageHolder = styled.div`
   justify-content: center;
   align-items: center;
   width: 320px;
-  height: 320px;
-  padding-bottom: 15px;
+  height: 475px;
 `;
 
 export const NameHolder = styled.div`
