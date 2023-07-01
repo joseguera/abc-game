@@ -20,13 +20,14 @@ const Header = (props) => {
               <h1 className="titles">Aby Zebra</h1>
             </StyledLink>
           </SiteTitle>
-          <div className="header-item">
+          {/* MENU ICON - NEEDS WOTK!!! */}
+          {/* <div className="header-item">
             <FontAwesomeIcon
               icon={faPaw}
               className="header-brand"
               onClick={() => openMenu()}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </HeaderHolder>

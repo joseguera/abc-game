@@ -9,43 +9,39 @@ import {
 } from "./FactorUnitAnimations.styles";
 
 export default function FactorUnitAnimations({ unitNumber, value, image }) {
-  const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
+  // const cups = Array.apply(null, Array(unitNumber / value)).map(function () {});
 
-  const dotArray = dotOrganizer(value);
+  // const dotArray = dotOrganizer(value);
 
-  const dots = dotArray.map((dot) => {
-    return Array.apply(null, Array(dot)).map(function () {});
-  });
+  // const dots = dotArray.map((dot) => {
+  //   return Array.apply(null, Array(dot)).map(function () {});
+  // });
 
-  function unitSize() {
-    let unit = 0;
-    if (unitNumber > 1 && unitNumber <= 5) {
-      unit = 2;
+  function unitAmount() {
+    let frames = 0;
+    if (unitNumber <= 10) {
+      frames = 1;
     }
-    if (unitNumber >= 6 && unitNumber <= 10) {
-      unit = 2;
+    if (unitNumber > 10 && unitNumber <= 20) {
+      frames = 2;
     }
-    if (unitNumber >= 11 && unitNumber <= 15) {
-      unit = 3;
+    if (unitNumber > 20 && unitNumber <= 30) {
+      frames = 3;
     }
-    if (unitNumber >= 16 && unitNumber <= 20) {
-      unit = 3;
-    }
-    if (unitNumber >= 21 && unitNumber <= 25) {
-      unit = 4;
-    }
-    // Images shouldn't be divided by more than 4
-    if (unitNumber >= 26 && unitNumber <= 30) {
-      unit = 4;
-    }
-
-    return unit;
+    return frames;
   }
+
+  const frameQuantity = unitAmount();
+
+  const frames = Array.apply(null, Array(frameQuantity)).map(function () {});
 
   return (
     <DotPicture>
-      <TenFrame />
-      <TenFrame />
+
+
+    {frames.map((frame, idx) => {
+      return <TenFrame key={idx} />
+    })}
 
       {/* {cups.map((el, index) => {
         return (
