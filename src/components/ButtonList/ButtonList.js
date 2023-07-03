@@ -11,7 +11,7 @@ export default function ButtonList({ list, category }) {
   
   return (
     <ButtonListHolder>
-      <PageHeader pageTitle={capitalized} />
+      <PageHeader pageTitle={capitalized} list={list} category={category} />
       <ButtonMatrix>
         {list.map((item) => {
           return (

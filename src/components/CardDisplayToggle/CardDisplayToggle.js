@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTableCells, faFileExport } from "@fortawesome/free-solid-svg-icons";
 import { Toggler, SelectedIcon, Icon } from "./CardDisplayToggle.styles";
 
-export default function CardDisplayToggle() {
+export default function CardDisplayToggle({ list, category }) {
   const [selected, setSelected] = useState(true);
   const setToggle = () => {
     setSelected(!selected);
   };
+
   return (
     <Toggler>
       {selected ? (
@@ -16,7 +18,9 @@ export default function CardDisplayToggle() {
             <FontAwesomeIcon style={{ margin: "0 auto" }} icon={faTableCells} />
           </SelectedIcon>
           <Icon onClick={() => setToggle()}>
-            <FontAwesomeIcon icon={faFileExport} />
+            <Link to={`/${category}/${list[0].id}`}>
+              <FontAwesomeIcon icon={faFileExport} />
+            </Link>
           </Icon>
         </>
       ) : (
@@ -25,7 +29,9 @@ export default function CardDisplayToggle() {
             <FontAwesomeIcon icon={faTableCells} />
           </Icon>
           <SelectedIcon onClick={() => setToggle()}>
-            <FontAwesomeIcon icon={faFileExport} />
+            <Link to={`/${category}/${list[0].id}`}>
+              <FontAwesomeIcon icon={faFileExport} />
+            </Link>
           </SelectedIcon>
         </>
       )}
