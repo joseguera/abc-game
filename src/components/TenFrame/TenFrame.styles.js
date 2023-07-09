@@ -12,6 +12,11 @@ export const FrameRow = styled.div`
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
+    .frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .top-row {
         aspect-ratio : 1 / 1;
         width: 20%; 
