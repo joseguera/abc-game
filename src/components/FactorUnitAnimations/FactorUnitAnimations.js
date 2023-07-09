@@ -40,7 +40,7 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
 
 
     {frames.map((frame, idx) => {
-      return <TenFrame key={idx} />
+      return <TenFrame key={idx} unitNumber={unitNumber} />
     })}
 
       {/* {cups.map((el, index) => {
