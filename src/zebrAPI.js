@@ -1698,8 +1698,7 @@ export const mathArray = [
     id: "12",
     value: 12,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1671317901/Cory-Images/lemur_k4gg9o.png",
+    image: images.numbers.pear,
     name: {
       eng: "twelve",
       spa: "doce",
@@ -1888,8 +1887,7 @@ export const mathArray = [
     id: "21",
     value: 21,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/sloth_tw82gs.png",
+    image: images.numbers.kiwi,
     name: {
       eng: "twenty-one",
       spa: "veintiuno",
@@ -1976,8 +1974,7 @@ export const mathArray = [
     id: "25",
     value: 25,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362393/Cory-Images/TEMP_Images/mongoose_ieo5rn.png",
+    image: images.numbers.uvas,
     name: {
       eng: "twenty-five",
       spa: "veinticinco",
@@ -2001,8 +1998,7 @@ export const mathArray = [
     id: "26",
     value: 26,
     clicked: false,
-    image:
-      "https://res.cloudinary.com/djqxogkfw/image/upload/v1672362394/Cory-Images/TEMP_Images/zebra_whhuqc.png",
+    image: images.numbers.uvas,
     name: {
       eng: "twenty-six",
       spa: "veintiséis",
@@ -2027,6 +2023,69 @@ export const mathArray = [
     name: {
       eng: "twenty-seven",
       spa: "veintisiete",
+    },
+    tiles: ["Ze-bra"],
+    syllables: ["Ze", "bra"],
+    nameSound:
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
+    funFacts: [
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
+    ],
+    horizontal: true,
+    isLiked: false,
+  },
+  {
+    id: "28",
+    value: 28,
+    clicked: false,
+    image: images.numbers.dragonfruit,
+    name: {
+      eng: "twenty-eight",
+      spa: "veintiocho",
+    },
+    tiles: ["Ze-bra"],
+    syllables: ["Ze", "bra"],
+    nameSound:
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
+    funFacts: [
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
+    ],
+    horizontal: true,
+    isLiked: false,
+  },
+  {
+    id: "29",
+    value: 29,
+    clicked: false,
+    image: images.numbers.dragonfruit,
+    name: {
+      eng: "twenty-nine",
+      spa: "veintinueve",
+    },
+    tiles: ["Ze-bra"],
+    syllables: ["Ze", "bra"],
+    nameSound:
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
+    funFacts: [
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
+    ],
+    horizontal: true,
+    isLiked: false,
+  },
+  {
+    id: "30",
+    value: 30,
+    clicked: false,
+    image: images.numbers.dragonfruit,
+    name: {
+      eng: "thirty",
+      spa: "treinta",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
