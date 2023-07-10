@@ -1,4 +1,5 @@
 import React from "react";
+import _ from "lodash";
 import { dotOrganizer } from "../../utils/utils.js";
 import { TenFrame } from "components";
 import {
@@ -53,18 +54,15 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
 
   const frames = Array.apply(null, Array(frameQuantity)).map(function () {});
 
-  console.log(frames);
-
   return (
     <DotPicture>
 
-
-    {frames.map((frame, idx) => {
-      return dotUnits.map(dotUnit => {
-        return <TenFrame key={idx} dotAmount={dotUnit} />
+    {/* This maps through two arrays and provides a frame and dot amount */}
+    {/* based on the unitAmount, dynamically */}
+    {_.zipWith(frames, dotUnits, (frame, dotUnit) => {
+        return <TenFrame key={unitNumber} dotAmount={dotUnit} />
       })
-      
-    })}
+    }
 
       {/* {cups.map((el, index) => {
         return (
