@@ -31,16 +31,39 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
     return frames;
   }
 
+  function getDotAmount() {
+    let dots = [];
+    let frame2 = unitNumber - 10;
+    let frame3 = unitNumber - 20
+    if (unitNumber <= 10) {
+      dots.push(unitNumber);
+    }
+    if (unitNumber > 10 && unitNumber <= 20) {
+      dots.push(10, frame2);
+    }
+    if (unitNumber > 20 && unitNumber <= 30) {
+      dots.push(10, 10, frame3);
+    }
+    return dots;
+  }
+
+  const dotUnits = getDotAmount();
+
   const frameQuantity = unitAmount();
 
   const frames = Array.apply(null, Array(frameQuantity)).map(function () {});
+
+  console.log(frames);
 
   return (
     <DotPicture>
 
 
     {frames.map((frame, idx) => {
-      return <TenFrame key={idx} unitNumber={unitNumber} />
+      return dotUnits.map(dotUnit => {
+        return <TenFrame key={idx} dotAmount={dotUnit} />
+      })
+      
     })}
 
       {/* {cups.map((el, index) => {
