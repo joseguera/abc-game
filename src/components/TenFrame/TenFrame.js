@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FrameHolder, FrameRow } from "./TenFrame.styles";
 
-export default function TenFrame({ unitNumber }) {
+export default function TenFrame({ dotAmount }) {
   const [dots, setDots] = useState({
-    f1: true,
+    f1: false,
     f2: false,
     f3: false,
     f4: false,
@@ -13,18 +13,18 @@ export default function TenFrame({ unitNumber }) {
     f8: false,
     f9: false,
     f10: false,
-  })
+  });
 
-
-
+  // provides the right amount of dots for each ten frame
+  while (dotAmount >= 0) {
+    dots[`f${dotAmount}`] = true;
+    dotAmount--;
+  }
 
   return (
     <FrameHolder>
-      {console.log(dots)}
       <FrameRow>
-        <div
-          className="frame top-row top-cells"
-        >
+        <div className="frame top-row top-cells">
           <div
             style={{
               width: "40px",
