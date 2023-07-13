@@ -5,7 +5,7 @@ export default function Science({ animals }) {
   return (
     <>
       <ClearStorage />
-      <ButtonList list={animals} category="science" />;
+      <ButtonList list={animals} category="science" />
     </>
   );
 }

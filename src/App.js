@@ -114,15 +114,6 @@ export default function App() {
   ///////// PARENT FUNCTIONS - END /////////
   //////////////////////////////////////////
 
-  // useEffect(() => {
-  //   getAnimals();
-  // }, [])
-
-  /////////////////////////////////////
-  ///////// IMPROVEMENT NOTES /////////
-  /////////////////////////////////////
-  
-
   return (
     <Router>
       <MainApp>
