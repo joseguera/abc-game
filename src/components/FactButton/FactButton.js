@@ -13,6 +13,7 @@ export default function FactButton({ funFacts, getAudio }) {
     typeof Audio !== "undefined" && new Audio(funFacts[0])
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
+
   const setAudioTrack = (factNumber) => {
     setAudio((currentElement) => {
       currentElement = new Audio(funFacts[factNumber]);
