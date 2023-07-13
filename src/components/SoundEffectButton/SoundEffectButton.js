@@ -32,8 +32,6 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
     return topicIcon;
   };
 
-// =====================================================
-
   const setAudioTrack = (factNumber) => {
     setAudio((currentElement) => {
       currentElement = new Audio(soundEffect[factNumber]);
@@ -48,8 +46,6 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
       return factNumber;
     });
   };
-
-  // ============================================================
 
   const playAudio = () => {
     dispatch(change(false));
@@ -66,8 +62,6 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration, dispatch]);
-
-  console.log(audioTrackDuration)
 
   return (
     <>
