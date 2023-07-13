@@ -12,8 +12,9 @@ import {
 export default function SoundEffectButton({ soundEffect, getAudio, category }) {
   const dispatch = useDispatch();
   const playing = useSelector((state) => state.playing.value);
+  const [factCounter, setFactCounter] = useState(0);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(soundEffect)
+    typeof Audio !== "undefined" && new Audio(soundEffect[0])
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 
@@ -31,6 +32,25 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
     return topicIcon;
   };
 
+// =====================================================
+
+  const setAudioTrack = (factNumber) => {
+    setAudio((currentElement) => {
+      currentElement = new Audio(soundEffect[factNumber]);
+      return currentElement;
+    });
+  };
+
+  const adjustCounter = () => {
+    setFactCounter((currentCount) => {
+      let factNumber = currentCount === 1 ? 0 : (currentCount += 1);
+      setAudioTrack(factNumber);
+      return factNumber;
+    });
+  };
+
+  // ============================================================
+
   const playAudio = () => {
     dispatch(change(false));
     const audioDuration = Math.ceil(audio.duration * 1000);
@@ -40,17 +60,14 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
   };
 
 
-  // Need to improve the implementation of this function
   useEffect(() => {
     const timer = setTimeout(() => {
-      // dispatch(change(true));
-      // In particular, right here:
-      // Maybe, carousel between two sound effects?
-      setAudioTrackDuration(audioTrackDuration + 500);
-      // **********************************/
+      dispatch(change(true));
     }, audioTrackDuration);
     return () => clearTimeout(timer);
   }, [audioTrackDuration, dispatch]);
+
+  console.log(audioTrackDuration)
 
   return (
     <>
@@ -59,6 +76,10 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
           <Icon>
             <FontAwesomeIcon
               icon={soundEffectButton(category)}
+              onClick={() => {
+                adjustCounter();
+                playAudio();
+              }}
             />
           </Icon>
         </button>

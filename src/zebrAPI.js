@@ -21,7 +21,7 @@ export const scienceArray = [
     syllables: ["Al", "li", "ga", "tor"],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
-    soundEffect: sounds.animals.alligator,
+    soundEffect: [sounds.animals.alligator, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/alligator_fact1_jzvtc3.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/alligator_fact2_krxfag.mp3",

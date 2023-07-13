@@ -44,6 +44,8 @@ export default function CardDetail({
 
   let item = list[itemIndex];  
 
+  console.log(item)
+
   const xSectionCloser = () => {
     const clicked = isDestructOpen;
     setIsDestructOpen(!clicked);

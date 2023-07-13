@@ -44,8 +44,6 @@ export default function FactButton({ funFacts, getAudio }) {
     return () => clearTimeout(timer);
   }, [audioTrackDuration, dispatch]);
 
-  console.log(audioTrackDuration)
-
   return (
     <>
       {playing ? (
