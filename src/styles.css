@@ -39,7 +39,7 @@ dialog:modal {
   cursor: pointer;
   outline: none;
   position: relative;
-  top: -415px;
+  top: -333px;
 }
 
 dialog::backdrop {
