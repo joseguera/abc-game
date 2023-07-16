@@ -906,6 +906,7 @@ export const artsArray = [
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
     funFacts: [
@@ -927,6 +928,7 @@ export const artsArray = [
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
     funFacts: [
@@ -948,6 +950,7 @@ export const artsArray = [
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
     funFacts: [
@@ -969,6 +972,7 @@ export const artsArray = [
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     funFacts: [
@@ -983,14 +987,15 @@ export const artsArray = [
     id: "electric-bass",
     value: "E",
     clicked: false,
-    image: "image.png",
+    image: "images.instruments.electric_bass",
     name: {
       eng: "Electric Bass",
       spa: "Elefante",
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
-    nameSound: images.instruments.electric_bass,
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
+    nameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/elephant_fact1_ejcgdf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/elephant_fact2_hacxsi.mp3",
@@ -1010,6 +1015,7 @@ export const artsArray = [
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
     funFacts: [
@@ -1031,6 +1037,7 @@ export const artsArray = [
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
     funFacts: [
@@ -1052,6 +1059,7 @@ export const artsArray = [
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
     funFacts: [
@@ -1073,6 +1081,7 @@ export const artsArray = [
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
     funFacts: [
@@ -1094,6 +1103,7 @@ export const artsArray = [
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
     funFacts: [
@@ -1115,6 +1125,7 @@ export const artsArray = [
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     funFacts: [
@@ -1136,6 +1147,7 @@ export const artsArray = [
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
     funFacts: [
@@ -1157,6 +1169,7 @@ export const artsArray = [
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     funFacts: [
@@ -1178,6 +1191,7 @@ export const artsArray = [
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     funFacts: [
@@ -1199,6 +1213,7 @@ export const artsArray = [
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
     funFacts: [
@@ -1220,6 +1235,7 @@ export const artsArray = [
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     funFacts: [
@@ -1241,6 +1257,7 @@ export const artsArray = [
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
     funFacts: [
@@ -1262,6 +1279,7 @@ export const artsArray = [
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     funFacts: [
@@ -1283,6 +1301,7 @@ export const artsArray = [
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
     funFacts: [
@@ -1304,6 +1323,7 @@ export const artsArray = [
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     funFacts: [
@@ -1325,6 +1345,7 @@ export const artsArray = [
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     funFacts: [
@@ -1349,6 +1370,7 @@ export const artsArray = [
       ["Ver", "vet"],
       ["Mon", "key"],
     ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     funFacts: [
@@ -1370,6 +1392,7 @@ export const artsArray = [
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     funFacts: [
@@ -1391,6 +1414,7 @@ export const artsArray = [
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
     funFacts: [
@@ -1415,6 +1439,7 @@ export const artsArray = [
       ["Yel", "low"],
       ["Mon", "goose"],
     ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     funFacts: [
@@ -1436,6 +1461,7 @@ export const artsArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -1464,6 +1490,7 @@ export const mathArray = [
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
     funFacts: [
@@ -1485,6 +1512,7 @@ export const mathArray = [
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
     funFacts: [
@@ -1506,6 +1534,7 @@ export const mathArray = [
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
     funFacts: [
@@ -1527,6 +1556,7 @@ export const mathArray = [
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     funFacts: [
@@ -1548,6 +1578,7 @@ export const mathArray = [
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
     funFacts: [
@@ -1569,6 +1600,7 @@ export const mathArray = [
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
     funFacts: [
@@ -1590,6 +1622,7 @@ export const mathArray = [
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
     funFacts: [
@@ -1611,6 +1644,7 @@ export const mathArray = [
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
     funFacts: [
@@ -1632,6 +1666,7 @@ export const mathArray = [
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
     funFacts: [
@@ -1653,6 +1688,7 @@ export const mathArray = [
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
     funFacts: [
@@ -1674,6 +1710,7 @@ export const mathArray = [
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     funFacts: [
@@ -1695,6 +1732,7 @@ export const mathArray = [
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
     funFacts: [
@@ -1716,6 +1754,7 @@ export const mathArray = [
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     funFacts: [
@@ -1737,6 +1776,7 @@ export const mathArray = [
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     funFacts: [
@@ -1758,6 +1798,7 @@ export const mathArray = [
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
     funFacts: [
@@ -1779,6 +1820,7 @@ export const mathArray = [
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     funFacts: [
@@ -1800,6 +1842,7 @@ export const mathArray = [
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
     funFacts: [
@@ -1821,6 +1864,7 @@ export const mathArray = [
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     funFacts: [
@@ -1842,6 +1886,7 @@ export const mathArray = [
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
     funFacts: [
@@ -1863,6 +1908,7 @@ export const mathArray = [
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     funFacts: [
@@ -1884,6 +1930,7 @@ export const mathArray = [
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     funFacts: [
@@ -1908,6 +1955,7 @@ export const mathArray = [
       ["Ver", "vet"],
       ["Mon", "key"],
     ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     funFacts: [
@@ -1929,6 +1977,7 @@ export const mathArray = [
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     funFacts: [
@@ -1950,6 +1999,7 @@ export const mathArray = [
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
     funFacts: [
@@ -1974,6 +2024,7 @@ export const mathArray = [
       ["Yel", "low"],
       ["Mon", "goose"],
     ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     funFacts: [
@@ -1995,6 +2046,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2016,6 +2068,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2037,6 +2090,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2058,6 +2112,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2079,6 +2134,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
