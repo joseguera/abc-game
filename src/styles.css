@@ -27,6 +27,25 @@ button, input[type="submit"], input[type="reset"] {
   min-height: 100vh;
 }
 
+dialog:modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fcd783;
+  width: 209px;
+  text-align: center;
+  border: 1px solid #ff6347;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  top: -415px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* LanguageSwitch Styles */
 
 .switch {
