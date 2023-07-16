@@ -6,7 +6,7 @@ export default function PageHeader({ pageTitle, list, category }) {
   return (
     <HeaderHolder>
         <PageTitle>{pageTitle}</PageTitle>
-        <CardDisplayToggle list={list} category={category} />
+        {/* <CardDisplayToggle list={list} category={category} /> */}
     </HeaderHolder>
   )
 }

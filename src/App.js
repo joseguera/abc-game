@@ -8,7 +8,7 @@ import {
   alphabetLetterSounds,
 } from "./zebrAPI";
 import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math, Favorites } from "pages";
-import { Header, Menu } from "components";
+import { Header, MenuModal } from "components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -121,7 +121,7 @@ export default function App() {
           // hasAnimal  &&
           <div className="main-body">
             <Header handleModal={handleModal} />
-            <Menu menuModal={menuModal} />
+            <MenuModal menuModal={menuModal} />
             {/* Start of Router Code */}
             <Switch>
               <Route
