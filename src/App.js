@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import {
   scienceArray,
@@ -22,6 +22,7 @@ import "./styles.css";
 import { MainApp } from "./App.styles";
 
 export default function App() {
+  const menuModal = useRef();
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
   // const [animals, setAnimals] = useState([]);
@@ -38,7 +39,6 @@ export default function App() {
   const [numbers, setNumbers] = useLocalStorage("numbers", mathArray);
 
   const [detailOpen, setDetailOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);    
   const [loading, isLoading] = useState(false);
 
   ///////// API Call - MongoDB /////////
@@ -86,6 +86,10 @@ export default function App() {
     return (audio.volume = 0);
   };
 
+  const handleModal = () => {
+    menuModal.current.showModal();
+  }
+
   const handleLike = (id, category, list) => {
     const newList = list.map((buttonValue) => {
       if (id === buttonValue.id) {
@@ -105,11 +109,6 @@ export default function App() {
     }
   };
 
-  const openMenu = () => {
-    const menu = menuOpen;
-    setMenuOpen(!menu);
-  } 
-
   //////////////////////////////////////////
   ///////// PARENT FUNCTIONS - END /////////
   //////////////////////////////////////////
@@ -121,14 +120,14 @@ export default function App() {
         {
           // hasAnimal  &&
           <div className="main-body">
-            <Header openMenu={openMenu} />
-            {menuOpen && <Menu openMenu={openMenu} />}
+            <Header handleModal={handleModal} />
+            <Menu menuModal={menuModal} />
             {/* Start of Router Code */}
             <Switch>
               <Route
                 exact
                 path="/"
-                component={(props) => <Home {...props} menuOpen={menuOpen} />}
+                component={(props) => <Home {...props} />}
               />
               <Route
                 exact
