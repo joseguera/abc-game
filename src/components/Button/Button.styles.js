@@ -54,12 +54,8 @@ export const IconHolder = styled.div`
   height: 60px;
   align-self: flex-end;
   justify-content: center;
-  .horizontal {
-    width: 100%;
-  }
-  .vertical {
-    height: 100%;
-  }
 `;
 
-export const AnimalIcon = styled.img``;
+export const AnimalIcon = styled.img`
+  width: 100%;
+`;

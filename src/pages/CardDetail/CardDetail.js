@@ -18,6 +18,7 @@ import {
   UnitHolder,
   ImageHolder,
   NameHolder,
+  AnimalImage
 } from "./CardDetail.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -105,8 +106,7 @@ export default function CardDetail({
           <ImageHolder>
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(category === "science" || category === "arts") && (
-              <img
-                className={item.horizontal ? "horizontal" : "vertical"}
+              <AnimalImage
                 src={item.image}
                 alt={item.name}
                 // alt={item.name.en}

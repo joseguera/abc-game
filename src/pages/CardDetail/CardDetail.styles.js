@@ -20,12 +20,10 @@ export const PlayingCard = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
-  .horizontal {
-    width: 100%;
-  }
-  .vertical {
-    height: 100%;
-  }
+`;
+
+export const AnimalImage = styled.img`
+  width: 100%;
 `;
 
 export const XCloserHolder = styled.div`

@@ -30,7 +30,6 @@ export default function Button({ category, item }) {
         <IconHolder>
           <AnimalIcon
             src={item.image}
-            className={item.horizontal ? "horizontal" : "vertical"}
             alt={item.name}
             // alt={item.name.en}
           />
