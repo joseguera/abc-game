@@ -1,9 +1,10 @@
 import React from "react";
 import { PageHeader, Button } from "components";
+import { useOutletContext, useParams } from "react-router-dom";
 import { FavoritesHolder, ButtonMatrix } from "./Favorites.styles";
 
-export default function Favorites({ animals, numbers, instruments }) {
-
+export default function Favorites(props) {
+  const { animals, instruments, numbers } = useOutletContext();
   const favoriteAnimals = animals.filter(animal => animal.isLiked);
   const favoriteInstruments = instruments.filter(instrument => instrument.isLiked);
   const favoriteNumber = numbers.filter(number => number.isLiked);
