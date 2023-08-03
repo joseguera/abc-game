@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <Arts />,
       },
       {
-        path: "/arts/:id",
+        path: "/:category/:id",
         element: <CardDetail />,
       },
       {
@@ -46,16 +46,8 @@ const router = createBrowserRouter([
         element: <Math />,
       },
       {
-        path: "/math/:id",
-        element: <CardDetail />,
-      },
-      {
         path: "/science",
         element: <Science />,
-      },
-      {
-        path: "/science/:id",
-        element: <CardDetail />,
       },
       {
         path: "/shop",

@@ -73,7 +73,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/chimpanzee_fact3_qnnklm.mp3",
     ],
     isLiked: false,
-    list: "science"
+    category: "science"
   },
   {
     id: "dingo",
@@ -95,6 +95,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/dingo_fact3_ow5mgy.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "elephant",
@@ -116,6 +117,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/elephant_fact3_dx6jql.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "frog",
@@ -137,6 +139,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/frog_fact3_glvaz1.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "gorilla",
@@ -158,6 +161,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/gorilla_fact3_wudgzl.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "hyena",
@@ -179,6 +183,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/hyena_fact3_hytr4n.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "impala",
@@ -200,6 +205,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/impala_fact3_kul7g5.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "jaguar",
@@ -221,6 +227,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact3_clfmtr.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "koala",
@@ -242,6 +249,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact3_nyynb4.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "lemur",
@@ -263,6 +271,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/lemur_fact3_dechin.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "macaw",
@@ -284,6 +293,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/macaw_fact3_prsu0v.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "numbat",
@@ -305,6 +315,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/numbat_fact3_lyn45a.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "okapi",
@@ -326,6 +337,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/okapi_fact3_ogttap.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "panda",
@@ -347,6 +359,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661509/animal_facts_audio/panda_fact3_dajist.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "quetzal",
@@ -368,6 +381,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/quetzal_fact3_is9snv.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "rhinoceros",
@@ -389,6 +403,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/rhinoceros_fact3_ufh40a.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "snake",
@@ -410,6 +425,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/snake_fact3_dz53vc.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "tiger",
@@ -431,6 +447,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/tiger_fact3_dluuj4.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "unau",
@@ -452,6 +469,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact3_mamotq.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "vervet-monkey",
@@ -476,6 +494,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact3_lfyjzb.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "warthog",
@@ -497,6 +516,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact3_bukixi.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "xenops",
@@ -518,6 +538,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact3_ldtacl.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "yellow-mongoose",
@@ -542,6 +563,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact3_gaevzy.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "zebra",
@@ -564,6 +586,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
 ];
 
@@ -893,6 +916,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: true,
+    category: "arts"
   },
   {
     id: "bell-tree",
@@ -937,6 +961,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "didgeridoo",
@@ -959,6 +984,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "electric-bass",
@@ -980,6 +1006,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "french-horn",
@@ -1002,6 +1029,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "gamelatron",
@@ -1024,6 +1052,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "harmonica",
@@ -1046,6 +1075,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "inci",
@@ -1068,6 +1098,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "janggu",
@@ -1090,6 +1121,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "khaen",
@@ -1112,6 +1144,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "leier",
@@ -1134,6 +1167,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "mbira",
@@ -1156,6 +1190,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "native-american-flute",
@@ -1178,6 +1213,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "oboe",
@@ -1200,6 +1236,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "piano",
@@ -1222,6 +1259,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "quijada-de-burro",
@@ -1244,6 +1282,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "rabab",
@@ -1266,6 +1305,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "sitar",
@@ -1288,6 +1328,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "taiko",
@@ -1310,6 +1351,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "ukulele",
@@ -1332,6 +1374,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "violin",
@@ -1357,6 +1400,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "waterphone",
@@ -1379,6 +1423,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "xalam",
@@ -1401,6 +1446,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "yuka",
@@ -1426,6 +1472,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "arts"
   },
   {
     id: "zarb",
@@ -1448,6 +1495,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: true,
+    category: "arts"
   },
 ];
 
@@ -1477,6 +1525,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "2",
@@ -1499,6 +1548,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "3",
@@ -1521,6 +1571,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "4",
@@ -1543,6 +1594,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "5",
@@ -1565,6 +1617,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "6",
@@ -1587,6 +1640,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "7",
@@ -1609,6 +1663,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "8",
@@ -1631,6 +1686,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "9",
@@ -1653,6 +1709,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "10",
@@ -1675,6 +1732,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "11",
@@ -1697,6 +1755,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "12",
@@ -1719,6 +1778,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "13",
@@ -1741,6 +1801,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "14",
@@ -1763,6 +1824,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "15",
@@ -1785,6 +1847,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "16",
@@ -1807,6 +1870,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "17",
@@ -1829,6 +1893,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "18",
@@ -1851,6 +1916,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "19",
@@ -1873,6 +1939,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "20",
@@ -1895,6 +1962,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "21",
@@ -1917,6 +1985,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "22",
@@ -1942,6 +2011,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
+    category: "math"
   },
   {
     id: "23",
@@ -1964,6 +2034,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "24",
@@ -1986,6 +2057,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "25",
@@ -2011,6 +2083,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "26",
@@ -2033,6 +2106,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "27",
@@ -2055,6 +2129,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "28",
@@ -2077,6 +2152,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "29",
@@ -2099,6 +2175,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
   {
     id: "30",
@@ -2121,6 +2198,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
+    category: "math"
   },
 ];
 

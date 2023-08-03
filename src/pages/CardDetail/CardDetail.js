@@ -26,7 +26,6 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function CardDetail({
   list,
-  category,
   sounds,
   syllableSounds,
   handleLike,
@@ -41,16 +40,34 @@ export default function CardDetail({
   /* finds the index of the object in "list" array being passed down as props
   and provides it to "item" object */
 
-  let { id } = useParams();
+  let { id, category } = useParams();
 
   ///////////// FIX THIS //////////////////////////
 
   const { animals, instruments, numbers } = useOutletContext();
 
-  
-  const itemIndex = animals.findIndex(animal => animal.id === id);
+  const currList = { animals, instruments, numbers }
 
-  let item = animals[itemIndex];  
+  
+  const findItem = () => {
+    let currentItem;
+    let currentList;
+    if (category === "science") {
+      currentItem = currList['animals'].findIndex(item => item.id === id);
+      currentList = currList['animals'][currentItem];
+    } 
+    if (category === "arts") {
+      currentItem = currList['instruments'].findIndex(item => item.id === id);
+      currentList = currList['instruments'][currentItem];
+    } 
+    if (category === "math") {
+      currentItem = currList['numbers'].findIndex(item => item.id === id);
+      currentList = currList['numbers'][currentItem];
+    }
+    return currentList;
+  }
+
+  let item = findItem();  
 
   console.log(item)
 
