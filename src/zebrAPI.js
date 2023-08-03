@@ -28,6 +28,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/alligator_fact3_kudvzs.mp3",
     ],
     isLiked: false,
+    category: "science"
   },
   {
     id: "baboon",
@@ -50,6 +51,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/baboon_fact3_a7j7vh.mp3",
     ],
     isLiked: true,
+    category: "science"
   },
   {
     id: "chimpanzee",
@@ -71,6 +73,7 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/chimpanzee_fact3_qnnklm.mp3",
     ],
     isLiked: false,
+    list: "science"
   },
   {
     id: "dingo",

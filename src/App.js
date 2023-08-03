@@ -9,7 +9,7 @@ import {
 } from "./zebrAPI";
 import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math, Favorites } from "pages";
 import { Header, MenuModal } from "components";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Link, Outlet, Route, Routes } from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,7 +25,6 @@ export default function App() {
   const menuModal = useRef();
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
-  // const [animals, setAnimals] = useState([]);
   const [sounds, setSounds] = useState(alphabetLetterSounds);
   const [syllables, setSyllables] = useState(animalSyllables);
 
@@ -114,116 +113,26 @@ export default function App() {
   //////////////////////////////////////////
 
   return (
-    <Router>
-      <MainApp>
-        {loading && <div>Loading</div>}
-        {
-          // hasAnimal  &&
-          <div className="main-body">
-            <Header handleModal={handleModal} />
-            <MenuModal menuModal={menuModal} />
-            {/* Start of Router Code */}
-            <Switch>
-              <Route
-                exact
-                path="/"
-                component={(props) => <Home {...props} />}
-              />
-              <Route
-                exact
-                path="/science"
-                component={(props) => <Science {...props} animals={animals} />}
-              />
-              <Route
-                exact
-                path="/technology"
-                component={(props) => <Technology {...props} />}
-              />
-              <Route
-                exact
-                path="/engineering"
-                component={(props) => <Engineering {...props} />}
-              />
-              <Route
-                exact
-                path="/arts"
-                component={(props) => (
-                  <Arts {...props} instruments={instruments} />
-                )}
-              />
-              <Route
-                exact
-                path="/math"
-                component={(props) => <Math {...props} numbers={numbers} />}
-              />
-              <Route
-                exact
-                path="/about"
-                component={(props) => <About {...props} />}
-              />
-              <Route
-                exact
-                path="/contact"
-                component={(props) => <Contact {...props} />}
-              />
-              <Route
-                exact
-                path="/aby-store"
-                component={(props) => <Shop {...props} />}
-              />
-              <Route
-                exact
-                path="/my-favorites"
-                component={(props) => <Favorites {...props} animals={animals} numbers={numbers} instruments={instruments} />}
-              />
-              <Route
-                path="/science/:id"
-                component={(props) => (
-                  <CardDetail
-                    {...props}
-                    list={animals}
-                    category="science"
-                    isDetailOpen={detailOpen}
-                    handleOpenClose={handleOpenClose}
-                    sounds={sounds.alphabet}
-                    syllableSounds={syllables}
-                    handleLike={handleLike}
-                  />
-                )}
-              />
-              <Route
-                path="/arts/:id"
-                component={(props) => (
-                  <CardDetail
-                    {...props}
-                    list={instruments}
-                    category="arts"
-                    isDetailOpen={detailOpen}
-                    handleOpenClose={handleOpenClose}
-                    syllableSounds={syllables}
-                    handleLike={handleLike}
-                  />
-                )}
-              />
-              <Route
-                path="/math/:id"
-                component={(props) => (
-                  <CardDetail
-                    {...props}
-                    list={numbers}
-                    category="math"
-                    isDetailOpen={detailOpen}
-                    handleOpenClose={handleOpenClose}
-                    syllableSounds={syllables}
-                    handleLike={handleLike}
-                  />
-                )}
-              />
-            </Switch>
-            {/* End of Router Code */}
-          </div>
-        }
-      </MainApp>
-    </Router>
+    <MainApp>
+      {loading && <div>Loading</div>}
+      {
+        // hasAnimal  &&
+        <div className="main-body">
+          <Header handleModal={handleModal} />
+          <MenuModal menuModal={menuModal} />
+          <Outlet
+            context={{
+              instruments,
+              animals,
+              numbers,
+              detailOpen,
+              handleOpenClose,
+              syllables,
+              handleLike,
+            }}
+          />
+        </div>
+      }
+    </MainApp>
   );
 }

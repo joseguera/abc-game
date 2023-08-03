@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-export default function Button({ category, item }) {
+export default function Button({ item }) {
   return (
-    <Link to={`/${category}/${item.id}`} className="decoration-none" >
+    <Link to={`/${item.category}/${item.id}`} className="decoration-none" >
     {/* <Link to={`/${category}/${item.key}`} style={styledLink}> */}
       <div
         className="flex flex-col w-24 h-24 text-lg border border-[#3d674c] rounded-lg transition-all ease-out delay-150 text-[#3d674c] drop-shadow-md bg-[#e3dac9] p-1 hover:drop-shadow-lg hover:text-xl hover:text-[#558f69] focus:drop-shadow-xl"

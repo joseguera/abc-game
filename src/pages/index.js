@@ -9,3 +9,4 @@ export { default as About } from "./About";
 export { default as Contact } from "./Contact";
 export { default as Shop } from "./Shop";
 export { default as Favorites } from "./Favorites";
+export { default as ErrorPage } from "./ErrorPage";

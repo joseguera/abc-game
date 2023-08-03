@@ -1,14 +1,79 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { Home, About, Arts, CardDetail, Contact, Engineering, ErrorPage, Favorites, Math, Science, Shop, Technology } from "pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
+import "./styles.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/arts",
+        element: <Arts />,
+      },
+      {
+        path: "/arts/:id",
+        element: <CardDetail />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/engineering",
+        element: <Engineering />,
+      },
+      {
+        path: "/my-favorites",
+        element: <Favorites />,
+      },
+      {
+        path: "/math",
+        element: <Math />,
+      },
+      {
+        path: "/math/:id",
+        element: <CardDetail />,
+      },
+      {
+        path: "/science",
+        element: <Science />,
+      },
+      {
+        path: "/science/:id",
+        element: <CardDetail />,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
+        path: "/technology",
+        element: <Technology />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );

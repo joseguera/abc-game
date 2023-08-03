@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useOutletContext, useParams } from "react-router-dom";
 import { db } from "../../utils/firebase";
 import { onValue, ref } from "firebase/database";
 import {
@@ -39,11 +40,17 @@ export default function CardDetail({
 
   /* finds the index of the object in "list" array being passed down as props
   and provides it to "item" object */
-  
-  const itemIndex = list.findIndex(animal => animal.id === props.match.params.id);
-  // const itemIndex = list.findIndex(animal => animal.key === props.match.params.id);
 
-  let item = list[itemIndex];  
+  let { id } = useParams();
+
+  ///////////// FIX THIS //////////////////////////
+
+  const { animals, instruments, numbers } = useOutletContext();
+
+  
+  const itemIndex = animals.findIndex(animal => animal.id === id);
+
+  let item = animals[itemIndex];  
 
   console.log(item)
 
@@ -95,9 +102,9 @@ export default function CardDetail({
             <UnitHolder>{item.value}</UnitHolder>
             {/* <UnitHolder>{value}</UnitHolder> */}
             <XCloser
-              onClick={() => handleOpenClose(item.id, category, list, audio)}
+              onClick={() => handleOpenClose(item.id, item.category, list, audio)}
             >
-              <XCloserLink to={`/${category}`}>
+              <XCloserLink to={`/${item.category}`}>
                 {/* <FontAwesomeIcon icon={faXmark} /> */}
                 &#x2715;
               </XCloserLink>
@@ -105,7 +112,7 @@ export default function CardDetail({
           </XCloserHolder>
           <ImageHolder>
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
-            {(category === "science" || category === "arts") && (
+            {(item.category === "science" || item.category === "arts") && (
               <AnimalImage
                 src={item.image}
                 alt={item.name}
@@ -113,7 +120,7 @@ export default function CardDetail({
               />
             )}
             {/* ///// MATH Image Logic ///// */}
-            {category === "math" && (
+            {item.category === "math" && (
               <FactorUnitAnimations
                 image={item.image}
                 unitNumber={item.value}
