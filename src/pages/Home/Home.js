@@ -1,24 +1,24 @@
 import React from "react";
-import { HomeBody, ButtonMatrix, NavButton, StyledLink } from "./Home.styles";
+import { Link } from "react-router-dom";
 
 export default function Home(props) {
 
   return (
-    <HomeBody>
+    <div className="w-3/4 flex flex-col items-center justify-center">
       <h2>Welcome to Aby Zebra</h2>
-      <ButtonMatrix>
-        <StyledLink to="/science">
+      <div className="w-full flex flex-col items-center gap-12">
+        <Link to="/science" className="no-underline">
           <div className="btn-3d-1">Science</div>
-        </StyledLink>
+        </Link>
         <div className="btn-3d-1">Technology</div>
         <div className="btn-3d-1">Engineering</div>
-        <StyledLink to="/arts">
+        <Link to="/arts" className="no-underline">
           <div className="btn-3d-1">Arts</div>
-        </StyledLink>
-        <StyledLink to="/math">
+        </Link>
+        <Link to="/math" className="no-underline">
           <div className="btn-3d-1">Math</div>
-        </StyledLink>
-      </ButtonMatrix>
-    </HomeBody>
+        </Link>
+      </div>
+    </div>
   );
 }

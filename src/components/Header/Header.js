@@ -5,7 +5,7 @@ import { faPaw } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ handleModal }) => {
   return (
-    <div className="bg-[#ff6347]">
+    <div className="bg-[#ff6347] w-full">
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-row items-center justify-between gap-4">
           <div>
