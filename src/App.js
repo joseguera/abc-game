@@ -19,7 +19,6 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import "./styles.css";
-import { MainApp } from "./App.styles";
 
 export default function App() {
   const menuModal = useRef();
@@ -113,7 +112,9 @@ export default function App() {
   //////////////////////////////////////////
 
   return (
-    <MainApp>
+    <div
+      className="min-w-screen bg-[#fde7b4] min-h-screen"
+    >
       {loading && <div>Loading</div>}
       {
         // hasAnimal  &&
@@ -133,6 +134,6 @@ export default function App() {
           />
         </div>
       }
-    </MainApp>
+    </div>
   );
 }

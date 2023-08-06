@@ -21,16 +21,6 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-.main-body {
-  width: 428px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #fde7b4;
-  min-height: 100vh;
-}
-
 dialog:modal {
   display: flex;
   flex-direction: column;
