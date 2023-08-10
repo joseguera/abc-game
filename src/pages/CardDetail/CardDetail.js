@@ -10,7 +10,6 @@ import {
   SlideShow,
 } from "components";
 import {
-  CardHolder,
   CardLetter,
   PlayingCard,
   XCloserHolder,
@@ -112,8 +111,10 @@ export default function CardDetail({
   };
 
   return (
-    <CardHolder>
-      <CardLetter key={item.id}>
+    <div
+      className="flex justify-center pt-5"
+    >
+      <div key={item.id} className="flex flex-col items-center bg-[#48a5e0] border-8 border-[#fff8dc] w-full h-screen rounded-2xl p-2.5">
         <PlayingCard>
           <XCloserHolder>
             <UnitHolder>{item.value}</UnitHolder>
@@ -122,7 +123,6 @@ export default function CardDetail({
               onClick={() => handleOpenClose(item.id, item.category, list, audio)}
             >
               <XCloserLink to={`/${item.category}`}>
-                {/* <FontAwesomeIcon icon={faXmark} /> */}
                 &#x2715;
               </XCloserLink>
             </XCloser>
@@ -133,7 +133,6 @@ export default function CardDetail({
               <AnimalImage
                 src={item.image}
                 alt={item.name}
-                // alt={item.name.en}
               />
             )}
             {/* ///// MATH Image Logic ///// */}
@@ -169,7 +168,7 @@ export default function CardDetail({
             )}
           </NameHolder>
         </PlayingCard>
-      </CardLetter>
-    </CardHolder>
+      </div>
+    </div>
   );
 }
