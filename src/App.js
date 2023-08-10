@@ -118,7 +118,7 @@ export default function App() {
       {loading && <div>Loading</div>}
       {
         // hasAnimal  &&
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-full">
           <Header handleModal={handleModal} />
           <MenuModal menuModal={menuModal} />
           <Outlet

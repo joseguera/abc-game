@@ -1,20 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const CardHolder = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 20px 0;
-`;
-
-export const CardLetter = styled.div`
-  background-color: #48a5e0;
-  border: 10px solid #fff8dc;
-  width: 320px;
-  height: 710px;
-  border-radius: 15px;
-  padding: 10px;
-`;
+export const CardLetter = styled.div``;
 
 export const PlayingCard = styled.div`
   display: flex;
