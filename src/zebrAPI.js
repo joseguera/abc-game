@@ -28,7 +28,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/alligator_fact3_kudvzs.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "baboon",
@@ -51,7 +52,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/baboon_fact3_a7j7vh.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "chimpanzee",
@@ -73,7 +75,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/chimpanzee_fact3_qnnklm.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "dingo",
@@ -95,7 +98,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/dingo_fact3_ow5mgy.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
   {
     id: "elephant",
@@ -117,7 +121,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/elephant_fact3_dx6jql.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "frog",
@@ -139,7 +144,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/frog_fact3_glvaz1.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "gorilla",
@@ -161,7 +167,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/gorilla_fact3_wudgzl.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "hyena",
@@ -183,7 +190,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/hyena_fact3_hytr4n.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "impala",
@@ -205,7 +213,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/impala_fact3_kul7g5.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "jaguar",
@@ -227,7 +236,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact3_clfmtr.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
   {
     id: "koala",
@@ -249,7 +259,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact3_nyynb4.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "lemur",
@@ -271,7 +282,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/lemur_fact3_dechin.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
   {
     id: "macaw",
@@ -293,7 +305,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/macaw_fact3_prsu0v.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "numbat",
@@ -315,7 +328,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/numbat_fact3_lyn45a.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "okapi",
@@ -337,7 +351,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661508/animal_facts_audio/okapi_fact3_ogttap.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "panda",
@@ -359,7 +374,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661509/animal_facts_audio/panda_fact3_dajist.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
   {
     id: "quetzal",
@@ -381,7 +397,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/quetzal_fact3_is9snv.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "rhinoceros",
@@ -403,7 +420,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661499/animal_facts_audio/rhinoceros_fact3_ufh40a.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "snake",
@@ -425,7 +443,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/snake_fact3_dz53vc.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "tiger",
@@ -447,7 +466,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/tiger_fact3_dluuj4.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
   {
     id: "unau",
@@ -469,7 +489,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact3_mamotq.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "vervet-monkey",
@@ -494,7 +515,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact3_lfyjzb.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#ddffbb"
   },
   {
     id: "warthog",
@@ -516,7 +538,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact3_bukixi.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#ffffc2"
   },
   {
     id: "xenops",
@@ -538,7 +561,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact3_ldtacl.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "yellow-mongoose",
@@ -563,7 +587,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact3_gaevzy.mp3",
     ],
     isLiked: true,
-    category: "science"
+    category: "science",
+    background: "#fdcedf"
   },
   {
     id: "zebra",
@@ -586,7 +611,8 @@ export const scienceArray = [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact3_hviwtv.mp3",
     ],
     isLiked: false,
-    category: "science"
+    category: "science",
+    background: "#aee1e1"
   },
 ];
 
