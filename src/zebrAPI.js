@@ -29,7 +29,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "baboon",
@@ -53,7 +53,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "chimpanzee",
@@ -76,7 +76,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "dingo",
@@ -99,7 +99,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
   {
     id: "elephant",
@@ -122,7 +122,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "frog",
@@ -145,7 +145,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "gorilla",
@@ -168,7 +168,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "hyena",
@@ -191,7 +191,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "impala",
@@ -214,7 +214,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "jaguar",
@@ -237,7 +237,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
   {
     id: "koala",
@@ -260,7 +260,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "lemur",
@@ -283,7 +283,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
   {
     id: "macaw",
@@ -306,7 +306,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "numbat",
@@ -329,7 +329,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "okapi",
@@ -352,7 +352,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "panda",
@@ -375,7 +375,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
   {
     id: "quetzal",
@@ -398,7 +398,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "rhinoceros",
@@ -421,7 +421,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "snake",
@@ -444,7 +444,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "tiger",
@@ -467,7 +467,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
   {
     id: "unau",
@@ -490,7 +490,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "vervet-monkey",
@@ -516,7 +516,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#ddffbb"
+    background: "bg-card-green"
   },
   {
     id: "warthog",
@@ -539,7 +539,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#ffffc2"
+    background: "bg-card-yellow"
   },
   {
     id: "xenops",
@@ -562,7 +562,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "yellow-mongoose",
@@ -588,7 +588,7 @@ export const scienceArray = [
     ],
     isLiked: true,
     category: "science",
-    background: "#fdcedf"
+    background: "bg-card-red"
   },
   {
     id: "zebra",
@@ -612,7 +612,7 @@ export const scienceArray = [
     ],
     isLiked: false,
     category: "science",
-    background: "#aee1e1"
+    background: "bg-card-blue"
   },
 ];
 

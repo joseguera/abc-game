@@ -28,8 +28,7 @@ export default function CardDetail({
   sounds,
   syllableSounds,
   handleLike,
-  handleOpenClose,
-  ...props
+  handleOpenClose
 }) {
   const [isDestructOpen, setIsDestructOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
@@ -38,7 +37,6 @@ export default function CardDetail({
 
   /* finds the index of the object in "list" array being passed down as props
   and provides it to "item" object */
-
   let { id, category } = useParams();
 
   ///////////// FIX THIS //////////////////////////
@@ -66,9 +64,8 @@ export default function CardDetail({
     return currentList;
   }
 
-  let item = findItem();  
+  let item = findItem(); 
 
-  console.log(item)
 
   const xSectionCloser = () => {
     const clicked = isDestructOpen;
@@ -114,7 +111,7 @@ export default function CardDetail({
     <div
       className="flex justify-center pt-5"
     >
-      <div key={item.id} className={`flex flex-col items-center bg-[${item.background}] border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`}>
+      <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`} >
         <PlayingCard>
           <XCloserHolder>
             <UnitHolder>{item.value}</UnitHolder>

@@ -15,8 +15,8 @@ const Header = ({ handleModal }) => {
                   fontSize: "2.5rem",
                   color: "#3c3f4a",
                   transform: "skew(-5deg, -5deg) rotate(5deg)",
-                  webkitTransform: "skew(-5deg, -5deg) rotate(5deg)",
-                  webkitTransformOrigin: "center center",
+                  WebkitTransform: "skew(-5deg, -5deg) rotate(5deg)",
+                  WebkitTransformOrigin: "center center",
                   transformOrigin: "center center",
                   textShadow:
                     "-1px 1px #E1DFDB, -2px 2px #E1DFDB, -3px 3px #120600, -4px 4px #120600, -5px 5px #E1DFDB, -6px 6px #E1DFDB, -7px 7px #120600, -8px 8px #120600, -9px 9px #E1DFDB, -10px 10px #E1DFDB, -11px 11px 15px rgba(0, 0, 0, 0.5)",
