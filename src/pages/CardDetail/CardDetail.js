@@ -114,7 +114,7 @@ export default function CardDetail({
     <div
       className="flex justify-center pt-5"
     >
-      <div key={item.id} className="flex flex-col items-center bg-[#48a5e0] border-8 border-[#fff8dc] w-full h-screen rounded-2xl p-2.5">
+      <div key={item.id} className={`flex flex-col items-center bg-[${item.background}] border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`}>
         <PlayingCard>
           <XCloserHolder>
             <UnitHolder>{item.value}</UnitHolder>
