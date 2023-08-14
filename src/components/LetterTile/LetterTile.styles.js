@@ -6,7 +6,7 @@ export const Tile = styled.div`
   line-height: 45px;
   font-size: 36px;
   text-align: center;
-  border: 1px solid #ff6347;
+  border: 1px solid #000000;
   border-radius: 5px;
   cursor: pointer;
   &:hover {

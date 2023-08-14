@@ -103,11 +103,11 @@ export default function CardDetail({
 
   return (
     <div
-      className="flex justify-center pt-5 w-fit lg:w-3/4"
+      className="flex justify-center pt-5 w-11/12 lg:w-3/4"
     >
       <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`} >
-        <div className="flex flex-col items-center lg:justify-center lg:flex-row lg:w-full">
-          <div className="flex flex-row w-full lg:flex-col-reverse justify-between lg:w-fit lg:items-center">
+        <div className="flex flex-col items-center lg:justify-center lg:flex-row lg:w-full lg:gap-20">
+          <div className="flex flex-row justify-between w-full lg:flex-col-reverse lg:items-center lg:gap-96 lg:w-fit lg:h-full">
             <UnitHolder>{item.value}</UnitHolder>
             <XCloser
               onClick={() => handleOpenClose(item.id, item.category, list, audio)}
@@ -117,11 +117,10 @@ export default function CardDetail({
               </XCloserLink>
             </XCloser>
           </div>
-          <ImageHolder>
+          <div className="w-full h-128 flex justify-center items-center lg:w-2/4">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
               <img
-                className="w-full lg:w-full"
                 src={item.image}
                 alt={item.name}
               />
@@ -135,7 +134,7 @@ export default function CardDetail({
                 value={value}
               />
             )}
-          </ImageHolder>
+          </div>
           <NameHolder>
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
             {isDestructOpen ? (
