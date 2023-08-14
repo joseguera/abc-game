@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        '128': '26.5rem',
+      },
       colors: {
         "card-blue": "#aee1e1",
         "card-green": "#ddffbb",

@@ -29,9 +29,7 @@ export const DestructButton = styled.div`
 `;
 
 export const ImageHolder = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ;
   width: 320px;
   height: 475px;
 `;
