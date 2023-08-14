@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       spacing: {
         '128': '26.5rem',
+        '132': '29rem',
       },
       colors: {
         "card-blue": "#aee1e1",
