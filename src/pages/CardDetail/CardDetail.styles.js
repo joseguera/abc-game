@@ -1,24 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const CardLetter = styled.div``;
-
-export const PlayingCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-`;
-
-export const AnimalImage = styled.img`
-  width: 100%;
-`;
-
-export const XCloserHolder = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 export const XCloser = styled.button`
   font-size: 27px;
 `;

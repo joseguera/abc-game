@@ -10,18 +10,12 @@ import {
   SlideShow,
 } from "components";
 import {
-  CardLetter,
-  PlayingCard,
-  XCloserHolder,
   XCloser,
   XCloserLink,
   UnitHolder,
   ImageHolder,
   NameHolder,
-  AnimalImage
 } from "./CardDetail.styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function CardDetail({
   list,
@@ -109,13 +103,12 @@ export default function CardDetail({
 
   return (
     <div
-      className="flex justify-center pt-5"
+      className="flex justify-center pt-5 w-fit lg:w-3/4"
     >
       <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`} >
-        <PlayingCard>
-          <XCloserHolder>
+        <div className="flex flex-col items-center lg:justify-center lg:flex-row lg:w-full">
+          <div className="flex flex-row w-full lg:flex-col-reverse justify-between lg:w-fit lg:items-center">
             <UnitHolder>{item.value}</UnitHolder>
-            {/* <UnitHolder>{value}</UnitHolder> */}
             <XCloser
               onClick={() => handleOpenClose(item.id, item.category, list, audio)}
             >
@@ -123,11 +116,12 @@ export default function CardDetail({
                 &#x2715;
               </XCloserLink>
             </XCloser>
-          </XCloserHolder>
+          </div>
           <ImageHolder>
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
-              <AnimalImage
+              <img
+                className="w-full lg:w-full"
                 src={item.image}
                 alt={item.name}
               />
@@ -164,7 +158,7 @@ export default function CardDetail({
               />
             )}
           </NameHolder>
-        </PlayingCard>
+        </div>
       </div>
     </div>
   );
