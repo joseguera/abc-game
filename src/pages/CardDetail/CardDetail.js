@@ -117,7 +117,7 @@ export default function CardDetail({
               </XCloserLink>
             </XCloser>
           </div>
-          <div className="w-full h-128 flex justify-center items-center lg:w-2/4">
+          <div className="w-full h-128 flex justify-center items-center lg:w-132">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
               <img
