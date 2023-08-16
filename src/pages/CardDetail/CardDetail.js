@@ -103,10 +103,10 @@ export default function CardDetail({
 
   return (
     <div
-      className="flex justify-center pt-5 w-11/12 lg:w-3/4"
+      className="flex justify-center pt-5 w-11/12 lg:w-2/4"
     >
       <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`} >
-        <div className="flex flex-col items-center lg:justify-center lg:flex-row lg:w-full lg:gap-20">
+        <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:w-full lg:gap-20">
           <div className="flex flex-row justify-between w-full lg:flex-col-reverse lg:items-center lg:gap-96 lg:w-fit lg:h-full">
             <UnitHolder>{item.value}</UnitHolder>
             <XCloser
