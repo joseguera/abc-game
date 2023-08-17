@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useOutletContext, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { db } from "../../utils/firebase";
 import { onValue, ref } from "firebase/database";
 import {
@@ -10,11 +11,7 @@ import {
   SlideShow,
 } from "components";
 import {
-  XCloser,
   XCloserLink,
-  UnitHolder,
-  ImageHolder,
-  NameHolder,
 } from "./CardDetail.styles";
 
 export default function CardDetail({
@@ -105,17 +102,18 @@ export default function CardDetail({
     <div
       className="flex justify-center pt-5 w-11/12 lg:w-2/4"
     >
-      <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5`} >
+      <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5 lg:p-3.5`} >
         <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:w-full lg:gap-20">
-          <div className="flex flex-row justify-between w-full lg:flex-col-reverse lg:items-center lg:gap-96 lg:w-fit lg:h-full">
-            <UnitHolder>{item.value}</UnitHolder>
-            <XCloser
+          <div className="flex flex-row justify-between items-center w-full lg:flex-col-reverse lg:items-start lg:gap-96 lg:w-fit lg:h-full">
+            <div className="text-lg lg:text-6xl">{item.value}</div>
+            <div 
+              className="text-lg lg:text-5xl"
               onClick={() => handleOpenClose(item.id, item.category, list, audio)}
             >
-              <XCloserLink to={`/${item.category}`}>
+              <Link className="decoration-none hover:text-[#4d8080]" to={`/${item.category}`}>
                 &#x2715;
-              </XCloserLink>
-            </XCloser>
+              </Link>
+            </div>
           </div>
           <div className="w-full h-128 flex justify-center items-center lg:w-132">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
@@ -135,7 +133,9 @@ export default function CardDetail({
               />
             )}
           </div>
-          <NameHolder>
+          <div
+            className="flex flex-row gap-4 justify-center items-center w-1/3"
+          >
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
             {isDestructOpen ? (
               openDestruct(category)
@@ -156,7 +156,7 @@ export default function CardDetail({
                 isLiked={item.isLiked}
               />
             )}
-          </NameHolder>
+          </div>
         </div>
       </div>
     </div>
