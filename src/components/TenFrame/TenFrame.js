@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FrameHolder, FrameRow } from "./TenFrame.styles";
+import { FrameRow } from "./TenFrame.styles";
 
 export default function TenFrame({ dotAmount }) {
   const [dots, setDots] = useState({
@@ -22,7 +22,7 @@ export default function TenFrame({ dotAmount }) {
   }
 
   return (
-    <FrameHolder>
+    <div className="flex flex-col w-full lg:w-8/12">
       <FrameRow>
         <div className="frame top-row top-cells">
           <div
@@ -137,6 +137,6 @@ export default function TenFrame({ dotAmount }) {
           ></div>
         </div>
       </FrameRow>
-    </FrameHolder>
+    </div>
   );
 }

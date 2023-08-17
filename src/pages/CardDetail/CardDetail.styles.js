@@ -1,23 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-export const XCloser = styled.button`
-  font-size: 27px;
-`;
-
-export const XCloserLink = styled(Link)`
-  font-size: 27px;
-  color: #000000;
-  text-decoration: none;
-  &:hover {
-    color: #4d8080 !important;
-  }
-`;
-
-export const UnitHolder = styled.div`
-  font-size: 27px;
-  color: #2f4f4f;
-`;
 
 export const DestructButton = styled.div`
   cursor: pointer;
@@ -26,22 +7,6 @@ export const DestructButton = styled.div`
   &:hover {
     color: #4d8080 !important;
   }
-`;
-
-export const ImageHolder = styled.div`
-  ;
-  width: 320px;
-  height: 475px;
-`;
-
-export const NameHolder = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 192px;
 `;
 
 export const Utils = styled.div`
