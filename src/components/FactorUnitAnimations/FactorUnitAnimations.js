@@ -55,7 +55,7 @@ export default function FactorUnitAnimations({ unitNumber, value, image }) {
   const frames = Array.apply(null, Array(frameQuantity)).map(function () {});
 
   return (
-    <DotPicture className="h-128">
+    <DotPicture className="h-134">
 
     {/* This maps through two arrays and provides a frame and dot amount */}
     {/* based on the unitAmount, dynamically */}

@@ -6,6 +6,7 @@ module.exports = {
       spacing: {
         '128': '26.5rem',
         '132': '29rem',
+        '134': '32rem',
       },
       colors: {
         "card-blue": "#aee1e1",
