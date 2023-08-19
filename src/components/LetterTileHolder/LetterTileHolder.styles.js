@@ -7,17 +7,19 @@ export const AnimalNameHolder = styled.div`
   flex-direction: column;
   row-gap: 15px;
   width: 295px;
-`;
-
-export const RowHolder = styled.div`
-
-`;
-
-export const TileRow = styled.div`
+  `;
+  
+  export const RowHolder = styled.div`
+  
+  `;
+  
+  export const TileRow = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 2px;
 `;
 
 export const Test = styled.div`
