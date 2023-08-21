@@ -22,7 +22,7 @@ export default function TenFrame({ dotAmount }) {
   }
 
   return (
-    <div className="flex flex-col w-full lg:w-8/12">
+    <div className="flex flex-col w-10/12 lg:w-8/12">
       <FrameRow>
         <div className="frame top-row top-cells">
           <div
