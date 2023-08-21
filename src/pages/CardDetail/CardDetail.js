@@ -115,7 +115,7 @@ export default function CardDetail({
               </Link>
             </div>
           </div>
-          <div className="w-full h-132 flex justify-center items-center lg:w-132">
+          <div className="w-full h-134 flex justify-center items-center lg:w-132">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
               <img

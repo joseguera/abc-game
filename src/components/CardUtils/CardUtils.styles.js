@@ -6,7 +6,7 @@ export const Utils = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: stretch;
-  width: 360px;
+  width: 320px;
 `;
 
 export const NameHolder = styled.div`
