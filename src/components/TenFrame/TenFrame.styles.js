@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const FrameHolder = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-`;
-
 export const FrameRow = styled.div`
     display: flex; 
     width: 100%; 

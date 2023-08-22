@@ -10,9 +10,6 @@ import {
   FactorUnitAnimations,
   SlideShow,
 } from "components";
-import {
-  XCloserLink,
-} from "./CardDetail.styles";
 
 export default function CardDetail({
   list,
