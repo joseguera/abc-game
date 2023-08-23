@@ -28,9 +28,12 @@ export default function CardUtils({
   list,
 }) {
   return (
+
+    
+
     <Utils>
       <NameHolder>
-        <NameButton name={name.eng} nameSound={nameSound} category={category} />
+        <NameButton name={name["eng"]} nameSound={nameSound} category={category} />
         {/* <NameButton name={name} nameSound={nameSound} category={category} /> */}
         <DestructButton onClick={() => xSectionCloser()}>
           <button>
