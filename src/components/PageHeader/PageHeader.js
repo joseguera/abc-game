@@ -9,20 +9,13 @@ export default function PageHeader({ pageTitle, list, category }) {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.value);
 
-
-  if (language === 'eng') {
-    setCurrLang('EN');
-  }
-  
-  if (language === 'spa') {
-    setCurrLang("ES")
-  }
+  const newLang = (language !== 'eng') ? 'eng' : 'spa';
 
   return (
     <HeaderHolder>
         <PageTitle>{pageTitle}</PageTitle>
         {/* <CardDisplayToggle list={list} category={category} /> */}
-        <div onClick={() => dispatch(change('spa'))}>{currLang}</div>
+        <div onClick={() => dispatch(change(newLang))}>{language}</div>
     </HeaderHolder>
   )
 }

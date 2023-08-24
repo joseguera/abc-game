@@ -5,7 +5,7 @@ const initialState = {
 };
 
 export const languageSlice = createSlice({
-  name: "playing",
+  name: "language",
   initialState,
   reducers: {
     change: (state, action) => {
