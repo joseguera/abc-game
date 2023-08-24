@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {
   NameButton,
   SoundEffectButton,
@@ -27,13 +28,15 @@ export default function CardUtils({
   isLiked,
   list,
 }) {
+
+  const language = useSelector((state) => state.language.value);
   return (
 
     
 
     <Utils>
       <NameHolder>
-        <NameButton name={name["eng"]} nameSound={nameSound} category={category} />
+        <NameButton name={name[language]} nameSound={nameSound} category={category} />
         {/* <NameButton name={name} nameSound={nameSound} category={category} /> */}
         <DestructButton onClick={() => xSectionCloser()}>
           <button>
