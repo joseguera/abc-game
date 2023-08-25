@@ -15,7 +15,7 @@ export default function PageHeader({ pageTitle, list, category }) {
     <HeaderHolder>
         <PageTitle>{pageTitle}</PageTitle>
         {/* <CardDisplayToggle list={list} category={category} /> */}
-        <div onClick={() => dispatch(change(newLang))}>{language}</div>
+        <button className='hover:cursor-pointer' onClick={() => dispatch(change(newLang))}>{language}</button>
     </HeaderHolder>
   )
 }
