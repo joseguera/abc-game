@@ -17,8 +17,14 @@ export const scienceArray = [
       eng: "Alligator",
       spa: "Caimán",
     },
-    tiles: ["Al-li-", "ga-", "tor"],
-    syllables: ["Al", "li", "ga", "tor"],
+    tiles: {
+      eng: ["Al-li-", "ga-", "tor"],
+      spa: ["Cai-mán"]
+    },
+    syllables: {
+      eng: ["Al", "li", "ga", "tor"],
+      spa: ["Cai", "mán"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
     soundEffect: [sounds.animals.alligator, sounds.animals.frog],
@@ -294,8 +300,14 @@ export const scienceArray = [
       eng: "Macaw",
       spa: "Guacamaya",
     },
-    tiles: ["Ma-caw"],
-    syllables: ["Ma", "caw"],
+    tiles: {
+      eng: ["Ma-caw"],
+      spa: ["Gua-ca-", "ma-ya"]
+    },
+    syllables: {
+      eng: ["Ma", "caw"],
+      spa: ["Gua", "ca", "ma", "ya"]
+    }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     soundEffect: [sounds.animals.macaw, sounds.animals.okapi],
@@ -317,8 +329,15 @@ export const scienceArray = [
       eng: "Numbat",
       spa: "Numbat",
     },
-    tiles: ["Num-bat"],
-    syllables: ["Num", "bat"],
+    tiles: {
+      eng: ["Num-bat"],
+      spa: ["Num-bat"]
+
+    },
+    syllables: {
+      eng: ["Num", "bat"],
+      spa: ["Num", "bat"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -340,8 +359,14 @@ export const scienceArray = [
       eng: "Okapi",
       spa: "Okapi",
     },
-    tiles: ["O-ka-pi"],
-    syllables: ["O", "ka", "pi"],
+    tiles: {
+      eng: ["O-ka-pi"],
+      spa: ["O-ka-pi"]
+    },
+    syllables: {
+      eng: ["O", "ka", "pi"],
+      spa: ["O", "ka", "pi"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
     soundEffect: [sounds.animals.okapi, sounds.animals.okapi],
@@ -363,8 +388,14 @@ export const scienceArray = [
       eng: "Panda",
       spa: "Panda",
     },
-    tiles: ["Pan-da"],
-    syllables: ["Pan", "da"],
+    tiles: {
+      eng: ["Pan-da"],
+      spa: ["Pan-da"]
+    },
+    syllables: {
+      eng: ["Pan", "da"],
+      spa: ["Pan", "da"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     soundEffect: [sounds.animals.panda, sounds.animals.okapi],
@@ -384,10 +415,16 @@ export const scienceArray = [
     image: images.animals.quetzal,
     name: {
       eng: "Quetzal",
-      spa: "Quetzal",
+      spa: "Quetzal"
     },
-    tiles: ["Quet-", "zal"],
-    syllables: ["Quet", "zal"],
+    tiles: {
+      eng: ["Quet-", "zal"],
+      spa: ["Quet-", "zal"]
+    },
+    syllables: {
+      eng: ["Quet", "zal"],
+      spa: ["Quet", "zal"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
     soundEffect: [sounds.animals.quetzal, sounds.animals.okapi],
@@ -409,8 +446,14 @@ export const scienceArray = [
       eng: "Rhinoceros",
       spa: "Rinoceronte",
     },
-    tiles: ["Rhi-", "noc-", "er-os"],
-    syllables: ["Rhi", "noc", "er", "os"],
+    tiles: {
+      eng: ["Rhi-", "noc-", "er-os"],
+      spa: ["Ri-no-", "ce-", "ron-te"]
+    },
+    syllables: {
+      eng: ["Rhi", "noc", "er", "os"],
+      spa: ["Ri", "no", "ce", "ron", "te"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     soundEffect: [sounds.animals.rhinoceros, sounds.animals.okapi],
@@ -432,8 +475,14 @@ export const scienceArray = [
       eng: "Snake",
       spa: "Serpiente",
     },
-    tiles: ["Snake"],
-    syllables: ["Snake"],
+    tiles: {
+      eng: ["Snake"],
+      spa: ["Ser-", "pien-", "te"]
+    },
+    syllables: {
+      eng: ["Snake"],
+      spa: ["Ser", "pien", "te"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
     soundEffect: [sounds.animals.snake, sounds.animals.okapi],
@@ -455,8 +504,14 @@ export const scienceArray = [
       eng: "Tiger",
       spa: "Tigre",
     },
-    tiles: ["Ti-ger"],
-    syllables: ["Ti", "ger"],
+    tiles: {
+      eng: ["Ti-ger"],
+      spa: ["Ti-gre"]
+    },
+    syllables: {
+      eng: ["Ti", "ger"],
+      spa: ["Ti", "gre"]
+    }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     soundEffect: [sounds.animals.tiger, sounds.animals.okapi],
@@ -478,8 +533,14 @@ export const scienceArray = [
       eng: "Unau",
       spa: "Perezoso",
     },
-    tiles: ["U-nau"],
-    syllables: ["U", "nau"],
+    tiles: {
+      eng: ["U-nau"],
+      spa: ["Pe-re-", "zo-so"]
+    },
+    syllables: {
+      eng: ["U", "nau"],
+      spa: ["Pe", "re", "zo", "so"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -501,11 +562,14 @@ export const scienceArray = [
       eng: "Vervet Monkey",
       spa: "Mono Vervet",
     },
-    tiles: [["Ver-vet"], ["Mon-key"]],
-    syllables: [
-      ["Ver", "vet"],
-      ["Mon", "key"],
-    ],
+    tiles: {
+      eng: [["Ver-vet"], ["Mon-key"]],
+      spa: [["Mo-no"], ["Ver-vet"]]
+    },
+    syllables: {
+      eng: [["Ver", "vet"], ["Mon", "key"]],
+      spa: [["Mo", "no"], ["Ver", "vet"]]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -527,8 +591,14 @@ export const scienceArray = [
       eng: "Warthog",
       spa: "Jabalí",
     },
-    tiles: ["Wart-", "hog"],
-    syllables: ["Wart", "hog"],
+    tiles: {
+      eng: ["Wart-", "hog"],
+      spa: ["Ja-", "ba-lí"]
+    },
+    syllables: {
+      eng: ["Wart", "hog"],
+      spa: ["Ja", "ba", "lí"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -548,10 +618,16 @@ export const scienceArray = [
     image: images.animals.xenops,
     name: {
       eng: "Xenops",
-      spa: "Xenops",
+      spa: "Picolezna",
     },
-    tiles: ["Xe-nops"],
-    syllables: ["Xe", "nops"],
+    tiles: {
+      eng: ["Xe-nops"],
+      spa: ["Pi-co-", "lez-na"]
+    },
+    syllables: {
+      eng: ["Xe", "nops"],
+      spa: ["Pi", "co", "lez", "na"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
     soundEffect: [sounds.animals.xenops, sounds.animals.okapi],
@@ -573,11 +649,14 @@ export const scienceArray = [
       eng: "Yellow Mongoose",
       spa: "Mangosta Amarilla",
     },
-    tiles: [["Yel-low"], ["Mon-", "goose"]],
-    syllables: [
-      ["Yel", "low"],
-      ["Mon", "goose"],
-    ],
+    tiles: {
+      eng: [["Yel-low"], ["Mon-", "goose"]],
+      spa: [["Man-gos-ta"], ["A-ma-", "ri-lla"]],
+    },
+    syllables: {
+      eng: [["Yel", "low"], ["Mon", "goose"]],
+      spa: [["Man", "gos", "ta"], ["A", "ma", "ri", "lla"]]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -599,8 +678,14 @@ export const scienceArray = [
       eng: "Zebra",
       spa: "Zebra",
     },
-    tiles: ["Ze-bra"],
-    syllables: ["Ze", "bra"],
+    tiles: {
+      eng: ["Ze-bra"],
+      spa: ["Ce-bra"]
+    },
+    syllables: {
+      eng: ["Ze", "bra"],
+      spa: ["Ce", "bra"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
 
