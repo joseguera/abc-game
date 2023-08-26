@@ -46,8 +46,14 @@ export const scienceArray = [
       eng: "Baboon",
       spa: "Mandril",
     },
-    tiles: ["Ba-boon"],
-    syllables: ["Ba", "boon"],
+    tiles: {
+      eng: ["Ba-boon"],
+      spa: ["Man-dril"]
+    },
+    syllables: {
+      eng: ["Ba", "boon"],
+      spa: ["Man", "dril"]
+    }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
     soundEffect:
@@ -70,8 +76,14 @@ export const scienceArray = [
       eng: "Chimpanzee",
       spa: "Chimpancé",
     },
-    tiles: ["Chim-", "pan-", "zee"],
-    syllables: ["Chim", "pan", "zee"],
+    tiles: {
+      eng: ["Chim-", "pan-", "zee"],
+      spa: ["Chim-", "pan-", "cé"]
+    },
+    syllables: {
+      eng: ["Chim", "pan", "zee"],
+      spa: ["Chim", "pan", "cé"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
     soundEffect: [sounds.animals.chimpanzee, sounds.animals.frog],
@@ -93,8 +105,14 @@ export const scienceArray = [
       eng: "Dingo",
       spa: "Dingo",
     },
-    tiles: ["Din-go"],
-    syllables: ["Din", "go"],
+    tiles: {
+      eng: ["Din-go"],
+      spa: ["Din-go"]
+    }, 
+    syllables: {
+      eng: ["Din", "go"],
+      spa: ["Din", "go"]
+    }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     soundEffect: [sounds.animals.dingo, sounds.animals.frog],
@@ -116,8 +134,14 @@ export const scienceArray = [
       eng: "Elephant",
       spa: "Elefante",
     },
-    tiles: ["El-e-", "phant"],
-    syllables: ["El", "e", "phant"],
+    tiles: {
+      eng: ["El-e-", "phant"],
+      spa: ["E-le-", "fan-te"]
+    },
+    syllables: {
+      eng: ["El", "e", "phant"],
+      spa: ["E", "le", "fan", "te"]
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
     soundEffect: [sounds.animals.elephant, sounds.animals.frog],
