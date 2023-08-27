@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Tile, Syllable, Dash } from "./SyllableTile.styles";
 
 export default function SyllableTile(props) {
 
+  const language = useSelector((state) => state.language.value);
   const playAudio = (syl) => {
     const syllable = syl.toLowerCase();
     new Audio(props.syllableSounds[props.value][syllable]).play();
@@ -10,7 +12,7 @@ export default function SyllableTile(props) {
 
   const last = props.syllableTiles.length - 1;
 
-  return props.syllableTiles.map((syllable, idx) => {
+  return props.syllableTiles[language].map((syllable, idx) => {
     return Array.isArray(syllable) ? (
       syllable.map((syl, idx) => {
         return idx === 0 ? (
