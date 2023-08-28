@@ -10,7 +10,8 @@ export default function SyllableTile(props) {
     new Audio(props.syllableSounds[props.value][syllable]).play();
   };
 
-  const last = props.syllableTiles.length - 1;
+
+  const last = props.syllableTiles[language].length - 1;
 
   return props.syllableTiles[language].map((syllable, idx) => {
     return Array.isArray(syllable) ? (

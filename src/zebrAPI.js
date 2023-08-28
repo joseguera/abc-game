@@ -19,7 +19,7 @@ export const scienceArray = [
     },
     tiles: {
       eng: ["Al-li-", "ga-", "tor"],
-      spa: ["Cai-mán"]
+      spa: ["Cai-", "mán"]
     },
     syllables: {
       eng: ["Al", "li", "ga", "tor"],
@@ -717,7 +717,7 @@ export const scienceArray = [
     },
     tiles: {
       eng: [["Yel-low"], ["Mon-", "goose"]],
-      spa: [["Man-gos-ta"], ["A-ma-", "ri-lla"]],
+      spa: [["Man-", "gos-ta"], ["A-ma-", "ri-lla"]],
     },
     syllables: {
       eng: [["Yel", "low"], ["Mon", "goose"]],
