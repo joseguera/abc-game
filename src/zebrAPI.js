@@ -14,16 +14,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.alligator,
     name: {
-      eng: "Alligator",
-      spa: "Caimán",
+      en: "Alligator",
+      es: "Caimán",
     },
     tiles: {
-      eng: ["Al-li-", "ga-", "tor"],
-      spa: ["Cai-", "mán"]
+      en: ["Al-li-", "ga-", "tor"],
+      es: ["Cai-", "mán"]
     },
     syllables: {
-      eng: ["Al", "li", "ga", "tor"],
-      spa: ["Cai", "mán"]
+      en: ["Al", "li", "ga", "tor"],
+      es: ["Cai", "mán"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
@@ -43,16 +43,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.baboon,
     name: {
-      eng: "Baboon",
-      spa: "Mandril",
+      en: "Baboon",
+      es: "Mandril",
     },
     tiles: {
-      eng: ["Ba-boon"],
-      spa: ["Man-dril"]
+      en: ["Ba-boon"],
+      es: ["Man-dril"]
     },
     syllables: {
-      eng: ["Ba", "boon"],
-      spa: ["Man", "dril"]
+      en: ["Ba", "boon"],
+      es: ["Man", "dril"]
     }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
@@ -73,16 +73,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.chimpanzee,
     name: {
-      eng: "Chimpanzee",
-      spa: "Chimpancé",
+      en: "Chimpanzee",
+      es: "Chimpancé",
     },
     tiles: {
-      eng: ["Chim-", "pan-", "zee"],
-      spa: ["Chim-", "pan-", "cé"]
+      en: ["Chim-", "pan-", "zee"],
+      es: ["Chim-", "pan-", "cé"]
     },
     syllables: {
-      eng: ["Chim", "pan", "zee"],
-      spa: ["Chim", "pan", "cé"]
+      en: ["Chim", "pan", "zee"],
+      es: ["Chim", "pan", "cé"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
@@ -102,16 +102,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.dingo,
     name: {
-      eng: "Dingo",
-      spa: "Dingo",
+      en: "Dingo",
+      es: "Dingo",
     },
     tiles: {
-      eng: ["Din-go"],
-      spa: ["Din-go"]
+      en: ["Din-go"],
+      es: ["Din-go"]
     }, 
     syllables: {
-      eng: ["Din", "go"],
-      spa: ["Din", "go"]
+      en: ["Din", "go"],
+      es: ["Din", "go"]
     }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
@@ -131,16 +131,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.elephant,
     name: {
-      eng: "Elephant",
-      spa: "Elefante",
+      en: "Elephant",
+      es: "Elefante",
     },
     tiles: {
-      eng: ["El-e-", "phant"],
-      spa: ["E-le-", "fan-te"]
+      en: ["El-e-", "phant"],
+      es: ["E-le-", "fan-te"]
     },
     syllables: {
-      eng: ["El", "e", "phant"],
-      spa: ["E", "le", "fan", "te"]
+      en: ["El", "e", "phant"],
+      es: ["E", "le", "fan", "te"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
@@ -160,16 +160,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.frog,
     name: {
-      eng: "Frog",
-      spa: "Rana",
+      en: "Frog",
+      es: "Rana",
     },
     tiles: {
-      eng: ["Frog"],
-      spa: ["Ra-na"]
+      en: ["Frog"],
+      es: ["Ra-na"]
     }, 
     syllables: {
-      eng: ["Frog"],
-      spa: ["Ra", "na"]
+      en: ["Frog"],
+      es: ["Ra", "na"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
@@ -189,16 +189,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.gorilla,
     name: {
-      eng: "Gorilla",
-      spa: "Gorila",
+      en: "Gorilla",
+      es: "Gorila",
     },
     tiles: {
-      eng: ["Go-", "ril-la"],
-      spa: ["Go-", "ri-la"]
+      en: ["Go-", "ril-la"],
+      es: ["Go-", "ri-la"]
     }, 
     syllables: {
-      eng: ["Go", "ril", "la"],
-      spa: ["Go", "ri", "la"]
+      en: ["Go", "ril", "la"],
+      es: ["Go", "ri", "la"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
@@ -218,16 +218,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.hyena,
     name: {
-      eng: "Hyena",
-      spa: "Hiena",
+      en: "Hyena",
+      es: "Hiena",
     },
     tiles: {
-      eng: ["Hy-e-na"],
-      spa: ["Hie-na"]
+      en: ["Hy-e-na"],
+      es: ["Hie-na"]
     },
     syllables: {
-      eng: ["Hy", "e", "na"],
-      spa: ["Hie", "na"]
+      en: ["Hy", "e", "na"],
+      es: ["Hie", "na"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
@@ -247,16 +247,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.impala,
     name: {
-      eng: "Impala",
-      spa: "Impala",
+      en: "Impala",
+      es: "Impala",
     },
     tiles: {
-      eng: ["Im-", "pal-a"],
-      spa: ["Im-", "pa-la"]
+      en: ["Im-", "pal-a"],
+      es: ["Im-", "pa-la"]
     },
     syllables: {
-      eng: ["Im", "pal", "a"],
-      spa: ["Im", "pa", "la"]
+      en: ["Im", "pal", "a"],
+      es: ["Im", "pa", "la"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
@@ -276,16 +276,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.jaguar,
     name: {
-      eng: "Jaguar",
-      spa: "Jaguar"
+      en: "Jaguar",
+      es: "Jaguar"
     },
     tiles: {
-      eng: ["Jag-", "u-ar"],
-      spa: ["Ja-guar"]
+      en: ["Jag-", "u-ar"],
+      es: ["Ja-guar"]
     },
     syllables: {
-      eng: ["Jag", "u", "ar"],
-      spa: ["Ja", "guar"]
+      en: ["Jag", "u", "ar"],
+      es: ["Ja", "guar"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
@@ -305,16 +305,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.koala,
     name: {
-      eng: "Koala",
-      spa: "Coala",
+      en: "Koala",
+      es: "Coala",
     },
     tiles: {
-      eng: ["Ko-", "a-la"],
-      spa: ["Co-", "a-la"]
+      en: ["Ko-", "a-la"],
+      es: ["Co-", "a-la"]
     },
     syllables: {
-      eng: ["Ko", "a", "la"],
-      spa: ["Co", "a", "la"]
+      en: ["Ko", "a", "la"],
+      es: ["Co", "a", "la"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
@@ -334,16 +334,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.lemur,
     name: {
-      eng: "Lemur",
-      spa: "Lémur",
+      en: "Lemur",
+      es: "Lémur",
     },
     tiles: {
-      eng: ["Le-mur"],
-      spa: ["Lé-mur"]
+      en: ["Le-mur"],
+      es: ["Lé-mur"]
     }, 
     syllables: {
-      eng: ["Le", "mur"],
-      spa: ["Lé", "mur"]
+      en: ["Le", "mur"],
+      es: ["Lé", "mur"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
@@ -363,16 +363,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.macaw,
     name: {
-      eng: "Macaw",
-      spa: "Guacamaya",
+      en: "Macaw",
+      es: "Guacamaya",
     },
     tiles: {
-      eng: ["Ma-caw"],
-      spa: ["Gua-ca-", "ma-ya"]
+      en: ["Ma-caw"],
+      es: ["Gua-ca-", "ma-ya"]
     },
     syllables: {
-      eng: ["Ma", "caw"],
-      spa: ["Gua", "ca", "ma", "ya"]
+      en: ["Ma", "caw"],
+      es: ["Gua", "ca", "ma", "ya"]
     }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
@@ -392,17 +392,17 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.numbat,
     name: {
-      eng: "Numbat",
-      spa: "Numbat",
+      en: "Numbat",
+      es: "Numbat",
     },
     tiles: {
-      eng: ["Num-bat"],
-      spa: ["Num-bat"]
+      en: ["Num-bat"],
+      es: ["Num-bat"]
 
     },
     syllables: {
-      eng: ["Num", "bat"],
-      spa: ["Num", "bat"]
+      en: ["Num", "bat"],
+      es: ["Num", "bat"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
@@ -422,16 +422,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.okapi,
     name: {
-      eng: "Okapi",
-      spa: "Okapi",
+      en: "Okapi",
+      es: "Okapi",
     },
     tiles: {
-      eng: ["O-ka-pi"],
-      spa: ["O-ka-pi"]
+      en: ["O-ka-pi"],
+      es: ["O-ka-pi"]
     },
     syllables: {
-      eng: ["O", "ka", "pi"],
-      spa: ["O", "ka", "pi"]
+      en: ["O", "ka", "pi"],
+      es: ["O", "ka", "pi"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
@@ -451,16 +451,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.panda,
     name: {
-      eng: "Panda",
-      spa: "Panda",
+      en: "Panda",
+      es: "Panda",
     },
     tiles: {
-      eng: ["Pan-da"],
-      spa: ["Pan-da"]
+      en: ["Pan-da"],
+      es: ["Pan-da"]
     },
     syllables: {
-      eng: ["Pan", "da"],
-      spa: ["Pan", "da"]
+      en: ["Pan", "da"],
+      es: ["Pan", "da"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
@@ -480,16 +480,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.quetzal,
     name: {
-      eng: "Quetzal",
-      spa: "Quetzal"
+      en: "Quetzal",
+      es: "Quetzal"
     },
     tiles: {
-      eng: ["Quet-", "zal"],
-      spa: ["Quet-", "zal"]
+      en: ["Quet-", "zal"],
+      es: ["Quet-", "zal"]
     },
     syllables: {
-      eng: ["Quet", "zal"],
-      spa: ["Quet", "zal"]
+      en: ["Quet", "zal"],
+      es: ["Quet", "zal"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
@@ -509,16 +509,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.rhinoceros,
     name: {
-      eng: "Rhinoceros",
-      spa: "Rinoceronte",
+      en: "Rhinoceros",
+      es: "Rinoceronte",
     },
     tiles: {
-      eng: ["Rhi-", "noc-", "er-os"],
-      spa: ["Ri-no-", "ce-", "ron-te"]
+      en: ["Rhi-", "noc-", "er-os"],
+      es: ["Ri-no-", "ce-", "ron-te"]
     },
     syllables: {
-      eng: ["Rhi", "noc", "er", "os"],
-      spa: ["Ri", "no", "ce", "ron", "te"]
+      en: ["Rhi", "noc", "er", "os"],
+      es: ["Ri", "no", "ce", "ron", "te"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
@@ -538,16 +538,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.snake,
     name: {
-      eng: "Snake",
-      spa: "Serpiente",
+      en: "Snake",
+      es: "Serpiente",
     },
     tiles: {
-      eng: ["Snake"],
-      spa: ["Ser-", "pien-", "te"]
+      en: ["Snake"],
+      es: ["Ser-", "pien-", "te"]
     },
     syllables: {
-      eng: ["Snake"],
-      spa: ["Ser", "pien", "te"]
+      en: ["Snake"],
+      es: ["Ser", "pien", "te"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
@@ -567,16 +567,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.tiger,
     name: {
-      eng: "Tiger",
-      spa: "Tigre",
+      en: "Tiger",
+      es: "Tigre",
     },
     tiles: {
-      eng: ["Ti-ger"],
-      spa: ["Ti-gre"]
+      en: ["Ti-ger"],
+      es: ["Ti-gre"]
     },
     syllables: {
-      eng: ["Ti", "ger"],
-      spa: ["Ti", "gre"]
+      en: ["Ti", "ger"],
+      es: ["Ti", "gre"]
     }, 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
@@ -596,16 +596,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.unau,
     name: {
-      eng: "Unau",
-      spa: "Perezoso",
+      en: "Unau",
+      es: "Perezoso",
     },
     tiles: {
-      eng: ["U-nau"],
-      spa: ["Pe-re-", "zo-so"]
+      en: ["U-nau"],
+      es: ["Pe-re-", "zo-so"]
     },
     syllables: {
-      eng: ["U", "nau"],
-      spa: ["Pe", "re", "zo", "so"]
+      en: ["U", "nau"],
+      es: ["Pe", "re", "zo", "so"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
@@ -625,16 +625,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.vervet_monkey,
     name: {
-      eng: "Vervet Monkey",
-      spa: "Mono Vervet",
+      en: "Vervet Monkey",
+      es: "Mono Vervet",
     },
     tiles: {
-      eng: [["Ver-vet"], ["Mon-key"]],
-      spa: [["Mo-no"], ["Ver-vet"]]
+      en: [["Ver-vet"], ["Mon-key"]],
+      es: [["Mo-no"], ["Ver-vet"]]
     },
     syllables: {
-      eng: [["Ver", "vet"], ["Mon", "key"]],
-      spa: [["Mo", "no"], ["Ver", "vet"]]
+      en: [["Ver", "vet"], ["Mon", "key"]],
+      es: [["Mo", "no"], ["Ver", "vet"]]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
@@ -654,16 +654,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.warthog,
     name: {
-      eng: "Warthog",
-      spa: "Jabalí",
+      en: "Warthog",
+      es: "Jabalí",
     },
     tiles: {
-      eng: ["Wart-", "hog"],
-      spa: ["Ja-", "ba-lí"]
+      en: ["Wart-", "hog"],
+      es: ["Ja-", "ba-lí"]
     },
     syllables: {
-      eng: ["Wart", "hog"],
-      spa: ["Ja", "ba", "lí"]
+      en: ["Wart", "hog"],
+      es: ["Ja", "ba", "lí"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
@@ -683,16 +683,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.xenops,
     name: {
-      eng: "Xenops",
-      spa: "Picolezna",
+      en: "Xenops",
+      es: "Picolezna",
     },
     tiles: {
-      eng: ["Xe-nops"],
-      spa: ["Pi-co-", "lez-na"]
+      en: ["Xe-nops"],
+      es: ["Pi-co-", "lez-na"]
     },
     syllables: {
-      eng: ["Xe", "nops"],
-      spa: ["Pi", "co", "lez", "na"]
+      en: ["Xe", "nops"],
+      es: ["Pi", "co", "lez", "na"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
@@ -712,16 +712,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.yellow_mongoose,
     name: {
-      eng: "Yellow Mongoose",
-      spa: "Mangosta Amarilla",
+      en: "Yellow Mongoose",
+      es: "Mangosta Amarilla",
     },
     tiles: {
-      eng: [["Yel-low"], ["Mon-", "goose"]],
-      spa: [["Man-", "gos-ta"], ["A-ma-", "ri-lla"]],
+      en: [["Yel-low"], ["Mon-", "goose"]],
+      es: [["Man-", "gos-ta"], ["A-ma-", "ri-lla"]],
     },
     syllables: {
-      eng: [["Yel", "low"], ["Mon", "goose"]],
-      spa: [["Man", "gos", "ta"], ["A", "ma", "ri", "lla"]]
+      en: [["Yel", "low"], ["Mon", "goose"]],
+      es: [["Man", "gos", "ta"], ["A", "ma", "ri", "lla"]]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
@@ -741,16 +741,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.zebra,
     name: {
-      eng: "Zebra",
-      spa: "Zebra",
+      en: "Zebra",
+      es: "Zebra",
     },
     tiles: {
-      eng: ["Ze-bra"],
-      spa: ["Ce-bra"]
+      en: ["Ze-bra"],
+      es: ["Ce-bra"]
     },
     syllables: {
-      eng: ["Ze", "bra"],
-      spa: ["Ce", "bra"]
+      en: ["Ze", "bra"],
+      es: ["Ce", "bra"]
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
@@ -1078,8 +1078,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.aeolian_harp,
     name: {
-      eng: "Aeolian Harp",
-      spa: "Caimán",
+      en: "Aeolian Harp",
+      es: "Caimán",
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
@@ -1101,8 +1101,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.bell_tree,
     name: {
-      eng: "Bell Tree",
-      spa: "Mandril",
+      en: "Bell Tree",
+      es: "Mandril",
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
@@ -1123,8 +1123,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.cuica,
     name: {
-      eng: "Cuíca",
-      spa: "Chimpancé",
+      en: "Cuíca",
+      es: "Chimpancé",
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
@@ -1146,8 +1146,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.didgeridoo,
     name: {
-      eng: "Didgeridoo",
-      spa: "Dingo",
+      en: "Didgeridoo",
+      es: "Dingo",
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
@@ -1169,8 +1169,8 @@ export const artsArray = [
     clicked: false,
     image: "images.instruments.electric_bass",
     name: {
-      eng: "Electric Bass",
-      spa: "Elefante",
+      en: "Electric Bass",
+      es: "Elefante",
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
@@ -1191,8 +1191,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.french_horn,
     name: {
-      eng: "French Horn",
-      spa: "Rana",
+      en: "French Horn",
+      es: "Rana",
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
@@ -1214,8 +1214,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.gamelatron,
     name: {
-      eng: "Gamelatron",
-      spa: "Gorila",
+      en: "Gamelatron",
+      es: "Gorila",
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
@@ -1237,8 +1237,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.harmonica,
     name: {
-      eng: "Harmonica",
-      spa: "Hiena",
+      en: "Harmonica",
+      es: "Hiena",
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
@@ -1260,8 +1260,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.inci,
     name: {
-      eng: "Inci",
-      spa: "Impala",
+      en: "Inci",
+      es: "Impala",
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
@@ -1283,8 +1283,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.janggu,
     name: {
-      eng: "Janggu",
-      spa: "Jaguar",
+      en: "Janggu",
+      es: "Jaguar",
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
@@ -1306,8 +1306,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.khaen,
     name: {
-      eng: "Khaen",
-      spa: "Coala",
+      en: "Khaen",
+      es: "Coala",
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
@@ -1329,8 +1329,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.leier,
     name: {
-      eng: "Leier",
-      spa: "Lémur",
+      en: "Leier",
+      es: "Lémur",
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
@@ -1352,8 +1352,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.mbira,
     name: {
-      eng: "Mbira",
-      spa: "Guacamaya",
+      en: "Mbira",
+      es: "Guacamaya",
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
@@ -1375,8 +1375,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.native_american_flute,
     name: {
-      eng: "Native American Flute",
-      spa: "Numbat",
+      en: "Native American Flute",
+      es: "Numbat",
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
@@ -1398,8 +1398,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.oboe,
     name: {
-      eng: "Oboe",
-      spa: "Okapi",
+      en: "Oboe",
+      es: "Okapi",
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
@@ -1421,8 +1421,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.piano,
     name: {
-      eng: "Piano",
-      spa: "Panda",
+      en: "Piano",
+      es: "Panda",
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
@@ -1444,8 +1444,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.quijada_de_burro,
     name: {
-      eng: "Quijada de Burro",
-      spa: "Quetzal",
+      en: "Quijada de Burro",
+      es: "Quetzal",
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
@@ -1467,8 +1467,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.rabab,
     name: {
-      eng: "Rabab",
-      spa: "Rinoceronte",
+      en: "Rabab",
+      es: "Rinoceronte",
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
@@ -1490,8 +1490,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.sitar,
     name: {
-      eng: "Sitar",
-      spa: "Serpiente",
+      en: "Sitar",
+      es: "Serpiente",
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
@@ -1513,8 +1513,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.taiko,
     name: {
-      eng: "Taiko",
-      spa: "Tigre",
+      en: "Taiko",
+      es: "Tigre",
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
@@ -1536,8 +1536,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.ukulele,
     name: {
-      eng: "Ukulele",
-      spa: "Perezoso",
+      en: "Ukulele",
+      es: "Perezoso",
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
@@ -1559,8 +1559,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.violin,
     name: {
-      eng: "Violin",
-      spa: "Mono Vervet",
+      en: "Violin",
+      es: "Mono Vervet",
     },
     tiles: [["Ver-vet"], ["Mon-key"]],
     syllables: [
@@ -1585,8 +1585,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.waterphone,
     name: {
-      eng: "Waterphone",
-      spa: "Jabalí",
+      en: "Waterphone",
+      es: "Jabalí",
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
@@ -1608,8 +1608,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.xalam,
     name: {
-      eng: "Xalam",
-      spa: "Xenops",
+      en: "Xalam",
+      es: "Xenops",
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
@@ -1631,8 +1631,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.yuka,
     name: {
-      eng: "Yuka",
-      spa: "Mangosta Amarilla",
+      en: "Yuka",
+      es: "Mangosta Amarilla",
     },
     tiles: [["Yel-low"], ["Mon-", "goose"]],
     syllables: [
@@ -1657,8 +1657,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.zarb,
     name: {
-      eng: "Zarb",
-      spa: "Zebra",
+      en: "Zarb",
+      es: "Zebra",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -1687,8 +1687,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.apple,
     name: {
-      eng: "one",
-      spa: "uno",
+      en: "one",
+      es: "uno",
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
@@ -1710,8 +1710,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.uvas,
     name: {
-      eng: "two",
-      spa: "dos",
+      en: "two",
+      es: "dos",
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
@@ -1733,8 +1733,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.cherry,
     name: {
-      eng: "three",
-      spa: "tres",
+      en: "three",
+      es: "tres",
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
@@ -1756,8 +1756,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.velvet_tamarind,
     name: {
-      eng: "four",
-      spa: "cuatro",
+      en: "four",
+      es: "cuatro",
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
@@ -1779,8 +1779,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.fig,
     name: {
-      eng: "five",
-      spa: "cinco",
+      en: "five",
+      es: "cinco",
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
@@ -1802,8 +1802,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.starfruit,
     name: {
-      eng: "six",
-      spa: "seis",
+      en: "six",
+      es: "seis",
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
@@ -1825,8 +1825,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.guava,
     name: {
-      eng: "seven",
-      spa: "siete",
+      en: "seven",
+      es: "siete",
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
@@ -1848,8 +1848,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.horned_melon,
     name: {
-      eng: "eight",
-      spa: "ocho",
+      en: "eight",
+      es: "ocho",
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
@@ -1871,8 +1871,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.eggplant,
     name: {
-      eng: "nine",
-      spa: "nueve",
+      en: "nine",
+      es: "nueve",
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
@@ -1894,8 +1894,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.rambutan,
     name: {
-      eng: "ten",
-      spa: "diez",
+      en: "ten",
+      es: "diez",
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
@@ -1917,8 +1917,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.coconut,
     name: {
-      eng: "eleven",
-      spa: "once",
+      en: "eleven",
+      es: "once",
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
@@ -1940,8 +1940,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.pear,
     name: {
-      eng: "twelve",
-      spa: "doce",
+      en: "twelve",
+      es: "doce",
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
@@ -1963,8 +1963,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.mango,
     name: {
-      eng: "thirteen",
-      spa: "trece",
+      en: "thirteen",
+      es: "trece",
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
@@ -1986,8 +1986,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.nectarine,
     name: {
-      eng: "fourteen",
-      spa: "catorce",
+      en: "fourteen",
+      es: "catorce",
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
@@ -2009,8 +2009,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.quince,
     name: {
-      eng: "fifteen",
-      spa: "quince",
+      en: "fifteen",
+      es: "quince",
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
@@ -2032,8 +2032,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.pear,
     name: {
-      eng: "sixteen",
-      spa: "dieciséis",
+      en: "sixteen",
+      es: "dieciséis",
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
@@ -2055,8 +2055,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.banana,
     name: {
-      eng: "seventeen",
-      spa: "diecisiete",
+      en: "seventeen",
+      es: "diecisiete",
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
@@ -2078,8 +2078,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.raspberry,
     name: {
-      eng: "eighteen",
-      spa: "dieciocho",
+      en: "eighteen",
+      es: "dieciocho",
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
@@ -2101,8 +2101,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.strawberry,
     name: {
-      eng: "nineteen",
-      spa: "diecinueve",
+      en: "nineteen",
+      es: "diecinueve",
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
@@ -2124,8 +2124,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.indian_gooseberry,
     name: {
-      eng: "Twenty",
-      spa: "veinte",
+      en: "Twenty",
+      es: "veinte",
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
@@ -2147,8 +2147,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.kiwi,
     name: {
-      eng: "twenty-one",
-      spa: "veintiuno",
+      en: "twenty-one",
+      es: "veintiuno",
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
@@ -2170,8 +2170,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.kiwi,
     name: {
-      eng: "twenty-two",
-      spa: "veintidós",
+      en: "twenty-two",
+      es: "veintidós",
     },
     tiles: [["Ver-vet"], ["Mon-key"]],
     syllables: [
@@ -2196,8 +2196,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.watermelon,
     name: {
-      eng: "twenty-three",
-      spa: "veintitrés",
+      en: "twenty-three",
+      es: "veintitrés",
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
@@ -2219,8 +2219,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.blueberry,
     name: {
-      eng: "twenty-four",
-      spa: "veinticuatro",
+      en: "twenty-four",
+      es: "veinticuatro",
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
@@ -2242,8 +2242,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.uvas,
     name: {
-      eng: "twenty-five",
-      spa: "veinticinco",
+      en: "twenty-five",
+      es: "veinticinco",
     },
     tiles: [["Yel-low"], ["Mon-", "goose"]],
     syllables: [
@@ -2268,8 +2268,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.uvas,
     name: {
-      eng: "twenty-six",
-      spa: "veintiséis",
+      en: "twenty-six",
+      es: "veintiséis",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -2291,8 +2291,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.dragonfruit,
     name: {
-      eng: "twenty-seven",
-      spa: "veintisiete",
+      en: "twenty-seven",
+      es: "veintisiete",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -2314,8 +2314,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.dragonfruit,
     name: {
-      eng: "twenty-eight",
-      spa: "veintiocho",
+      en: "twenty-eight",
+      es: "veintiocho",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -2337,8 +2337,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.dragonfruit,
     name: {
-      eng: "twenty-nine",
-      spa: "veintinueve",
+      en: "twenty-nine",
+      es: "veintinueve",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
@@ -2360,8 +2360,8 @@ export const mathArray = [
     clicked: false,
     image: images.numbers.dragonfruit,
     name: {
-      eng: "thirty",
-      spa: "treinta",
+      en: "thirty",
+      es: "treinta",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
