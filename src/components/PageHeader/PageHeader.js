@@ -9,13 +9,13 @@ export default function PageHeader({ pageTitle, list, category }) {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.value);
 
-  const newLang = (language !== 'eng') ? 'eng' : 'spa';
+  const newLang = (language !== 'en') ? 'en' : 'es';
 
   return (
     <HeaderHolder>
         <PageTitle>{pageTitle}</PageTitle>
         {/* <CardDisplayToggle list={list} category={category} /> */}
-        <button className='hover:cursor-pointer' onClick={() => dispatch(change(newLang))}>{language}</button>
+        <button className='hover:cursor-pointer' onClick={() => dispatch(change(newLang))}>{language.toUpperCase()}</button>
     </HeaderHolder>
   )
 }
