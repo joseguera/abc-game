@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { change } from "../../features/language/languageSlice";
-import { CardDisplayToggle } from "components";
-import { HeaderHolder, PageTitle } from './PageHeader.styles';
 
 export default function PageHeader({ pageTitle, list, category }) {
   const [currLang, setCurrLang] = useState('EN');
@@ -12,10 +10,12 @@ export default function PageHeader({ pageTitle, list, category }) {
   const newLang = (language !== 'en') ? 'en' : 'es';
 
   return (
-    <HeaderHolder>
-        <PageTitle>{pageTitle}</PageTitle>
+    <div 
+      className='flex justify-between text-4xl items-center gap: 10px pt-8 w-2/5'
+    >
+        <div className="">{pageTitle}</div>
         {/* <CardDisplayToggle list={list} category={category} /> */}
         <button className='hover:cursor-pointer' onClick={() => dispatch(change(newLang))}>{language.toUpperCase()}</button>
-    </HeaderHolder>
+    </div>
   )
 }
