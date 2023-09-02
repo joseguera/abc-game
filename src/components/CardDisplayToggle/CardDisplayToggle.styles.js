@@ -1,16 +1,7 @@
 import styled from "styled-components";
 
 export const Toggler = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid #3d674c;
-  border-radius: 6px;
-  height: 32px;
-  width: 84px;
-  transition: all 5s;
+
 
 `;
 

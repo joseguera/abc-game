@@ -14,6 +14,9 @@ module.exports = {
         "card-red": "#fdcedf",
         "card-yellow": "#ffffc2",
       },
+      transitionDuration: {
+        '5000': '5000ms',
+      }
     },
     screens: {
       'sm': '640px',
