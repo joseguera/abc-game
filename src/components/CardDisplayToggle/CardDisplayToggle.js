@@ -11,7 +11,9 @@ export default function CardDisplayToggle({ list, category }) {
   };
 
   return (
-    <Toggler>
+    <div
+      className="flex flex-row self-center items-center justify-around border-2 border-solid border-[#3d674c] rounded-md h-8 w-20 transition-all duration-5000"
+    >
       {selected ? (
         <>
           <SelectedIcon onClick={() => setToggle()}>
@@ -35,6 +37,6 @@ export default function CardDisplayToggle({ list, category }) {
           </SelectedIcon>
         </>
       )}
-    </Toggler>
+    </div>
   );
 }
