@@ -6,12 +6,6 @@ import {
   FactButton,
   LikeButton,
 } from "components";
-import {
-  Utils,
-  NameHolder,
-  DestructButton,
-  IconHolder,
-} from "./CardUtils.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShapes } from "@fortawesome/free-solid-svg-icons";
 
@@ -31,28 +25,30 @@ export default function CardUtils({
 
   const language = useSelector((state) => state.language.value);
   return (
-
-    
-
-    <Utils>
-      <NameHolder>
+    <div
+      className="flex flex-col gap-5 justify-center items-stretch w-full"
+    >
+      <div
+        className="flex justify-center items-center flex-row gap-3.5"
+      >
         <NameButton name={name[language]} nameSound={nameSound} category={category} />
-        {/* <NameButton name={name} nameSound={nameSound} category={category} /> */}
-        <DestructButton onClick={() => xSectionCloser()}>
+        <div
+          className="cursor-pointer text-lg text-[#2f4f4f] flex items-center hover:text-[#4d8080]" 
+          onClick={() => xSectionCloser()}
+        >
           <button>
             <FontAwesomeIcon icon={faShapes} />
           </button>
-        </DestructButton>
-      </NameHolder>
-      <IconHolder>
+        </div>
+      </div>
+      <div className="flex justify-around">
         <SoundEffectButton
           soundEffect={soundEffect}
           getAudio={getAudio}
           category={category}
         />
         <FactButton
-          name={name.eng}
-          // name={name}
+          name={name[language]}
           nameSound={nameSound}
           funFacts={funFacts}
           getAudio={getAudio}
@@ -64,7 +60,7 @@ export default function CardUtils({
           category={category}
           list={list}
         />
-      </IconHolder>
-    </Utils>
+      </div>
+    </div>
   );
 }
