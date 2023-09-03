@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const Toggler = styled.div`
-
-
-`;
-
 export const SelectedIcon = styled.p`
   font-size: 22px;
   width: 40px;

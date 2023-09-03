@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTableCells, faFileExport } from "@fortawesome/free-solid-svg-icons";
-import { Toggler, SelectedIcon, Icon } from "./CardDisplayToggle.styles";
+import { SelectedIcon, Icon } from "./CardDisplayToggle.styles";
 
 export default function CardDisplayToggle({ list, category }) {
   const [selected, setSelected] = useState(true);
