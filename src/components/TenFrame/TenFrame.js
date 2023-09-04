@@ -81,7 +81,7 @@ export default function TenFrame({ dotAmount }) {
         </div>
       </FrameRow>
       <FrameRow>
-        <div className="frame lower-row bottom-cells">
+        <div className="frame lower-row border-r-[1px] border-b-[2px]">
           <div
             style={{
               width: "40px",
@@ -92,7 +92,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row bottom-cells">
+        <div className="frame lower-row border-r-[1px] border-b-[2px]">
           <div
             style={{
               width: "40px",
@@ -103,7 +103,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row bottom-cells">
+        <div className="frame lower-row border-r-[1px] border-b-[2px]">
           <div
             style={{
               width: "40px",
@@ -114,7 +114,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row bottom-cells">
+        <div className="frame lower-row border-r-[1px] border-b-[2px]">
           <div
             style={{
               width: "40px",
