@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FrameRow } from "./TenFrame.styles";
 
 export default function TenFrame({ dotAmount }) {
   const [dots, setDots] = useState({
@@ -23,8 +22,8 @@ export default function TenFrame({ dotAmount }) {
 
   return (
     <div className="flex flex-col w-10/12 lg:w-full">
-      <FrameRow>
-        <div className="frame top-row top-cells">
+      <div className="flex w-full flex-row justify-center items-center">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
             style={{
               width: "40px",
@@ -35,7 +34,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame top-row top-cells">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
             style={{
               width: "40px",
@@ -46,7 +45,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame top-row top-cells">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
             style={{
               width: "40px",
@@ -57,7 +56,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame top-row top-cells">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
             style={{
               width: "40px",
@@ -68,7 +67,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame top-row">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0">
           <div
             style={{
               width: "40px",
@@ -79,9 +78,9 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-      </FrameRow>
-      <FrameRow>
-        <div className="frame lower-row border-r-[1px] border-b-[2px]">
+      </div>
+      <div className="flex w-full flex-row justify-center items-center">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
             style={{
               width: "40px",
@@ -92,7 +91,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row border-r-[1px] border-b-[2px]">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
             style={{
               width: "40px",
@@ -103,7 +102,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row border-r-[1px] border-b-[2px]">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
             style={{
               width: "40px",
@@ -114,7 +113,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row border-r-[1px] border-b-[2px]">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
             style={{
               width: "40px",
@@ -125,7 +124,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-        <div className="frame lower-row">
+        <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black">
           <div
             style={{
               width: "40px",
@@ -136,7 +135,7 @@ export default function TenFrame({ dotAmount }) {
             }}
           ></div>
         </div>
-      </FrameRow>
+      </div>
     </div>
   );
 }
