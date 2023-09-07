@@ -104,11 +104,11 @@ export default function TenFrame({ dotAmount }) {
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
+            className="bg-red-500"
             style={{
               width: "40px",
               height: "40px",
               borderRadius: "100%",
-              background: "red",
               display: `${dots.f8 ? "block" : "none"}`,
             }}
           ></div>
