@@ -25,114 +25,54 @@ export default function TenFrame({ dotAmount }) {
       <div className="flex w-full flex-row justify-center items-center">
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f1 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f1 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f2 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f2 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f3 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f3 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f4 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f4 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f5 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f5 ? "block" : "hidden"}`}
           ></div>
         </div>
       </div>
       <div className="flex w-full flex-row justify-center items-center">
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f6 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f6 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f7 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f7 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
-            className="bg-red-500"
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              display: `${dots.f8 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f8 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f9 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f9 ? "block" : "hidden"}`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black">
           <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "100%",
-              background: "red",
-              display: `${dots.f10 ? "block" : "none"}`,
-            }}
+            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f10 ? "block" : "hidden"}`}
           ></div>
         </div>
       </div>
