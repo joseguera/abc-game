@@ -15,11 +15,6 @@ export const Tile = styled.div`
   }
 `;
 
-export const Syllable = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
 export const Dash = styled.div`
   width: 10.65px;
   height: 42px;
