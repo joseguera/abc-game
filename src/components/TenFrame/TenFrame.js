@@ -25,54 +25,74 @@ export default function TenFrame({ dotAmount }) {
       <div className="flex w-full flex-row justify-center items-center">
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f1 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f1 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f2 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f2 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f3 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f3 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0 border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f4 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f4 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-b-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f5 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f5 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
       </div>
       <div className="flex w-full flex-row justify-center items-center">
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f6 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f6 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f7 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f7 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f8 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f8 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black border-r-0">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f9 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f9 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
         <div className="flex justify-center items-center aspect-square w-1/5 border-4 border-solid border-black">
           <div
-            className={`bg-red-500 w-10 h-10 rounded-full ${dots.f10 ? "block" : "hidden"}`}
+            className={`bg-red-500 w-10 h-10 rounded-full ${
+              dots.f10 ? "block" : "hidden"
+            }`}
           ></div>
         </div>
       </div>
