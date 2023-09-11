@@ -19,7 +19,9 @@ export default function SyllableTile(props) {
         return idx === 0 ? (
           <div key={idx + syl} className="flex flex-row">
             <Tile onClick={() => playAudio(syl)}>{syl}</Tile>
-            <Dash>-</Dash>
+            <div className="w-3 h-10 leading-10 cursor-auto border-none">
+              -
+            </div>
           </div>
         ) : (
           <Tile key={idx + syl} onClick={() => playAudio(syl)}>{syl}</Tile>
@@ -28,7 +30,9 @@ export default function SyllableTile(props) {
     ) : idx !== last ? (
       <div key={syllable + idx} className="flex flex-row">
         <Tile onClick={() => playAudio(syllable)}>{syllable}</Tile>
-        <Dash>-</Dash>
+        <div className="w-3 h-10 leading-10 cursor-auto border-none">
+          -
+        </div>
       </div>
     ) : (
       <Tile key={idx + syllable} onClick={() => playAudio(syllable)}>{syllable}</Tile>
