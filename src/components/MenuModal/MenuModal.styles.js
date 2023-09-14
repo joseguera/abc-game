@@ -10,9 +10,5 @@ export const MenuItem = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-  :hover {
-    color: #ff6347;
-  }
+
 `;
