@@ -19,7 +19,5 @@ export const IconHeartNotLiked = styled.div`
 `;
 
 export const IconDisabled = styled.div`
-  font-size: 27px;
-  cursor: not-allowed;
-  color: #8fbcbc;
+  
 `;
