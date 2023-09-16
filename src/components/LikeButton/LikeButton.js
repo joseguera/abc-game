@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import {
-  IconDisabled,
   IconHeartLiked,
   IconHeartNotLiked,
 } from "./LikeButton.styles";
@@ -33,8 +32,8 @@ export default function LikeButton({
       </IconHeartNotLiked>
     )
   ) : (
-    <IconDisabled>
+    <div className="text-lg cursor-not-allowed text-[#8fbcbc]">
       <FontAwesomeIcon icon={faHeart} />
-    </IconDisabled>
+    </div>
   );
 }
