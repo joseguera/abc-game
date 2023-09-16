@@ -1,9 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {
-  IconHeartLiked,
-  IconHeartNotLiked,
-} from "./LikeButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,15 +17,19 @@ export default function LikeButton({
 
   return playing ? (
     isLiked ? (
-      <IconHeartLiked onClick={() => handleLikeHeart(id, category, props.list)}>
-        <FontAwesomeIcon icon={faHeart} />
-      </IconHeartLiked>
-    ) : (
-      <IconHeartNotLiked
+      <div
+        className="text-lg cursor-pointer text-[#ff6347] hover:text-[#ff9380]" 
         onClick={() => handleLikeHeart(id, category, props.list)}
       >
         <FontAwesomeIcon icon={faHeart} />
-      </IconHeartNotLiked>
+      </div>
+    ) : (
+      <div
+        className="text-lg cursor-pointer text-[#2f4f4f] hover:text-[#4d8080]"
+        onClick={() => handleLikeHeart(id, category, props.list)}
+      >
+        <FontAwesomeIcon icon={faHeart} />
+      </div>
     )
   ) : (
     <div className="text-lg cursor-not-allowed text-[#8fbcbc]">
