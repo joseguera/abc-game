@@ -4,7 +4,6 @@ import { LetterTile, SyllableTile } from "components";
 import {
   AnimalNameHolder,
   RowHolder,
-  TileRow,
 } from "./LetterTileHolder.styles";
 
 export default function LetterTileHolder(props) {
@@ -18,7 +17,10 @@ export default function LetterTileHolder(props) {
             props.tiles[language].map((tile) => {
               return tile.map((letter, idx) => {
                 return (
-                  <TileRow key={idx + letter}>
+                  <div 
+                    key={idx + letter}
+                    className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5"
+                  >
                     {letter.split("").map((l, idx) => (
                       <LetterTile
                         key={idx + l}
@@ -26,18 +28,18 @@ export default function LetterTileHolder(props) {
                         sounds={props.sounds}
                       />
                     ))}
-                  </TileRow>
+                  </div>
                 );
               });
             })
           ) : (
-            <TileRow>
+            <div className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5">
               <SyllableTile
                 value={props.value}
                 syllableTiles={props.syllables}
                 syllableSounds={props.syllableSounds}
               />
-            </TileRow>
+            </div>
           )}
         </RowHolder>
       ) : (
@@ -45,7 +47,10 @@ export default function LetterTileHolder(props) {
           {props.isSpelled ? (
             props.tiles[language].map((tile, idx) => {
               return (
-                <TileRow key={idx + tile}>
+                <div 
+                  key={idx + tile}
+                  className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5"
+                >
                   {tile.split("").map((t, idx) => (
                     <LetterTile
                       key={idx + t}
@@ -53,17 +58,17 @@ export default function LetterTileHolder(props) {
                       sounds={props.sounds}
                     />
                   ))}
-                </TileRow>
+                </div>
               );
             })
           ) : (
-            <TileRow>
+            <div className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5">
               <SyllableTile
                 value={props.value}
                 syllableTiles={props.syllables}
                 syllableSounds={props.syllableSounds}
               />
-            </TileRow>
+            </div>
           )}
         </RowHolder>
       )}
