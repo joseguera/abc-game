@@ -1,18 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { LetterTile, SyllableTile } from "components";
-import {
-  AnimalNameHolder,
-  RowHolder,
-} from "./LetterTileHolder.styles";
 
 export default function LetterTileHolder(props) {
   const language = useSelector((state) => state.language.value);
 
   return (
-    <AnimalNameHolder>
+    <div
+      className="flex justify-center items-center flex-col gap-x-4 w-full"
+    >
       {props.name[language].length > 10 ? (
-        <RowHolder>
+        <div>
           {props.isSpelled ? (
             props.tiles[language].map((tile) => {
               return tile.map((letter, idx) => {
@@ -41,9 +39,9 @@ export default function LetterTileHolder(props) {
               />
             </div>
           )}
-        </RowHolder>
+        </div>
       ) : (
-        <RowHolder>
+        <div>
           {props.isSpelled ? (
             props.tiles[language].map((tile, idx) => {
               return (
@@ -70,8 +68,8 @@ export default function LetterTileHolder(props) {
               />
             </div>
           )}
-        </RowHolder>
+        </div>
       )}
-    </AnimalNameHolder>
+    </div>
   );
 }
