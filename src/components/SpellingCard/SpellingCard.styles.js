@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
 export const SpellingCardHolder = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 360px;
-  justify-content: center;
+  
 `;
 
 export const IconHolder = styled.div`

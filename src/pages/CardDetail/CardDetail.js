@@ -100,7 +100,7 @@ export default function CardDetail({
       className="flex justify-center pt-5 w-11/12 lg:w-2/4"
     >
       <div key={item.id} className={`flex flex-col items-center ${item.background} border-8 border-[#fff8dc] w-full h-full rounded-2xl p-2.5 lg:p-3.5`} >
-        <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:w-full lg:gap-20">
+        <div className="w-full flex flex-col items-center lg:justify-between lg:flex-row lg:gap-8">
           <div className="flex flex-row justify-between items-center w-full lg:flex-col-reverse lg:items-start lg:gap-96 lg:w-fit lg:h-full">
             <div className="text-3xl lg:text-6xl">{item.value}</div>
             <div 
@@ -112,7 +112,7 @@ export default function CardDetail({
               </Link>
             </div>
           </div>
-          <div className="w-full h-134 flex justify-center items-center lg:w-132">
+          <div className="w-2/4 h-134 flex justify-center items-center">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
               <img
@@ -131,7 +131,7 @@ export default function CardDetail({
             )}
           </div>
           <div
-            className="flex flex-row h-48 gap-4 justify-center items-center lg:w-1/3"
+            className="flex flex-row w-2/4 h-48 gap-4 justify-center items-center"
           >
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
             {isDestructOpen ? (
