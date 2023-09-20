@@ -17,7 +17,7 @@ export default function SpellingCard({ value, sounds, syllableSounds, item, xSec
   }
 
     return (
-      <SpellingCardHolder>
+      <div className="flex flex-row flex-wrap w-full justify-center">
         <LetterTileHolder
           value={value}
           sounds={sounds}
@@ -40,6 +40,6 @@ export default function SpellingCard({ value, sounds, syllableSounds, item, xSec
             <FontAwesomeIcon icon={faRectangleXmark} />
           </CloseIcon>
         </IconHolder>
-      </SpellingCardHolder>
+      </div>
     );
 }

@@ -38,6 +38,10 @@ module.exports = {
       heading: ["DM Sans", "Helvetica", "Arial"],
       body: ["Inter", "Helvetica", "Arial"],
     },
+    lineHeight: {
+      'extra-loose': '2.5',
+      '12': '3rem',
+    }
   },
   plugins: [],
 };
