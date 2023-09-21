@@ -35,6 +35,7 @@ const animals = {
     harmonica: require("./instruments/harmonica.png"),
     mbira: require("./instruments/mbira.png"),
     quijada_de_burro: require("./instruments/quijada-de-burro.png"),
+    violin: require("./instruments/violin.png"),
     zarb: require("./instruments/zarb.png"),
   }
   
