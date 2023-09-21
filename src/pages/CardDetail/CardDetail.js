@@ -112,7 +112,7 @@ export default function CardDetail({
               </Link>
             </div>
           </div>
-          <div className="w-2/4 h-134 flex justify-center items-center">
+          <div className="w-full lg:w-2/4 h-134 flex justify-center items-center">
             {/* ///// SCIENCE & ARTS Image Logic ///// */}
             {(item.category === "science" || item.category === "arts") && (
               <img
@@ -131,7 +131,7 @@ export default function CardDetail({
             )}
           </div>
           <div
-            className="flex flex-row w-2/4 h-48 gap-4 justify-center items-center"
+            className="flex flex-row w-full lg:w-2/4 h-48 gap-4 justify-center items-center"
           >
             {/* ///// SCIENCE & ARTS Card Title Logic ///// */}
             {isDestructOpen ? (
