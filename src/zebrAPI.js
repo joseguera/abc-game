@@ -1079,7 +1079,7 @@ export const artsArray = [
     image: images.instruments.aeolian_harp,
     name: {
       en: "Aeolian Harp",
-      es: "Caimán",
+      es: "Arpa Eólica",
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
@@ -1102,7 +1102,7 @@ export const artsArray = [
     image: images.instruments.bell_tree,
     name: {
       en: "Bell Tree",
-      es: "Mandril",
+      es: "Árbol de Campanas",
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
@@ -1116,6 +1116,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: true,
+    category: "arts"
   },
   {
     id: "cuica",
@@ -1124,7 +1125,7 @@ export const artsArray = [
     image: images.instruments.cuica,
     name: {
       en: "Cuíca",
-      es: "Chimpancé",
+      es: "Cuíca",
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
@@ -1147,7 +1148,7 @@ export const artsArray = [
     image: images.instruments.didgeridoo,
     name: {
       en: "Didgeridoo",
-      es: "Dingo",
+      es: "Didgeridoo",
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
@@ -1170,7 +1171,7 @@ export const artsArray = [
     image: "images.instruments.electric_bass",
     name: {
       en: "Electric Bass",
-      es: "Elefante",
+      es: "Bajo Eléctrico",
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
@@ -1192,7 +1193,7 @@ export const artsArray = [
     image: images.instruments.french_horn,
     name: {
       en: "French Horn",
-      es: "Rana",
+      es: "Corno Francés",
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
@@ -1215,7 +1216,7 @@ export const artsArray = [
     image: images.instruments.gamelatron,
     name: {
       en: "Gamelatron",
-      es: "Gorila",
+      es: "Gamelatrón",
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
@@ -1238,7 +1239,7 @@ export const artsArray = [
     image: images.instruments.harmonica,
     name: {
       en: "Harmonica",
-      es: "Hiena",
+      es: "Armónica",
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
@@ -1261,7 +1262,7 @@ export const artsArray = [
     image: images.instruments.inci,
     name: {
       en: "Inci",
-      es: "Impala",
+      es: "Tumpong",
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
@@ -1284,7 +1285,7 @@ export const artsArray = [
     image: images.instruments.janggu,
     name: {
       en: "Janggu",
-      es: "Jaguar",
+      es: "Janggu",
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
@@ -1307,7 +1308,7 @@ export const artsArray = [
     image: images.instruments.khaen,
     name: {
       en: "Khaen",
-      es: "Coala",
+      es: "Khaen",
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
@@ -1330,7 +1331,7 @@ export const artsArray = [
     image: images.instruments.leier,
     name: {
       en: "Leier",
-      es: "Lémur",
+      es: "Lira",
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
@@ -1353,7 +1354,7 @@ export const artsArray = [
     image: images.instruments.mbira,
     name: {
       en: "Mbira",
-      es: "Guacamaya",
+      es: "Mbira",
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
@@ -1376,7 +1377,7 @@ export const artsArray = [
     image: images.instruments.native_american_flute,
     name: {
       en: "Native American Flute",
-      es: "Numbat",
+      es: "Flauta India",
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
@@ -1399,7 +1400,7 @@ export const artsArray = [
     image: images.instruments.oboe,
     name: {
       en: "Oboe",
-      es: "Okapi",
+      es: "Oboe",
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
@@ -1422,7 +1423,7 @@ export const artsArray = [
     image: images.instruments.piano,
     name: {
       en: "Piano",
-      es: "Panda",
+      es: "Piano",
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
@@ -1444,8 +1445,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.quijada_de_burro,
     name: {
-      en: "Quijada de Burro",
-      es: "Quetzal",
+      en: "Jawbone",
+      es: "Quijada de Burro",
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
@@ -1467,8 +1468,8 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.rabab,
     name: {
-      en: "Rabab",
-      es: "Rinoceronte",
+      en: "Rubab",
+      es: "Robab",
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
@@ -1491,7 +1492,7 @@ export const artsArray = [
     image: images.instruments.sitar,
     name: {
       en: "Sitar",
-      es: "Serpiente",
+      es: "Sitar",
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
@@ -1514,7 +1515,7 @@ export const artsArray = [
     image: images.instruments.taiko,
     name: {
       en: "Taiko",
-      es: "Tigre",
+      es: "Taiko",
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
@@ -1537,7 +1538,7 @@ export const artsArray = [
     image: images.instruments.ukulele,
     name: {
       en: "Ukulele",
-      es: "Perezoso",
+      es: "Ukelele",
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
@@ -1560,7 +1561,7 @@ export const artsArray = [
     image: images.instruments.violin,
     name: {
       en: "Violin",
-      es: "Mono Vervet",
+      es: "Violín",
     },
     tiles: [["Ver-vet"], ["Mon-key"]],
     syllables: [
@@ -1586,7 +1587,7 @@ export const artsArray = [
     image: images.instruments.waterphone,
     name: {
       en: "Waterphone",
-      es: "Jabalí",
+      es: "Waterphone",
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
@@ -1609,7 +1610,7 @@ export const artsArray = [
     image: images.instruments.xalam,
     name: {
       en: "Xalam",
-      es: "Xenops",
+      es: "Xalam",
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
@@ -1632,7 +1633,7 @@ export const artsArray = [
     image: images.instruments.yuka,
     name: {
       en: "Yuka",
-      es: "Mangosta Amarilla",
+      es: "Yuka",
     },
     tiles: [["Yel-low"], ["Mon-", "goose"]],
     syllables: [
@@ -1658,7 +1659,7 @@ export const artsArray = [
     image: images.instruments.zarb,
     name: {
       en: "Zarb",
-      es: "Zebra",
+      es: "Tombak",
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
