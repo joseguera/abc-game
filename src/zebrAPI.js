@@ -1081,8 +1081,15 @@ export const artsArray = [
       en: "Aeolian Harp",
       es: "Arpa Eólica",
     },
-    tiles: ["Al-li-", "ga-", "tor"],
-    syllables: ["Al", "li", "ga", "tor"],
+    slides: [{
+      placeOfOrigin: "",
+      flag: ""
+    }, {
+      instrumentType: "Wind",
+      material: "Wood"
+    }, {
+      video: "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96"
+    }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
@@ -1448,8 +1455,17 @@ export const artsArray = [
       en: "Jawbone",
       es: "Quijada de Burro",
     },
-    tiles: ["Quet-", "zal"],
-    syllables: ["Quet", "zal"],
+    slides: [{
+      placeOfOrigin: "Africa",
+      flag: images.flags.african_union_flag,
+      howItWorks: "The jawbone is cleaned and dried to make the teeth loose and rattle. This makes a loud buzzing sound."
+    }, {
+      instrumentType: "Percussion",
+      technicalName: "Idiophone",
+      material: "animal bone"
+    }, {
+      video: "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96"
+    }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",

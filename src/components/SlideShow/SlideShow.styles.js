@@ -38,7 +38,7 @@ export const Fact = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   font-size: 16px;
   word-break: break-word;
   width: 250px;
