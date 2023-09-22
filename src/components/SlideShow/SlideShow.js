@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { ShowContainer, SlideHolder, Slide, Fact, CloseIcon } from "./SlideShow.styles";
+import {
+  ShowContainer,
+  SlideHolder,
+  Slide,
+  Fact,
+  CloseIcon,
+} from "./SlideShow.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
@@ -7,14 +13,26 @@ import {
   faRectangleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function SlideShow({ xSectionCloser }) {
+export default function SlideShow({ xSectionCloser, item }) {
   const [slide, setSlide] = useState(0);
 
   const slideContent = [
-    <Fact>Place of Origin: Africa<br />Flag: [FLAG]</Fact>,
-    <Fact>Instrument Type: Wind<br />Made of Material: Wood
+    <Fact>
+      Place of Origin: {item.slides[0].placeOfOrigin}
+      <br />
+      Flag: <img src={item.slides[0].flag} alt={item.slides[0].placeOfOrigin} />
+      <br />
+      How it Works: {item.slides[0].howItWorks}
     </Fact>,
-    <Fact>YouTube video of a musician playing the instrument.</Fact>,
+    <Fact>
+      Instrument Type: {item.slides[1].instrumentType}
+      <br />
+      Technical Name: {item.slides[1].technicalName} <br />
+      Made of Material: {item.slides[1].material} <br />
+    </Fact>,
+    <Fact>
+      <video src={item.slides[2].video} controls="true"></video>
+    </Fact>,
   ];
 
   const decrementFact = () => {
@@ -35,7 +53,9 @@ export default function SlideShow({ xSectionCloser }) {
           icon={faAngleLeft}
           onClick={() => decrementFact()}
         />
-        <Slide>{slideContent[slide]}</Slide>
+        <div className="flex flex-col">
+          <Slide>{slideContent[slide]}</Slide>
+        </div>
         <FontAwesomeIcon
           className="arrow-icon"
           icon={faAngleRight}

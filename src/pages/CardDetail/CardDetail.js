@@ -81,7 +81,7 @@ export default function CardDetail({
         xSectionCloser={() => xSectionCloser()}
       />
     ),
-    arts: <SlideShow xSectionCloser={() => xSectionCloser()} />,
+    arts: <SlideShow item={item} xSectionCloser={() => xSectionCloser()} />,
     math: (
       <FactorButtons
         item={item}

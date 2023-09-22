@@ -27,6 +27,18 @@ const animals = {
     zebra: require("./animals/zebra.png")
   };
 
+  const flags = {
+    // aeolian_harp: require("./instruments/aeolian-harp.png"),
+    // bell_tree: require("./instruments/bell-tree.png"),
+    // cuica: require("./instruments/cuica.png"),
+    // didgeridoo: require("./instruments/didgeridoo.png"),
+    // harmonica: require("./instruments/harmonica.png"),
+    // mbira: require("./instruments/mbira.png"),
+    african_union_flag: require("./flags/african-union-flag.png"),
+    // violin: require("./instruments/violin.png"),
+    // zarb: require("./instruments/zarb.png"),
+  }
+
   const instruments = {
     aeolian_harp: require("./instruments/aeolian-harp.png"),
     bell_tree: require("./instruments/bell-tree.png"),
@@ -65,6 +77,6 @@ const animals = {
     watermelon: require("./numbers/watermelon.png"),
   };
 
-  const images = { animals, instruments, numbers }
+  const images = { animals, flags, instruments, numbers }
   
   export default images;
