@@ -1452,7 +1452,7 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.quijada_de_burro,
     name: {
-      en: "Jawbone",
+      en: "Quijada (Jawbone)",
       es: "Quijada de Burro",
     },
     slides: [{
@@ -1464,7 +1464,7 @@ export const artsArray = [
       technicalName: "Idiophone",
       material: "animal bone"
     }, {
-      video: "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96"
+      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:

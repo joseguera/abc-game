@@ -31,8 +31,8 @@ export default function SlideShow({ xSectionCloser, item }) {
       Made of Material: {item.slides[1].material} <br />
     </Fact>,
     <Fact>
-      <video src={item.slides[2].video} controls="true"></video>
-    </Fact>,
+      <iframe width="560" height="315" src={item.slides[2].video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+    </Fact>
   ];
 
   const decrementFact = () => {
