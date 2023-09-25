@@ -5,7 +5,7 @@ export const ShowContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  row-gap: 10px;
+  gap: 10px;
   width: 295px;
   color: #2f4f4f;
 `;
@@ -16,7 +16,6 @@ export const SlideHolder = styled.div`
   align-items: center;
   flex-direction: row;
   gap: 15px;
-  height: 145px;
   color: #2f4f4f;
   .arrow-icon {
     font-size: 27px;
@@ -36,12 +35,13 @@ export const Slide = styled.div`
 
 export const Fact = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 16px;
   word-break: break-word;
   width: 250px;
+  gap: 10px;
 `;
 
 export const CloseIcon = styled.div`

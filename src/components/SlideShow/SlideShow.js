@@ -18,20 +18,29 @@ export default function SlideShow({ xSectionCloser, item }) {
 
   const slideContent = [
     <Fact>
-      Place of Origin: {item.slides[0].placeOfOrigin}
-      <br />
-      Flag: <img src={item.slides[0].flag} alt={item.slides[0].placeOfOrigin} />
-      <br />
-      How it Works: {item.slides[0].howItWorks}
+      <div>
+        Place of Origin: {item.slides[0].placeOfOrigin}
+      </div>
+      <div className="flex justify-center">
+        <img className="w-1/2" src={item.slides[0].flag} alt={item.slides[0].placeOfOrigin} />
+      </div>
+      <div>
+        <b>How's it work?</b> {item.slides[0].howItWorks}
+      </div>
     </Fact>,
     <Fact>
-      Instrument Type: {item.slides[1].instrumentType}
-      <br />
-      Technical Name: {item.slides[1].technicalName} <br />
-      Made of Material: {item.slides[1].material} <br />
+      <div>
+        Instrument Type: {item.slides[1].instrumentType}
+      </div>
+      <div>
+        Technical Name: {item.slides[1].technicalName}
+      </div>
+      <div>
+        Made of Material: {item.slides[1].material}
+      </div>
     </Fact>,
     <Fact>
-      <iframe width="360" height="315" src={item.slides[2].video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+      <iframe width="250" src={item.slides[2].video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
     </Fact>
   ];
 
@@ -53,8 +62,8 @@ export default function SlideShow({ xSectionCloser, item }) {
           icon={faAngleLeft}
           onClick={() => decrementFact()}
         />
-        <div className="flex flex-col">
-          <Slide>{slideContent[slide]}</Slide>
+        <div className="flex flex-col h-fit">
+          {slideContent[slide]}
         </div>
         <FontAwesomeIcon
           className="arrow-icon"
