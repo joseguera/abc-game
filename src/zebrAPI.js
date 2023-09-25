@@ -1248,8 +1248,17 @@ export const artsArray = [
       en: "Harmonica",
       es: "Armónica",
     },
-    tiles: ["Hy-e-na"],
-    syllables: ["Hy", "e", "na"],
+    slides: [{
+      placeOfOrigin: "Europe",
+      flag: images.flags.european_union_flag,
+      howItWorks: "The harmonica..."
+    }, {
+      instrumentType: "Wind",
+      technicalName: "Aerophone",
+      material: "brass, stainless steel or bronze"
+    }, {
+      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
+    }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",

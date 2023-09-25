@@ -28,15 +28,8 @@ const animals = {
   };
 
   const flags = {
-    // aeolian_harp: require("./instruments/aeolian-harp.png"),
-    // bell_tree: require("./instruments/bell-tree.png"),
-    // cuica: require("./instruments/cuica.png"),
-    // didgeridoo: require("./instruments/didgeridoo.png"),
-    // harmonica: require("./instruments/harmonica.png"),
-    // mbira: require("./instruments/mbira.png"),
     african_union_flag: require("./flags/african-union-flag.png"),
-    // violin: require("./instruments/violin.png"),
-    // zarb: require("./instruments/zarb.png"),
+    european_union_flag: require("./flags/european-union-flag.png"),
   }
 
   const instruments = {
