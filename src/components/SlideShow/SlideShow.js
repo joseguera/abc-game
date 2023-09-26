@@ -35,7 +35,7 @@ export default function SlideShow({ xSectionCloser, item }) {
       <div>
         Technical Name: {item.slides[1].technicalName}
       </div>
-      <div>
+      <div className="text-center">
         Made of Material: {item.slides[1].material}
       </div>
     </Fact>,
