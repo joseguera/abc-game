@@ -1847,8 +1847,8 @@ export const artsArray = [
       es: "Yuka",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Cuba",
+      flag: images.flags.cuba,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1879,8 +1879,8 @@ export const artsArray = [
       es: "Tombak",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Iran",
+      flag: images.flags.iran,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
