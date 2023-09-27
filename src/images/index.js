@@ -28,8 +28,25 @@ const animals = {
   };
 
   const flags = {
-    african_union_flag: require("./flags/african-union-flag.png"),
-    european_union_flag: require("./flags/european-union-flag.png"),
+    afghanistan: require("./flags/afghanistan.png"),
+    african_union: require("./flags/african-union.png"),
+    australia: require("./flags/australia.png"),
+    brazil: require("./flags/brazil.png"),
+    china: require("./flags/china.png"),
+    cuba: require("./flags/cuba.png"),
+    european_union: require("./flags/european-union.png"),
+    germany: require("./flags/germany.png"),
+    greece: require("./flags/greece.png"),
+    hawaii: require("./flags/hawaii.png"),
+    india: require("./flags/india.png"),
+    iran: require("./flags/iran.png"),
+    italy: require("./flags/italy.png"),
+    japan: require("./flags/japan.png"),
+    philippines: require("./flags/philippines.png"),
+    south_korea: require("./flags/south-korea.png"),
+    thailand: require("./flags/thailand.png"),
+    united_states: require("./flags/united-states.png"),
+    zimbabwe: require("./flags/zimbabwe.png"),
   }
 
   const instruments = {
