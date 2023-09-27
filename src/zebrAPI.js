@@ -1082,8 +1082,9 @@ export const artsArray = [
       es: "Arpa Eólica",
     },
     slides: [{
-      placeOfOrigin: "",
-      flag: ""
+      placeOfOrigin: "Greece",
+      flag: images.flags.greece,
+      howItWorks: "The aeolian harp..."
     }, {
       instrumentType: "Wind",
       material: "Wood"
@@ -1112,9 +1113,9 @@ export const artsArray = [
       es: "Árbol de Campanas",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "China",
+      flag: images.flags.china,
+      howItWorks: "The bell tree..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1144,9 +1145,9 @@ export const artsArray = [
       es: "Cuíca",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "Brazil",
+      flag: images.flags.brazil,
+      howItWorks: "The cuíca..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1176,9 +1177,9 @@ export const artsArray = [
       es: "Didgeridoo",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "Australia",
+      flag: images.flags.australia,
+      howItWorks: "The didgeridoo..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1208,8 +1209,8 @@ export const artsArray = [
       es: "Bajo Eléctrico",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "United States",
+      flag: images.flags.united_states,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1240,7 +1241,7 @@ export const artsArray = [
     },
     slides: [{
       placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      flag: images.flags.european_union,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1271,8 +1272,8 @@ export const artsArray = [
       es: "Gamelatrón",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "United States",
+      flag: images.flags.united_states,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1304,7 +1305,7 @@ export const artsArray = [
     },
     slides: [{
       placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      flag: images.flags.european_union,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1335,9 +1336,9 @@ export const artsArray = [
       es: "Tumpong",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "Philippines",
+      flag: images.flags.philippines,
+      howItWorks: "The inci..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1367,8 +1368,8 @@ export const artsArray = [
       es: "Janggu",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "South Korea",
+      flag: images.flags.south_korea,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1399,8 +1400,8 @@ export const artsArray = [
       es: "Khaen",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Thailand",
+      flag: images.flags.thailand,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1431,8 +1432,8 @@ export const artsArray = [
       es: "Lira",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Germany",
+      flag: images.flags.germany,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1463,8 +1464,8 @@ export const artsArray = [
       es: "Mbira",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Zimbabwe",
+      flag: images.flags.zimbabwe,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1495,9 +1496,9 @@ export const artsArray = [
       es: "Flauta India",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "United States",
+      flag: images.flags.united_states,
+      howItWorks: "The native american flute..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1528,7 +1529,7 @@ export const artsArray = [
     },
     slides: [{
       placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      flag: images.flags.european_union,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1559,8 +1560,8 @@ export const artsArray = [
       es: "Piano",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Italy",
+      flag: images.flags.italy,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1592,7 +1593,7 @@ export const artsArray = [
     },
     slides: [{
       placeOfOrigin: "Africa",
-      flag: images.flags.african_union_flag,
+      flag: images.flags.african_union,
       howItWorks: "The jawbone is cleaned and dried to make the teeth loose and rattle. This makes a loud buzzing sound."
     }, {
       instrumentType: "Percussion",
@@ -1623,8 +1624,8 @@ export const artsArray = [
       es: "Robab",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Afghanistan",
+      flag: images.flags.afghanistan,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1655,8 +1656,8 @@ export const artsArray = [
       es: "Sitar",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "India",
+      flag: images.flags.india,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1687,8 +1688,8 @@ export const artsArray = [
       es: "Taiko",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Japan",
+      flag: images.flags.japan,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1719,8 +1720,8 @@ export const artsArray = [
       es: "Ukelele",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Hawaii",
+      flag: images.flags.hawaii,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1751,9 +1752,9 @@ export const artsArray = [
       es: "Violín",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
-      howItWorks: "The harmonica..."
+      placeOfOrigin: "Italy",
+      flag: images.flags.italy,
+      howItWorks: "The violin..."
     }, {
       instrumentType: "Wind",
       technicalName: "Aerophone",
@@ -1783,8 +1784,8 @@ export const artsArray = [
       es: "Waterphone",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "United States",
+      flag: images.flags.united_states,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
@@ -1815,8 +1816,8 @@ export const artsArray = [
       es: "Xalam",
     },
     slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union_flag,
+      placeOfOrigin: "Africa",
+      flag: images.flags.african_union,
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
