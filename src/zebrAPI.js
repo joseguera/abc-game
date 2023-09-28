@@ -1149,11 +1149,11 @@ export const artsArray = [
       flag: images.flags.brazil,
       howItWorks: "The cuíca..."
     }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
+      instrumentType: "Percussion",
+      technicalName: "Membranophone",
+      material: "metal with animal skin stretched over the top"
     }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
+      video: "https://www.youtube.com/embed/mmlK94QvwiA?si=WdGKnz3ADPRZuB9o&amp;clip=Ugkxu_w8-6SbXsuIBdsKYiNZQEPQdtSmFr7a&amp;clipt=EMC7ARjYsAI&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
     nameSound:
