@@ -1204,7 +1204,7 @@ export const artsArray = [
     id: "electric-bass",
     value: "E",
     clicked: false,
-    image: "images.instruments.electric_bass",
+    image: images.instruments.electric_bass,
     name: {
       en: "Electric Bass",
       es: "Bajo Eléctrico",
