@@ -1086,7 +1086,8 @@ export const artsArray = [
       flag: images.flags.greece,
       howItWorks: "The aeolian harp..."
     }, {
-      instrumentType: "Wind",
+      instrumentType: "Wind/String",
+      technicalName: "Chordophone",
       material: "Wood"
     }, {
       video: "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96"
@@ -1562,10 +1563,10 @@ export const artsArray = [
     slides: [{
       placeOfOrigin: "Italy",
       flag: images.flags.italy,
-      howItWorks: "The harmonica..."
+      howItWorks: "The piano..."
     }, {
       instrumentType: "Wind",
-      technicalName: "Aerophone",
+      technicalName: "Chordophone",
       material: "brass, stainless steel or bronze"
     }, {
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
@@ -1661,7 +1662,7 @@ export const artsArray = [
       howItWorks: "The harmonica..."
     }, {
       instrumentType: "Wind",
-      technicalName: "Aerophone",
+      technicalName: "Chordophone",
       material: "brass, stainless steel or bronze"
     }, {
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
@@ -1724,9 +1725,9 @@ export const artsArray = [
       flag: images.flags.hawaii,
       howItWorks: "The harmonica..."
     }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
+      instrumentType: "String",
+      technicalName: "Chordophone",
+      material: "Wood"
     }, {
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
@@ -1756,9 +1757,9 @@ export const artsArray = [
       flag: images.flags.italy,
       howItWorks: "The violin..."
     }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
+      instrumentType: "String",
+      technicalName: "Chordophone",
+      material: "wood"
     }, {
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
