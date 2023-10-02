@@ -17,10 +17,9 @@ export default function CardUtils({
   getAudio,
   id,
   category,
-  handleLike,
   xSectionCloser,
   isLiked,
-  list,
+  item
 }) {
 
   const language = useSelector((state) => state.language.value);
@@ -54,11 +53,10 @@ export default function CardUtils({
           getAudio={getAudio}
         />
         <LikeButton
-          handleLike={handleLike}
           isLiked={isLiked}
           id={id}
           category={category}
-          list={list}
+          item={item}
         />
       </div>
     </div>

@@ -15,7 +15,6 @@ export default function CardDetail({
   list,
   sounds,
   syllableSounds,
-  handleLike,
   handleOpenClose
 }) {
   const [isDestructOpen, setIsDestructOpen] = useState(false);
@@ -105,7 +104,7 @@ export default function CardDetail({
             <div className="text-3xl lg:text-6xl">{item.value}</div>
             <div 
               className="text-3xl lg:text-5xl"
-              onClick={() => handleOpenClose(item.id, item.category, list, audio)}
+              onClick={() => handleOpenClose(item.id, item.category, item, audio)}
             >
               <Link className="decoration-none hover:text-[#4d8080]" to={`/${item.category}`}>
                 &#x2715;
@@ -138,11 +137,9 @@ export default function CardDetail({
               openDestruct(category)
             ) : (
               <CardUtils
-                list={list}
                 item={item}
                 getAudio={getAudio}
                 xSectionCloser={xSectionCloser}
-                handleLike={handleLike}
                 id={item.id}
                 category={category}
                 name={item.name}
