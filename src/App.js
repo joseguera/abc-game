@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import axios from "axios";
 import {
   scienceArray,
   artsArray,
@@ -7,24 +6,16 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { Home, About, Contact, Shop, CardDetail, Science, Technology, Engineering, Arts, Math, Favorites } from "pages";
 import { Header, MenuModal } from "components";
-import { Link, Outlet, Route, Routes } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faListUl,
-  faMusic,
-  faBookOpenReader,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
 import "./styles.css";
+
 
 export default function App() {
   const menuModal = useRef();
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
-  const [sounds, setSounds] = useState(alphabetLetterSounds);
   const [syllables, setSyllables] = useState(animalSyllables);
 
   // ARTS
