@@ -1122,7 +1122,7 @@ export const artsArray = [
       technicalName: "Aerophone",
       material: "brass, stainless steel or bronze"
     }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
+      video: "https://www.youtube.com/embed/71w929twkME?si=wmbgBdJ-lBoAQ_k8&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
