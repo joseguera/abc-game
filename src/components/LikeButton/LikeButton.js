@@ -18,21 +18,21 @@ export default function LikeButton({
   return playing ? (
     isLiked ? (
       <div
-        className="text-lg cursor-pointer text-[#ff6347] hover:text-[#ff9380]" 
+        className="text-3xl cursor-pointer text-[#ff6347] hover:text-[#ff9380]" 
         onClick={() => handleLikeHeart(item.id, item.category, item)}
       >
         <FontAwesomeIcon icon={faHeart} />
       </div>
     ) : (
       <div
-        className="text-lg cursor-pointer text-[#2f4f4f] hover:text-[#4d8080]"
+        className="text-3xl cursor-pointer text-[#2f4f4f] hover:text-[#4d8080]"
         onClick={() => handleLikeHeart(item.id, item.category, item)}
       >
         <FontAwesomeIcon icon={faHeart} />
       </div>
     )
   ) : (
-    <div className="text-lg cursor-not-allowed text-[#8fbcbc]">
+    <div className="text-3xl cursor-not-allowed text-[#8fbcbc]">
       <FontAwesomeIcon icon={faHeart} />
     </div>
   );

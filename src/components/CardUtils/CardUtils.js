@@ -32,7 +32,7 @@ export default function CardUtils({
       >
         <NameButton name={name[language]} nameSound={nameSound} category={category} />
         <div
-          className="cursor-pointer text-lg text-[#2f4f4f] flex items-center hover:text-[#4d8080]" 
+          className="cursor-pointer text-2xl text-[#2f4f4f] flex items-center hover:text-[#4d8080]" 
           onClick={() => xSectionCloser()}
         >
           <button>
