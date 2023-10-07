@@ -28,7 +28,7 @@ export default function CardDetail({
 
   ///////////// FIX THIS //////////////////////////
 
-  const { animals, instruments, numbers } = useOutletContext();
+  const { animals, instruments, numbers, alphabetLetterSounds } = useOutletContext();
 
   const currList = { animals, instruments, numbers }
 
@@ -74,7 +74,7 @@ export default function CardDetail({
     science: (
       <SpellingCard
         item={item}
-        sounds={sounds}
+        alphabetLetterSounds={alphabetLetterSounds}
         syllableSounds={syllableSounds}
         value={item.value}
         xSectionCloser={() => xSectionCloser()}

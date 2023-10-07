@@ -8,7 +8,7 @@ import {
   faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function SpellingCard({ value, sounds, syllableSounds, item, xSectionCloser }) {
+export default function SpellingCard({ value, alphabetLetterSounds, syllableSounds, item, xSectionCloser }) {
 
   const [isSpelled, setIsSpelled] = useState(true);
 
@@ -20,7 +20,7 @@ export default function SpellingCard({ value, sounds, syllableSounds, item, xSec
       <div className="flex flex-row flex-wrap w-full justify-center">
         <LetterTileHolder
           value={value}
-          sounds={sounds}
+          alphabetLetterSounds={alphabetLetterSounds}
           syllableSounds={syllableSounds}
           tiles={item.tiles}
           syllables={item.syllables}

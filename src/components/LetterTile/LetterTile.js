@@ -1,13 +1,13 @@
 import React from "react";
 import { Tile, Dash } from "./LetterTile.styles";
 
-export default function LetterTile(props) {
-  const letters = props.letter.toUpperCase();
+export default function LetterTile({ letter, letterSound }) {
+  const letters = letter.toUpperCase();
   const playAudio = () => {
-    new Audio(props.sounds[letters]).play();
+    new Audio(letterSound[letters]).play();
   };
-  return props.letter !== "-" ? (
-    <Tile onClick={playAudio}>{props.letter}</Tile>
+  return letter !== "-" ? (
+    <Tile onClick={playAudio}>{letter}</Tile>
   ) : (
     <Dash>-</Dash>
   );
