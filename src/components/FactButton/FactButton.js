@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { change } from "../../features/playing/playingSlice";
-import { Icon, IconDisabled } from "./FactButton.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
@@ -47,7 +46,7 @@ export default function FactButton({ funFacts, getAudio }) {
   return (
     <>
       {playing ? (
-        <Icon>
+        <div className="text-3xl cursor-pointer text-[#2f4f4f] flex items-center hover:text-[#FC6A03]">
           <FontAwesomeIcon
             icon={faLightbulb}
             onClick={() => {
@@ -55,11 +54,11 @@ export default function FactButton({ funFacts, getAudio }) {
               playAudio();
             }}
           />
-        </Icon>
+        </div>
       ) : (
-        <IconDisabled>
+        <div className="text-3xl cursor-not-allowed text-[#8fbcbc] flex items-center">
           <FontAwesomeIcon icon={faLightbulb} />
-        </IconDisabled>
+        </div>
       )}
     </>
   );
