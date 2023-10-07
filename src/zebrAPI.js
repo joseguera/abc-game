@@ -274,6 +274,10 @@ export const scienceArray = [
       en: ["Im", "pal", "a"],
       es: ["Im", "pa", "la"]
     },
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
     soundEffect: [sounds.animals.impala, sounds.animals.frog],
@@ -302,6 +306,10 @@ export const scienceArray = [
     syllables: {
       en: ["Jag", "u", "ar"],
       es: ["Ja", "guar"]
+    },
+    nameSound: { 
+      en: "",
+      es: "" 
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
@@ -332,6 +340,10 @@ export const scienceArray = [
       en: ["Ko", "a", "la"],
       es: ["Co", "a", "la"]
     },
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     soundEffect: [sounds.animals.okapi, sounds.animals.frog],
@@ -360,6 +372,10 @@ export const scienceArray = [
     syllables: {
       en: ["Le", "mur"],
       es: ["Lé", "mur"]
+    },
+    nameSound: { 
+      en: "",
+      es: "" 
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
@@ -390,6 +406,10 @@ export const scienceArray = [
       en: ["Ma", "caw"],
       es: ["Gua", "ca", "ma", "ya"]
     }, 
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     soundEffect: [sounds.animals.macaw, sounds.animals.okapi],
@@ -420,6 +440,10 @@ export const scienceArray = [
       en: ["Num", "bat"],
       es: ["Num", "bat"]
     },
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
@@ -448,6 +472,10 @@ export const scienceArray = [
     syllables: {
       en: ["O", "ka", "pi"],
       es: ["O", "ka", "pi"]
+    },
+    nameSound: { 
+      en: "",
+      es: "" 
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
@@ -478,6 +506,10 @@ export const scienceArray = [
       en: ["Pan", "da"],
       es: ["Pan", "da"]
     },
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     soundEffect: [sounds.animals.panda, sounds.animals.okapi],
@@ -506,6 +538,10 @@ export const scienceArray = [
     syllables: {
       en: ["Quet", "zal"],
       es: ["Quet", "zal"]
+    },
+    nameSound: { 
+      en: "",
+      es: "" 
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
@@ -536,6 +572,10 @@ export const scienceArray = [
       en: ["Rhi", "noc", "er", "os"],
       es: ["Ri", "no", "ce", "ron", "te"]
     },
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     soundEffect: [sounds.animals.rhinoceros, sounds.animals.okapi],
@@ -564,6 +604,10 @@ export const scienceArray = [
     syllables: {
       en: ["Snake"],
       es: ["Ser", "pien", "te"]
+    },
+    nameSound: { 
+      en: "",
+      es: "" 
     },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
@@ -594,6 +638,10 @@ export const scienceArray = [
       en: ["Ti", "ger"],
       es: ["Ti", "gre"]
     }, 
+    nameSound: { 
+      en: "",
+      es: "" 
+    },
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     soundEffect: [sounds.animals.tiger, sounds.animals.okapi],
@@ -623,8 +671,10 @@ export const scienceArray = [
       en: ["U", "nau"],
       es: ["Pe", "re", "zo", "so"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
+      es: "" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/unau_fact1_ds858v.mp3",
