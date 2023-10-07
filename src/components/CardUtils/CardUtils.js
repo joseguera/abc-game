@@ -30,7 +30,7 @@ export default function CardUtils({
       <div
         className="flex justify-center items-center flex-row gap-3.5"
       >
-        <NameButton name={name[language]} nameSound={nameSound} category={category} />
+        <NameButton name={name[language]} nameSound={nameSound[language]} category={category} />
         <div
           className="cursor-pointer text-2xl text-[#2f4f4f] flex items-center hover:text-[#4d8080]" 
           onClick={() => xSectionCloser()}

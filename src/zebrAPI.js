@@ -25,8 +25,10 @@ export const scienceArray = [
       en: ["Al", "li", "ga", "tor"],
       es: ["Cai", "mán"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3", 
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/caiman.m4a" 
+    },
     soundEffect: [sounds.animals.alligator, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661498/animal_facts_audio/alligator_fact1_jzvtc3.mp3",
@@ -54,8 +56,10 @@ export const scienceArray = [
       en: ["Ba", "boon"],
       es: ["Man", "dril"]
     }, 
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3", 
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/mandril.m4a" 
+    },
     soundEffect:
       [sounds.animals.chimpanzee, sounds.animals.frog],
     funFacts: [
@@ -84,8 +88,10 @@ export const scienceArray = [
       en: ["Chim", "pan", "zee"],
       es: ["Chim", "pan", "cé"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/chimpance.m4a" 
+    },
     soundEffect: [sounds.animals.chimpanzee, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/chimpanzee_fact1_qv9lyc.mp3",
@@ -113,8 +119,10 @@ export const scienceArray = [
       en: ["Din", "go"],
       es: ["Din", "go"]
     }, 
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/dingo.m4a" 
+    },
     soundEffect: [sounds.animals.dingo, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/dingo_fact1_kswj5g.mp3",
@@ -142,8 +150,10 @@ export const scienceArray = [
       en: ["El", "e", "phant"],
       es: ["E", "le", "fan", "te"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/elefante.m4a" 
+    },
     soundEffect: [sounds.animals.elephant, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/elephant_fact1_ejcgdf.mp3",
@@ -171,8 +181,10 @@ export const scienceArray = [
       en: ["Frog"],
       es: ["Ra", "na"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/rana.m4a" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/frog_fact1_rfrsgr.mp3",
@@ -200,8 +212,10 @@ export const scienceArray = [
       en: ["Go", "ril", "la"],
       es: ["Go", "ri", "la"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/gorila.m4a" 
+    },
     soundEffect: [sounds.animals.gorilla, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/gorilla_fact1_cgq79y.mp3",
@@ -229,8 +243,10 @@ export const scienceArray = [
       en: ["Hy", "e", "na"],
       es: ["Hie", "na"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3", 
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/hiena.m4a" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/hyena_fact1_qtugg1.mp3",
@@ -636,8 +652,10 @@ export const scienceArray = [
       en: [["Ver", "vet"], ["Mon", "key"]],
       es: [["Mo", "no"], ["Ver", "vet"]]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3", 
+      es: "" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact1_cz2295.mp3",
@@ -665,8 +683,10 @@ export const scienceArray = [
       en: ["Wart", "hog"],
       es: ["Ja", "ba", "lí"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3", 
+      es: "" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact1_senecj.mp3",
@@ -694,8 +714,10 @@ export const scienceArray = [
       en: ["Xe", "nops"],
       es: ["Pi", "co", "lez", "na"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3", 
+      es: "" 
+    },
     soundEffect: [sounds.animals.xenops, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact1_jecyvz.mp3",
@@ -723,8 +745,10 @@ export const scienceArray = [
       en: [["Yel", "low"], ["Mon", "goose"]],
       es: [["Man", "gos", "ta"], ["A", "ma", "ri", "lla"]]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3", 
+      es: "" 
+    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/yellow_mongoose_fact1_jgd2eq.mp3",
@@ -752,9 +776,10 @@ export const scienceArray = [
       en: ["Ze", "bra"],
       es: ["Ce", "bra"]
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
-
+    nameSound: { 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3", 
+      es: "" 
+    },
     soundEffect: [sounds.animals.zebra, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
