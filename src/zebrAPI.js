@@ -967,7 +967,6 @@ export const animalSyllables = {
 };
 
 export const alphabetLetterSounds = {
-  alphabet: {
     en: {
       A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/A.mp3",
       B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/B.mp3",
@@ -1026,7 +1025,6 @@ export const alphabetLetterSounds = {
       Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703170/animal-audio-ES/alphabet/alphabet-spanish-y.m4a",
       Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703167/animal-audio-ES/alphabet/alphabet-spanish-z.m4a"
     }
-  } 
 };
 
 export const animalFactCitations = {
