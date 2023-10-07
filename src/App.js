@@ -128,6 +128,7 @@ export default function App() {
               instruments,
               animals,
               numbers,
+              alphabetLetterSounds,
               detailOpen,
               handleOpenClose,
               syllables,
