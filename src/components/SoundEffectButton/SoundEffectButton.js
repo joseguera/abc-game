@@ -77,7 +77,7 @@ export default function SoundEffectButton({ soundEffect, getAudio, category }) {
           </div>
         </button>
       ) : (
-        <div className="text-xl cursor-not-allowed text-[#8fbcbc] flex items-center">
+        <div className="text-2xl cursor-not-allowed text-[#8fbcbc] flex items-center">
           <FontAwesomeIcon icon={soundEffectButton(category)} />
         </div>
       )}
