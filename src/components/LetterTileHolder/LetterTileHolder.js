@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { LetterTile, SyllableTile } from "components";
 
-export default function LetterTileHolder({ name, isSpelled, tiles, value, syllables, syllableSounds, alphabetLetterSounds }) {
+export default function LetterTileHolder({ name, isSpelled, tiles, value, syllables, alphabetLetterSounds }) {
   const language = useSelector((state) => state.language.value);
 
   return (
@@ -35,7 +35,6 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
               <SyllableTile
                 value={value}
                 syllableTiles={syllables}
-                syllableSounds={syllableSounds}
               />
             </div>
           )}
@@ -64,7 +63,6 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
               <SyllableTile
                 value={value}
                 syllableTiles={syllables}
-                syllableSounds={syllableSounds}
               />
             </div>
           )}

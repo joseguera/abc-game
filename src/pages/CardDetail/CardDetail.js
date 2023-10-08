@@ -12,9 +12,6 @@ import {
 } from "components";
 
 export default function CardDetail({
-  list,
-  sounds,
-  syllableSounds,
   handleOpenClose
 }) {
   const [isDestructOpen, setIsDestructOpen] = useState(false);
@@ -75,7 +72,6 @@ export default function CardDetail({
       <SpellingCard
         item={item}
         alphabetLetterSounds={alphabetLetterSounds}
-        syllableSounds={syllableSounds}
         value={item.value}
         xSectionCloser={() => xSectionCloser()}
       />

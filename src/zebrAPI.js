@@ -816,7 +816,7 @@ export const scienceArray = [
     image: images.animals.zebra,
     name: {
       en: "Zebra",
-      es: "Zebra",
+      es: "Cebra",
     },
     tiles: {
       en: ["Ze-bra"],
@@ -828,7 +828,7 @@ export const scienceArray = [
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3", 
-      es: "" 
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786189/animal-audio-ES/full-names/cebra-name.m4a" 
     },
     soundEffect: [sounds.animals.zebra, sounds.animals.okapi],
     funFacts: [
@@ -961,8 +961,14 @@ export const animalSyllables = {
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_4_bivqec.mp3",
   },
   Z: {
-    ze: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_1_cnq15e.mp3",
-    bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_2_gflttj.mp3",
+    en: {
+      ze: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_1_cnq15e.mp3",
+      bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/zebra_2_gflttj.mp3",
+    },
+    es: {
+      ce: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786251/animal-audio-ES/syllables/cebra-ce.m4a",
+      bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786250/animal-audio-ES/syllables/cebra-bra.m4a",
+    }
   },
 };
 

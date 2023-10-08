@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { LetterTileHolder } from "components";
-import { SpellingCardHolder, IconHolder, CloseIcon, Icon } from "./SpellingCard.styles";
+import { IconHolder, CloseIcon, Icon } from "./SpellingCard.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faRectangleXmark,
@@ -8,7 +8,7 @@ import {
   faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function SpellingCard({ value, alphabetLetterSounds, syllableSounds, item, xSectionCloser }) {
+export default function SpellingCard({ value, alphabetLetterSounds, item, xSectionCloser }) {
 
   const [isSpelled, setIsSpelled] = useState(true);
 
@@ -21,7 +21,6 @@ export default function SpellingCard({ value, alphabetLetterSounds, syllableSoun
         <LetterTileHolder
           value={value}
           alphabetLetterSounds={alphabetLetterSounds}
-          syllableSounds={syllableSounds}
           tiles={item.tiles}
           syllables={item.syllables}
           name={item.name}
