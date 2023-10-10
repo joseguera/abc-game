@@ -341,11 +341,9 @@ export const scienceArray = [
       es: ["Co", "a", "la"]
     },
     nameSound: { 
-      en: "",
-      es: "" 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896594/animal-audio-ES/full-names/coala-name.m4a" 
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     soundEffect: [sounds.animals.okapi, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/koala_fact1_vgfacw.mp3",
@@ -407,11 +405,9 @@ export const scienceArray = [
       es: ["Gua", "ca", "ma", "ya"]
     }, 
     nameSound: { 
-      en: "",
-      es: "" 
+      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
+      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896593/animal-audio-ES/full-names/guacamaya-name.m4a" 
     },
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     soundEffect: [sounds.animals.macaw, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661507/animal_facts_audio/macaw_fact1_abx8vt.mp3",
@@ -963,9 +959,9 @@ export const animalSyllables = {
       la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_3_dlcaiz.mp3",
     },
     es: {
-      co: "",
-      a: "",
-      la: ""
+      co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896701/animal-audio-ES/syllables/coala-co.m4a",
+      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-a.m4a",
+      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-la.m4a"
     }
   },
   L: {
@@ -984,10 +980,10 @@ export const animalSyllables = {
       caw: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_2_qhttqp.mp3",
     },
     es: {
-      gua: "", 
-      ca: "", 
-      ma: "", 
-      ya: ""
+      gua: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896703/animal-audio-ES/syllables/guacamaya-gua.m4a", 
+      ca: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ca.m4a", 
+      ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ma.m4a", 
+      ya: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ya.m4a"
     }
   },
   N: {
