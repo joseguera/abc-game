@@ -22,8 +22,22 @@ export const scienceArray = [
       es: ["Cai-", "mán"]
     },
     syllables: {
-      en: ["Al", "li", "ga", "tor"],
-      es: ["Cai", "mán"]
+      en: {
+        text: ["Al", "li", "ga", "tor"],
+        audio: {
+          al: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_1_pfcrda.mp3",
+          li: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_2_upcmbv.mp3",
+          ga: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_3_h1a4kp.mp3",
+          tor: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_4_kl1tng.mp3",
+        },
+      },
+      es: {
+        text: ["Cai", "mán"],
+        audio: { 
+          cai: "",
+          mán: "" 
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3", 
@@ -53,8 +67,20 @@ export const scienceArray = [
       es: ["Man-dril"]
     },
     syllables: {
-      en: ["Ba", "boon"],
-      es: ["Man", "dril"]
+      en: {
+        text: ["Ba", "boon"],
+        audio: {
+          ba: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_1_itfivg.mp3",
+          boon: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_2_ncorah.mp3",
+        }
+      },
+      es: {
+        text: ["Man", "dril"],
+        audio: {
+          man: "",
+          dril: ""
+        }
+      }
     }, 
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3", 
@@ -85,8 +111,22 @@ export const scienceArray = [
       es: ["Chim-", "pan-", "cé"]
     },
     syllables: {
-      en: ["Chim", "pan", "zee"],
-      es: ["Chim", "pan", "cé"]
+      en: {
+        text: ["Chim", "pan", "zee"],
+        audio: {
+          chim: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_1_qcfs5u.mp3",
+          pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_2_besjij.mp3",
+          zee: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_3_c9jbgo.mp3",
+        }
+      },
+      es: {
+        text: ["Chim", "pan", "cé"],
+        audio: {
+          chim: "",
+          pan: "",
+          cé: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
@@ -116,8 +156,20 @@ export const scienceArray = [
       es: ["Din-go"]
     }, 
     syllables: {
-      en: ["Din", "go"],
-      es: ["Din", "go"]
+      en: {
+        text: ["Din", "go"],
+        audio: {
+          din: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_1_uisizq.mp3",
+          go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_2_ksewju.mp3"
+        }
+      },
+      es: {
+        text: ["Din", "go"],
+        audio: {
+          din: "",
+          go: ""
+        }
+      }
     }, 
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
@@ -143,12 +195,29 @@ export const scienceArray = [
       es: "Elefante",
     },
     tiles: {
+      
       en: ["El-e-", "phant"],
       es: ["E-le-", "fan-te"]
     },
     syllables: {
-      en: ["El", "e", "phant"],
-      es: ["E", "le", "fan", "te"]
+      en: {
+        text: ["El", "e", "phant"],
+        audio: {
+          el: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_1_x7njho.mp3",
+          e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/elephant_2_tpecbo.mp3",
+          phant:
+            "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_3_ifv1kp.mp3"
+        }
+      },
+      es: {
+        text: ["E", "le", "fan", "te"],
+        audio: {
+          e: "", 
+          le: "", 
+          fan: "", 
+          te: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
@@ -178,8 +247,19 @@ export const scienceArray = [
       es: ["Ra-na"]
     }, 
     syllables: {
-      en: ["Frog"],
-      es: ["Ra", "na"]
+      en: {
+        text: ["Frog"],
+        audio: {
+          frog: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/frog_1_ziaz9v.mp3",
+        }
+      },
+      es: {
+        text: ["Ra", "na"],
+        audio: {
+          ra: "",
+          na: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
@@ -209,8 +289,22 @@ export const scienceArray = [
       es: ["Go-", "ri-la"]
     }, 
     syllables: {
-      en: ["Go", "ril", "la"],
-      es: ["Go", "ri", "la"]
+      en: {
+        text: ["Go", "ril", "la"],
+        audio: {
+          go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_1_ml8hee.mp3",
+          ril: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_2_e4b1vh.mp3",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_3_lj7nc5.mp3"
+        }
+      },
+      es: {
+        text: ["Go", "ri", "la"],
+        audio: {
+          go: "",
+          ri: "",
+          la: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
@@ -240,8 +334,21 @@ export const scienceArray = [
       es: ["Hie-na"]
     },
     syllables: {
-      en: ["Hy", "e", "na"],
-      es: ["Hie", "na"]
+      en: {
+        text: ["Hy", "e", "na"],
+        audio: {
+          hy: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_1_nmxsgi.mp3",
+          e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_2_vbkgbo.mp3",
+          na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_3_nefma3.mp3"
+        }
+      },
+      es: {
+        text: ["Hie", "na"],
+        audio: {
+          hie: "",
+          na: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3", 
@@ -271,8 +378,22 @@ export const scienceArray = [
       es: ["Im-", "pa-la"]
     },
     syllables: {
-      en: ["Im", "pal", "a"],
-      es: ["Im", "pa", "la"]
+      en: {
+        text: ["Im", "pal", "a"],
+        audio: {
+          im: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_1_uwkk50.mp3",
+          pal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_2_qbm7el.mp3",
+          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_3_w5g2rc.mp3",
+        }
+      },
+      es: {
+        text: ["Im", "pa", "la"],
+        audio: {
+          im: "",
+          pa: "",
+          la: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
@@ -302,8 +423,21 @@ export const scienceArray = [
       es: ["Ja-guar"]
     },
     syllables: {
-      en: ["Jag", "u", "ar"],
-      es: ["Ja", "guar"]
+      en: {
+        text: ["Jag", "u", "ar"],
+        audio: {
+          jag: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/jaguar_1_rsytkv.mp3",
+          u: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_2_yvkrbl.mp3",
+          ar: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_3_qjl6n0.mp3",
+        }
+      },
+      es: {
+        text: ["Ja", "guar"],
+        audio: {
+          ja: "",
+          guar: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
@@ -333,8 +467,22 @@ export const scienceArray = [
       es: ["Co-", "a-la"]
     },
     syllables: {
-      en: ["Ko", "a", "la"],
-      es: ["Co", "a", "la"]
+      en: {
+        text: ["Ko", "a", "la"],
+        audio: {
+          ko: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_1_aczrfi.mp3",
+          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_2_fzcj6v.mp3",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_3_dlcaiz.mp3",
+        }
+      },
+      es: {
+        text: ["Co", "a", "la"],
+        audio: {
+          co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896701/animal-audio-ES/syllables/coala-co.m4a",
+          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-a.m4a",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-la.m4a"
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
@@ -364,8 +512,20 @@ export const scienceArray = [
       es: ["Lé-mur"]
     }, 
     syllables: {
-      en: ["Le", "mur"],
-      es: ["Lé", "mur"]
+      en: {
+        text: ["Le", "mur"],
+        audio: {
+          le: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_1_snqqev.mp3",
+          mur: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_2_i58c0k.mp3",
+        }
+      },
+      es: {
+        text: ["Lé", "mur"],
+        audio: {
+          lé: "",
+          mur: ""
+        }
+      }
     },
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
@@ -395,8 +555,22 @@ export const scienceArray = [
       es: ["Gua-ca-", "ma-ya"]
     },
     syllables: {
-      en: ["Ma", "caw"],
-      es: ["Gua", "ca", "ma", "ya"]
+      en: {
+        text: ["Ma", "caw"],
+        audio: {
+          ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_1_v3cwcl.mp3",
+          caw: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_2_qhttqp.mp3",
+        }
+      },
+      es: {
+        text: ["Gua", "ca", "ma", "ya"],
+        audio: {
+          gua: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896703/animal-audio-ES/syllables/guacamaya-gua.m4a", 
+          ca: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ca.m4a", 
+          ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ma.m4a", 
+          ya: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ya.m4a"
+        }
+      }
     }, 
     nameSound: { 
       en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
@@ -819,153 +993,19 @@ export const scienceArray = [
 ];
 
 export const animalSyllables = {
-  A: {
-    en: {
-      al: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_1_pfcrda.mp3",
-      li: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_2_upcmbv.mp3",
-      ga: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_3_h1a4kp.mp3",
-      tor: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/alligator_4_kl1tng.mp3",
-    },
-    es: {
-      cai: "",
-      mán: ""
-    }
-  },
-  B: {
-    en: {
-      ba: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_1_itfivg.mp3",
-      boon: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441727/animal_name_vowels_audio/baboon_2_ncorah.mp3",
-    },
-    es: {
-      man: "",
-      dril: ""
-    }
-  },
-  C: {
-    en: {
-      chim: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_1_qcfs5u.mp3",
-      pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_2_besjij.mp3",
-      zee: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/chimpanzee_3_c9jbgo.mp3",
-    },
-    es: {
-      chim: "",
-      pan: "",
-      cé: ""
-    }
-  },
-  D: {
-    en: {
-      din: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_1_uisizq.mp3",
-      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/dingo_2_ksewju.mp3"
-    },
-    es: {
-      din: "",
-      go: ""
-    }
-  },
-  E: {
-    en: {
-      el: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_1_x7njho.mp3",
-      e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/elephant_2_tpecbo.mp3",
-      phant:
-        "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/elephant_3_ifv1kp.mp3"
-    },
-    es: {
-      e: "", 
-      le: "", 
-      fan: "", 
-      te: ""
-    }
-  },
-  F: {
-    en: {
-      frog: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/frog_1_ziaz9v.mp3",
-    },
-    es: {
-      ra: "",
-      na: ""
-    }
-  },
-  G: {
-    en: {
-      go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_1_ml8hee.mp3",
-      ril: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_2_e4b1vh.mp3",
-      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441728/animal_name_vowels_audio/gorilla_3_lj7nc5.mp3"
-    },
-    es: {
-      go: "",
-      ri: "",
-      la: ""
-    }
-  },
-  H: {
-    en: {
-      hy: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_1_nmxsgi.mp3",
-      e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_2_vbkgbo.mp3",
-      na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/hyena_3_nefma3.mp3"
-    },
-    es: {
-      hie: "",
-      na: ""
-    }
-  },
-  I: {
-    en: {
-      im: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_1_uwkk50.mp3",
-      pal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_2_qbm7el.mp3",
-      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/impala_3_w5g2rc.mp3",
-    },
-    es: {
-      im: "",
-      pa: "",
-      la: ""
-    }
-  },
-  J: {
-    en: {
-      jag: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/jaguar_1_rsytkv.mp3",
-      u: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_2_yvkrbl.mp3",
-      ar: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/jaguar_3_qjl6n0.mp3",
-    },
-    es: {
-      ja: "",
-      guar: ""
-    }
-  },
-  K: {
-    en: {
-      ko: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_1_aczrfi.mp3",
-      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_2_fzcj6v.mp3",
-      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441729/animal_name_vowels_audio/koala_3_dlcaiz.mp3",
-    },
-    es: {
-      co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896701/animal-audio-ES/syllables/coala-co.m4a",
-      a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-a.m4a",
-      la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-la.m4a"
-    }
-  },
-  L: {
-    en: {
-      le: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_1_snqqev.mp3",
-      mur: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/lemur_2_i58c0k.mp3",
-    },
-    es: {
-      lé: "",
-      mur: ""
-    }
-  },
-  M: {
-    en: {
-      ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_1_v3cwcl.mp3",
-      caw: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/macaw_2_qhttqp.mp3",
-    },
-    es: {
-      gua: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896703/animal-audio-ES/syllables/guacamaya-gua.m4a", 
-      ca: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ca.m4a", 
-      ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ma.m4a", 
-      ya: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ya.m4a"
-    }
-  },
+  A: {},
+  B: {},
+  C: {},
+  D: {},
+  E: {},
+  F: {},
+  G: {},
+  H: {},
+  I: {},
+  J: {},
+  K: {},
+  L: {},
+  M: {},
   N: {
     en: {
       num: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441730/animal_name_vowels_audio/numbat_1_db9zmv.mp3",
