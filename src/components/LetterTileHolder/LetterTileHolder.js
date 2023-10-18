@@ -34,7 +34,7 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
             <div className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5">
               <SyllableTile
                 value={value}
-                syllableTiles={syllables}
+                syllables={syllables}
               />
             </div>
           )}
@@ -62,7 +62,7 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
             <div className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5">
               <SyllableTile
                 value={value}
-                syllableTiles={syllables}
+                syllables={syllables}
               />
             </div>
           )}

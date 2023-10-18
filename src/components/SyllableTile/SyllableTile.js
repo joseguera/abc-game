@@ -1,18 +1,17 @@
 import React from "react";
-import { animalSyllables } from "zebrAPI";
 import { useSelector } from "react-redux";
 
-export default function SyllableTile({ value, syllableTiles }) {
+export default function SyllableTile({ value, syllables }) {
   const language = useSelector((state) => state.language.value);
   const playAudio = (syl) => {
     const syllable = syl.toLowerCase();
-    new Audio(animalSyllables[value][language][syllable]).play();
+    new Audio(syllables[language].audio[syllable.toLowerCase()]).play();
   };
 
 
-  const last = syllableTiles[language].length - 1;
+  const last = syllables[language].length - 1;
 
-  return syllableTiles[language].map((syllable, idx) => {
+  return syllables[language].text.map((syllable, idx) => {
     return Array.isArray(syllable) ? (
       syllable.map((syl, idx) => {
         return idx === 0 ? (
