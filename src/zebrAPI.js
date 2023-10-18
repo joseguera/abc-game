@@ -1173,35 +1173,6 @@ export const scienceArray = [
   },
 ];
 
-export const animalSyllables = {
-  A: {},
-  B: {},
-  C: {},
-  D: {},
-  E: {},
-  F: {},
-  G: {},
-  H: {},
-  I: {},
-  J: {},
-  K: {},
-  L: {},
-  M: {},
-  N: {},
-  O: {},
-  P: {},
-  Q: {},
-  R: {},
-  S: {},
-  T: {},
-  U: {},
-  V: {},
-  W: {},
-  X: {},
-  Y: {},
-  Z: {},
-};
-
 export const alphabetLetterSounds = {
     en: {
       A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/A.mp3",

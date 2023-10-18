@@ -16,7 +16,6 @@ export default function App() {
   const menuModal = useRef();
   // SCIENCE
   const [animals, setAnimals] = useLocalStorage("animals", scienceArray);
-  const [syllables, setSyllables] = useState(animalSyllables);
 
   // ARTS
   const [instruments, setInstruments] = useLocalStorage(
@@ -52,7 +51,12 @@ export default function App() {
       to the LetterDetail
   */
 
-  const handleOpenClose = (id, category, list, audio = new Audio()) => {
+  const handleOpenClose = (id, category, audio = new Audio()) => {
+    let list = [];
+    if (category === "science") list = animals;
+    if (category === "math") list = numbers;
+    if (category === "arts") list = instruments;
+
     const newList = list.map((element) => {
       if (id === element.id) {
         element.clicked = !element.clicked;
@@ -131,7 +135,6 @@ export default function App() {
               alphabetLetterSounds,
               detailOpen,
               handleOpenClose,
-              syllables,
               handleLike,
             }}
           />

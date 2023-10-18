@@ -11,9 +11,7 @@ import {
   SlideShow,
 } from "components";
 
-export default function CardDetail({
-  handleOpenClose
-}) {
+export default function CardDetail() {
   const [isDestructOpen, setIsDestructOpen] = useState(false);
   const [audio, setAudio] = useState(new Audio());
   const [button, setButton] = useState(1);
@@ -25,7 +23,7 @@ export default function CardDetail({
 
   ///////////// FIX THIS //////////////////////////
 
-  const { animals, instruments, numbers, alphabetLetterSounds } = useOutletContext();
+  const { animals, instruments, numbers, alphabetLetterSounds, handleOpenClose } = useOutletContext();
 
   const currList = { animals, instruments, numbers }
 
@@ -100,7 +98,7 @@ export default function CardDetail({
             <div className="text-3xl lg:text-6xl">{item.value}</div>
             <div 
               className="text-3xl lg:text-5xl"
-              onClick={() => handleOpenClose(item.id, item.category, item, audio)}
+              onClick={() => handleOpenClose(item.id, item.category, audio)}
             >
               <Link className="decoration-none hover:text-[#4d8080]" to={`/${item.category}`}>
                 &#x2715;
@@ -139,7 +137,6 @@ export default function CardDetail({
                 id={item.id}
                 category={category}
                 name={item.name}
-                // name={item.name.en}
                 nameSound={item.nameSound}
                 soundEffect={item.soundEffect}
                 funFacts={item.funFacts}
