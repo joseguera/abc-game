@@ -16,8 +16,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.alligator,
     name: {
-      en: "Alligator",
-      es: "Caimán",
+      en: {
+        text: "Alligator",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3", 
+      },
+      es: {
+        text: "Caimán",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/caiman.m4a" 
+      }
     },
     tiles: {
       en: ["Al-li-", "ga-", "tor"],
@@ -40,10 +46,6 @@ export const scienceArray = [
           mán: "" 
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3", 
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/caiman.m4a" 
     },
     soundEffect: [sounds.animals.alligator, sounds.animals.frog],
     funFacts: [
