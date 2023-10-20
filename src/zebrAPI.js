@@ -18,7 +18,7 @@ export const scienceArray = [
     name: {
       en: {
         text: "Alligator",
-        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3", 
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3"
       },
       es: {
         text: "Caimán",
@@ -63,8 +63,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.baboon,
     name: {
-      en: "Baboon",
-      es: "Mandril",
+      en: {
+        text: "Baboon",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3" 
+      },
+      es: {
+        text: "Mandril",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/mandril.m4a"  
+      }
     },
     tiles: {
       en: ["Ba-boon"],
@@ -86,10 +92,6 @@ export const scienceArray = [
         }
       }
     }, 
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3", 
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/mandril.m4a" 
-    },
     soundEffect:
       [sounds.animals.chimpanzee, sounds.animals.frog],
     funFacts: [
