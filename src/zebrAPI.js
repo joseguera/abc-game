@@ -109,8 +109,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.chimpanzee,
     name: {
-      en: "Chimpanzee",
-      es: "Chimpancé",
+      en: {
+        text: "Chimpanzee",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3"
+      }, 
+      es: {
+        text: "Chimpancé",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/chimpance.m4a"
+      } 
     },
     tiles: {
       en: ["Chim-", "pan-", "zee"],
@@ -133,10 +139,6 @@ export const scienceArray = [
           cé: ""
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/chimpance.m4a" 
     },
     soundEffect: [sounds.animals.chimpanzee, sounds.animals.frog],
     funFacts: [
