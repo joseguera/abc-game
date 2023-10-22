@@ -115,8 +115,8 @@ export const scienceArray = [
       }, 
       es: {
         text: "Chimpancé",
-        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/chimpance.m4a"
-      } 
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/chimpance.m4a" 
+      }
     },
     tiles: {
       en: ["Chim-", "pan-", "zee"],
