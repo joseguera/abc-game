@@ -156,8 +156,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.dingo,
     name: {
-      en: "Dingo",
-      es: "Dingo",
+      en: {
+        text: "Dingo",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3"
+      },
+      es: {
+        text: "Dingo",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/dingo.m4a" 
+      }
     },
     tiles: {
       en: ["Din-go"],
@@ -179,10 +185,6 @@ export const scienceArray = [
         }
       }
     }, 
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/dingo.m4a" 
-    },
     soundEffect: [sounds.animals.dingo, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661500/animal_facts_audio/dingo_fact1_kswj5g.mp3",
