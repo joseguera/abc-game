@@ -201,11 +201,16 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.elephant,
     name: {
-      en: "Elephant",
-      es: "Elefante",
+      en: {
+        text: "Elephant",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3"
+      }, 
+      es: {
+        text: "Elefante",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/elefante.m4a" 
+      } 
     },
     tiles: {
-      
       en: ["El-e-", "phant"],
       es: ["E-le-", "fan-te"]
     },
@@ -228,10 +233,6 @@ export const scienceArray = [
           te: ""
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/elefante.m4a" 
     },
     soundEffect: [sounds.animals.elephant, sounds.animals.frog],
     funFacts: [
