@@ -250,8 +250,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.frog,
     name: {
-      en: "Frog",
-      es: "Rana",
+      en: {
+        text: "Frog",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
+      }, 
+      es: {
+        text: "Rana",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/rana.m4a"
+      } 
     },
     tiles: {
       en: ["Frog"],
@@ -271,10 +277,6 @@ export const scienceArray = [
           na: ""
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655872/animal-audio-ES/full-names/rana.m4a" 
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
