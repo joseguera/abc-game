@@ -294,8 +294,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.gorilla,
     name: {
-      en: "Gorilla",
-      es: "Gorila",
+      en: {
+        text: "Gorilla",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3"
+      },
+      es: {
+        text: "Gorila",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/gorila.m4a" 
+      } 
     },
     tiles: {
       en: ["Go-", "ril-la"],
@@ -318,10 +324,6 @@ export const scienceArray = [
           la: ""
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/gorila.m4a" 
     },
     soundEffect: [sounds.animals.gorilla, sounds.animals.frog],
     funFacts: [
