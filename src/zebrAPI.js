@@ -1149,8 +1149,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.zebra,
     name: {
-      en: "Zebra",
-      es: "Cebra",
+      en: {
+        text: "Zebra",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3"
+      }, 
+      es: {
+        text: "Cebra",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786189/animal-audio-ES/full-names/cebra-name.m4a" 
+      }
     },
     tiles: {
       en: ["Ze-bra"],
@@ -1171,10 +1177,6 @@ export const scienceArray = [
           bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786250/animal-audio-ES/syllables/cebra-bra.m4a",
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3", 
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786189/animal-audio-ES/full-names/cebra-name.m4a" 
     },
     soundEffect: [sounds.animals.zebra, sounds.animals.okapi],
     funFacts: [
