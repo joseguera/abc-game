@@ -341,8 +341,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.hyena,
     name: {
-      en: "Hyena",
-      es: "Hiena",
+      en: {
+        text: "Hyena",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3"
+      },
+      es: {
+        text: "Hiena",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/hiena.m4a" 
+      }
     },
     tiles: {
       en: ["Hy-e-na"],
@@ -364,10 +370,6 @@ export const scienceArray = [
           na: ""
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3", 
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696655871/animal-audio-ES/full-names/hiena.m4a" 
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
