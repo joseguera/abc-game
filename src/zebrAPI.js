@@ -387,8 +387,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.impala,
     name: {
-      en: "Impala",
-      es: "Impala",
+      en: {
+        text: "Impala",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3"
+      }, 
+      es: {
+        text: "Impala",
+        audio: "" 
+      }
     },
     tiles: {
       en: ["Im-", "pal-a"],
@@ -412,10 +418,6 @@ export const scienceArray = [
         }
       }
     },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
-      es: "" 
-    },
     soundEffect: [sounds.animals.impala, sounds.animals.frog],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661505/animal_facts_audio/impala_fact1_nq6zzx.mp3",
@@ -432,8 +434,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.jaguar,
     name: {
-      en: "Jaguar",
-      es: "Jaguar"
+      en: {
+        text: "Jaguar",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3"
+      }, 
+      es: {
+        text: "Jaguar",
+        audio: "" 
+      }
     },
     tiles: {
       en: ["Jag-", "u-ar"],
@@ -456,10 +464,6 @@ export const scienceArray = [
         }
       }
     },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
-      es: "" 
-    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661506/animal_facts_audio/jaguar_fact1_nfjkrf.mp3",
@@ -476,8 +480,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.koala,
     name: {
-      en: "Koala",
-      es: "Coala",
+      en: {
+        text: "Koala",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3"
+      }, 
+      es: {
+        text: "Coala",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896594/animal-audio-ES/full-names/coala-name.m4a" 
+      }
     },
     tiles: {
       en: ["Ko-", "a-la"],
@@ -500,10 +510,6 @@ export const scienceArray = [
           la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-la.m4a"
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
-      es: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896594/animal-audio-ES/full-names/coala-name.m4a" 
     },
     soundEffect: [sounds.animals.okapi, sounds.animals.frog],
     funFacts: [
