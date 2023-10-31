@@ -1085,8 +1085,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.xenops,
     name: {
-      en: "Xenops",
-      es: "Picolezna",
+      en: {
+        text: "Xenops",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3"
+      },
+      es: {
+        text: "Picolezna",
+        audio: "" 
+      }
     },
     tiles: {
       en: ["Xe-nops"],
@@ -1110,10 +1116,6 @@ export const scienceArray = [
         }
       }
     },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3", 
-      es: "" 
-    },
     soundEffect: [sounds.animals.xenops, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/xenops_fact1_jecyvz.mp3",
@@ -1130,8 +1132,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.yellow_mongoose,
     name: {
-      en: "Yellow Mongoose",
-      es: "Mangosta Amarilla",
+      en: {
+        text: "Yellow Mongoose",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3"
+      }, 
+      es: {
+        text: "Mangosta Amarilla",
+        audio: "" 
+      }
     },
     tiles: {
       en: [["Yel-low"], ["Mon-", "goose"]],
@@ -1160,10 +1168,6 @@ export const scienceArray = [
           lla: "",
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3", 
-      es: "" 
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
