@@ -990,8 +990,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.vervet_monkey,
     name: {
-      en: "Vervet Monkey",
-      es: "Mono Vervet",
+      en: {
+        text: "Vervet Monkey",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3"
+      },
+      es: {
+        text: "Mono Vervet",
+        audio: "" 
+      } 
     },
     tiles: {
       en: [["Ver-vet"], ["Mon-key"]],
@@ -1017,10 +1023,6 @@ export const scienceArray = [
         }
       }
     },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3", 
-      es: "" 
-    },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661501/animal_facts_audio/vervet_monkey_fact1_cz2295.mp3",
@@ -1037,8 +1039,14 @@ export const scienceArray = [
     clicked: false,
     image: images.animals.warthog,
     name: {
-      en: "Warthog",
-      es: "Jabalí",
+      en: {
+        text: "Warthog",
+        audio: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3"
+      }, 
+      es: {
+        text: "Jabalí",
+        audio: "" 
+      }
     },
     tiles: {
       en: ["Wart-", "hog"],
@@ -1060,10 +1068,6 @@ export const scienceArray = [
           lí: "",
         }
       }
-    },
-    nameSound: { 
-      en: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3", 
-      es: "" 
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
