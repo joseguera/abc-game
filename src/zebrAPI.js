@@ -2247,8 +2247,14 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.zarb,
     name: {
-      en: "Zarb",
-      es: "Tombak",
+      en: {
+        text: "Zarb",
+        audio: ""
+      }, 
+      es: {
+        text: "Tombak",
+        audio: ""
+      } 
     },
     slides: [{
       placeOfOrigin: "Iran",
