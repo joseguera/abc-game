@@ -2183,8 +2183,14 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.xalam,
     name: {
-      en: "Xalam",
-      es: "Xalam",
+      en: {
+        text: "Xalam",
+        audio: ""
+      }, 
+      es: {
+        text: "Xalam",
+        audio: ""
+      } 
     },
     slides: [{
       placeOfOrigin: "Africa",
@@ -2215,8 +2221,14 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.yuka,
     name: {
-      en: "Yuka",
-      es: "Yuka",
+      en: {
+        text: "Yuka",
+        audio: ""
+      }, 
+      es: {
+        text: "Yuka",
+        audio: ""
+      } 
     },
     slides: [{
       placeOfOrigin: "Cuba",
@@ -2230,8 +2242,6 @@ export const artsArray = [
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/yellow_mongoose_fact1_jgd2eq.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact2_ugljou.mp3",
@@ -2268,8 +2278,6 @@ export const artsArray = [
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
