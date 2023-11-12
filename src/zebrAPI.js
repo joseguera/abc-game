@@ -2151,8 +2151,14 @@ export const artsArray = [
     clicked: false,
     image: images.instruments.waterphone,
     name: {
-      en: "Waterphone",
-      es: "Waterphone",
+      en: {
+        text: "Waterphone",
+        audio: ""
+      }, 
+      es: {
+        text: "Waterphone",
+        audio: ""
+      } 
     },
     slides: [{
       placeOfOrigin: "United States",
@@ -2166,8 +2172,6 @@ export const artsArray = [
       video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
     }],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
-    nameSound:
-      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact1_senecj.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact2_czrjpl.mp3",
