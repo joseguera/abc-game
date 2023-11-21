@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function NameButton({ name, category, nameSound }) {
+    const language = useSelector((state) => state.language.value);
   const playing = useSelector((state) => state.playing.value);
   const [audio, setAudio] = useState(
     typeof Audio !== "undefined" && new Audio(nameSound)

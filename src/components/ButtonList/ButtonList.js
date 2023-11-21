@@ -12,7 +12,7 @@ export default function ButtonList({ list, category }) {
           return (
             <div className="flex flex-row" key={item.id}>
               {/* <ButtonRow key={item._id}> */}
-              <Button category={category} item={item} />
+              <Button item={item} />
             </div>
           );
         })}
