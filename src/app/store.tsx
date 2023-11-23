@@ -3,6 +3,12 @@ import playingReducer from '../features/playing/playingSlice'
 import languageReducer from '../features/language/languageSlice'
 import thunk from "redux-thunk";
 
+export interface RootState {
+  language: {
+    value: string;
+  }
+}
+
 const allReducers = combineReducers({
     playing: playingReducer,
     language: languageReducer
