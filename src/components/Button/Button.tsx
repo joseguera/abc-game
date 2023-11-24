@@ -1,5 +1,4 @@
 import React from "react";
-import { RootState } from "../../app/store"
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +41,12 @@ interface ButtonProps {
     background: string;
   };
 };
+
+interface RootState {
+    language: {
+      value: string;
+    }  
+}
 
 const Button: React.FC<ButtonProps> = ({ item: { id, value, image, name, isLiked, category } }) => {
   const language = useSelector((state: RootState) => state.language.value);
