@@ -4,16 +4,28 @@ import { change } from "../../features/playing/playingSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
-export default function FactButton({ funFacts, getAudio }) {
+interface FactButtonProps {
+  funFacts: string[];
+  getAudio: (arg0: HTMLAudioElement) => void;
+}
+
+interface RootState {
+  playing: {
+    value: string;
+  }  
+}
+
+const FactButton: React.FC<FactButtonProps> = ({ funFacts, getAudio }) => {
   const dispatch = useDispatch();
-  const playing = useSelector((state) => state.playing.value);
+  const playing = useSelector((state: RootState) => state.playing.value);
   const [factCounter, setFactCounter] = useState(0);
-  const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio(funFacts[0])
+  const [audio, setAudio] = useState<HTMLAudioElement>(
+    // typeof Audio !== "undefined" && new Audio(funFacts[0])
+    new Audio(funFacts[0])
   );
   const [audioTrackDuration, setAudioTrackDuration] = useState(0);
 
-  const setAudioTrack = (factNumber) => {
+  const setAudioTrack = (factNumber: number) => {
     setAudio((currentElement) => {
       currentElement = new Audio(funFacts[factNumber]);
       return currentElement;
@@ -62,4 +74,6 @@ export default function FactButton({ funFacts, getAudio }) {
       )}
     </>
   );
-}
+};
+
+export default FactButton;
