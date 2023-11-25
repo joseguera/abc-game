@@ -2,17 +2,57 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { LetterTile, SyllableTile } from "components";
 
-export default function LetterTileHolder({ name, isSpelled, tiles, value, syllables, alphabetLetterSounds }) {
-  const language = useSelector((state) => state.language.value);
+interface LetterTileHolderProps {
+    value: string;
+    name: {
+      en: {
+        text: string;
+        audio: string;
+      };
+      es: {
+        text: string;
+        audio: string;
+      };
+    };
+    tiles: {
+      en: string[][];
+      es: string[][];
+    };
+    syllables: {
+      en: {
+        text: string[];
+        audio: Record<string, string>;
+      };
+      es: {
+        text: string[];
+        audio: Record<string, string>;
+      };
+    };
+    isSpelled: boolean;
+    alphabetLetterSounds: {
+      en: Record<string, string>;
+      es: Record<string, string>;
+    };
+};
+
+interface RootState {
+  language: {
+    value: string;
+  }  
+}
+
+const LetterTileHolder: React.FC<LetterTileHolderProps> = ({ value, name, tiles, syllables, isSpelled, alphabetLetterSounds }) => {
+  const language = useSelector((state: RootState) => state.language.value);
+  const newLang = (language !== 'en') ? 'en' : 'es';
 
   return (
     <div
       className="flex justify-center items-center flex-col gap-x-4 w-full"
     >
-      {name[language].length > 10 ? (
+      {name[newLang].text.length > 10 ? (
         <div>
           {isSpelled ? (
-            tiles[language].map((tile) => {
+            tiles[newLang].map((tile) => {
               return tile.map((letter, idx) => {
                 return (
                   <div 
@@ -23,7 +63,7 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
                       <LetterTile
                         key={idx + l}
                         letter={l}
-                        letterSound={alphabetLetterSounds[language]}
+                        letterSound={alphabetLetterSounds[newLang]}
                       />
                     ))}
                   </div>
@@ -42,17 +82,17 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
       ) : (
         <div>
           {isSpelled ? (
-            tiles[language].map((tile, idx) => {
+            tiles[newLang].map((tile, idx) => {
               return (
                 <div 
-                  key={idx + tile}
+                  key={idx.toString() + tile}
                   className="flex justify-center flex-row flex-wrap gap-0.5 mb-0.5"
                 >
-                  {tile.split("").map((t, idx) => (
+                  {tile.toString().split("").map((t, idx) => (
                     <LetterTile
                       key={idx + t}
                       letter={t}
-                      letterSound={alphabetLetterSounds[language]}
+                      letterSound={alphabetLetterSounds[newLang]}
                     />
                   ))}
                 </div>
@@ -70,4 +110,6 @@ export default function LetterTileHolder({ name, isSpelled, tiles, value, syllab
       )}
     </div>
   );
-}
+};
+
+export default LetterTileHolder;
