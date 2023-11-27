@@ -1138,7 +1138,7 @@ export const scienceArray = [
       }, 
       es: {
         text: "Mangosta Amarilla",
-        audio: "" 
+        audio: "audio.mp4" 
       }
     },
     tiles: {
