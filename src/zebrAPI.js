@@ -42,8 +42,8 @@ export const scienceArray = [
       es: {
         text: ["Cai", "mán"],
         audio: { 
-          cai: "",
-          mán: "" 
+          cai: "audio.mp3",
+          mán: "audio.mp3" 
         }
       }
     },
