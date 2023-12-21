@@ -91,8 +91,8 @@ export const scienceArray = [
       es: {
         text: ["Man", "dril"],
         audio: {
-          man: "audio.mp3",
-          dril: "audio.mp3",
+          man: "audio_file1.mp3",
+          dril: "audio_file2.mp3",
         },
       },
     },
