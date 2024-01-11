@@ -1,13 +1,10 @@
 // Design for  zebrAPI which is the backbone of the Aby Zebra web app
-
 import images from "./images/index.js";
 import sounds from "./sounds/index.js";
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
-
-// TEST NOTE
 
 export const scienceArray = [
   {
@@ -1225,72 +1222,6 @@ export const scienceArray = [
     background: "bg-card-blue"
   },
 ];
-
-export const alphabetLetterSounds = {
-    en: {
-      A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/A.mp3",
-      B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/B.mp3",
-      C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/C.mp3",
-      D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/D.mp3",
-      E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/E.mp3",
-      F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/F.mp3",
-      G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/G.mp3",
-      H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/H.mp3",
-      I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/I.mp3",
-      J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/J.mp3",
-      K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/K.mp3",
-      L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695624/alphabet-letters-spoken/L.mp3",
-      M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/M.mp3",
-      N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/N.mp3",
-      O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/O.mp3",
-      P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/P.mp3",
-      Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/Q.mp3",
-      R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/R.mp3",
-      S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/S.mp3",
-      T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/T.mp3",
-      U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/U.mp3",
-      V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/V.mp3",
-      W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/W.mp3",
-      X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695625/alphabet-letters-spoken/X.mp3",
-      Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Y.mp3",
-      Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1667695626/alphabet-letters-spoken/Z.mp3"
-    },
-    es: {
-      A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703156/animal-audio-ES/alphabet/a.m4a",
-      Á: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703156/animal-audio-ES/alphabet/a.m4a",
-      B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703166/animal-audio-ES/alphabet/b.m4a",
-      C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703151/animal-audio-ES/alphabet/c.m4a",
-      D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703190/animal-audio-ES/alphabet/d.m4a",
-      E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703185/animal-audio-ES/alphabet/e.m4a",
-      É: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703185/animal-audio-ES/alphabet/e.m4a",
-      F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703157/animal-audio-ES/alphabet/f.m4a",
-      G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703169/animal-audio-ES/alphabet/g.m4a",
-      H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703182/animal-audio-ES/alphabet/h.m4a",
-      I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703177/animal-audio-ES/alphabet/i.m4a",
-      Í: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703177/animal-audio-ES/alphabet/i.m4a",
-      J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703179/animal-audio-ES/alphabet/j.m4a",
-      K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703187/animal-audio-ES/alphabet/k.m4a",
-      L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703159/animal-audio-ES/alphabet/l.m4a",
-      LL: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703148/animal-audio-ES/alphabet/ll.m4a",
-      M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703149/animal-audio-ES/alphabet/m.m4a",
-      N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703189/animal-audio-ES/alphabet/n.m4a",
-      Ñ: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703180/animal-audio-ES/alphabet/nn.m4a",
-      O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703174/animal-audio-ES/alphabet/o.m4a",
-      Ó: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703174/animal-audio-ES/alphabet/o.m4a",
-      P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703164/animal-audio-ES/alphabet/p.m4a",
-      Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703154/animal-audio-ES/alphabet/q.m4a",
-      R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703162/animal-audio-ES/alphabet/r.m4a",
-      S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703152/animal-audio-ES/alphabet/s.m4a",
-      T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703175/animal-audio-ES/alphabet/t.m4a",
-      U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703172/animal-audio-ES/alphabet/u.m4a",
-      Ú: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703172/animal-audio-ES/alphabet/u.m4a",
-      V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703192/animal-audio-ES/alphabet/v.m4a",
-      W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703184/animal-audio-ES/alphabet/w.m4a",
-      X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703161/animal-audio-ES/alphabet/x.m4a",
-      Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703170/animal-audio-ES/alphabet/y.m4a",
-      Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696703167/animal-audio-ES/alphabet/z.m4a"
-    }
-};
 
 export const animalFactCitations = {
   alligator: {
