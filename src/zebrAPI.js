@@ -57,8 +57,8 @@ export const scienceArray = [
       es: {
         text: ["Cai", "mán"],
         audio: { 
-          cai: "audio.mp3",
-          mán: "audio.mp3" 
+          cai: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704751992/alphabet_list/syllables/ES/01-cai.m4a",
+          mán: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704751992/alphabet_list/syllables/ES/02-man.m4a" 
         }
       }
     },
@@ -109,8 +109,8 @@ export const scienceArray = [
       es: {
         text: ["Man", "dril"],
         audio: {
-          man: "audio.mp3",
-          dril: "audio.mp3"
+          man: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752152/alphabet_list/syllables/ES/03-man.m4a",
+          dril: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/04-dril.m4a"
         }
       }
     }, 
@@ -163,9 +163,9 @@ export const scienceArray = [
       es: {
         text: ["Chim", "pan", "cé"],
         audio: {
-          chim: "",
-          pan: "",
-          cé: ""
+          chim: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752152/alphabet_list/syllables/ES/05-chim.m4a",
+          pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/06-pan.m4a",
+          cé: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752152/alphabet_list/syllables/ES/07-ce.m4a"
         }
       }
     },
@@ -216,8 +216,8 @@ export const scienceArray = [
       es: {
         text: ["Din", "go"],
         audio: {
-          din: "",
-          go: ""
+          din: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/08-din.m4a",
+          go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/09-go.m4a"
         }
       }
     }, 
@@ -270,10 +270,10 @@ export const scienceArray = [
       es: {
         text: ["E", "le", "fan", "te"],
         audio: {
-          e: "", 
-          le: "", 
-          fan: "", 
-          te: ""
+          e: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752154/alphabet_list/syllables/ES/10-e.m4a", 
+          le: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752152/alphabet_list/syllables/ES/11-le.m4a", 
+          fan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752154/alphabet_list/syllables/ES/12-fan.m4a", 
+          te: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/13-te.m4a"
         }
       }
     },
@@ -323,8 +323,8 @@ export const scienceArray = [
       es: {
         text: ["Ra", "na"],
         audio: {
-          ra: "",
-          na: ""
+          ra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752154/alphabet_list/syllables/ES/14-ra.m4a",
+          na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752153/alphabet_list/syllables/ES/15-na.m4a"
         }
       }
     },
@@ -376,9 +376,9 @@ export const scienceArray = [
       es: {
         text: ["Go", "ri", "la"],
         audio: {
-          go: "",
-          ri: "",
-          la: ""
+          go: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752906/alphabet_list/syllables/ES/16-go.m4a",
+          ri: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752906/alphabet_list/syllables/ES/17-ri.m4a",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752904/alphabet_list/syllables/ES/18-la.m4a"
         }
       }
     },
@@ -430,8 +430,8 @@ export const scienceArray = [
       es: {
         text: ["Hie", "na"],
         audio: {
-          hie: "",
-          na: ""
+          hie: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752905/alphabet_list/syllables/ES/19-hie.m4a",
+          na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752906/alphabet_list/syllables/ES/20-na.m4a"
         }
       }
     },
@@ -483,9 +483,9 @@ export const scienceArray = [
       es: {
         text: ["Im", "pa", "la"],
         audio: {
-          im: "",
-          pa: "",
-          la: ""
+          im: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704752904/alphabet_list/syllables/ES/21-im.m4a",
+          pa: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753233/alphabet_list/syllables/ES/22-pa.m4a",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/23-la.m4a"
         }
       }
     },
@@ -537,8 +537,8 @@ export const scienceArray = [
       es: {
         text: ["Ja", "guar"],
         audio: {
-          ja: "",
-          guar: ""
+          ja: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/24-ja.m4a",
+          guar: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753233/alphabet_list/syllables/ES/25-guar.m4a"
         }
       }
     },
@@ -590,9 +590,9 @@ export const scienceArray = [
       es: {
         text: ["Co", "a", "la"],
         audio: {
-          co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896701/animal-audio-ES/syllables/coala-co.m4a",
-          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-a.m4a",
-          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/coala-la.m4a"
+          co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/26-co.m4a",
+          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/27-a.m4a",
+          la: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/28-la.m4a"
         }
       }
     },
@@ -643,8 +643,8 @@ export const scienceArray = [
       es: {
         text: ["Lé", "mur"],
         audio: {
-          lé: "",
-          mur: ""
+          lé: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753232/alphabet_list/syllables/ES/29-le.m4a",
+          mur: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704753233/alphabet_list/syllables/ES/30-mur.m4a"
         }
       }
     },
@@ -695,10 +695,10 @@ export const scienceArray = [
       es: {
         text: ["Gua", "ca", "ma", "ya"],
         audio: {
-          gua: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896703/animal-audio-ES/syllables/guacamaya-gua.m4a", 
-          ca: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ca.m4a", 
-          ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ma.m4a", 
-          ya: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696896702/animal-audio-ES/syllables/guacamaya-ya.m4a"
+          gua: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/31-gua.m4a", 
+          ca: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/32-ca.m4a", 
+          ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/33-ma.m4a", 
+          ya: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/34-ya.m4a"
         }
       }
     }, 
@@ -750,8 +750,8 @@ export const scienceArray = [
       es: {
         text: ["Num", "bat"],
         audio: {
-          num: "",
-          bat: ""
+          num: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754211/alphabet_list/syllables/ES/35-num.m4a",
+          bat: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/36-bat.m4a"
         }
       }
     },
@@ -803,9 +803,9 @@ export const scienceArray = [
       es: {
         text: ["O", "ka", "pi"],
         audio: {
-          o: "",
-          ka: "",
-          pi: ""
+          o: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/37-o.m4a",
+          ka: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/38-ka.m4a",
+          pi: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763933/alphabet_list/syllables/ES/39-pi.m4a"
         }
       }
     },
@@ -856,8 +856,8 @@ export const scienceArray = [
       es: {
         text: ["Pan", "da"],
         audio: {
-          pan: "",
-          da: ""
+          pan: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763933/alphabet_list/syllables/ES/40-pan.m4a",
+          da: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/41-da.m4a"
         }
       }
     },
@@ -908,8 +908,8 @@ export const scienceArray = [
       es: {
         text: ["Quet", "zal"],
         audio: {
-          quet: "",
-          zal: ""
+          quet: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/42-quet.m4a",
+          zal: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/43-zal.m4a"
         }
       }
     },
@@ -962,11 +962,11 @@ export const scienceArray = [
       es: {
         text: ["Ri", "no", "ce", "ron", "te"],
         audio: {
-          ri: "",
-          no: "",
-          ce: "",
-          ron: "",
-          te: ""
+          ri: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754210/alphabet_list/syllables/ES/44-ri.m4a",
+          no: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754211/alphabet_list/syllables/ES/45-no.m4a",
+          ce: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754209/alphabet_list/syllables/ES/46-ce.m4a",
+          ron: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754211/alphabet_list/syllables/ES/47-ron.m4a",
+          te: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754209/alphabet_list/syllables/ES/48-te.m4a"
         }
       }
     },
@@ -1017,9 +1017,9 @@ export const scienceArray = [
       es: {
         text: ["Ser", "pien", "te"],
         audio: {
-          ser: "",
-          pien: "",
-          te: ""
+          ser: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/49-ser.m4a",
+          pien: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/50-pien.m4a",
+          te: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/51-te.m4a"
         }
       }
     },
@@ -1070,8 +1070,8 @@ export const scienceArray = [
       es: {
         text: ["Ti", "gre"],
         es: {
-          ti: "",
-          gre: ""
+          ti: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/52-ti.m4a",
+          gre: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/53-gre.m4a"
         }
       }
     }, 
@@ -1122,10 +1122,10 @@ export const scienceArray = [
       es: {
         text: ["Pe", "re", "zo", "so"],
         audio: {
-          pe: "",
-          re: "",
-          zo: "",
-          so: ""
+          pe: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/54-pe.m4a",
+          re: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762283/alphabet_list/syllables/ES/55-re.m4a",
+          zo: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/56-zo.m4a",
+          so: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/57-so.m4a"
         }
       }
     },
@@ -1178,10 +1178,10 @@ export const scienceArray = [
       es: {
         text: [["Mo", "no"], ["Ver", "vet"]],
         audio: {
-          mo: "",
-          no: "",
-          ver: "",
-          vet: ""
+          mo: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763931/alphabet_list/syllables/ES/58-mo.m4a",
+          no: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763931/alphabet_list/syllables/ES/59-no.m4a",
+          ver: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763932/alphabet_list/syllables/ES/60-ver.m4a",
+          vet: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763933/alphabet_list/syllables/ES/61-vet.m4a"
         }
       }
     },
@@ -1232,9 +1232,9 @@ export const scienceArray = [
       es: {
         text: ["Ja", "ba", "lí"],
         audio: {
-          ja: "",
-          ba: "",
-          lí: "",
+          ja: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754955/alphabet_list/syllables/ES/62-ja.m4a",
+          ba: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704755552/alphabet_list/syllables/ES/63-ba.m4a",
+          lí: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754955/alphabet_list/syllables/ES/64-li.m4a",
         }
       }
     },
@@ -1285,10 +1285,10 @@ export const scienceArray = [
       es: {
         text: ["Pi", "co", "lez", "na"],
         audio: {
-          pi: "",
-          co: "",
-          lez: "",
-          na: ""
+          pi: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762030/alphabet_list/syllables/ES/65-pi.m4a",
+          co: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762031/alphabet_list/syllables/ES/66-co.m4a",
+          lez: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762030/alphabet_list/syllables/ES/67-lez.m4a",
+          na: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762030/alphabet_list/syllables/ES/68-na.m4a"
         }
       }
     },
@@ -1342,13 +1342,13 @@ export const scienceArray = [
       es: {
         text: [["Man", "gos", "ta"], ["A", "ma", "ri", "lla"]],
         audio: {
-          man: "",
-          gos: "",
-          ta: "",
-          a: "",
-          ma: "",
-          ri: "",
-          lla: "",
+          man: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754964/alphabet_list/syllables/ES/69-man.m4a",
+          gos: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/70-gos.m4a",
+          ta: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/71-ta.m4a",
+          a: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754983/alphabet_list/syllables/ES/72-a.m4a",
+          ma: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/73-ma.m4a",
+          ri: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/74-ri.m4a",
+          lla: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704755552/alphabet_list/syllables/ES/75-lla.m4a",
         }
       }
     },
@@ -1399,8 +1399,8 @@ export const scienceArray = [
       es: {
         text: ["Ce", "bra"],
         audio: {
-          ce: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786251/animal-audio-ES/syllables/cebra-ce.m4a",
-          bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696786250/animal-audio-ES/syllables/cebra-bra.m4a",
+          ce: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/76-ce.m4a",
+          bra: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/77-bra.m4a",
         }
       }
     },
