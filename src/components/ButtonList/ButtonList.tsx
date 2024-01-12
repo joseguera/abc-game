@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, PageHeader } from "components";
+import { Button, Header } from "components";
 
 interface ListItem {
     id: string;
@@ -47,7 +47,7 @@ const ButtonList: React.FC<ButtonListProps> = ({ category, list }) => {
   
   return (
     <div className="flex flex-col items-center">
-      <PageHeader pageTitle={capitalized} category={category} />
+      <Header pageTitle={capitalized} category={category} />
       <div className="flex flex-row flex-wrap gap-6 items-center justify-center">
         {list.map((item) => {
           return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeader, Button } from "components";
+import { Header, Button } from "components";
 import { useOutletContext, useParams } from "react-router-dom";
 import { FavoritesHolder, ButtonMatrix } from "./Favorites.styles";
 
@@ -11,7 +11,7 @@ export default function Favorites(props) {
 
   return (
     <FavoritesHolder>
-      <PageHeader pageTitle="My Favorites" />
+      <Header pageTitle="My Favorites" />
       <h2>Favorite Animals</h2>
       <ButtonMatrix>
         {favoriteAnimals.map((animal) => {
