@@ -1,5 +1,4 @@
 import React from 'react';
-import { RootState } from "../../app/store"
 import { useDispatch, useSelector } from "react-redux";
 import { change } from "../../features/language/languageSlice";
 
@@ -7,6 +6,12 @@ interface PageHeaderProps {
   category: string;
   pageTitle: string;
 };
+
+interface RootState {
+  language: {
+    value: string;
+  }
+}
 
 const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, category }) => {
   const dispatch = useDispatch();
