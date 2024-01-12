@@ -15,6 +15,7 @@ interface RootState {
 }
 
 const Header: React.FC<HeaderProps> = ({ pageTitle, category }) => {
+
   const dispatch = useDispatch();
   const language = useSelector((state: RootState) => state.language.value);
 
