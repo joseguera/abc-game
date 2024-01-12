@@ -1,14 +1,19 @@
 import React from 'react';
-import { RootState } from "../../app/store"
 import { useDispatch, useSelector } from "react-redux";
 import { change } from "../../features/language/languageSlice";
 
-interface PageHeaderProps {
+interface HeaderProps {
   category: string;
   pageTitle: string;
 };
 
-const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, category }) => {
+interface RootState {
+  language: {
+    value: string;
+  }  
+}
+
+const Header: React.FC<HeaderProps> = ({ pageTitle, category }) => {
   const dispatch = useDispatch();
   const language = useSelector((state: RootState) => state.language.value);
 
@@ -24,4 +29,4 @@ const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, category }) => {
   )
 }
 
-export default PageHeader;
+export default Header;

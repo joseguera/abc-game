@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw } from "@fortawesome/free-solid-svg-icons";
 
-const Header = ({ handleModal }) => {
+const NavBar = ({ handleModal }) => {
   return (
     <div className="bg-[#ff6347] w-full">
       <div className="flex flex-row items-center justify-center">
@@ -40,4 +40,4 @@ const Header = ({ handleModal }) => {
   );
 };
 
-export default Header;
+export default NavBar;

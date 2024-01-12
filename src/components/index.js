@@ -1,6 +1,5 @@
 export { default as Button } from "./Button";
 export { default as ButtonList } from "./ButtonList";
-// export { default as LanguageSwitch } from './LanguageSwitch'
 export { default as FactorButtons } from "./FactorButtons";
 export { default as LetterTileHolder } from "./LetterTileHolder";
 export { default as NameButton } from "./NameButton";
@@ -12,10 +11,10 @@ export { default as LetterTile } from "./LetterTile";
 export { default as SyllableTile } from "./SyllableTile";
 export { default as FactorUnitAnimations } from "./FactorUnitAnimations";
 export { default as MenuModal } from "./MenuModal";
-export { default as Header } from "./Header";
 export { default as LikeButton } from "./LikeButton";
 export { default as SlideShow } from "./SlideShow";
 export { default as CardDisplayToggle } from "./CardDisplayToggle";
 export { default as TenFrame } from "./TenFrame";
 export { default as ClearStorage } from "./ClearStorage";
-export { default as PageHeader } from "./PageHeader";
+export { default as NavBar } from "./NavBar";
+export { default as Header } from "./Header";

@@ -6,7 +6,7 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { Header, MenuModal } from "components";
+import { NavBar, MenuModal } from "components";
 import { Outlet} from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import "./styles.css";
@@ -125,7 +125,7 @@ export default function App() {
       {
         // hasAnimal  &&
         <div className="flex flex-col justify-center items-center w-full">
-          <Header handleModal={handleModal} />
+          <NavBar handleModal={handleModal} />
           <MenuModal menuModal={menuModal} />
           <Outlet
             context={{
