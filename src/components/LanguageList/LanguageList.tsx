@@ -1,28 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { change } from "../../features/language/languageSlice";
 
-interface LanguageListProps {
-  getLangPopup: (option: boolean) => void;
+interface LangList {
+    lang: string;
+    text: string;
+    selected: boolean;
 }
 
-const LanguageList: React.FC<LanguageListProps> = ({ getLangPopup }) => {
+interface LanguageListProps {
+  getLangPopup: (option: boolean) => void;
+  getSelected: (lang: string) => void;
+  langList: LangList[];
+}
+
+const LanguageList: React.FC<LanguageListProps> = ({ getLangPopup, getSelected, langList }) => {
   const dispatch = useDispatch();
-
-  const [langList, setLangList] = useState([
-    { lang: "en", text: "English", selected: true },
-    { lang: "es", text: "Español", selected: false },
-  ]);
-
-  function getSelected(lang: string) {
-    setLangList(
-      langList.map((language) =>
-        lang === language.lang
-          ? { ...language, selected: true }
-          : { ...language, selected: false }
-      )
-    );
-  }
 
   return (
     <div className="absolute top-12 bg-[#fcd783] shadow-xl rounded-lg w-fit h-fit z-10 shadow-xl p-4">
@@ -32,9 +25,9 @@ const LanguageList: React.FC<LanguageListProps> = ({ getLangPopup }) => {
             key={lang.lang}
             className="cursor-pointer flex flex-row items-center gap-4"
             onClick={() => {
-              getLangPopup(false);
-              dispatch(change(lang.lang));
-              getSelected(lang.lang);
+                getSelected(lang.lang);
+                dispatch(change(lang.lang));
+                getLangPopup(false);
             }}
           >
             <div className="w-5 h-5 rounded-full border-2 border-[#ff6347] flex justify-center items-center">
