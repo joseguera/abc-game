@@ -35,7 +35,7 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     fontFamily: {
-      heading: ["DM Sans", "Helvetica", "Arial"],
+      heading: ["cormorant", "Helvetica", "Arial"],
       body: ["Inter", "Helvetica", "Arial"],
     },
     lineHeight: {
