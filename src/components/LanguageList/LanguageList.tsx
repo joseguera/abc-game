@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { change } from "../../features/language/languageSlice";
 
@@ -16,6 +16,13 @@ interface LanguageListProps {
 
 const LanguageList: React.FC<LanguageListProps> = ({ getLangPopup, getSelected, langList }) => {
   const dispatch = useDispatch();
+  const [langHover, setLangHover] = useState("w-5 h-5");
+
+function getHovered() {
+    langList.map(lang => {
+        return lang.selected === true ? setLangHover("w-3 h-3") : setLangHover("w-5 h-5"); 
+    })
+} 
 
   return (
     <div className="absolute top-12 bg-[#fcd783] shadow-xl rounded-lg w-fit h-fit z-10 shadow-xl p-4">
@@ -29,10 +36,11 @@ const LanguageList: React.FC<LanguageListProps> = ({ getLangPopup, getSelected, 
                 dispatch(change(lang.lang));
                 getLangPopup(false);
             }}
+            onMouseOver={() => getHovered()}
           >
             <div className="w-5 h-5 rounded-full border-2 border-[#ff6347] flex justify-center items-center">
               <div
-                className={`w-5 h-5 rounded-full bg-[${lang.selected ? "#ff6347" : "none"}]`}
+                className={`${langHover} rounded-full bg-[${lang.selected ? "#ff6347" : "none"}]`}
               ></div>
             </div>
             <div className="text-[24px] hover:text-[#ff6347]">{lang.text}</div>

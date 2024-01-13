@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+// import App2 from "./App2";
 import { Home, About, Arts, CardDetail, Contact, Engineering, ErrorPage, Favorites, Math, Science, Shop, Technology } from "pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { store } from "./app/store";
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    // element: <App2 />,
     errorElement: <ErrorPage />,
     children: [
       {
