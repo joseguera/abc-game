@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonList, ClearStorage } from "components";
-import { useOutletContext, useParams } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 export default function Science(props) {
   const { animals } = useOutletContext();
