@@ -11,6 +11,7 @@ const NavBar = ({ handleModal }) => {
           <div>
             <Link to="/" className="text-decoration-line: none">
               <h1
+                className="heading"
                 style={{
                   fontSize: "2.5rem",
                   color: "#3c3f4a",
