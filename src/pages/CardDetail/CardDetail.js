@@ -100,7 +100,7 @@ export default function CardDetail() {
               className="text-3xl lg:text-5xl"
               onClick={() => handleOpenClose(item.id, item.category, audio)}
             >
-              <Link className="decoration-none hover:text-[#4d8080]" to={`/${item.category}`}>
+              <Link className="decoration-none hover:text-[#014885]" to={`/${item.category}`}>
                 &#x2715;
               </Link>
             </div>

@@ -9,10 +9,10 @@ module.exports = {
         '134': '32rem',
       },
       colors: {
-        "card-blue": "#aee1e1",
-        "card-green": "#ddffbb",
-        "card-red": "#fdcedf",
-        "card-yellow": "#ffffc2",
+        "card-blue": "#add8d2",
+        "card-green": "#c6d78d",
+        "card-red": "#eec5c1",
+        "card-yellow": "#f0e17c",
       },
       transitionDuration: {
         '5000': '5000ms',

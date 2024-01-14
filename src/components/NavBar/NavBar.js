@@ -5,10 +5,16 @@ import { faPaw } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({ handleModal }) => {
   return (
-    <div className="bg-[#ff6347] w-full">
-      <div className="flex flex-row items-center justify-center">
-        <div className="flex flex-row items-center justify-between gap-4">
-          <div>
+    <div className="bg-[#ff6347] w-full h-24 flex justify-center drop-shadow-xl">
+      <div className="flex flex-row items-center justify-between w-11/12">
+            {/* MENU ICON - NEEDS WORK!!! */}
+            <div className="flex w-8 h-8 items-center justify-around">
+              <FontAwesomeIcon
+                icon={faPaw}
+                className="h-6 leading-6 cursor-pointer hover:text-[#343434]"
+                onClick={() => handleModal()}
+              />
+            </div>
             <Link to="/" className="text-decoration-line: none">
               <h1
                 className="heading"
@@ -26,17 +32,7 @@ const NavBar = ({ handleModal }) => {
                 Aby Zebra
               </h1>
             </Link>
-          </div>
-          {/* MENU ICON - NEEDS WORK!!! */}
-          <div className="flex w-8 h-8 items-center justify-around">
-            <FontAwesomeIcon
-              icon={faPaw}
-              className="h-6 leading-6 cursor-pointer hover:text-[#343434]"
-              onClick={() => handleModal()}
-            />
-          </div>
         </div>
-      </div>
     </div>
   );
 };
