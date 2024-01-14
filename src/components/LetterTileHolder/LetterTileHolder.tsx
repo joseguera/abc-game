@@ -44,7 +44,6 @@ interface RootState {
 const LetterTileHolder: React.FC<LetterTileHolderProps> = ({ value, name, tiles, syllables, isSpelled, alphabetLetterSounds }) => {
   const language = useSelector((state: RootState) => state.language.value);
   const newLang = (language === 'en') ? 'en' : 'es';
-  console.log(language)
   return (
     <div
       className="flex justify-center items-center flex-col gap-x-4 w-full"

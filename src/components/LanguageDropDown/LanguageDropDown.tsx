@@ -6,8 +6,9 @@ import LanguageList from "components/LanguageList";
 export default function LanguageDropDown() {
   const [langPopup, setLangPopup] = useState(false);
   const [langList, setLangList] = useState([
-    { lang: "en", text: "English", selected: true },
-    { lang: "es", text: "Español", selected: false },
+    { lang: "en", text: "English", selected: true, hovered: false },
+    { lang: "es", text: "Español", selected: false, hovered: false },
+    // { lang: "fr", text: "Français", selected: false, hovered: false },
   ]);
   
   function getLangPopup(over: boolean) {
@@ -23,9 +24,18 @@ export default function LanguageDropDown() {
     )})
   }
 
+  function getHovered(lang: string) {
+    setLangList((prevState) => {
+        return prevState.map((language) =>
+          lang === language.lang
+            ? { ...language, hovered: true }
+            : { ...language, hovered: false }
+    )})
+  }
+
   return (
     <div
-      className="flex justify-center items-center relative"
+      className="flex justify-end items-center relative lg:justify-center"
       onMouseOver={() => getLangPopup(true)}
       onMouseOut={() => getLangPopup(false)}
     >
@@ -37,7 +47,7 @@ export default function LanguageDropDown() {
         />
       </div>
       {langPopup && 
-        <LanguageList getLangPopup={getLangPopup} getSelected={getSelected} langList={langList} />
+        <LanguageList getLangPopup={getLangPopup} getSelected={getSelected} getHovered={getHovered} langList={langList} />
       }
     </div>
   );
