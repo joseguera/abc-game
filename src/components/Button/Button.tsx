@@ -55,7 +55,7 @@ const Button: React.FC<ButtonProps> = ({ item: { id, value, image, name, isLiked
 
   return (
     <Link to={`/${category}/${id}`} className="decoration-none">
-      <div className="flex flex-col w-24 h-24 text-lg border border-[#3d674c] rounded-lg transition-all ease-out delay-150 text-[#3d674c] drop-shadow-md bg-[#e3dac9] p-1 hover:drop-shadow-lg hover:text-xl hover:text-[#558f69] focus:drop-shadow-xl lg:w-48 lg:flex-row lg:justify-between lg:p-2">
+      <div className="flex flex-col w-24 h-24 text-lg border border-[#022645] rounded-lg transition-all ease-out delay-150 text-[#022645] drop-shadow-md bg-[#EBE6D9] p-1 hover:drop-shadow-lg hover:bg-[#EEE9DD] hover:text-xl hover:text-[#014885] focus:drop-shadow-xl lg:w-48 lg:flex-row lg:justify-between lg:p-2">
         <div className="flex flex-row items-start justify-between lg:flex-col">
           <div className="flex items-start -mt-1 text-2xl lg:text-4xl">
             {value}

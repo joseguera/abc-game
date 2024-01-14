@@ -119,7 +119,7 @@ export default function App() {
 
   return (
     <div
-      className="min-w-screen bg-[#fde7b4] min-h-screen"
+      className="min-w-screen bg-[#F3F3E9] min-h-screen"
     >
       {loading && <div>Loading</div>}
       {
