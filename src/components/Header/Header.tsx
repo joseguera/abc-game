@@ -3,14 +3,15 @@ import { LanguageDropDown } from 'components';
 
 interface HeaderProps {
   pageTitle: string;
+  category: string;
 };
 const Header: React.FC<HeaderProps> = ({ pageTitle }) => {
 
   return (
     <div 
-      className='w-10/12 lg:w-3/5 flex justify-between text-4xl items-center gap-2.5 py-8'
+      className='w-11/12 flex justify-between text-4xl items-center gap-2.5 py-8'
     >
-        <div className="">{pageTitle}</div>
+        <div className="text-[48px] font-bold">{pageTitle}</div>
         <LanguageDropDown />
     </div>
   )

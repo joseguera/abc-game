@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaw } from "@fortawesome/free-solid-svg-icons";
+import mobileBars from "../../images/icons/bars-solid.svg";
 
 const NavBar = ({ handleModal }) => {
   return (
@@ -9,8 +9,9 @@ const NavBar = ({ handleModal }) => {
       <div className="flex flex-row items-center justify-between w-11/12">
             {/* MENU ICON - NEEDS WORK!!! */}
             <div className="flex w-8 h-8 items-center justify-around">
-              <FontAwesomeIcon
-                icon={faPaw}
+              <img
+                src={mobileBars}
+                alt="mobile menu"
                 className="h-6 leading-6 cursor-pointer hover:text-[#343434]"
                 onClick={() => handleModal()}
               />
