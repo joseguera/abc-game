@@ -6,7 +6,7 @@ import {
   animalSyllables,
   alphabetLetterSounds,
 } from "./zebrAPI";
-import { NavBar, MenuModal } from "components";
+import { NavBar, MenuModal, Footer } from "components";
 import { Outlet} from "react-router-dom";
 import useLocalStorage from "./hooks/useLocalStorage";
 import "./styles.css";
@@ -118,13 +118,11 @@ export default function App() {
   //////////////////////////////////////////
 
   return (
-    <div
-      className="min-w-screen bg-[#F3F3E9] min-h-screen"
-    >
+    <div className="min-w-screen bg-[#F3F3E9] min-h-screen">
       {loading && <div>Loading</div>}
       {
         // hasAnimal  &&
-        <div className="flex flex-col justify-center items-center w-full">
+        <div className="flex flex-col justify-between items-center w-full h-screen">
           <NavBar handleModal={handleModal} />
           <MenuModal menuModal={menuModal} />
           <Outlet
@@ -138,6 +136,7 @@ export default function App() {
               handleLike,
             }}
           />
+          <Footer />
         </div>
       }
     </div>
