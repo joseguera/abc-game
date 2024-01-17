@@ -14,7 +14,7 @@ const ButtonList: React.FC<ButtonListProps> = ({ category, list }) => {
   return (
     <div className="flex flex-col items-center">
       <Header pageTitle={capitalized} category={category} />
-      <div className="flex flex-row flex-wrap gap-6 items-center justify-center">
+      <div className="w-11/12 flex flex-row flex-wrap gap-6 items-center justify-between">
         {list.map((item) => {
           return (
             <div className="flex flex-row" key={item.id}>

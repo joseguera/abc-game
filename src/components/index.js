@@ -18,6 +18,7 @@ export { default as TenFrame } from "./TenFrame";
 export { default as ClearStorage } from "./ClearStorage";
 export { default as NavBar } from "./NavBar";
 export { default as Header } from "./Header";
+export { default as Footer } from "./Footer";
 export { default as LanguageDropDown } from "./LanguageDropDown";
 export { default as LanguageList } from "./LanguageList";
 
