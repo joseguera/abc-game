@@ -1,6 +1,21 @@
 import React from "react";
 import { Button, Header } from "components";
 
+
+interface AudioObject {
+  [key: string]: string;
+}
+
+interface SyllableLanguage {
+  text: string[];
+  audio: AudioObject;
+}
+
+interface Syllables {
+  en: SyllableLanguage;
+  es: SyllableLanguage;
+}
+
 interface ListItem {
     id: string;
     value: string;
@@ -20,24 +35,18 @@ interface ListItem {
       en: string[];
       es: string[];
     };
-    syllables: {
-      en: {
-        text: string[];
-        audio: Record<string, string>;
-      };
-      es: {
-        text: string[];
-        audio: Record<string, string>;
-      };
-    };
-    soundEffect: string[];
-    funFacts: string[];
+  syllables: Syllables;
+  soundEffect: string[];
+  funFacts: {
+    en: string[];
+    es: string[];
+  };
     isLiked: boolean;
     category: string;
     background: string;
 };
 
-interface ButtonListProps {
+export interface ButtonListProps {
   category: string;
   list: ListItem[];
 };
