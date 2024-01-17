@@ -2,12 +2,14 @@
 
 import images from "./images/index.js";
 import sounds from "./sounds/index.js";
+import { ListItem } from "zebraAPI";
+
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 
-export const scienceArray = [
+export const scienceArray:ListItem[] = [
   {
     id: "alligator",
     value: "A",
@@ -945,14 +947,14 @@ export const scienceArray = [
     syllables: {
       en: {
         text: ["Ti", "ger"],
-        en: {
+        audio: {
           ti: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/tiger_1_cmeugy.mp3",
           ger: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/tiger_2_dmfmjj.mp3",
         },
       },
       es: {
         text: ["Ti", "gre"],
-        es: {
+        audio: {
           ti: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/52-ti.m4a",
           gre: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704762282/alphabet_list/syllables/ES/53-gre.m4a",
         },
@@ -1039,14 +1041,13 @@ export const scienceArray = [
       },
     },
     tiles: {
-      en: [["Ver-vet"], ["Mon-key"]],
-      es: [["Mo-no"], ["Ver-vet"]],
+      en: ["Ver-vet", "Mon-key"],
+      es: ["Mo-no", "Ver-vet"],
     },
     syllables: {
       en: {
         text: [
-          ["Ver", "vet"],
-          ["Mon", "key"],
+          "Ver", "vet", "Mon", "key",
         ],
         audio: {
           ver: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_1_xvowle.mp3",
@@ -1057,8 +1058,7 @@ export const scienceArray = [
       },
       es: {
         text: [
-          ["Mo", "no"],
-          ["Ver", "vet"],
+          "Mo", "no", "Ver", "vet",
         ],
         audio: {
           mo: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763931/alphabet_list/syllables/ES/58-mo.m4a",
@@ -1199,17 +1199,15 @@ export const scienceArray = [
       },
     },
     tiles: {
-      en: [["Yel-low"], ["Mon-", "goose"]],
+      en: ["Yel-low", "Mon-", "goose"],
       es: [
-        ["Man-", "gos-ta"],
-        ["A-ma-", "ri-lla"],
+        "Man-", "gos-ta", "A-ma-", "ri-lla",
       ],
     },
     syllables: {
       en: {
         text: [
-          ["Yel", "low"],
-          ["Mon", "goose"],
+          "Yel", "low", "Mon", "goose",
         ],
         audio: {
           yel: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_1_m8jdxg.mp3",
@@ -1220,10 +1218,7 @@ export const scienceArray = [
         },
       },
       es: {
-        text: [
-          ["Man", "gos", "ta"],
-          ["A", "ma", "ri", "lla"],
-        ],
+        text: ["Man", "gos", "ta", "A", "ma", "ri", "lla"],
         audio: {
           man: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754964/alphabet_list/syllables/ES/69-man.m4a",
           gos: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704754954/alphabet_list/syllables/ES/70-gos.m4a",
