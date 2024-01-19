@@ -4,12 +4,11 @@ import images from "./images/index.js";
 import sounds from "./sounds/index.js";
 import { ListItem } from "zebraAPI";
 
-
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 
-export const scienceArray:ListItem[] = [
+export const scienceArray: ListItem[] = [
   {
     id: "alligator",
     value: "A",
@@ -310,8 +309,8 @@ export const scienceArray:ListItem[] = [
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: {
-      en: ["audio.m4a", "audio.m4a", "audio.m4a"],
-      es: ["audio.m4a", "audio.m4a", "audio.m4a"],
+      en: ["audio", "audio", "audio"],
+      es: ["audio", "audio", "audio"],
     },
     isLiked: false,
     category: "science",
@@ -1046,9 +1045,7 @@ export const scienceArray:ListItem[] = [
     },
     syllables: {
       en: {
-        text: [
-          "Ver", "vet", "Mon", "key",
-        ],
+        text: ["Ver", "vet", "Mon", "key"],
         audio: {
           ver: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_1_xvowle.mp3",
           vet: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441731/animal_name_vowels_audio/vervet_monkey_2_haaszc.mp3",
@@ -1057,9 +1054,7 @@ export const scienceArray:ListItem[] = [
         },
       },
       es: {
-        text: [
-          "Mo", "no", "Ver", "vet",
-        ],
+        text: ["Mo", "no", "Ver", "vet"],
         audio: {
           mo: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763931/alphabet_list/syllables/ES/58-mo.m4a",
           no: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704763931/alphabet_list/syllables/ES/59-no.m4a",
@@ -1200,15 +1195,11 @@ export const scienceArray:ListItem[] = [
     },
     tiles: {
       en: ["Yel-low", "Mon-", "goose"],
-      es: [
-        "Man-", "gos-ta", "A-ma-", "ri-lla",
-      ],
+      es: ["Man-", "gos-ta", "A-ma-", "ri-lla"],
     },
     syllables: {
       en: {
-        text: [
-          "Yel", "low", "Mon", "goose",
-        ],
+        text: ["Yel", "low", "Mon", "goose"],
         audio: {
           yel: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_1_m8jdxg.mp3",
           low: "https://res.cloudinary.com/djqxogkfw/video/upload/v1672441732/animal_name_vowels_audio/yellow_mongoose_2_bdw2zz.mp3",
@@ -1288,69 +1279,69 @@ export const scienceArray:ListItem[] = [
 ];
 
 export const alphabetLetterSounds = {
-    en: {
-      A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/a.m4a",
-      B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/b.m4a",
-      C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921482/alphabet_list/alphabet/EN/c.m4a",
-      D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/d.m4a",
-      E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/e.m4a",
-      F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/f.m4a",
-      G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/g.m4a",
-      H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/h.m4a",
-      I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/i.m4a",
-      J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921486/alphabet_list/alphabet/EN/j.m4a",
-      K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/k.m4a",
-      L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/l.m4a",
-      M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921478/alphabet_list/alphabet/EN/m.m4a",
-      N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/n.m4a",
-      O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/o.m4a",
-      P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921478/alphabet_list/alphabet/EN/p.m4a",
-      Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/q.m4a",
-      R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/r.m4a",
-      S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/s.m4a",
-      T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/t.m4a",
-      U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/u.m4a",
-      V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921482/alphabet_list/alphabet/EN/v.m4a",
-      W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/w.m4a",
-      X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/x.m4a",
-      Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/y.m4a",
-      Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/z.m4a"
-    },
-    es: {
-      A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810892/alphabet_list/alphabet/ES/a.m4a",
-      Á: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810892/alphabet_list/alphabet/ES/a.m4a",
-      B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810899/alphabet_list/alphabet/ES/b.m4a",
-      C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810900/alphabet_list/alphabet/ES/c.m4a",
-      D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696812219/alphabet_list/alphabet/ES/d.m4a",
-      E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810909/alphabet_list/alphabet/ES/e.m4a",
-      É: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810909/alphabet_list/alphabet/ES/e.m4a",
-      F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810902/alphabet_list/alphabet/ES/f.m4a",
-      G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810910/alphabet_list/alphabet/ES/g.m4a",
-      H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810913/alphabet_list/alphabet/ES/h.m4a",
-      I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/i.m4a",
-      Í: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/i.m4a",
-      J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810886/alphabet_list/alphabet/ES/j.m4a",
-      K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810890/alphabet_list/alphabet/ES/k.m4a",
-      L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810881/alphabet_list/alphabet/ES/l.m4a",
-      LL: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810879/alphabet_list/alphabet/ES/ll.m4a",
-      M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810893/alphabet_list/alphabet/ES/m.m4a",
-      N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/n.m4a",
-      Ñ: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810883/alphabet_list/alphabet/ES/nn.m4a",
-      O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810889/alphabet_list/alphabet/ES/o.m4a",
-      Ó: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810889/alphabet_list/alphabet/ES/o.m4a",
-      P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810882/alphabet_list/alphabet/ES/p.m4a",
-      Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810888/alphabet_list/alphabet/ES/q.m4a",
-      R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810885/alphabet_list/alphabet/ES/r.m4a",
-      S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810898/alphabet_list/alphabet/ES/s.m4a",
-      T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810895/alphabet_list/alphabet/ES/t.m4a",
-      U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810906/alphabet_list/alphabet/ES/u.m4a",
-      Ú: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810906/alphabet_list/alphabet/ES/u.m4a",
-      V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810905/alphabet_list/alphabet/ES/v.m4a",
-      W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810903/alphabet_list/alphabet/ES/w.m4a",
-      X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810896/alphabet_list/alphabet/ES/x.m4a",
-      Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810907/alphabet_list/alphabet/ES/y.m4a",
-      Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810912/alphabet_list/alphabet/ES/z.m4a"
-    }
+  en: {
+    A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/a.m4a",
+    B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/b.m4a",
+    C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921482/alphabet_list/alphabet/EN/c.m4a",
+    D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/d.m4a",
+    E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/e.m4a",
+    F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/f.m4a",
+    G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/g.m4a",
+    H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921484/alphabet_list/alphabet/EN/h.m4a",
+    I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/i.m4a",
+    J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921486/alphabet_list/alphabet/EN/j.m4a",
+    K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/k.m4a",
+    L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/l.m4a",
+    M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921478/alphabet_list/alphabet/EN/m.m4a",
+    N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/n.m4a",
+    O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/o.m4a",
+    P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921478/alphabet_list/alphabet/EN/p.m4a",
+    Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921479/alphabet_list/alphabet/EN/q.m4a",
+    R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/r.m4a",
+    S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/s.m4a",
+    T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/t.m4a",
+    U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921480/alphabet_list/alphabet/EN/u.m4a",
+    V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921482/alphabet_list/alphabet/EN/v.m4a",
+    W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921481/alphabet_list/alphabet/EN/w.m4a",
+    X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/x.m4a",
+    Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921483/alphabet_list/alphabet/EN/y.m4a",
+    Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1704921485/alphabet_list/alphabet/EN/z.m4a",
+  },
+  es: {
+    A: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810892/alphabet_list/alphabet/ES/a.m4a",
+    Á: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810892/alphabet_list/alphabet/ES/a.m4a",
+    B: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810899/alphabet_list/alphabet/ES/b.m4a",
+    C: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810900/alphabet_list/alphabet/ES/c.m4a",
+    D: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696812219/alphabet_list/alphabet/ES/d.m4a",
+    E: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810909/alphabet_list/alphabet/ES/e.m4a",
+    É: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810909/alphabet_list/alphabet/ES/e.m4a",
+    F: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810902/alphabet_list/alphabet/ES/f.m4a",
+    G: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810910/alphabet_list/alphabet/ES/g.m4a",
+    H: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810913/alphabet_list/alphabet/ES/h.m4a",
+    I: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/i.m4a",
+    Í: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/i.m4a",
+    J: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810886/alphabet_list/alphabet/ES/j.m4a",
+    K: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810890/alphabet_list/alphabet/ES/k.m4a",
+    L: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810881/alphabet_list/alphabet/ES/l.m4a",
+    LL: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810879/alphabet_list/alphabet/ES/ll.m4a",
+    M: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810893/alphabet_list/alphabet/ES/m.m4a",
+    N: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810878/alphabet_list/alphabet/ES/n.m4a",
+    Ñ: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810883/alphabet_list/alphabet/ES/nn.m4a",
+    O: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810889/alphabet_list/alphabet/ES/o.m4a",
+    Ó: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810889/alphabet_list/alphabet/ES/o.m4a",
+    P: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810882/alphabet_list/alphabet/ES/p.m4a",
+    Q: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810888/alphabet_list/alphabet/ES/q.m4a",
+    R: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810885/alphabet_list/alphabet/ES/r.m4a",
+    S: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810898/alphabet_list/alphabet/ES/s.m4a",
+    T: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810895/alphabet_list/alphabet/ES/t.m4a",
+    U: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810906/alphabet_list/alphabet/ES/u.m4a",
+    Ú: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810906/alphabet_list/alphabet/ES/u.m4a",
+    V: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810905/alphabet_list/alphabet/ES/v.m4a",
+    W: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810903/alphabet_list/alphabet/ES/w.m4a",
+    X: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810896/alphabet_list/alphabet/ES/x.m4a",
+    Y: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810907/alphabet_list/alphabet/ES/y.m4a",
+    Z: "https://res.cloudinary.com/djqxogkfw/video/upload/v1696810912/alphabet_list/alphabet/ES/z.m4a",
+  },
 };
 
 export const animalFactCitations = {
@@ -1512,17 +1503,22 @@ export const artsArray = [
       en: "Aeolian Harp",
       es: "Arpa Eólica",
     },
-    slides: [{
-      placeOfOrigin: "Greece",
-      flag: images.flags.greece,
-      howItWorks: "The aeolian harp..."
-    }, {
-      instrumentType: "Wind/String",
-      technicalName: "Chordophone",
-      material: "Wood"
-    }, {
-      video: "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "Greece",
+        flag: images.flags.greece,
+        howItWorks: "The aeolian harp...",
+      },
+      {
+        instrumentType: "Wind/String",
+        technicalName: "Chordophone",
+        material: "Wood",
+      },
+      {
+        video:
+          "https://youtube.com/clip/UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL?si=_Avt7vI3WNGqFx96",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
@@ -1533,7 +1529,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: true,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "bell-tree",
@@ -1544,17 +1540,22 @@ export const artsArray = [
       en: "Bell Tree",
       es: "Árbol de Campanas",
     },
-    slides: [{
-      placeOfOrigin: "China",
-      flag: images.flags.china,
-      howItWorks: "The bell tree..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/71w929twkME?si=wmbgBdJ-lBoAQ_k8&modestbranding=1"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "China",
+        flag: images.flags.china,
+        howItWorks: "The bell tree...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/71w929twkME?si=wmbgBdJ-lBoAQ_k8&modestbranding=1",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
@@ -1565,7 +1566,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: true,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "cuica",
@@ -1576,18 +1577,23 @@ export const artsArray = [
       en: "Cuíca",
       es: "Cuíca",
     },
-    slides: [{
-      placeOfOrigin: "Brazil",
-      flag: images.flags.brazil,
-      howItWorks: "The cuíca..."
-    }, {
-      instrumentType: "Percussion",
-      technicalName: "Membranophone",
-      material: "metal with animal skin stretched over the top"
-    }, {
-      video: "https://www.youtube.com/embed/mmlK94QvwiA?si=WdGKnz3ADPRZuB9o&amp;clip=Ugkxu_w8-6SbXsuIBdsKYiNZQEPQdtSmFr7a&amp;clipt=EMC7ARjYsAI&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Brazil",
+        flag: images.flags.brazil,
+        howItWorks: "The cuíca...",
+      },
+      {
+        instrumentType: "Percussion",
+        technicalName: "Membranophone",
+        material: "metal with animal skin stretched over the top",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/mmlK94QvwiA?si=WdGKnz3ADPRZuB9o&amp;clip=Ugkxu_w8-6SbXsuIBdsKYiNZQEPQdtSmFr7a&amp;clipt=EMC7ARjYsAI&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
     funFacts: [
@@ -1597,7 +1603,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "didgeridoo",
@@ -1608,17 +1614,22 @@ export const artsArray = [
       en: "Didgeridoo",
       es: "Didgeridoo",
     },
-    slides: [{
-      placeOfOrigin: "Australia",
-      flag: images.flags.australia,
-      howItWorks: "The didgeridoo..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "Australia",
+        flag: images.flags.australia,
+        howItWorks: "The didgeridoo...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
@@ -1629,7 +1640,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "electric-bass",
@@ -1640,19 +1651,25 @@ export const artsArray = [
       en: "Electric Bass",
       es: "Bajo Eléctrico",
     },
-    slides: [{
-      placeOfOrigin: "United States",
-      flag: images.flags.united_states,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/wslZrcc6mMU?si=uZtyarZuhCwWcPAR&amp;clip=UgkxfEJ4lHCq0wBsPsZRz71uo6PH67BU6czZ&amp;clipt=ENzVERiAxxI&modestbranding=1"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "United States",
+        flag: images.flags.united_states,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/wslZrcc6mMU?si=uZtyarZuhCwWcPAR&amp;clip=UgkxfEJ4lHCq0wBsPsZRz71uo6PH67BU6czZ&amp;clipt=ENzVERiAxxI&modestbranding=1",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
-    nameSound: "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
+    nameSound:
+      "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/elephant_fact1_ejcgdf.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/elephant_fact2_hacxsi.mp3",
@@ -1660,7 +1677,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "french-horn",
@@ -1671,18 +1688,23 @@ export const artsArray = [
       en: "French Horn",
       es: "Corno Francés",
     },
-    slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Europe",
+        flag: images.flags.european_union,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
     funFacts: [
@@ -1692,7 +1714,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "gamelatron",
@@ -1703,18 +1725,23 @@ export const artsArray = [
       en: "Gamelatron",
       es: "Gamelatrón",
     },
-    slides: [{
-      placeOfOrigin: "United States",
-      flag: images.flags.united_states,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "United States",
+        flag: images.flags.united_states,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
     funFacts: [
@@ -1724,7 +1751,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "harmonica",
@@ -1735,18 +1762,23 @@ export const artsArray = [
       en: "Harmonica",
       es: "Armónica",
     },
-    slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Europe",
+        flag: images.flags.european_union,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
     funFacts: [
@@ -1756,7 +1788,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "inci",
@@ -1767,17 +1799,22 @@ export const artsArray = [
       en: "Inci",
       es: "Tumpong",
     },
-    slides: [{
-      placeOfOrigin: "Philippines",
-      flag: images.flags.philippines,
-      howItWorks: "The inci..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "Philippines",
+        flag: images.flags.philippines,
+        howItWorks: "The inci...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
@@ -1788,7 +1825,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "janggu",
@@ -1799,18 +1836,23 @@ export const artsArray = [
       en: "Janggu",
       es: "Janggu",
     },
-    slides: [{
-      placeOfOrigin: "South Korea",
-      flag: images.flags.south_korea,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "South Korea",
+        flag: images.flags.south_korea,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
     funFacts: [
@@ -1820,7 +1862,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "khaen",
@@ -1831,17 +1873,22 @@ export const artsArray = [
       en: "Khaen",
       es: "Khaen",
     },
-    slides: [{
-      placeOfOrigin: "Thailand",
-      flag: images.flags.thailand,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
+    slides: [
+      {
+        placeOfOrigin: "Thailand",
+        flag: images.flags.thailand,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
@@ -1852,7 +1899,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "leier",
@@ -1863,18 +1910,23 @@ export const artsArray = [
       en: "Leier",
       es: "Lira",
     },
-    slides: [{
-      placeOfOrigin: "Germany",
-      flag: images.flags.germany,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Germany",
+        flag: images.flags.germany,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
     funFacts: [
@@ -1884,7 +1936,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "mbira",
@@ -1895,18 +1947,23 @@ export const artsArray = [
       en: "Mbira",
       es: "Mbira",
     },
-    slides: [{
-      placeOfOrigin: "Zimbabwe",
-      flag: images.flags.zimbabwe,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Zimbabwe",
+        flag: images.flags.zimbabwe,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     funFacts: [
@@ -1916,7 +1973,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "native-american-flute",
@@ -1927,18 +1984,23 @@ export const artsArray = [
       en: "Native American Flute",
       es: "Flauta India",
     },
-    slides: [{
-      placeOfOrigin: "United States",
-      flag: images.flags.united_states,
-      howItWorks: "The native american flute..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "United States",
+        flag: images.flags.united_states,
+        howItWorks: "The native american flute...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     funFacts: [
@@ -1948,7 +2010,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "oboe",
@@ -1959,18 +2021,23 @@ export const artsArray = [
       en: "Oboe",
       es: "Oboe",
     },
-    slides: [{
-      placeOfOrigin: "Europe",
-      flag: images.flags.european_union,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Europe",
+        flag: images.flags.european_union,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
     funFacts: [
@@ -1980,7 +2047,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "piano",
@@ -1991,18 +2058,23 @@ export const artsArray = [
       en: "Piano",
       es: "Piano",
     },
-    slides: [{
-      placeOfOrigin: "Italy",
-      flag: images.flags.italy,
-      howItWorks: "The piano..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Chordophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Italy",
+        flag: images.flags.italy,
+        howItWorks: "The piano...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Chordophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     funFacts: [
@@ -2012,7 +2084,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "quijada-de-burro",
@@ -2023,18 +2095,24 @@ export const artsArray = [
       en: "Quijada (Jawbone)",
       es: "Quijada de Burro",
     },
-    slides: [{
-      placeOfOrigin: "Africa",
-      flag: images.flags.african_union,
-      howItWorks: "The jawbone is cleaned and dried to make the teeth loose and rattle. This makes a loud buzzing sound."
-    }, {
-      instrumentType: "Percussion",
-      technicalName: "Idiophone",
-      material: "animal bone"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Africa",
+        flag: images.flags.african_union,
+        howItWorks:
+          "The jawbone is cleaned and dried to make the teeth loose and rattle. This makes a loud buzzing sound.",
+      },
+      {
+        instrumentType: "Percussion",
+        technicalName: "Idiophone",
+        material: "animal bone",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
     funFacts: [
@@ -2044,7 +2122,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "rabab",
@@ -2055,18 +2133,23 @@ export const artsArray = [
       en: "Rubab",
       es: "Robab",
     },
-    slides: [{
-      placeOfOrigin: "Afghanistan",
-      flag: images.flags.afghanistan,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Afghanistan",
+        flag: images.flags.afghanistan,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     funFacts: [
@@ -2076,7 +2159,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "sitar",
@@ -2087,18 +2170,23 @@ export const artsArray = [
       en: "Sitar",
       es: "Sitar",
     },
-    slides: [{
-      placeOfOrigin: "India",
-      flag: images.flags.india,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Chordophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "India",
+        flag: images.flags.india,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Chordophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
     funFacts: [
@@ -2108,7 +2196,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "taiko",
@@ -2119,18 +2207,23 @@ export const artsArray = [
       en: "Taiko",
       es: "Taiko",
     },
-    slides: [{
-      placeOfOrigin: "Japan",
-      flag: images.flags.japan,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Japan",
+        flag: images.flags.japan,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     funFacts: [
@@ -2140,7 +2233,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "ukulele",
@@ -2151,18 +2244,23 @@ export const artsArray = [
       en: "Ukulele",
       es: "Ukelele",
     },
-    slides: [{
-      placeOfOrigin: "Hawaii",
-      flag: images.flags.hawaii,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "String",
-      technicalName: "Chordophone",
-      material: "Wood"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Hawaii",
+        flag: images.flags.hawaii,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "String",
+        technicalName: "Chordophone",
+        material: "Wood",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     funFacts: [
@@ -2172,7 +2270,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "violin",
@@ -2183,18 +2281,23 @@ export const artsArray = [
       en: "Violin",
       es: "Violín",
     },
-    slides: [{
-      placeOfOrigin: "Italy",
-      flag: images.flags.italy,
-      howItWorks: "The violin..."
-    }, {
-      instrumentType: "String",
-      technicalName: "Chordophone",
-      material: "wood"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Italy",
+        flag: images.flags.italy,
+        howItWorks: "The violin...",
+      },
+      {
+        instrumentType: "String",
+        technicalName: "Chordophone",
+        material: "wood",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     funFacts: [
@@ -2204,7 +2307,7 @@ export const artsArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "waterphone",
@@ -2214,25 +2317,30 @@ export const artsArray = [
     name: {
       en: {
         text: "Waterphone",
-        audio: ""
-      }, 
+        audio: "",
+      },
       es: {
         text: "Waterphone",
-        audio: ""
-      } 
+        audio: "",
+      },
     },
-    slides: [{
-      placeOfOrigin: "United States",
-      flag: images.flags.united_states,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "United States",
+        flag: images.flags.united_states,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact1_senecj.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/warthog_fact2_czrjpl.mp3",
@@ -2240,7 +2348,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "xalam",
@@ -2250,25 +2358,30 @@ export const artsArray = [
     name: {
       en: {
         text: "Xalam",
-        audio: ""
-      }, 
+        audio: "",
+      },
       es: {
         text: "Xalam",
-        audio: ""
-      } 
+        audio: "",
+      },
     },
-    slides: [{
-      placeOfOrigin: "Africa",
-      flag: images.flags.african_union,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Africa",
+        flag: images.flags.african_union,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
     funFacts: [
@@ -2278,7 +2391,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "yuka",
@@ -2288,25 +2401,30 @@ export const artsArray = [
     name: {
       en: {
         text: "Yuka",
-        audio: ""
-      }, 
+        audio: "",
+      },
       es: {
         text: "Yuka",
-        audio: ""
-      } 
+        audio: "",
+      },
     },
-    slides: [{
-      placeOfOrigin: "Cuba",
-      flag: images.flags.cuba,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Cuba",
+        flag: images.flags.cuba,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661502/animal_facts_audio/yellow_mongoose_fact1_jgd2eq.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/yellow_mongoose_fact2_ugljou.mp3",
@@ -2314,7 +2432,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "arts"
+    category: "arts",
   },
   {
     id: "zarb",
@@ -2324,25 +2442,30 @@ export const artsArray = [
     name: {
       en: {
         text: "Zarb",
-        audio: ""
-      }, 
+        audio: "",
+      },
       es: {
         text: "Tombak",
-        audio: ""
-      } 
+        audio: "",
+      },
     },
-    slides: [{
-      placeOfOrigin: "Iran",
-      flag: images.flags.iran,
-      howItWorks: "The harmonica..."
-    }, {
-      instrumentType: "Wind",
-      technicalName: "Aerophone",
-      material: "brass, stainless steel or bronze"
-    }, {
-      video: "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1"
-    }],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    slides: [
+      {
+        placeOfOrigin: "Iran",
+        flag: images.flags.iran,
+        howItWorks: "The harmonica...",
+      },
+      {
+        instrumentType: "Wind",
+        technicalName: "Aerophone",
+        material: "brass, stainless steel or bronze",
+      },
+      {
+        video:
+          "https://www.youtube.com/embed/yNNASyshhnQ?si=LAP0cu7tnvQ9nkYW&amp;clip=UgkxCEyAJ4URGHHF7DU4rNcVjiB_N0mBdKaL&amp;clipt=EKCBChjc1gs&modestbranding=1",
+      },
+    ],
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: [
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661503/animal_facts_audio/zebra_fact1_cdpouk.mp3",
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671661504/animal_facts_audio/zebra_fact2_b6u2js.mp3",
@@ -2350,7 +2473,7 @@ export const artsArray = [
     ],
     horizontal: true,
     isLiked: true,
-    category: "arts"
+    category: "arts",
   },
 ];
 
@@ -2370,7 +2493,7 @@ export const mathArray = [
     },
     tiles: ["Al-li-", "ga-", "tor"],
     syllables: ["Al", "li", "ga", "tor"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/alligator_ipbeqb.mp3",
     funFacts: [
@@ -2380,7 +2503,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "2",
@@ -2393,7 +2516,7 @@ export const mathArray = [
     },
     tiles: ["Ba-boon"],
     syllables: ["Ba", "boon"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/baboon_f4s3in.mp3",
     funFacts: [
@@ -2403,7 +2526,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "3",
@@ -2416,7 +2539,7 @@ export const mathArray = [
     },
     tiles: ["Chim-", "pan-", "zee"],
     syllables: ["Chim", "pan", "zee"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1671648469/animal-sounds/chimpanzee_fralis.mp3",
     funFacts: [
@@ -2426,7 +2549,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "4",
@@ -2439,7 +2562,7 @@ export const mathArray = [
     },
     tiles: ["Din-go"],
     syllables: ["Din", "go"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/dingo_vbeznb.mp3",
     funFacts: [
@@ -2449,7 +2572,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "5",
@@ -2462,7 +2585,7 @@ export const mathArray = [
     },
     tiles: ["El-e-", "phant"],
     syllables: ["El", "e", "phant"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/elephant_ja0xof.mp3",
     funFacts: [
@@ -2472,7 +2595,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "6",
@@ -2485,7 +2608,7 @@ export const mathArray = [
     },
     tiles: ["Frog"],
     syllables: ["Frog"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795180/animal-sounds/frog_hqdv08.mp3",
     funFacts: [
@@ -2495,7 +2618,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "7",
@@ -2508,7 +2631,7 @@ export const mathArray = [
     },
     tiles: ["Go-", "ril-la"],
     syllables: ["Go", "ril", "la"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/gorilla_nu73cy.mp3",
     funFacts: [
@@ -2518,7 +2641,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "8",
@@ -2531,7 +2654,7 @@ export const mathArray = [
     },
     tiles: ["Hy-e-na"],
     syllables: ["Hy", "e", "na"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/hyena_uvck0i.mp3",
     funFacts: [
@@ -2541,7 +2664,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "9",
@@ -2554,7 +2677,7 @@ export const mathArray = [
     },
     tiles: ["Im-", "pal-a"],
     syllables: ["Im", "pal", "a"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/impala_sz5oq8.mp3",
     funFacts: [
@@ -2564,7 +2687,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "10",
@@ -2577,7 +2700,7 @@ export const mathArray = [
     },
     tiles: ["Jag-", "u-ar"],
     syllables: ["Jag", "u", "ar"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/jaguar_augfbp.mp3",
     funFacts: [
@@ -2587,7 +2710,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "11",
@@ -2600,7 +2723,7 @@ export const mathArray = [
     },
     tiles: ["Ko-", "a-la"],
     syllables: ["Ko", "a", "la"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/koala_xamipd.mp3",
     funFacts: [
@@ -2610,7 +2733,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "12",
@@ -2623,7 +2746,7 @@ export const mathArray = [
     },
     tiles: ["Le-mur"],
     syllables: ["Le", "mur"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/lemur_ypjdmr.mp3",
     funFacts: [
@@ -2633,7 +2756,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "13",
@@ -2646,7 +2769,7 @@ export const mathArray = [
     },
     tiles: ["Ma-caw"],
     syllables: ["Ma", "caw"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795181/animal-sounds/macaw_dccou1.mp3",
     funFacts: [
@@ -2656,7 +2779,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "14",
@@ -2669,7 +2792,7 @@ export const mathArray = [
     },
     tiles: ["Num-bat"],
     syllables: ["Num", "bat"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/numbat_wpfejt.mp3",
     funFacts: [
@@ -2679,7 +2802,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "15",
@@ -2692,7 +2815,7 @@ export const mathArray = [
     },
     tiles: ["O-ka-pi"],
     syllables: ["O", "ka", "pi"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/okapi_ukx8lz.mp3",
     funFacts: [
@@ -2702,7 +2825,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "16",
@@ -2715,7 +2838,7 @@ export const mathArray = [
     },
     tiles: ["Pan-da"],
     syllables: ["Pan", "da"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/panda_o0bz0g.mp3",
     funFacts: [
@@ -2725,7 +2848,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "17",
@@ -2738,7 +2861,7 @@ export const mathArray = [
     },
     tiles: ["Quet-", "zal"],
     syllables: ["Quet", "zal"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/quetzal_ivuema.mp3",
     funFacts: [
@@ -2748,7 +2871,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "18",
@@ -2761,7 +2884,7 @@ export const mathArray = [
     },
     tiles: ["Rhi-", "noc-", "er-os"],
     syllables: ["Rhi", "noc", "er", "os"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/rhino_zyp4fl.mp3",
     funFacts: [
@@ -2771,7 +2894,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "19",
@@ -2784,7 +2907,7 @@ export const mathArray = [
     },
     tiles: ["Snake"],
     syllables: ["Snake"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/Snake_ds2byy.mp3",
     funFacts: [
@@ -2794,7 +2917,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "20",
@@ -2807,7 +2930,7 @@ export const mathArray = [
     },
     tiles: ["Ti-ger"],
     syllables: ["Ti", "ger"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/tiger_wfkjkn.mp3",
     funFacts: [
@@ -2817,7 +2940,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "21",
@@ -2830,7 +2953,7 @@ export const mathArray = [
     },
     tiles: ["U-nau"],
     syllables: ["U", "nau"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/unau_jwytmf.mp3",
     funFacts: [
@@ -2840,7 +2963,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "22",
@@ -2856,7 +2979,7 @@ export const mathArray = [
       ["Ver", "vet"],
       ["Mon", "key"],
     ],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/vervet_monkey_gvims4.mp3",
     funFacts: [
@@ -2866,7 +2989,7 @@ export const mathArray = [
     ],
     horizontal: false,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "23",
@@ -2879,7 +3002,7 @@ export const mathArray = [
     },
     tiles: ["Wart-", "hog"],
     syllables: ["Wart", "hog"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/wildebeest_ugxsq2.mp3",
     funFacts: [
@@ -2889,7 +3012,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "24",
@@ -2902,7 +3025,7 @@ export const mathArray = [
     },
     tiles: ["Xe-nops"],
     syllables: ["Xe", "nops"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/xenops_e6rmil.mp3",
     funFacts: [
@@ -2912,7 +3035,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "25",
@@ -2928,7 +3051,7 @@ export const mathArray = [
       ["Yel", "low"],
       ["Mon", "goose"],
     ],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1660795182/animal-sounds/yellow_mongoose_l39y3w.mp3",
     funFacts: [
@@ -2938,7 +3061,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "26",
@@ -2951,7 +3074,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2961,7 +3084,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "27",
@@ -2974,7 +3097,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -2984,7 +3107,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "28",
@@ -2997,7 +3120,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -3007,7 +3130,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "29",
@@ -3020,7 +3143,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -3030,7 +3153,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
   {
     id: "30",
@@ -3043,7 +3166,7 @@ export const mathArray = [
     },
     tiles: ["Ze-bra"],
     syllables: ["Ze", "bra"],
-    soundEffect: [sounds.animals.frog, sounds.animals.okapi], 
+    soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     nameSound:
       "https://res.cloudinary.com/djqxogkfw/video/upload/v1666114219/animal-sounds/zebra_u99gjw.mp3",
     funFacts: [
@@ -3053,7 +3176,7 @@ export const mathArray = [
     ],
     horizontal: true,
     isLiked: false,
-    category: "math"
+    category: "math",
   },
 ];
 
