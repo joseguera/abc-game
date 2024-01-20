@@ -357,8 +357,8 @@ export const scienceArray: ListItem[] = [
     },
     soundEffect: [sounds.animals.gorilla, sounds.animals.frog],
     funFacts: {
-      en: ["audio.m4a", "audio.m4a", "audio.m4a"],
-      es: ["audio.m4a", "audio.m4a", "audio.m4a"],
+      en: ["audio", "audio", "audio"],
+      es: ["audio", "audio", "audio"],
     },
     isLiked: false,
     category: "science",
