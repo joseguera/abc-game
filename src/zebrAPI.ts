@@ -404,7 +404,7 @@ export const scienceArray: ListItem[] = [
     },
     soundEffect: [sounds.animals.frog, sounds.animals.okapi],
     funFacts: {
-      en: ["", "", ""],
+      en: ["audio", "audio", "audio"],
       es: ["", "", ""],
     },
     isLiked: false,
