@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { change } from "../../features/language/languageSlice";
+import * as languageSlice from "../../features/language/languageSlice"
+const { change } = languageSlice;
 
 interface LangList {
     lang: string;

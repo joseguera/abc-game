@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import globe from "../../images/icons/globe.svg";
-import globeRed from "../../images/icons/globeRed.svg";
-import LanguageList from "components/LanguageList";
+// import globe from "../../images/icons/globe.svg";
+// import globeRed from "../../images/icons/globeRed.svg";
+import LanguageList from "../LanguageList/LanguageList";
 
 export default function LanguageDropDown() {
   const [langPopup, setLangPopup] = useState(false);
@@ -40,11 +40,11 @@ export default function LanguageDropDown() {
       onMouseOut={() => getLangPopup(false)}
     >
       <div className="w-12 h-12 flex justify-center items-center">
-        <img
+        {/* <img
           src={langPopup ? globeRed : globe}
           className="h-6 leading-6 cursor-pointer hover:text-[#343434]"
           alt="language icon"
-        />
+        /> */}
       </div>
       {langPopup && 
         <LanguageList getLangPopup={getLangPopup} getSelected={getSelected} getHovered={getHovered} langList={langList} />

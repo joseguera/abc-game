@@ -1,16 +1,16 @@
 import React from "react";
-import { Button, Header } from "components";
-import { ListItem } from "zebraAPI";
-
+import Button from "../Button/Button";
+import Header from "../Header/Header";
+import { animalListItem } from "../../../declarations/animalListItem";
 
 interface ButtonListProps {
   category: string;
-  list: ListItem[];
-};
+  list: animalListItem[];
+}
 
 const ButtonList: React.FC<ButtonListProps> = ({ category, list }) => {
   const capitalized = category.charAt(0).toUpperCase() + category.slice(1);
-  
+
   return (
     <div className="flex flex-col items-center">
       <Header pageTitle={capitalized} category={category} />

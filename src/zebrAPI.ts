@@ -2,13 +2,13 @@
 
 import images from "./images/index.js";
 import sounds from "./sounds/index.js";
-import { ListItem } from "zebraAPI";
+import { animalListItem } from "../declarations/animalListItem";
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////// SCIENCE ////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 
-export const scienceArray: ListItem[] = [
+export const scienceArray: animalListItem[] = [
   {
     id: "alligator",
     value: "A",
