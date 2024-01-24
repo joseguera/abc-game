@@ -7,7 +7,7 @@ interface SyllableLanguage {
   audio: AudioObject;
 }
 
-export interface AnimalListItem {
+export interface animalListItem {
   id: string;
   value: string;
   clicked: boolean;

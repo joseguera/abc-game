@@ -1,5 +1,5 @@
 import React from 'react';
-import { LanguageDropDown } from 'components';
+import LanguageDropDown from '../LanguageDropDown/LanguageDropDown';
 
 interface HeaderProps {
   pageTitle: string;
