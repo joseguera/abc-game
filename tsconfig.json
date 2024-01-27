@@ -23,5 +23,5 @@
     "noImplicitAny": true
   },
   "include": ["src/**/*.ts", "src/components/ButtonList/ButtonList.test.tsx", "declarations", "declarations/animalListItem.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
