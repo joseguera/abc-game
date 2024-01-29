@@ -5,7 +5,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import ButtonList from "./ButtonList";
 import { scienceArray } from "../../zebrAPI.js";
-import { animalListItem } from "../../../declarations/animalListItem";
+import { animalListItem } from "../../../declarations/animalListItem.js";
 
 // Mock the Link component from react-router-dom
 jest.mock("react-router-dom", () => ({
@@ -27,11 +27,11 @@ describe("ButtonList Component", () => {
     expect(screen.getByText("science")).toBeInTheDocument();
 
     // Check if buttons (Links) are rendered for each item in the list
-     mockList.forEach((animal) => {
-       const link = screen.getByText(animal.name.en.text);
-       expect(link).toBeInTheDocument();
-       expect(link.tagName).toBe("A");
-       expect(link).toHaveAttribute("href", `/path-to/${animal.id}`); // Replace with your actual route structure
-     });
+    mockList.forEach((animal) => {
+      const link = screen.getByText(animal.name.en.text);
+      expect(link).toBeInTheDocument();
+      expect(link.tagName).toBe("A");
+      expect(link).toHaveAttribute("href", `/path-to/${animal.id}`); // Replace with your actual route structure
+    });
   });
 });

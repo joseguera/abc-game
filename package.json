@@ -55,24 +55,10 @@
       "API_URL"
     ]
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "babel-jest"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@jest/globals": "^29.7.0",
     "@testing-library/jest-dom": "^6.3.0",
