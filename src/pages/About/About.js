@@ -34,6 +34,11 @@ export default function About(props) {
             content was child-friendly. However, we cannot control the ads or
             links to other pages on these sites. Parental discretion is advised.
           </i>
+            <i>
+            NOTE: We've carefully vetted these links to ensure that their page
+            content was child-friendly. However, we cannot control the ads or
+            links to other pages on these sites. Parental discretion is advised.
+          </i>
         </span>
       </Instructions>
 
